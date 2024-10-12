@@ -2,24 +2,23 @@ import React from "react";
 import { portfolioData } from "./portfolioData";
 export default function PortfolioComplete() {
   return (
-    <section className="text-gray-600 body-font bg-teal-50">
+    <section className="text-gray-600 body-font ">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col">
           <div className="flex flex-col flex-wrap py-6 mb-12 sm:flex-row">
-            <h1 className="mb-2 sm:w-2/5 sm:mb-0 nadpisPage">
-              Space The Final Frontier
-            </h1>
-            <p className="pl-0 sm:w-3/5 sm:pl-10 textPage">
-              Street art subway tile salvia four dollar toast bitters selfies
-              quinoa yuccie synth meditation iPhone intelligentsia prism tofu.
-              Viral gochujang bitters dreamcatcher.
+            <h1 className="mb-2 nadpisPage sm:w-1/3 sm:mb-0">Moje práce</h1>
+            <p className="pl-0 textPage sm:w-2/3">
+              Prohlédněte si ukázky mých projektů a nechte se inspirovat. Každý
+              web, na kterém pracuji, je navržen s ohledem na potřeby a cíle
+              klienta. Moje projekty kombinují estetiku, použitelnost a
+              technickou kvalitu, abych vždy dosáhl optimálního výsledku.
             </p>
           </div>
         </div>
         <div className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4">
           {portfolioData.map((item, index) => (
             <div className="p-4 mb-6 md:w-1/3 sm:mb-0" key={index}>
-              <div className="h-64 overflow-hidden rounded-lg">
+              <div className="overflow-hidden rounded-lg">
                 <img
                   alt={item.images[0].alt}
                   className="object-cover object-center w-full h-full"

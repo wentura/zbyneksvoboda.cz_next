@@ -5,7 +5,7 @@ export default function Portfolio() {
   const portfolio = portfolioData.filter((item) => item.hasCaseStudy === true);
 
   return (
-    <div className="px-5 py-20 mx-auto bg-amber-50 md:py-40 lg:px-0">
+    <div className="px-5 py-20 mx-auto md:py-40 lg:px-0">
       <div className="container flex flex-col flex-wrap max-w-screen-xl py-0 mx-auto mb-0 lg:pb-20 sm:flex-row">
         <h1 className="mb-2 nadpisPage sm:w-1/3 sm:mb-0">Moje práce</h1>
         <p className="pl-0 textPage sm:w-2/3">
@@ -23,17 +23,18 @@ export default function Portfolio() {
               ? "lg:bg-gradient-to-r"
               : "lg:bg-gradient-to-l flex-row-reverse"
           } ${
-            item.bgFromColor
+            item.caseStudy.bgFromColor
           } 2xl:from-35% 2xl:to-35% from-25% to-25% to-white max-w-full mb-20`}
           key={index}
         >
           <div
             className={`container max-w-screen-xl flex flex-wrap px-0 lg:px-20 py-10 lg:py-40 mx-auto  ${
               index % 2 === 0 ? "" : "flex-row-reverse"
-            } ${item.bgFromColor} from-25% to-25% to-white`}
+            } ${item.caseStudy.bgFromColor} from-25% to-25% to-white`}
           >
+            <h2 className="mb-5 nadpisPortfolio md:hidden">{item.title}</h2>
             {/* <div className="w-full overflow-hidden rounded-lg lg:w-1/2 lg:mb-0 bg-gradient-to-r from-indigo-500 to-purple-200"> */}
-            <div className="w-full mx-auto mb-10 overflow-hidden rounded-lg h-fit sm:w-1/2 lg:w-1/3 lg:mb-0">
+            <div className="w-full mx-auto mb-10 overflow-hidden rounded-lg h-fit sm:w-1/2 lg:w-1/3 lg:mb-0 md:drop-shadow-[0_40px_40px_rgba(0,0,0,0.7)] drop-shadow-2xl">
               <motion.div
                 // initial={{ opacity: 0, x: -180 }}
                 initial={{

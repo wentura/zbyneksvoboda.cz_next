@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { servicesData } from "./servicesData";
 export default function Services() {
@@ -44,9 +45,10 @@ export default function Services() {
           ))}
         </div>
       </div>
-      <div className="pt-20 flex max-w-screen-xl justify-end mx-auto">
-        <button className="ctaBtnPrimary">Prohlédněte si portfolio</button>
-        <button className="ctaBtnSecondary">Kontaktujte mě</button>
+      <div className="md:pt-20 flex max-w-screen-xl md:justify-end mx-auto pl-5 md:pl-0 pt-10">
+        <Link className="ctaBtnSecondaryDark" href="/kontakt">
+          Kontaktujte mě
+        </Link>
       </div>
     </section>
   );

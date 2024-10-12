@@ -6,11 +6,12 @@ import Navigation from "./navigation";
 export default function Header() {
   return (
     <motion.div
-      initial={{ y: 100, opacity: 0 }}
+      // initial={{ y: 0, opacity: 100 }}
+      // initial={{ y: 100, opacity: 0 }}
       // animate={{ y: 0, opacity: 100 }}
-      whileInView={{ y: 0, opacity: 100 }}
-      transition={{ ease: "easeInOut", duration: 0.3 }}
-      viewport={{ once: true }}
+      // whileInView={{ y: 0, opacity: 100 }}
+      // transition={{ ease: "easeInOut", duration: 0.3 }}
+      // viewport={{ once: true }}
       className={`top-0 sticky bg-modra2 z-30`}
       id="navigation"
     >

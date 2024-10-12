@@ -5,7 +5,7 @@ import { ReactMatrixAnimation } from "react-matrix-animation";
 export default function Hero() {
   return (
     // <section className="relative h-screen sm:max-h-screen max-h-[350px]">
-    <section className="relative h-screen ">
+    <section className="relative h-screen max-h-[900px] ">
       <div className="absolute items-center justify-center w-full h-full -z-20 ">
         <ReactMatrixAnimation
           backgroundColor="#ffffff"
@@ -21,25 +21,26 @@ export default function Hero() {
             <Image src="/ja.png" width={600} height={800} alt="ja" />
           </div>
         </div>
-        <div className="relative flex flex-col items-center py-2 text-center lg:flex-grow w-full min-w-fit lg:pr-8 md:pr-1 md:items-start md:text-left lg:my-64 my-4 z-10">
-          <p className="mb-4">
-            Vytvářím weby, které podpoří růst vašeho podnikání.
+        <div className="relative flex flex-col items-start py-2 lg:flex-grow w-full min-w-fit lg:pr-8 md:pr-1 md:items-start text-left lg:my-64 my-4 z-10">
+          <h1 className="mb-4 text-xl md:text-4xl font-black text-modra2 tracking-tight">
+            Zbyněk Svoboda
+          </h1>
+          <p className="mb-4 text-4xl md:text-6xl font-extralight leading-tight text-modra2 tracking-tight">
+            Vytvářím weby, které podpoří růst
+            <br />
+            vašeho podnikání.
           </p>
-          <p className="mb-4 md:w-1/2 lg:w-3/5">
-            Moderní webové stránky, které nejen zaujmou, ale i přinášejí
-            výsledky. Specializuji se na web design a vývoj pro malé a střední
-            podniky.{" "}
+          <p className="mb-4 md:w-1/2 lg:w-3/5 text-xl font-extralight leading-snug tracking-normal hidden md:block">
+            <span class="text-modra2 font-black">Moderní webové stránky</span>,
+            které nejen zaujmou, ale i přinášejí výsledky. Specializuji se na
+            web design a vývoj pro jednotlice, malé a střední podniky.{" "}
           </p>
-          <p className="mb-8  md:w-1/2 lg:w-4/5">
-            Ať už hledáte stylový web pro prezentaci své značky, nebo robustní
-            e-shop, který zvýší vaše prodeje, jsem tu, abych vám pomohl. Mým
-            cílem je vytvořit pro vás online řešení, které bude jednoduše
-            spravovatelné, rychlé a funkční. Pojďme spolu nastartovat váš online
-            úspěch!
-          </p>
-          <div className="flex justify-center">
-            <button className="ctaBtnPrimary">Prohlédněte si portfolio</button>
-            <button className="ctaBtnSecondary">Kontaktujte mě</button>
+
+          <div className="flex justify-center flex-col md:flex-row">
+            <button className="ctaBtnPrimary mb-4 md:mb-0">
+              Prohlédněte si portfolio
+            </button>
+            <button className="ctaBtnSecondary md:ml-4">Kontaktujte mě</button>
           </div>
         </div>
         <div className="w-5/6 bg-red-400 min-h-min lg:max-w-lg lg:w-full md:w-1/2">

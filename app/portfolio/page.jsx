@@ -2,9 +2,5 @@ import React from "react";
 import PortfolioComplete from "../components/portfolioComplete";
 
 export default function PortfolioPage() {
-  return (
-    <main>
-      <PortfolioComplete />
-    </main>
-  );
+  return <PortfolioComplete />;
 }
