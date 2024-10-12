@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { ReactMatrixAnimation } from "react-matrix-animation";
 
@@ -40,7 +41,9 @@ export default function Hero() {
             <button className="ctaBtnPrimary mb-4 md:mb-0">
               Prohlédněte si portfolio
             </button>
-            <button className="ctaBtnSecondary md:ml-4">Kontaktujte mě</button>
+            <Link href="/kontakt" className="ctaBtnSecondary md:ml-4">
+              Kontaktujte mě
+            </Link>
           </div>
         </div>
         <div className="w-5/6 bg-red-400 min-h-min lg:max-w-lg lg:w-full md:w-1/2">

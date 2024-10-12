@@ -11,7 +11,7 @@ export const portfolioData = [
       technologies: ["Shoptet", "HTML", "CSS", "JavaScript", "jQuery"],
       images: [
         { img: "/moje_prace/kolemkrku.png", alt: "kolemkrku" },
-        { img: "/public/moje_prace/kolemkrku1.png", alt: "kolemkrkunaled" },
+        { img: "/moje_prace/kolemkrku1.png", alt: "kolemkrkunaled" },
         { img: "/public/moje_prace/kolemkrku2.png", alt: "alt" },
         { img: "/public/moje_prace/kolemkrku3.png", alt: "alt" },
       ],
@@ -21,11 +21,12 @@ export const portfolioData = [
     images: [{ img: "/moje_prace/kolemkrku.png", alt: "kolemkrku" }],
   },
   {
-    title: "Zodpovědnávyúka.cz",
+    title: "Zodpovědná vyúka",
     link: "https://zodpovednavyuka.cz/",
     linkViewMore: "zodpovednavyuka.cz",
     hasCaseStudy: true,
     shortDecs: "shortDecs",
+    slug: "zodpovednavyuka",
     images: [{ img: "/moje_prace/zv.png", alt: "alt" }],
     caseStudy: {
       bgFromColor: "from-amber-200",
@@ -41,8 +42,8 @@ export const portfolioData = [
     },
   },
   {
-    title: "SvouCestou.info",
-    link: "https://SvouCestou.info/",
+    title: "Svou Cestou",
+    link: "https://svoucestou.info/",
     linkViewMore: "svoucestou.info",
     hasCaseStudy: true,
     slug: "svoucestou",
@@ -51,37 +52,25 @@ export const portfolioData = [
       year: 2022,
       technologies: ["Shoptet", "HTML", "CSS", "JavaScript", "jQuery"],
       images: [
-        { img: "https://dummyimage.com/600x900/aeacdc/&text=0-1", alt: "alt" },
-        { img: "https://dummyimage.com/1203x503&text=0-2", alt: "alt" },
-        { img: "https://dummyimage.com/1203x503&text=0-3", alt: "alt" },
+        { img: "/moje_prace/zv.png", alt: "kolemkrku" },
+        { img: "/moje_prace/zv1.png", alt: "kolemkrku" },
+        { img: "/moje_prace/zv.png", alt: "kolemkrku" },
       ],
       bgFromColor: "from-green-500",
     },
 
     shortDecs: "shortDecsSvoucestou",
     images: [
-      {
-        img: "https://dummyimage.com/1203x503&text=2-0",
-        alt: "alt1",
-        text: "text1",
-      },
-      { img: "https://dummyimage.com/1203x503", alt: "alt2", text: "text2" },
-      { img: "https://dummyimage.com/1203x503", alt: "alt3", text: "text3" },
-      { img: "https://dummyimage.com/1203x503", alt: "alt4", text: "text4" },
-      { img: "https://dummyimage.com/1203x503", alt: "alt5", text: "text5" },
-      { img: "https://dummyimage.com/1203x503", alt: "alt6", text: "text6" },
+      { img: "/moje_prace/zv.png", alt: "kolemkrku" },
+      { img: "/moje_prace/zv.png", alt: "kolemkrku" },
     ],
   },
   {
-    title: "Kolem-krku.cz",
+    title: "Kolem krku",
     link: "https://kolem-krku.cz/",
     linkViewMore: "kolem-krku.cz",
     hasCaseStudy: false,
     shortDecs: "shortDecs",
-    images: [
-      { img: "https://dummyimage.com/1203x503&text=3-0", alt: "alt" },
-      { img: "https://dummyimage.com/1203x503", alt: "alt" },
-      { img: "https://dummyimage.com/1203x503", alt: "alt" },
-    ],
+    images: [{ img: "/moje_prace/zv.png", alt: "kolemkrku" }],
   },
 ];

@@ -12,10 +12,10 @@ export const navData = [
     link: "/recenze",
   },
   { title: "ČKD / FAQ", link: "/ckdfaq" },
-  {
-    title: "O mně",
-    link: "/#o-mne",
-  },
+  // {
+  //   title: "O mně",
+  //   link: "/#o-mne",
+  // },
   {
     title: "Kontakt",
     link: "/kontakt",

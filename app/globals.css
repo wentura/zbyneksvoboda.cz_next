@@ -4,17 +4,16 @@
 
 @layer components {
   .odkaz {
-    @apply underline decoration-1 underline-offset-4 decoration-black;
+    @apply underline decoration-1 underline-offset-2 decoration-gray-400;
   }
-
   .nadpisPage {
-    @apply text-3xl font-bold text-gray-900;
+    @apply text-4xl font-bold text-gray-900 tracking-tight;
   }
   .nadpisPageDark {
-    @apply text-4xl font-bold text-red-400;
+    @apply text-4xl font-bold text-red-400 tracking-tight;
   }
   .nadpisPortfolio {
-    @apply text-2xl font-bold;
+    @apply text-2xl font-bold tracking-tight;
   }
   .textPage {
     @apply text-base;

@@ -1,4 +1,5 @@
 import * as motion from "framer-motion/client";
+import Image from "next/image";
 import React from "react";
 import { portfolioData } from "./portfolioData";
 export default function Portfolio() {
@@ -45,10 +46,12 @@ export default function Portfolio() {
                 viewport={{ once: true }}
                 // transition={{ easeIn: easeIn, duration: 1.5 }}
               >
-                <img
+                <Image
                   alt={item.caseStudy.images[0].alt}
                   className="object-cover object-center w-full h-1/3"
                   src={item.caseStudy.images[0].img}
+                  width={400}
+                  height={600}
                 />
               </motion.div>
             </div>
@@ -64,8 +67,11 @@ export default function Portfolio() {
                     Blue bottle crucifix vinyl post-ironic four dollar toast
                     vegan taxidermy. Gastropub indxgo juice poutine.
                   </p>
-                  <a className="flex mt-5 odkaz odkazVen">
-                    {item.linkViewMore}
+                  <a
+                    className="flex mt-5 odkaz "
+                    href={`/portfolio/pripadovaStudie/${item.slug}`}
+                  >
+                    případová studie
                   </a>
                 </div>
               </div>

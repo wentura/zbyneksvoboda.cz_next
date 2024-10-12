@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section className="py-20 md:py-40">
+    <section className="py-10 md:py-24">
       <div className="container h-2 max-w-screen-xl px-5 mx-auto mb-20">
         <div className="flex flex-col flex-wrap py-6 mb-12 sm:flex-row">
           <h1 className="mb-2 sm:w-1/3 sm:mb-0 nadpisPage">Kontaktujte mě</h1>
