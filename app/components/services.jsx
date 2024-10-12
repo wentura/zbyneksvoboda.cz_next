@@ -16,8 +16,8 @@ export default function Services() {
           </p>
         </div>
         <div className="flex flex-wrap">
-          {servicesData.map((service) => (
-            <div className="flex md:w-1/3 pr-2">
+          {servicesData.map((service, index) => (
+            <div className="flex md:w-1/3 pr-2" key={index}>
               <div className="flex-grow">
                 <h2 className="mb-2 text-xl font-bold text-gray-100 ">
                   {service.title}
