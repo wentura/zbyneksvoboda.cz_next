@@ -2,26 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer components {
+  .odkaz {
+    @apply underline decoration-1 underline-offset-4 decoration-black;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .nadpisPage {
+    @apply text-3xl font-bold text-gray-900;
+  }
+  .nadpisPageDark {
+    @apply text-4xl font-bold text-red-400;
+  }
+  .nadpisPortfolio {
+    @apply text-2xl font-bold;
+  }
+  .textPage {
+    @apply text-base;
+  }
+  .ctaBtnPrimary {
+    @apply inline-flex px-6 py-2 text-lg text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600;
+  }
+  .ctaBtnSecondary {
+    @apply inline-flex px-6 py-2 ml-4 text-lg text-gray-700 bg-gray-100 border-0 rounded focus:outline-none hover:bg-gray-200;
+  }
+  .bg-modra2 {
+    background: #262626;
   }
 }
