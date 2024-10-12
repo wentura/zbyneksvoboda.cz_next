@@ -18,7 +18,7 @@ export default function Recenze() {
         </div>
         <div className="flex flex-wrap -m-4">
           {recenzeData.map((recenze, index) => (
-            <div className="p-12 mb-6 lg:w-1/3 lg:mb-0">
+            <div className="p-12 mb-6 lg:w-1/3 lg:mb-0" key={index}>
               <div className="h-full">
                 <div className="flex flex-row justify-between mb-4 items-center">
                   <img
