@@ -18,14 +18,16 @@ export default function Services() {
         </div>
         <div className="flex flex-wrap">
           {servicesData.map((service, index) => (
-            <div className="flex md:w-1/3 pr-2" key={index}>
+            <div className="flex md:w-1/3 pr-2 mb-10 md:mb-2" key={index}>
               <div className="flex-grow">
                 <h2 className="mb-2 text-xl font-bold text-gray-100 ">
                   {service.title}
                 </h2>
-                <p className="text-base leading-relaxed pr-2">
-                  {service.description}
-                </p>
+                <p
+                  className="text-base leading-relaxed pr-2"
+                  dangerouslySetInnerHTML={{ __html: service.description }}
+                />
+
                 {/* <a className="inline-flex items-center mt-3 text-indigo-500">
                   Learn More
                   <svg
@@ -46,7 +48,7 @@ export default function Services() {
         </div>
       </div>
       <div className="md:pt-20 flex max-w-screen-xl md:justify-end mx-auto pl-5 md:pl-0 pt-10">
-        <Link className="ctaBtnSecondaryDark" href="/kontakt">
+        <Link className="ctaBtnSecondaryDark mx-auto md:mx-0" href="/kontakt">
           Kontaktujte mě
         </Link>
       </div>

@@ -6,7 +6,7 @@ import { ReactMatrixAnimation } from "react-matrix-animation";
 export default function Hero() {
   return (
     // <section className="relative h-screen sm:max-h-screen max-h-[350px]">
-    <section className="relative h-screen max-h-[900px] ">
+    <section className="relative h-screen max-h-[880px] md:max-h-[900px] ">
       <div className="absolute items-center justify-center w-full h-full -z-20 ">
         <ReactMatrixAnimation
           backgroundColor="#ffffff"
@@ -15,7 +15,7 @@ export default function Hero() {
           fontColor="#71B462"
         />
       </div>
-      <div className="container flex flex-col items-center max-w-screen-xl px-5 pt-0 md:pt-10 mx-auto md:flex-row max-h[300px] md:max-h-screen">
+      <div className="container flex flex-col items-center max-w-screen-xl px-5 pt-0 md:pt-10 mx-auto md:flex-row max-h-[300px] md:max-h-screen">
         {/* <div className="absolute bottom-0 right-0 hidden w-1/3 md:block -z-10"> */}
         <div className="absolute bottom-0 right-0 w-2/3 sm:w-1/3 md:block -z-10">
           <div className="heroFotka  max-h-[800px] max-w-[400px]">
@@ -23,9 +23,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="relative flex flex-col items-start py-2 lg:flex-grow w-full min-w-fit lg:pr-8 md:pr-1 md:items-start text-left lg:my-64 my-4 z-10">
-          <h1 className="mb-4 text-xl md:text-4xl font-black text-modra2 tracking-tight">
-            Zbyněk Svoboda
-          </h1>
+          <h1 className="mt-12 md:mt-0 mb-4 nadpisPage">Zbyněk Svoboda</h1>
           <p className="mb-4 text-4xl md:text-6xl font-extralight leading-tight text-modra2 tracking-tight">
             Vytvářím weby, které podpoří růst
             <br />
@@ -37,10 +35,10 @@ export default function Hero() {
             web design a vývoj pro jednotlice, malé a střední podniky.{" "}
           </p>
 
-          <div className="flex justify-center flex-col md:flex-row">
-            <button className="ctaBtnPrimary mb-4 md:mb-0">
+          <div className="flex justify-center flex-col md:flex-row mt-12 md:mt-0 mx-auto md:mx-0">
+            <Link href="/portfolio" className="ctaBtnPrimary mb-4 md:mb-0">
               Prohlédněte si portfolio
-            </button>
+            </Link>
             <Link href="/kontakt" className="ctaBtnSecondary md:ml-4">
               Kontaktujte mě
             </Link>

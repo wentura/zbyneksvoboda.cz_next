@@ -31,9 +31,10 @@ export default function Recenze() {
                     <span className="text-sm text-gray-400">{recenze.co}</span>
                   </div>
                 </div>
-                <p className="pb-12 font-extralight text-sm leading-6 tracking-wide">
-                  {recenze.text}
-                </p>
+                <p
+                  className="pb-12 font-extralight text-sm leading-6 tracking-wide"
+                  dangerouslySetInnerHTML={{ __html: recenze.text }}
+                />
               </div>
             </div>
           ))}

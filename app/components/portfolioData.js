@@ -3,10 +3,15 @@ export const portfolioData = [
     title: "Kolem krku",
     link: "https://kolem-krku.cz/",
     linkViewMore: "kolem-krku.cz",
+    shortDecs: "shortDecs",
+    images: [{ img: "/moje_prace/kolemkrku.png", alt: "kolemkrku" }],
     hasCaseStudy: true,
     slug: "kolemkrku",
     caseStudy: {
       subTitle: "Originální ručně šité kravaty, Kolem-krku.cz",
+      studyTextShort: "study<br />text",
+      studyTextLong:
+        "study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text",
       year: 2022,
       technologies: ["Shoptet", "HTML", "CSS", "JavaScript", "jQuery"],
       images: [
@@ -17,20 +22,21 @@ export const portfolioData = [
       ],
       bgFromColor: "from-sky-600",
     },
-    shortDecs: "shortDecs",
-    images: [{ img: "/moje_prace/kolemkrku.png", alt: "kolemkrku" }],
   },
   {
     title: "Zodpovědná vyúka",
     link: "https://zodpovednavyuka.cz/",
     linkViewMore: "zodpovednavyuka.cz",
-    hasCaseStudy: true,
     shortDecs: "shortDecs",
+    hasCaseStudy: true,
     slug: "zodpovednavyuka",
     images: [{ img: "/moje_prace/zv.png", alt: "alt" }],
     caseStudy: {
       bgFromColor: "from-amber-200",
       subTitle: "Originální ručně šité kravaty, Kolem-krku.cz",
+      studyTextShort: "study<br />text",
+      studyTextLong:
+        "study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text",
       year: 2022,
       technologies: ["Shoptet", "HTML", "CSS", "JavaScript", "jQuery"],
       images: [
@@ -45,11 +51,19 @@ export const portfolioData = [
     title: "Svou Cestou",
     link: "https://svoucestou.info/",
     linkViewMore: "svoucestou.info",
+    shortDecs: "shortDecsSvoucestou",
+    images: [
+      { img: "/moje_prace/zv.png", alt: "kolemkrku" },
+      { img: "/moje_prace/zv.png", alt: "kolemkrku" },
+    ],
     hasCaseStudy: true,
     slug: "svoucestou",
     caseStudy: {
       subTitle: "Originální ručně šité kravaty, Kolem-krku.cz",
       year: 2022,
+      studyTextShort: "study<br />text",
+      studyTextLong:
+        "study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text",
       technologies: ["Shoptet", "HTML", "CSS", "JavaScript", "jQuery"],
       images: [
         { img: "/moje_prace/zv.png", alt: "kolemkrku" },
@@ -58,19 +72,13 @@ export const portfolioData = [
       ],
       bgFromColor: "from-green-500",
     },
-
-    shortDecs: "shortDecsSvoucestou",
-    images: [
-      { img: "/moje_prace/zv.png", alt: "kolemkrku" },
-      { img: "/moje_prace/zv.png", alt: "kolemkrku" },
-    ],
   },
   {
     title: "Kolem krku",
     link: "https://kolem-krku.cz/",
     linkViewMore: "kolem-krku.cz",
-    hasCaseStudy: false,
     shortDecs: "shortDecs",
     images: [{ img: "/moje_prace/zv.png", alt: "kolemkrku" }],
+    hasCaseStudy: false,
   },
 ];
