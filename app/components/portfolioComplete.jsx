@@ -36,7 +36,7 @@ export default function PortfolioComplete() {
             >
               případová studie
             </a>
-            <div className="text-sm mr-0 text-right">
+            {/* <div className="text-sm mr-0 text-right">
               <a
                 className="odkazVen odkaz font-thin "
                 href={item.link}
@@ -44,7 +44,7 @@ export default function PortfolioComplete() {
               >
                 {item.linkViewMore}
               </a>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
