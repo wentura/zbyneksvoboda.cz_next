@@ -1,32 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @layer components {
   .odkaz {
     @apply underline decoration-1 underline-offset-2 decoration-gray-400;
   }
   .nadpisPage {
     @apply text-3xl md:text-5xl font-bold text-gray-900 tracking-tight;
+    font-family: "Montserrat", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
   }
   .nadpisPageDark {
     @apply text-3xl md:text-5xl font-bold text-red-400 tracking-tight;
+    font-family: "Montserrat" !important;
+    font-optical-sizing: auto !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+  }
+  .nadpisPageWhite {
+    @apply text-3xl md:text-5xl font-bold text-gray-100 tracking-tight;
+    font-family: "Montserrat" !important;
+    font-optical-sizing: auto !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
   }
   .nadpisPortfolio {
     @apply text-2xl md:text-4xl font-bold text-gray-900 tracking-tight;
+    font-family: "Montserrat" !important;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
     /* @apply text-3xl font-bold tracking-tight; */
   }
   .textPage {
-    @apply text-base;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
   }
   .ctaBtnPrimary {
     @apply inline-flex px-6 py-2 text-lg text-white font-extrabold bg-red-500 bg-opacity-60 border-0 rounded focus:outline-none hover:bg-opacity-80 hover:scale-105 transition duration-150 backdrop-blur-sm;
+    font-family: "Montserrat" !important;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
   }
   .ctaBtnSecondary {
     @apply inline-flex px-6 py-2 bg-emerald-500 text-lg text-white border font-extrabold justify-center  rounded focus:outline-none hover:bg-emerald-700 hover:scale-105 transition duration-150 hover:text-gray-50;
+    font-family: "Montserrat" !important;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
   }
   .ctaBtnSecondaryDark {
     @apply inline-flex px-6 py-2 text-lg text-gray-100 font-extrabold bg-red-400 justify-center  rounded focus:outline-none  hover:scale-105 transition duration-150 hover:text-gray-50;
+    font-family: "Montserrat" !important;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
   }
   .bg-modra2 {
     background: #262626;

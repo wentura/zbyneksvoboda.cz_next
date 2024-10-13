@@ -4,7 +4,7 @@ import { servicesData } from "./servicesData";
 export default function Services() {
   return (
     <section
-      className="py-20 mx-auto text-gray-300 body-font bg-modra2 md:py-40"
+      className="py-20 mx-auto text-gray-300 bg-modra2 md:py-40"
       id="sluzby"
     >
       <div className="container max-w-screen-xl px-5 mx-auto">

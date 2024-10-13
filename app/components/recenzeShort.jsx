@@ -4,13 +4,13 @@ import React from "react";
 import { recenzeData } from "./recenzeData";
 export default function RecenzeShort() {
   return (
-    <section className="py-20 mx-auto text-gray-300 body-font bg-modra2 md:py-40">
+    <section className="py-20 mx-auto text-gray-300 bg-modra2 md:py-40">
       <div className="container max-w-screen-xl px-5 mx-auto">
         <div className="flex flex-col flex-wrap py-0 mb-20 sm:flex-row">
           <h1 className="mb-2 md:w-1/3 md:mb-2 nadpisPageDark">
             Moji klienti říkají...
           </h1>
-          <p className="pl-0 textPage md:w-2/3">
+          <p className="pl-0 md:w-2/3">
             Spolupracuji s klienty, kteří očekávají kvalitu, spolehlivost a
             inovativní přístup.
             <br />

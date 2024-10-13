@@ -7,7 +7,7 @@ export default function PortfolioComplete() {
       <div className="flex flex-col">
         <div className="flex flex-col flex-wrap mb-12 sm:flex-row">
           <h1 className="mb-2 nadpisPage sm:w-1/3 sm:mb-0">Moje práce</h1>
-          <p className="pl-0 textPage sm:w-2/3">
+          <p className="pl-0 sm:w-2/3">
             Prohlédněte si ukázky mých projektů a nechte se inspirovat. Každý
             web, na kterém pracuji, je navržen s ohledem na potřeby a cíle
             klienta. Moje projekty kombinují estetiku, použitelnost a technickou
@@ -18,7 +18,7 @@ export default function PortfolioComplete() {
       <div className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4">
         {portfolioData.map((item, index) => (
           <div className="p-12 pb-10 md:pb-20 md:w-1/3" key={index}>
-            <div className="overflow-hidden drop-shadow-md">
+            <div className="overflow-hidden drop-shadow-[0_5px_10px_rgba(0,0,0,0.3)] hover:scale-150 transition duration-200">
               <Image
                 alt={item.images[0].alt}
                 width={400}

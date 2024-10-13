@@ -16,7 +16,7 @@ export default function Ckdfaq() {
               <span className="nadpisPageDark text-lg">Q</span>uestion
             </span>
           </h1>
-          <p className="pl-0 textPage md:w-2/3">
+          <p className="pl-0 md:w-2/3">
             Nevíte, jak začít nebo co vše je třeba? Tady jsou odpovědi na
             některé z nejčastějších otázek.
           </p>

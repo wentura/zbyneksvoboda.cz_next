@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="container h-2 max-w-screen-xl px-5 mx-auto mb-20">
         <div className="flex flex-col flex-wrap py-6 mb-12 sm:flex-row">
           <h1 className="mb-2 sm:w-1/3 sm:mb-0 nadpisPage">Kontaktujte mě</h1>
-          <p className="pl-0 textPage sm:w-2/3 ">
+          <p className="pl-0 sm:w-2/3 ">
             Máte projekt, o kterém chcete mluvit?
             <br />
             Rád s vámi proberu všechny detaily a najdeme společně to nejlepší

@@ -4,10 +4,9 @@ export default function Footer() {
   return (
     <footer className="text-gray-400 bg-modra2">
       <div className="container flex flex-col items-center max-w-screen-xl px-5 py-5 mx-auto sm:flex-row ">
-        <Link className="" href="/">
+        <Link className="nadpisPageWhite text-base" href="/">
           Zbyněk Svoboda
-        </Link>
-
+        </Link>{" "}
         <span className="inline-flex justify-center mt-4 sm:ml-auto sm:mt-0 sm:justify-start">
           <a
             className="text-gray-400"

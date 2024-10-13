@@ -10,7 +10,7 @@ export default function Portfolio() {
     <div className="px-5 py-20 mx-auto md:py-40 lg:px-0">
       <div className="container flex flex-col flex-wrap max-w-screen-xl py-0 mx-auto mb-0 lg:pb-20 sm:flex-row">
         <h1 className="mb-2 nadpisPage sm:w-1/3 sm:mb-0">Moje práce</h1>
-        <p className="pl-0 textPage sm:w-2/3">
+        <p className="pl-0 sm:w-2/3">
           Prohlédněte si ukázky mých projektů
           <span className="hidden md:inline-block">
             &nbsp;a nechte se inspirovat
@@ -46,7 +46,7 @@ export default function Portfolio() {
               <div className="flex-grow">
                 <h2 className="mb-5 nadpisPortfolio">{item.title}</h2>
                 <p
-                  className="textPage"
+                  className=""
                   dangerouslySetInnerHTML={{
                     __html: item.caseStudy.studyTextShort,
                   }}
@@ -89,7 +89,7 @@ export default function Portfolio() {
                 <div className="flex-grow">
                   <h2 className="mb-5 nadpisPortfolio">{item.title}</h2>
                   <p
-                    className="textPage"
+                    className=""
                     dangerouslySetInnerHTML={{
                       __html: item.caseStudy.studyTextShort,
                     }}

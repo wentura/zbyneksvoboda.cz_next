@@ -9,7 +9,7 @@ export default function Recenze() {
           <h1 className="mb-2 md:w-1/3 md:mb-2 nadpisPage">
             Co říkají moji klienti
           </h1>
-          <p className="pl-0 textPage md:w-2/3">
+          <p className="pl-0 md:w-2/3">
             Spolupracuji s klienty, kteří očekávají kvalitu, spolehlivost a
             inovativní přístup.
             <br />
