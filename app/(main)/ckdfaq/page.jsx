@@ -25,7 +25,7 @@ export default function Ckdfaq() {
         <div className="container px-5 py-10 mx-auto">
           <div className="-my-8 divide-y-2 divide-gray-100">
             {Ckd.map((ckd, index) => (
-              <div className="py-8 flex flex-wrap md:flex-nowrap">
+              <div className="py-8 flex flex-wrap md:flex-nowrap" key={index}>
                 <div className="md:w-96 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                   <span className="nadpisPageDark uppercase">
                     {ckd.headTitle}
