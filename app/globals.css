@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); */
 @layer components {
   .odkaz {
     @apply underline decoration-1 underline-offset-2 decoration-gray-400;
@@ -36,11 +37,11 @@
     /* @apply text-3xl font-bold tracking-tight; */
   }
   .textPage {
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Sans", sans-serif !important;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 300 !important;
     font-style: normal;
-    font-variation-settings: "wdth" 100;
+    font-variation-settings: "wdth" 300 !important;
   }
   .ctaBtnPrimary {
     @apply inline-flex px-6 py-2 text-lg text-white font-extrabold bg-red-500 bg-opacity-60 border-0 rounded focus:outline-none hover:bg-opacity-80 hover:scale-105 transition duration-150 backdrop-blur-sm;

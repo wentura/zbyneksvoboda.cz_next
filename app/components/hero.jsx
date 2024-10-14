@@ -30,8 +30,10 @@ export default function Hero() {
             vašeho podnikání.
           </p>
           <p className="mb-4 md:w-1/2 lg:w-3/5 text-xl font-extralight leading-snug tracking-normal hidden md:block">
-            <span class="text-modra2 font-black">Moderní webové stránky</span>,
-            které nejen zaujmou, ale i přinášejí výsledky. Specializuji se na
+            <span className="text-modra2 font-black">
+              Moderní webové stránky
+            </span>
+            , které nejen zaujmou, ale i přinášejí výsledky. Specializuji se na
             web design a vývoj pro jednotlice, malé a střední podniky.{" "}
           </p>
 
