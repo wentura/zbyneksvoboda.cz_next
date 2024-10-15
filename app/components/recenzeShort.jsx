@@ -17,12 +17,15 @@ export default function RecenzeShort() {
             Podívejte se, co o naší spolupráci říkají.
           </p>
         </div>
-        <div className="flex flex-wrap -m-4 px-5 md:px-0">
+        <div className="flex flex-wrap -m-4 px-5 md:px-0 lg:divide-x-2 divide-gray-700">
           {recenzeData.map((recenze, index) =>
             recenze.short ? (
-              <div className="pr-8 mb-6 lg:w-1/3 lg:mb-0" key={index}>
+              <div
+                className="px-2 md:px-4 mb-6 w-full lg:w-1/3 lg:mb-0"
+                key={index}
+              >
                 <div className="h-full">
-                  <div className="flex flex-row justify-between">
+                  <div className="flex flex-row justify-between  flex-grow">
                     {" "}
                     <Image
                       width={200}
@@ -31,7 +34,7 @@ export default function RecenzeShort() {
                       className="inline-block object-cover object-center w-20 h-20 mb-5 bg-gray-100 border-2 border-gray-200 rounded-full"
                       src={recenze.fotka}
                     />
-                    <div className="flex flex-col justify-center pr-8 text-gray-100">
+                    <div className="flex flex-col justify-center pr-0 text-gray-100 items-end w-full text-right ">
                       <span className="">{recenze.kdo}</span>
                       <span className="">{recenze.co}</span>
                     </div>

@@ -1,22 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@0,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); */
 @layer components {
   .odkaz {
     @apply underline decoration-1 underline-offset-2 decoration-gray-400;
   }
+  @font-face {
+    font-family: "notoserif";
+    src: url("/noto.woff2") format("woff2");
+    src: url("/noto.woff") format("woff");
+    src: url("/noto.ttf") format("truetype");
+    font-display: swap;
+  }
+
   .nadpisPage {
     @apply text-3xl md:text-5xl font-bold text-gray-900 tracking-tight;
-    font-family: "Montserrat", sans-serif !important;
+    /* font-family: "Montserrat", sans-serif !important; */
+    font-family: notoserif !important;
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
   }
   .nadpisPageDark {
     @apply text-3xl md:text-5xl font-bold text-red-400 tracking-tight;
-    font-family: "Montserrat" !important;
+    /* font-family: "Montserrat" !important; */
+    font-family: notoserif !important;
     font-optical-sizing: auto !important;
     font-weight: 900 !important;
     font-style: normal !important;
@@ -24,13 +34,18 @@
   .nadpisPageWhite {
     @apply text-3xl md:text-5xl font-bold text-gray-100 tracking-tight;
     font-family: "Montserrat" !important;
+    /* font-family: notoserif !important; */
     font-optical-sizing: auto !important;
     font-weight: 900 !important;
     font-style: normal !important;
   }
+  .heroJmeno {
+    font-family: "Montserrat" !important;
+  }
   .nadpisPortfolio {
     @apply text-2xl md:text-4xl font-bold text-gray-900 tracking-tight;
-    font-family: "Montserrat" !important;
+    /* font-family: "Montserrat" !important; */
+    font-family: notoserif !important;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
@@ -42,6 +57,12 @@
     font-weight: 300 !important;
     font-style: normal;
     font-variation-settings: "wdth" 300 !important;
+  }
+  .jinyNadpis {
+    font-family: notoserif !important;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
   }
   .ctaBtnPrimary {
     @apply inline-flex px-6 py-2 text-lg text-white font-extrabold bg-red-500 bg-opacity-60 border-0 rounded focus:outline-none hover:bg-opacity-80 hover:scale-105 transition duration-150 backdrop-blur-sm;
@@ -69,5 +90,8 @@
   }
   .text-modra2 {
     color: #262626;
+  }
+  .pLine {
+    line-height: 111% !important;
   }
 }

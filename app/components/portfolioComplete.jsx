@@ -29,7 +29,10 @@ export default function PortfolioComplete() {
             </div>
             <div className="py-4 nadpisPortfolio">{item.title}</div>
 
-            <p className="pb-4">{item.shortDecs}</p>
+            <p
+              className="pb-4"
+              dangerouslySetInnerHTML={{ __html: item.shortDecs }}
+            />
             <a
               className={item.hasCaseStudy ? `odkaz` : `hidden`}
               href={`/portfolio/pripadovaStudie/${item.slug}`}

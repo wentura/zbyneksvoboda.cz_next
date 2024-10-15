@@ -4,10 +4,11 @@ export const portfolioData = [
     title: "Diavita",
     link: "https://diavita.cz/",
     linkViewMore: "diavita.cz",
-    shortDecs: "shortDecs",
+    shortDecs:
+      "Webová prezentace firmy Diavia. Vyrábějí a prodávají vazelíny, sladidla a sirupy.<br /><br />Řešili jsme jak nejlépe zobrazit rozmanitou produktovou řadu a představit jednotlivé výrobky zákazníkům.",
     images: [
       {
-        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840001/zbyneksvoboda/portfolio2/diavita.jpg",
+        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840001/zbyneksvoboda/portfolio2/diavita.webp",
         alt: "Diavita",
       },
     ],
@@ -15,42 +16,43 @@ export const portfolioData = [
   },
 
   //svoucestou
-  {
-    title: "Svou Cestou",
-    link: "https://svoucestou.info/",
-    linkViewMore: "svoucestou.info",
-    shortDecs: "shortDecsSvoucestou",
-    images: [
-      { img: "/moje_prace/zv.png", alt: "kolemkrku" },
-      { img: "/moje_prace/zv.png", alt: "kolemkrku" },
-    ],
-    hasCaseStudy: true,
-    slug: "svoucestou",
-    caseStudy: {
-      subTitle: "Originální ručně šité kravaty, Kolem-krku.cz",
-      year: 2022,
-      studyTextShort: "study<br />text",
-      studyTextLong:
-        "study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text",
-      technologies: ["Shoptet", "HTML", "CSS", "JavaScript", "jQuery"],
-      images: [
-        { img: "/moje_prace/zv.png", alt: "kolemkrku" },
-        { img: "/moje_prace/zv1.png", alt: "kolemkrku" },
-        { img: "/moje_prace/zv.png", alt: "kolemkrku" },
-      ],
-      bgFromColor: "from-green-500",
-    },
-  },
+  // {
+  //   title: "Svou Cestou",
+  //   link: "https://svoucestou.info/",
+  //   linkViewMore: "svoucestou.info",
+  //   shortDecs: "shortDecsSvoucestou",
+  //   images: [
+  //     { img: "/moje_prace/zv.png", alt: "kolemkrku" },
+  //     { img: "/moje_prace/zv.png", alt: "kolemkrku" },
+  //   ],
+  //   hasCaseStudy: true,
+  //   slug: "svoucestou",
+  //   caseStudy: {
+  //     subTitle: "Originální ručně šité kravaty, Kolem-krku.cz",
+  //     year: 2022,
+  //     studyTextShort: "study<br />text",
+  //     studyTextLong:
+  //       "study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text",
+  //     technologies: ["Shoptet", "HTML", "CSS", "JavaScript", "jQuery"],
+  //     images: [
+  //       { img: "/moje_prace/zv.png", alt: "kolemkrku" },
+  //       { img: "/moje_prace/zv1.png", alt: "kolemkrku" },
+  //       { img: "/moje_prace/zv.png", alt: "kolemkrku" },
+  //     ],
+  //     bgFromColor: "from-green-500",
+  //   },
+  // },
 
   //autokempkokorin
   {
     title: "Autokemp Kokořín",
     link: "https://www.autokempkokorin.cz/",
     linkViewMore: "autokempkokorin.cz",
-    shortDecs: "shortDecs",
+    shortDecs:
+      "Rychlá a přehledná prezentace autokempu Kokořín, představuje hlavní výhody kempu v oblasti CHKO Kokořínsko.<br /><br />Plně responzivní (upravená pro mobilní zařízení).",
     images: [
       {
-        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840002/zbyneksvoboda/portfolio2/autokempkokorin.jpg",
+        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840002/zbyneksvoboda/portfolio2/autokempkokorin.webp",
         alt: "Autokemp Kokořín",
       },
     ],
@@ -61,10 +63,11 @@ export const portfolioData = [
     title: "Biozahájí",
     link: "https://biozahaji.cz/",
     linkViewMore: "biozahaji.cz",
-    shortDecs: "shortDecs",
+    shortDecs:
+      "Web pro bio farmu s možností úprav.<br /><br />Cílem webu je zobrazit rychle aktuální nabídku produktů.",
     images: [
       {
-        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840002/zbyneksvoboda/portfolio2/biozahaji.jpg",
+        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840002/zbyneksvoboda/portfolio2/biozahaji.webp",
         alt: "Biozahájí",
       },
     ],
@@ -75,10 +78,11 @@ export const portfolioData = [
     title: "Penzion Malba",
     link: "https://penzionmalba.cz/",
     linkViewMore: "pensionmalba.cz",
-    shortDecs: "shortDecs",
+    shortDecs:
+      "Statický web pro penzion Malba v CHKO Kokořínsko.<br /><br />Rychlé, plně responzivní, optimalizované pro mobilní zařízení a dobrou čitelnost.",
     images: [
       {
-        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840003/zbyneksvoboda/portfolio2/kokostezky.jpg",
+        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728894626/zbyneksvoboda/portfolio2/malba.webp",
         alt: "Penzion Malba",
       },
     ],
@@ -89,10 +93,11 @@ export const portfolioData = [
     title: "Ergo-product",
     link: "https://www.ergo-product.cz/",
     linkViewMore: "ergo-product.cz",
-    shortDecs: "shortDecs",
+    shortDecs:
+      "E-shop postavený na řešení od Shoptetu, upravil jsem některé grafické prvky, zobrazení detailu produktu je více přehledné.<br /><br />Vytvořil jsem vlastní <span class='font-extrabold'>reklamační fomurlář</span>, který posílá reklamace spolu s fotkami od zákazníků na mail.",
     images: [
       {
-        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840006/zbyneksvoboda/portfolio2/ergoproduct.jpg",
+        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840006/zbyneksvoboda/portfolio2/ergoproduct.webp",
         alt: "Ergo-product",
       },
     ],
@@ -103,10 +108,11 @@ export const portfolioData = [
     title: "Kolem krku",
     link: "https://kolem-krku.cz/",
     linkViewMore: "kolem-krku.cz",
-    shortDecs: "shortDecs",
+    shortDecs:
+      "Shoptet e-shop s originálními módními doplňky. Snaha o minimalistický vzhled, ale práce na projektu pokračuje...",
     images: [
       {
-        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840004/zbyneksvoboda/portfolio2/kolemkrku.jpg",
+        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840004/zbyneksvoboda/portfolio2/kolemkrku.webp",
         alt: "kolemkrku",
       },
     ],
@@ -121,7 +127,7 @@ export const portfolioData = [
       technologies: ["Shoptet", "HTML", "CSS", "JavaScript", "jQuery"],
       images: [
         {
-          img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840004/zbyneksvoboda/portfolio2/kolemkrku.jpg",
+          img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840004/zbyneksvoboda/portfolio2/kolemkrku.webp",
           alt: "kolemkrku",
         },
         { img: "/moje_prace/kolemkrku1.png", alt: "kolemkrkunaled" },
@@ -137,10 +143,11 @@ export const portfolioData = [
     title: "Faberpoint",
     link: "https://faberpoint.eu/",
     linkViewMore: "faberpoint.eu",
-    shortDecs: "shortDecs",
+    shortDecs:
+      "Webová aplikace pro administraci klientského &quot;skladu&quot; a přehledu aktuálních cen za nové stavebnice Faber na základě aktuálního skladu.<br /><br />Plně responzivní, data v databázi, klientská sekce. Postaveno na PHP.",
     images: [
       {
-        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840004/zbyneksvoboda/portfolio2/faberpoint.jpg",
+        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840004/zbyneksvoboda/portfolio2/faberpoint.webp",
         alt: "Faberpoint",
       },
     ],
@@ -154,7 +161,7 @@ export const portfolioData = [
     shortDecs: "shortDecs",
     images: [
       {
-        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840002/zbyneksvoboda/portfolio2/fly5.jpg",
+        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840002/zbyneksvoboda/portfolio2/fly5.webp",
         alt: "Fly5",
       },
     ],
@@ -167,7 +174,7 @@ export const portfolioData = [
     shortDecs: "shortDecs",
     images: [
       {
-        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840003/zbyneksvoboda/portfolio2/kokostezky.jpg",
+        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840003/zbyneksvoboda/portfolio2/kokostezky.webp",
         alt: "Kokostezky",
       },
     ],
@@ -183,7 +190,7 @@ export const portfolioData = [
     slug: "zodpovednavyuka",
     images: [
       {
-        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840003/zbyneksvoboda/portfolio2/zodpovednavyuka.jpg",
+        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840003/zbyneksvoboda/portfolio2/zodpovednavyuka.webp",
         alt: "alt",
       },
     ],
@@ -197,7 +204,7 @@ export const portfolioData = [
       technologies: ["Shoptet", "HTML", "CSS", "JavaScript", "jQuery"],
       images: [
         {
-          img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840003/zbyneksvoboda/portfolio2/zodpovednavyuka.jpg",
+          img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840003/zbyneksvoboda/portfolio2/zodpovednavyuka.webp",
           alt: "kolemkrku",
         },
         { img: "/moje_prace/zv1.png", alt: "kolemkrkunaled" },
@@ -214,7 +221,7 @@ export const portfolioData = [
     shortDecs: "shortDecs",
     images: [
       {
-        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840001/zbyneksvoboda/portfolio2/arboristikasvarovsky.jpg",
+        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840001/zbyneksvoboda/portfolio2/arboristikasvarovsky.webp",
         alt: "Arboristika Svarovský",
       },
     ],
@@ -228,7 +235,7 @@ export const portfolioData = [
     shortDecs: "shortDecs",
     images: [
       {
-        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840005/zbyneksvoboda/portfolio2/harasov.jpg",
+        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840005/zbyneksvoboda/portfolio2/harasov.webp",
         alt: "Letovisko Harasov",
       },
     ],
@@ -243,7 +250,7 @@ export const portfolioData = [
     shortDecs: "shortDecs",
     images: [
       {
-        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840002/zbyneksvoboda/portfolio2/pohrebniustav.jpg",
+        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840002/zbyneksvoboda/portfolio2/pohrebniustav.webp",
         alt: "Pohřební ústav Kralupy",
       },
     ],
@@ -257,7 +264,7 @@ export const portfolioData = [
   //   shortDecs: "shortDecs",
   //   images: [
   //     {
-  //       img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840006/zbyneksvoboda/portfolio2/reklamace.jpg",
+  //       img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840006/zbyneksvoboda/portfolio2/reklamace.webp",
   //       alt: "Reklamační formulář pro web ergo-product.cz",
   //     },
   //   ],
@@ -271,7 +278,7 @@ export const portfolioData = [
     shortDecs: "shortDecs",
     images: [
       {
-        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840005/zbyneksvoboda/portfolio2/zodpovednyhub.jpg",
+        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840005/zbyneksvoboda/portfolio2/zodpovednyhub.webp",
         alt: "Arboristika Svarovský",
       },
     ],
@@ -285,7 +292,7 @@ export const portfolioData = [
   //   shortDecs: "shortDecs",
   //   images: [
   //     {
-  //       img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840001/zbyneksvoboda/portfolio2/arboristikasvarovsky.jpg",
+  //       img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728840001/zbyneksvoboda/portfolio2/arboristikasvarovsky.webp",
   //       alt: "Arboristika Svarovský",
   //     },
   //   ],
