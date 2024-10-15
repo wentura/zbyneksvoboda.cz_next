@@ -49,7 +49,7 @@ export default function NavigationMobile() {
         </button>
         <ul className="flex flex-col gap-y-2 w-full items-center text-xl my-2">
           <li className="flex px-8 py-4" key="home">
-            <Link href="/" className="nadpisPage heroJmeno">
+            <Link href="/" className="heroJmeno">
               Zbyněk Svoboda
             </Link>{" "}
           </li>

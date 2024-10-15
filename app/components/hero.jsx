@@ -23,10 +23,10 @@ export default function Hero() {
           </div>
         </div>
         <div className="relative flex flex-col items-start py-2 lg:flex-grow w-full min-w-fit lg:pr-8 md:pr-1 md:items-start text-left lg:my-40 my-4 z-10">
-          <h1 className="mt-10 md:mt-0 mb-10 nadpisPage heroJmeno">
+          <h1 className="mt-10 md:mt-0 mb-10 heroJmeno font-extrabold">
             Zbyněk Svoboda
           </h1>
-          <p className="mb-10 text-4xl md:text-7xl font-extralight text-modra2 jinyNadpis md:w-2/3 pLine">
+          <p className="mb-10 text-4xl md:text-7xl text-modra2 jinyNadpis md:w-2/3 pLine font-extralightlight ">
             Vytvářím moderní weby, podporující růst vašeho podnikání.
           </p>
           <p className="mb-20 md:w-1/2 lg:w-3/5 text-xl font-extralight leading-snug tracking-normal hidden md:block">
