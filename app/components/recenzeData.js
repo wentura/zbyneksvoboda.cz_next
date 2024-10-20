@@ -1,13 +1,13 @@
 export const recenzeData = [
-  {
-    kdo: "Nikola Smejkalova",
-    co: "NikolaSmejkalova.cz",
-    short: 1,
-    textShort:
-      "Jsme velmi spokojeni s prací pana Zbyňka Svobody, který pracoval na našich webových stránkách....",
-    text: "Jsme velmi spokojeni s prací pana Zbyňka Svobody, který pracoval na našich webových stránkách.<br />Jeho ofesionální přístup a znalosti v oblasti webdesignu nás nadchly. Stránky, které pro nás vytvořil, jsou nejen vizuálně atraktivní, ale také velmi přehledné a snadno použitelné.<br />Zbyněk nám poskytl cenné rady ohledně rozmístění obsahu a navigace, což nám pomohlo při budování efektivního online prostoru pro kontakt s našimi klienty.<br />Celkově jsme s jeho tvorbou více než spokojeni a bez váhání mu udělujeme hodnocení pěti hvězdiček. Děkujeme!",
-    fotka: "/recenze/ns.jpg",
-  },
+  // {
+  //   kdo: "Nikola Smejkalova",
+  //   co: "NikolaSmejkalova.cz",
+  //   short: 1,
+  //   textShort:
+  //     "Jsme velmi spokojeni s prací pana Zbyňka Svobody, který pracoval na našich webových stránkách....",
+  //   text: "Jsme velmi spokojeni s prací pana Zbyňka Svobody, který pracoval na našich webových stránkách.<br />Jeho ofesionální přístup a znalosti v oblasti webdesignu nás nadchly. Stránky, které pro nás vytvořil, jsou nejen vizuálně atraktivní, ale také velmi přehledné a snadno použitelné.<br />Zbyněk nám poskytl cenné rady ohledně rozmístění obsahu a navigace, což nám pomohlo při budování efektivního online prostoru pro kontakt s našimi klienty.<br />Celkově jsme s jeho tvorbou více než spokojeni a bez váhání mu udělujeme hodnocení pěti hvězdiček. Děkujeme!",
+  //   fotka: "/recenze/ns.jpg",
+  // },
   {
     kdo: "Natalie Štípková",
     co: "PohrebniUstavKralupy.cz",

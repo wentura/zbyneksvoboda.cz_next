@@ -5,8 +5,8 @@ import PhoneSvg from "./phone";
 export default function Contact() {
   return (
     <section className="py-10 md:py-24">
-      <div className="container h-2 max-w-screen-xl px-5 mx-auto mb-20">
-        <div className="flex flex-col flex-wrap py-6 mb-12 sm:flex-row">
+      <div className="container h-2 max-w-screen-xl px-5 mx-auto mb-2">
+        <div className="flex flex-col flex-wrap py-6 mb-8 sm:flex-row">
           <h1 className="mb-2 sm:w-1/3 sm:mb-0 nadpisPage">Kontaktujte mě</h1>
           <p className="pl-0 sm:w-2/3 text-lg leading-8">
             Máte projekt, o kterém chcete mluvit?
@@ -195,7 +195,7 @@ export default function Contact() {
 
           <div className="flex lg:flex-row md:flex-col"></div>
         </div>
-        <div className="w-5/6 mt-80 md:mt-56 xl:mt-40 lg:max-w-xl lg:w-full md:w-1/2">
+        <div className="w-5/6 mt-48 md:mt-56 xl:mt-40 lg:max-w-xl lg:w-full md:w-1/2">
           <img
             className="object-cover rounded-2xl drop-shadow-xl"
             alt="Zbyněk Svoboda, já"
