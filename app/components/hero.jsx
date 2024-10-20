@@ -32,8 +32,10 @@ export default function Hero() {
             Vytvářím moderní weby, které přináší výsledky.
           </p>
           <p className="mb-20 md:w-1/2 lg:w-3/5 text-xl font-light leading-snug tracking-normal hidden md:block">
-            <span className="text-modra2 font-bold">Weby a web aplikace</span>,
-            které zaujmou a{" "}
+            <span className="text-modra2 font-bold">
+              Weby a webové aplikace
+            </span>
+            , které zaujmou a{" "}
             <span className="text-modra2 font-bold">
               pomáhají růstu vašeho podnikání
             </span>
