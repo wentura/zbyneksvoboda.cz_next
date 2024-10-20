@@ -4,33 +4,38 @@ export const Ckd = [
   {
     headTitle: "jak probíhá",
     title: "proces tvorby webu?",
-    text: "Nejdříve proběhne úvodní konzultace, kde si vyjasníme vaše požadavky a cíle. Poté vytvořím návrh designu a struktury webu. Po vašem schválení pokračujeme v kódování a testování, aby byl web funkční a optimalizovaný pro všechny zařízení. Celý proces trvá zpravidla několik týdnů, v závislosti na složitosti projektu.",
+    text: "Nejdříve si spolu nezávazně popovídáme a vyjasníme si vaše požadavky,cíle a očekávání od projektu. Pak si předáme podklady, zdroje a další materiály, které pomohou při návrhu a následně při tvorbě webu. Vytvoořím  první hrubý návrh designu, struktury webu i s plánovaným obsahem.  Po vašem schválení budu pokračovat v samotné tvorbě a testování webu, tak aby byl web funkční a optimalizovaný pro všechny zařízení.",
   },
   {
     headTitle: "Jak dlouho",
     title: "trvá vytvoření webových stránek?",
-    text: "Závisí na rozsahu projektu, ale většina webových stránek je hotová do 4–6 týdnů. Tento časový rámec zahrnuje návrh, schválení klientem, vývoj a testování.",
+    text: "Závisí na rozsahu projektu, ale většina webových stránek je hotová do 4–6 týdnů. Tento časový rámec zahrnuje návrh, schválení klientem, vývoj a testování. ",
   },
   {
-    headTitle: "co potřebuji",
-    title: "abych mohl začít?",
-    text: "Budu potřebovat informace o vaší firmě, vašich cílech a cílové skupině. Pokud ne někteté otázky nebudeme znát odpovědi, tak na vše přijdeme v analýze projektu. Dále bych rád také věděl, jaké funkce očekáváte na svém webu (např. kontaktní formulář, blog, e-shop). Pokud máte vizuální materiály (např. logo, fotografie) budu je potřebovat také.",
+    headTitle: "jaké informace",
+    title: "jsou potřeba pro začátek?",
+    text: "Budu potřebovat informace o vaší firmě, vašich cílech a cílové skupině. Pokud na někteté otázky nebudeme znát odpovědi, tak na vše přijdeme v analýze projektu. Dále bych rád také věděl, jaké funkce očekáváte na svém webu (např. kontaktní formulář, blog, e-shop). Pokud máte vizuální materiály (např. logo, fotografie) budu je potřebovat také.",
   },
   //   {
   //     headTitle: "technická podpora",
   //     title: "Poskytujete technickou podporu? Co domény, hosting atd.?",
   //     text: "Nezabývám se přímo prodejem domén a poskytováním hostingu, ale mohu vám doporučit spolehlivé poskytovatele těchto služeb a pomoci s jejich nastavením.",
   //   },
-  //   {
-  //     headTitle: "responzivní",
-  //     title: "Bude web responzivní?",
-  //     text: "Ano, všechny webové stránky, které vytvářím, jsou plně responzivní. To znamená, že budou správně fungovat na různých zařízeních – od mobilních telefonů po velké monitory.",
-  //   },
-  //   {
-  //     headTitle: "správa",
-  //     title: "Mohu si web po dokončení sám upravovat?",
-  //     text: "Ano, pokud si to opravdu přejete a nebo povada projektu to vyžaduje, vytvořím web s redakčním systémem , kde si budete moci sami upravovat obsah. Poskytnu vám také základní školení, jak systém používat.",
-  //   },
+  {
+    headTitle: "zobrazení na mobilu",
+    title: "bude fungovat v pořádku?",
+    text: "Ano, všechny webové stránky, které vytvářím, jsou plně responzivní (jsou vytvořené pro malé displaye = mobily). To znamená, že budou správně fungovat na různých zařízeních – od mobilních telefonů po velké monitory.",
+  },
+  {
+    headTitle: "SEO",
+    title: "bude fungovat?",
+    text: "Ano, moje weby jsou už tvořeny tak, aby se dobře zobrazovali, uřivatelům nekladly překážky v používání a byly celkově přehledné. Technické SEO je samozřejmostí.",
+  },
+  {
+    headTitle: "Editace obsahu",
+    title: "bude po předání možná?",
+    text: "Pokud se tak domluvíme, web bude mít svou administraci a bude možné ho editovat..",
+  },
   //   {
   //     headTitle: "údržba",
   //     title: "Poskytujete i údržbu webu po jeho dokončení?",

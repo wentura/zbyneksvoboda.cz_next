@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Matomo from "./matomo";
 export default function Footer() {
   return (
     <footer className="text-gray-400 bg-modra2">
@@ -66,6 +67,7 @@ export default function Footer() {
           </a>
         </span>
       </div>
+      <Matomo />
     </footer>
   );
 }

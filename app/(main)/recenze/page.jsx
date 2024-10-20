@@ -26,7 +26,7 @@ export default function Recenze() {
                     className="inline-block object-cover object-center w-20 h-20 rounded-full drop-shadow-xl"
                     src={recenze.fotka}
                   />
-                  <div className="flex flex-col	pr-8">
+                  <div className="flex flex-col	pr-4 text-right">
                     <span className="text-lg font-bold">{recenze.kdo}</span>
                     <span className="text-sm text-gray-400">{recenze.co}</span>
                   </div>

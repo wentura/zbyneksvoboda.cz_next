@@ -1,7 +1,7 @@
 import Footer from "./components/footer";
 import "./globals.css";
 export const metadata = {
-  title: "Tvořím weby",
+  title: "Zbyněk Svoboda, tvořím weby",
   description: "Zbyněk Svoboda, webový designér a vývojář na volné noze.",
 };
 

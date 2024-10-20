@@ -1,6 +1,7 @@
 import { easeIn } from "framer-motion";
 import * as motion from "framer-motion/client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { portfolioData } from "./portfolioData";
 export default function Portfolio() {
@@ -44,24 +45,36 @@ export default function Portfolio() {
           >
             <div className="md:hidden mb-8 text-left flex justify-start w-full">
               <div className="flex-grow">
-                <h2 className="mb-5 nadpisPortfolio">{item.title}</h2>
                 <p
-                  className=""
+                  className="jinyNadpis text-lg mb-2"
+                  dangerouslySetInnerHTML={{
+                    __html: item.title,
+                  }}
+                />
+                <h2 className="mb-4 nadpisPortfolio">{item.caseStudy.title}</h2>
+                <p
+                  className="mb-2"
+                  dangerouslySetInnerHTML={{
+                    __html: item.caseStudy.subTitle,
+                  }}
+                />
+                <p
+                  className="mb-2"
                   dangerouslySetInnerHTML={{
                     __html: item.caseStudy.studyTextShort,
                   }}
                 />
                 <a
-                  className="flex mt-5 odkaz "
+                  className="odkaz"
                   href={`/portfolio/pripadovaStudie/${item.slug}`}
                 >
-                  případová studie
+                  zobrazit případovou studii {item.title}
                 </a>
               </div>
             </div>
 
             {/* <div className="w-full overflow-hidden rounded-lg lg:w-1/2 lg:mb-0 bg-gradient-to-r from-indigo-500 to-purple-200"> */}
-            <div className="w-full mx-auto mb-10 overflow-hidden rounded-lg h-fit sm:w-1/2 lg:w-1/3 lg:mb-0 md:drop-shadow-[0_40px_40px_rgba(0,0,0,0.7)] drop-shadow-2xl">
+            <div className="w-full mx-auto mb-10 overflow-hidden rounded-lg h-fit sm:w-1/2 lg:w-1/3 lg:mb-0 md:drop-shadow-[0_20px_20px_rgba(0,0,0,0.7)] drop-shadow-2xl">
               <motion.div
                 initial={{
                   opacity: 0.2,
@@ -74,7 +87,9 @@ export default function Portfolio() {
                 <Image
                   alt={item.caseStudy.images[0].alt}
                   className="object-cover object-center w-full h-1/3"
-                  src={item.caseStudy.images[0].img}
+                  // !!tehle obrazek je pred casestudy daty, protoze ma jiny rozmer nez chci
+                  src={item.images[0].img}
+                  // !!tehle obrazek je pred casestudy daty, protoze ma jiny rozmer nez chci
                   width={400}
                   height={600}
                 />
@@ -87,18 +102,32 @@ export default function Portfolio() {
                   asd
                 </div> */}
                 <div className="flex-grow">
-                  <h2 className="mb-5 nadpisPortfolio">{item.title}</h2>
                   <p
-                    className=""
+                    className="jinyNadpis text-xl mb-4"
+                    dangerouslySetInnerHTML={{
+                      __html: item.title,
+                    }}
+                  />
+                  <h2 className="mb-8 nadpisPortfolio">
+                    {item.caseStudy.title}
+                  </h2>
+                  <p
+                    className="mb-4"
+                    dangerouslySetInnerHTML={{
+                      __html: item.caseStudy.subTitle,
+                    }}
+                  />
+                  <p
+                    className="mb-4"
                     dangerouslySetInnerHTML={{
                       __html: item.caseStudy.studyTextShort,
                     }}
                   />
                   <a
-                    className="flex mt-5 odkaz "
+                    className="odkaz"
                     href={`/portfolio/pripadovaStudie/${item.slug}`}
                   >
-                    případová studie
+                    zobrazit případovou studii {item.title}
                   </a>
                 </div>
               </div>
@@ -107,9 +136,6 @@ export default function Portfolio() {
                   {/* <h2 className="mb-3 text-lg font-medium text-gray-900 title-font">
                     najekuy dalsi text
                   </h2> */}
-                  <p className="text-base leading-relaxed">
-                    jeste nevim co sem dat...
-                  </p>
                 </div>
               </div>
             </div>

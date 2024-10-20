@@ -12,32 +12,36 @@ export default function Hero() {
           backgroundColor="#ffffff"
           tileSize={14}
           fadeFactor={0.1}
-          fontColor="#71B462"
+          // fontColor="#71B462"
+          // fontColor="#bbd2a7"
+          fontColor="#DCF6C3"
         />
       </div>
       <div className="container flex flex-col items-center max-w-screen-xl px-5 pt-0 md:pt-0 mx-auto md:flex-row max-h-[300px] md:max-h-screen">
         {/* <div className="absolute bottom-0 right-0 hidden w-1/3 md:block -z-10"> */}
         <div className="absolute bottom-0 right-0 w-2/3 sm:w-1/3 md:block -z-10">
-          <div className="heroFotka max-h-[800px] max-w-[400px] hidden sm:block">
+          <div className="heroFotka max-h-[800px] max-w-[400px]">
             <Image src="/ja.png" width={600} height={800} alt="ja" />
           </div>
         </div>
         <div className="relative flex flex-col items-start py-2 lg:flex-grow w-full min-w-fit lg:pr-8 md:pr-1 md:items-start text-left lg:my-40 my-4 z-10">
-          <h1 className="mt-10 md:mt-0 mb-10 heroJmeno font-extrabold">
+          <h1 className="mt-10 mb-5 md:mt-0 md:mb-10 heroJmeno font-extrabold">
             Zbyněk Svoboda
           </h1>
-          <p className="mb-10 text-4xl md:text-7xl text-modra2 jinyNadpis md:w-2/3 pLine font-extralightlight ">
-            Vytvářím moderní weby, podporující růst vašeho podnikání.
+          <p className="mb-10 text-2xl md:text-5xl text-modra2 jinyNadpis md:w-2/3 pLine font-extralightlight ">
+            Vytvářím moderní weby, které přináší výsledky.
           </p>
-          <p className="mb-20 md:w-1/2 lg:w-3/5 text-xl font-extralight leading-snug tracking-normal hidden md:block">
-            <span className="text-modra2 font-black">
-              Moderní webové stránky
+          <p className="mb-20 md:w-1/2 lg:w-3/5 text-xl font-light leading-snug tracking-normal hidden md:block">
+            <span className="text-modra2 font-bold">Weby a web aplikace</span>,
+            které zaujmou a{" "}
+            <span className="text-modra2 font-bold">
+              pomáhají růstu vašeho podnikání
             </span>
-            , které nejen zaujmou, ale i přinášejí výsledky. Specializuji se na
-            web design a vývoj pro jednotlice, malé a střední podniky.{" "}
+            . Specializuji se na web design a vývoj pro jednotlice, malé a
+            střední podniky.{" "}
           </p>
 
-          <div className="flex justify-center flex-col md:flex-row mt-12 md:mt-0 mx-auto md:mx-0">
+          <div className="flex justify-center flex-col md:flex-row mt-5 sm:mt-10 md:mt-0 mx-auto md:mx-0">
             <Link href="/portfolio" className="ctaBtnPrimary mb-4 md:mb-0">
               Prohlédněte si portfolio
             </Link>
