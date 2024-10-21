@@ -9,7 +9,7 @@ export default function Services() {
     >
       <div className="container max-w-screen-xl px-5 mx-auto">
         <div className="flex flex-col flex-wrap py-6 mb-20 sm:flex-row">
-          <h1 className="mb-2 nadpisPageDark  sm:w-1/3 sm:mb-0">Co nabízím</h1>
+          <h1 className="mb-2 nadpisPageDark  sm:w-1/3 sm:mb-0">Co dělám?</h1>
           <p className="pl-0 text-base leading-relaxed sm:w-2/3">
             Mým cílem je vytvářet weby, které nejen skvěle vypadají, ale hlavně
             fungují. Specializuji se na tvorbu uživatelsky přívětivých a

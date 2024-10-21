@@ -28,13 +28,11 @@ export default function Hero() {
           <h1 className="mt-10 mb-5 md:mt-0 md:mb-10 heroJmeno font-extrabold">
             Zbyněk Svoboda
           </h1>
-          <p className="mb-10 text-2xl md:text-5xl text-modra2 jinyNadpis md:w-4/7 pLine font-light ">
-            Tvořím moderní weby.
-            <br />
-            Zlepšuji vaši online prezenci.
-            <br />
-            Pomáhám růstu vašemu podnikání.
-          </p>
+          <div className="mb-12 text-2xl md:text-5xl text-modra2 jinyNadpis md:w-4/7 pLine font-light flex flex-col gap-y-4">
+            <div className="">Tvořím moderní weby.</div>
+            <div className="">Zlepšuji vaši online prezenci. </div>
+            <div className="">Pomáhám růstu vašemu podnikání. </div>
+          </div>
           <p className="mb-20 md:w-1/2 lg:w-3/5 text-xl font-light leading-snug tracking-normal hidden md:block">
             Vytvářím{" "}
             <span className="text-modra2 font-bold">

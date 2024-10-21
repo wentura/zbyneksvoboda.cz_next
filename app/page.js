@@ -11,7 +11,9 @@ export default function Home() {
   return (
     <main>
       <Hero />
+
       <Header />
+
       <Services />
       <Portfolio />
       {/* <PortfolioComplete /> */}
