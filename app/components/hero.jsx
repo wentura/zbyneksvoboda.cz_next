@@ -28,19 +28,24 @@ export default function Hero() {
           <h1 className="mt-10 mb-5 md:mt-0 md:mb-10 heroJmeno font-extrabold">
             Zbyněk Svoboda
           </h1>
-          <p className="mb-10 text-2xl md:text-5xl text-modra2 jinyNadpis md:w-2/3 pLine font-extralightlight ">
-            Vytvářím moderní weby, které přináší výsledky.
+          <p className="mb-10 text-2xl md:text-5xl text-modra2 jinyNadpis md:w-4/7 pLine font-light ">
+            Tvořím moderní weby.
+            <br />
+            Zlepšuji vaši online prezenci.
+            <br />
+            Pomáhám růstu vašemu podnikání.
           </p>
           <p className="mb-20 md:w-1/2 lg:w-3/5 text-xl font-light leading-snug tracking-normal hidden md:block">
+            Vytvářím{" "}
             <span className="text-modra2 font-bold">
-              Weby a webové aplikace
+              weby a webové aplikace
             </span>
             , které zaujmou a{" "}
             <span className="text-modra2 font-bold">
               pomáhají růstu vašeho podnikání
             </span>
             . Specializuji se na web design a vývoj pro jednotlice, malé a
-            střední podniky.{" "}
+            střední fimry.{" "}
           </p>
 
           <div className="flex justify-center flex-col md:flex-row mt-5 sm:mt-10 md:mt-0 mx-auto md:mx-0">
