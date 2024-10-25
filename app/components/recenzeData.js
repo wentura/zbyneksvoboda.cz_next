@@ -60,6 +60,6 @@ export const recenzeData = [
     short: 0,
     text: "Super, naprostá m*da!",
     fotka:
-      "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882223/zbyneksvoboda/portfolio2/recenze/doom.webp",
+      "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882224/zbyneksvoboda/portfolio2/recenze/maly.webp",
   },
 ];
