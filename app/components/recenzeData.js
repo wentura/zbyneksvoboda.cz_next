@@ -34,7 +34,7 @@ export const recenzeData = [
     textShort: "Spolupráci s panem Svobodou vřele doporučuji...",
     text: "Spolupráci s panem Svobodou vřele doporučuji,<br />veškerá má přání ohledně úprav designu byla obratem splněna.<br />Oceňuji rychlost a kvalitu odvedené práce a přátelskou a rychlou komunikaci.<br />Vše bylo jasně a srozumitelně vysvětleno a společně jsme pozvedli design eshopu o několik levelů výš a zlepšili některé funkce.",
     fotka:
-      "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882224/zbyneksvoboda/portfolio2/recenze/ms.webp",
+      "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882223/zbyneksvoboda/portfolio2/recenze/frankova.webp",
   },
   {
     kdo: "Jan Bláha",
