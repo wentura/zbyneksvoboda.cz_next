@@ -28,9 +28,19 @@ export const recenzeData = [
       "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882224/zbyneksvoboda/portfolio2/recenze/ms.webp",
   },
   {
+    kdo: "Kateřina Hrabíková",
+    co: "Zodpovědná výuka",
+    short: 1,
+    textShort:
+      "Velmi jsem ocenila pečlivost a ochotu přizpůsobit se mým potřebám. Každý detail byl promyšlen, a díky tomu nyní mám web, který je plně funkční a snadno použitelný pro naše návštěvníky.",
+    text: "Velmi jsem ocenila pečlivost a ochotu přizpůsobit se mým potřebám. Každý detail byl promyšlen, a díky tomu nyní mám web, který je plně funkční a snadno použitelný pro naše návštěvníky.<br /><br />Pokud hledáte někoho, kdo vám pomůže vytvořit webovou stránku či aplikaci, která bude odrážet váš záměr a zároveň bude praktická, určitě doporučuji jeho služby!<br /><br />Cením si toho, že pan Svoboda aplikoval své kreativní nápady, díky kterým je web moderní, přehledný a uživatelsky přívětivý.",
+    fotka:
+      "https://res.cloudinary.com/dam7wdzvx/image/upload/v1730489771/zbyneksvoboda/portfolio2/recenze/kaca.webp",
+  },
+  {
     kdo: "Kristýna Franková",
     co: "Hexfit.eu",
-    short: 1,
+    short: 0,
     textShort: "Spolupráci s panem Svobodou vřele doporučuji...",
     text: "Spolupráci s panem Svobodou vřele doporučuji,<br />veškerá má přání ohledně úprav designu byla obratem splněna.<br />Oceňuji rychlost a kvalitu odvedené práce a přátelskou a rychlou komunikaci.<br />Vše bylo jasně a srozumitelně vysvětleno a společně jsme pozvedli design eshopu o několik levelů výš a zlepšili některé funkce.",
     fotka:
