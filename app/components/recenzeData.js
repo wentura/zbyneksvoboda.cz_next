@@ -1,9 +1,20 @@
 export const recenzeData = [
   {
+    kdo: "Jakub Skála",
+    co: "Autokempkokorin.cz",
+    short: 1,
+    textShort:
+      "Se spoluprací se Zbyňkem Svobodou jsme moc spokojeni. Stránky pro Autokemp Kokořín, které pro nás udělal, odpovídají aktuálnímu trendu....",
+    text: "Se spoluprací se Zbyňkem Svobodou jsme moc spokojeni. Stránky pro Autokemp Kokořín, které pro nás udělal, odpovídají aktuálnímu trendu a při požadavku na další úpravy Zbyněk reaguje bez prodlení.",
+    fotka:
+      "https://res.cloudinary.com/dam7wdzvx/image/upload/v1731687135/zbyneksvoboda/ref/jakub_skala.png.webp",
+  },
+  {
     kdo: "Jan Svárovský",
     co: "ArboristikaSvarovsky.cz",
     short: 1,
-    textShort: "Výborná spolupráce v tom pravém smyslu...",
+    textShort:
+      "Výborná spolupráce v tom pravém smyslu - pochopení požadavků + návrh + konzultace + realizace = spokojenost. To vše rychle a operativně.",
     text: "Výborná spolupráce v tom pravém smyslu - pochopení požadavků + návrh + konzultace + realizace = spokojenost. To vše rychle a operativně, DĚKUJI!!!",
     fotka:
       "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882223/zbyneksvoboda/portfolio2/recenze/js.webp",
@@ -11,7 +22,7 @@ export const recenzeData = [
   {
     kdo: "Natalie Štípková",
     co: "PohrebniUstavKralupy.cz",
-    short: 1,
+    short: 0,
     textShort:
       "Jsme velmi spokojeni s prací pana Zbyňka Svobody, který pracoval na našich webových stránkách....",
     text: "Jsme velmi spokojeni s prací pana Zbyňka Svobody, který pracoval na našich webových stránkách.<br />Jeho profesionální přístup a znalosti v oblasti webdesignu nás nadchly. Stránky, které pro nás vytvořil, jsou nejen vizuálně atraktivní, ale také velmi přehledné a snadno použitelné.<br />Zbyněk nám poskytl cenné rady ohledně rozmístění obsahu a navigace, což nám pomohlo při budování efektivního online prostoru pro kontakt s našimi klienty.<br />Celkově jsme s jeho tvorbou více než spokojeni a bez váhání mu udělujeme hodnocení pěti hvězdiček. Děkujeme!",
