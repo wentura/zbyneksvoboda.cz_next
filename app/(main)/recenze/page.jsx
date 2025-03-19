@@ -6,10 +6,10 @@ export default function Recenze() {
     <section className="py-10 mx-auto text-gray-600 md:py-20 px-5">
       <div className="container max-w-screen-xl mx-auto">
         <div className="flex flex-col flex-wrap py-0 mb-20 sm:flex-row">
-          <h1 className="mb-2 md:w-1/3 md:mb-2 nadpisPage">
+          <h1 className="mb-2 nadpisPage leading-snug sm:w-full sm:mb-8">
             Co říkají moji klienti
           </h1>
-          <p className="pl-0 md:w-2/3">
+          <p className="pl-0 text-xl leading-relaxed">
             Spolupracuji s klienty, kteří očekávají kvalitu, spolehlivost a
             inovativní přístup.
             <br />

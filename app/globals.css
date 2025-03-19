@@ -20,7 +20,7 @@
     font-display: swap;
   }
   strong {
-    font-weight: 800 !important;
+    font-weight: 700 !important;
   }
   .nadpisPage {
     @apply text-3xl md:text-5xl font-bold text-gray-900 tracking-tight;
@@ -38,6 +38,14 @@
     font-weight: 900 !important;
     font-style: normal !important;
   }
+  .nadpisPageDark2 {
+    @apply text-2xl md:text-3xl font-bold text-gray-100 tracking-tight;
+    /* font-family: "Montserrat" !important; */
+    font-family: notoserif !important;
+    font-optical-sizing: auto !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+  }
   .nadpisPageWhite {
     @apply text-3xl md:text-5xl font-bold text-gray-100 tracking-tight;
     font-family: montserrat !important;
@@ -47,7 +55,7 @@
     font-style: normal !important;
   }
   .heroJmeno {
-    @apply text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 tracking-tight;
+    @apply text-2xl sm:text-4xl md:text-5xl font-bold text-gray-900 tracking-tight;
     font-family: montserrat !important;
     font-optical-sizing: auto;
     font-weight: 800 !important;
@@ -78,14 +86,14 @@
     @apply inline-flex px-6 py-2 text-lg text-white font-extrabold bg-red-500 bg-opacity-60 border-0 rounded focus:outline-none hover:bg-opacity-80 hover:scale-105 transition duration-150 backdrop-blur-sm;
     font-family: montserrat !important;
     font-optical-sizing: auto;
-    font-weight: 900;
+    font-weight: 600;
     font-style: normal;
   }
   .ctaBtnSecondary {
     @apply inline-flex px-6 py-2 bg-emerald-500 text-lg text-white border font-extrabold justify-center  rounded focus:outline-none hover:bg-emerald-700 hover:scale-105 transition duration-150 hover:text-gray-50;
     font-family: montserrat !important;
     font-optical-sizing: auto;
-    font-weight: 900;
+    font-weight: 600;
     font-style: normal;
   }
 
@@ -93,7 +101,7 @@
     @apply inline-flex px-6 py-2 text-lg text-gray-100 font-extrabold bg-red-400 justify-center  rounded focus:outline-none  hover:scale-105 transition duration-150 hover:text-gray-50;
     font-family: montserrat !important;
     font-optical-sizing: auto;
-    font-weight: 900;
+    font-weight: 600;
     font-style: normal;
   }
   .bg-modra2 {

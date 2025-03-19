@@ -25,33 +25,40 @@ export default function Hero() {
           </div>
         </div>
         <div className="relative flex flex-col items-start py-2 lg:flex-grow w-full min-w-fit lg:pr-8 md:pr-1 md:items-start text-left lg:my-40 my-4 z-10">
-          <h1 className="mt-10 mb-5 md:mt-0 md:mb-10 heroJmeno font-extrabold">
-            Zbyněk Svoboda
+          <h1 className="mt-2 mb-12 md:mt-0 md:mb-10 heroJmeno font-extrabold">
+            <span className="block md:hidden">Zbyněk Svoboda</span>
+            <span className="hidden">
+              Digitální strategie, která dává smysl
+            </span>
           </h1>
-          <div className="mb-12 text-2xl md:text-5xl text-modra2 jinyNadpis md:w-4/7 pLine font-light flex flex-col gap-y-4">
-            <div className="">Tvořím moderní weby.</div>
-            <div className="">Zlepšuji vaši online prezenci. </div>
-            <div className="">Pomáhám růstu vašeho podnikání. </div>
+          <div className="mb-12 text-3xl  md:text-7xl text-modra2 jinyNadpis md:w-6/7 pLine font-bold flex flex-col gap-y-4">
+            {/* <div className="mb-2 leading-[44px] md:leading-7 md:mb-4"></div> */}
+            <div className="mb-2 md:leading-normal md:mb-44">
+              Pomáhám firmám pochopit, co je v digitálním světě důležité
+            </div>
+            {/* <div className="">🚀 Pomohu vám najít správnou strategii</div> */}
+            {/* <div className="">Pomáhám růstu vašeho podnikání. </div> */}
           </div>
-          <p className="mb-20 md:w-1/2 lg:w-3/5 text-xl font-light leading-snug tracking-normal hidden md:block">
-            Vytvářím{" "}
-            <span className="text-modra2 font-bold">
-              weby a webové aplikace
-            </span>
-            , které zaujmou a{" "}
-            <span className="text-modra2 font-bold">
-              pomáhají růstu vašeho podnikání
-            </span>
-            . Specializuji se na web design a vývoj pro jednotlice, malé a
-            střední fimry.{" "}
+          <p className="mb-20 md:w-1/2 lg:w-full text-xl font-light leading-snug tracking-normal hidden md:block">
+            Váš web je jen jedna část skládačky.
+            <br />
+            Jak využít moderní technologie k růstu?
+            <br />
+            Žádné univerzální rady, ale reálné řešení.
           </p>
 
-          <div className="flex justify-center flex-col md:flex-row mt-5 sm:mt-10 md:mt-0 mx-auto md:mx-0">
-            <Link href="/portfolio" className="ctaBtnPrimary mb-4 md:mb-0">
-              Prohlédněte si portfolio
+          <div className="flex justify-center flex-col md:flex-row mt-1 sm:mt-10 md:mt-0 mx-auto md:mx-0">
+            <Link
+              href="/portfolio"
+              className="ctaBtnPrimary mb-4 md:mb-0 hidden md:block"
+            >
+              Prohlédněte si mou práci
             </Link>
-            <Link href="/kontakt" className="ctaBtnSecondary md:ml-4">
-              Kontaktujte mě
+            <Link
+              href="/kontakt"
+              className="ctaBtnSecondary md:ml-4 text-base md:text-lg"
+            >
+              Dohodněme si konzultaci
             </Link>
           </div>
         </div>
@@ -63,6 +70,26 @@ export default function Hero() {
             src="https://dummyimage.com/720x600"
           /> */}
         </div>
+      </div>
+
+      {/* Bouncing arrow indicating scroll down */}
+      <div className="absolute bottom-8 w-full flex justify-center cursor-pointer animate-bounce">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="text-gray-200"
+        >
+          <path
+            d="M12 5V19M12 19L19 12M12 19L5 12"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
       </div>
     </section>
   );

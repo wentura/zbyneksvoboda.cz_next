@@ -10,10 +10,11 @@ export default function RecenzeShort() {
           {/* <h1 className="mb-2 md:w-2/3 md:mb-2 nadpisPageDark">
             Moji klienti říkají...
           </h1> */}
-          <h1 className="mb-2 md:w-1/3 md:mb-2 nadpisPageDark">
+
+          <h1 className="mb-2 nadpisPageDark leading-snug sm:w-full sm:mb-8">
             Řekli o mé práci
           </h1>
-          <p className="pl-0 md:w-2/3">
+          <p className="pl-0 text-xl leading-relaxed">
             Spolupracuji s klienty, kteří očekávají kvalitu, spolehlivost a
             inovativní přístup.
             <br />

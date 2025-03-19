@@ -10,20 +10,18 @@ export default function Portfolio() {
   return (
     <div className="px-5 py-20 mx-auto md:py-40 lg:px-0">
       <div className="container flex flex-col flex-wrap max-w-screen-xl py-0 mx-auto mb-0 lg:pb-20 sm:flex-row">
-        <h1 className="mb-2 nadpisPage sm:w-1/3 sm:mb-0">Moje práce</h1>
-        <p className="pl-0 sm:w-2/3">
-          Prohlédněte si ukázky mých projektů
-          <span className="hidden md:inline-block">
-            &nbsp;a nechte se inspirovat
-          </span>
-          .
-          <br className="" />
+        <h1 className="mb-2 nadpisPage leading-snug sm:w-full sm:mb-8">
+          Ukázky projektů, na kterých jsem pracoval
+        </h1>
+        <p className="pl-0 text-xl leading-relaxed">
+          Každý web nebo e-shop, na kterém pracuji, má jasný cíl – ať už jde o
+          lepší uživatelský zážitek, vyšší konverze, nebo technickou efektivitu.
+          Podívejte se na vybrané projekty, kde se spojila technická preciznost
+          s promyšlenou strategií.
+        </p>
+        <p className="mt-12 pl-0 text-xl leading-relaxed">
           Každý web, na kterém pracuji, je navržen s ohledem na potřeby a cíle
           klienta.
-          <span className="hidden md:inline-block">
-            Moje projekty kombinují estetiku, použitelnost a technickou kvalitu,
-            abych vždy dosáhl optimálního výsledku.
-          </span>
         </p>
       </div>
       {portfolio.map((item, index) => (
@@ -90,8 +88,8 @@ export default function Portfolio() {
                   // !!tehle obrazek je pred casestudy daty, protoze ma jiny rozmer nez chci
                   src={item.images[0].img}
                   // !!tehle obrazek je pred casestudy daty, protoze ma jiny rozmer nez chci
-                  width={400}
-                  height={600}
+                  width={500}
+                  height={700}
                 />
               </motion.div>
             </div>

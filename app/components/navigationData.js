@@ -1,23 +1,25 @@
 export const navData = [
   {
-    title: "Služby",
+    title: "Řešení & služby",
     link: "/#sluzby",
   },
   {
-    title: "Portfolio",
+    title: "Projekty & reference",
     link: "/portfolio",
   },
+  //   { title: "Jak pracuji", link: "/jakpracuji" },
   {
     title: "Recenze",
     link: "/recenze",
   },
-  { title: "ČKD / FAQ", link: "/ckdfaq" },
+  //   { title: "Blog & zdroje", link: "/blog" },
+  //   { title: "ČKD / FAQ", link: "/ckdfaq" },
   // {
   //   title: "O mně",
   //   link: "/#o-mne",
   // },
   {
-    title: "Kontakt",
+    title: "Kontakt & spolupráce",
     link: "/kontakt",
   },
 ];

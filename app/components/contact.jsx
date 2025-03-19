@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import MailSvg from "./mail";
 import PhoneSvg from "./phone";
@@ -5,20 +6,22 @@ import PhoneSvg from "./phone";
 export default function Contact() {
   return (
     <section className="py-10 md:py-24">
-      <div className="container h-2 max-w-screen-xl px-5 mx-auto mb-2">
-        <div className="flex flex-col flex-wrap py-6 mb-8 sm:flex-row">
-          <h1 className="mb-2 sm:w-1/3 sm:mb-0 nadpisPage">Kontaktujte mě</h1>
-          <p className="pl-0 sm:w-2/3 text-lg leading-8">
-            Máte projekt, o kterém chcete mluvit?
+      <div className="container max-w-screen-xl px-5 mx-auto">
+        <div className="flex flex-col flex-wrap py-6">
+          <h1 className="mb-2 nadpisPage leading-snug sm:w-full sm:mb-8">
+            Kontaktujte mě
+          </h1>
+          <p className="pl-0 text-lg">
+            Chcete zjistit, jak posunout váš web, e-shop nebo digitální
+            strategii?
             <br />
-            Rád s vámi proberu všechny detaily a najdeme společně to nejlepší
-            řešení.
+            Rád se podívám na váš projekt a pomohu vám najít nejlepší řešení.
           </p>
         </div>
       </div>
       <div className="container flex flex-col-reverse items-center max-w-screen-xl px-5 mx-auto md:flex-row ">
-        <div className="flex flex-col items-center mt-20 text-center lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
-          <div className="flex flex-col items-start justify-center w-full md:justify-start">
+        <div className="flex flex-col  text-center lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
+          <div className="flex flex-col w-full">
             <div className="flex flex-col gap-4 ">
               <div className="flex flex-col gap-4 mb-12">
                 <a
@@ -40,7 +43,7 @@ export default function Contact() {
                 {/* <span className="inline-flex justify-center mt-4 sm:ml-auto sm:mt-0 sm:justify-start"> */}
                 <div>
                   <a
-                    className="ml-3 text-modra2 odkaz flex inline-flex gap-2"
+                    className="ml-3 text-modra2 odkaz flex gap-2"
                     href="https://www.facebook.com/profile.php?id=100093105173892"
                     target="_blank"
                   >
@@ -59,7 +62,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <a
-                    className="ml-3 text-modra2 odkaz flex inline-flex gap-2"
+                    className="ml-3 text-modra2 odkaz flex gap-2"
                     href="https://www.instagram.com/zbyndasvoboda/"
                     target="_blank"
                   >
@@ -80,7 +83,7 @@ export default function Contact() {
                 </div>
                 <div className="">
                   <a
-                    className="ml-3 text-modra2 odkaz flex inline-flex gap-2"
+                    className="ml-3 text-modra2 odkaz flex gap-2"
                     href="https://www.linkedin.com/in/zbyneksvoboda/"
                     target="_blank"
                   >
@@ -103,14 +106,14 @@ export default function Contact() {
                   </a>
                 </div>
               </div>
-              <span className="text-modra2">
+              <span className="text-modra2 text-left pl-4 md:pl-3">
                 <strong>Kancelář</strong>
                 <br />
                 dobré, tiché kavárny na Mělníku, nebo
                 <br />
                 Nebužely 3, 277 34
               </span>
-              <span className="text-modra2">
+              <span className="text-modra2 text-left pl-4 md:pl-3">
                 <strong>Fakturační údaje</strong>
                 <br />
                 Zbyněk Svoboda
@@ -195,11 +198,13 @@ export default function Contact() {
 
           <div className="flex lg:flex-row md:flex-col"></div>
         </div>
-        <div className="w-5/6 mt-48 md:mt-56 xl:mt-40 lg:max-w-xl lg:w-full md:w-1/2">
-          <img
-            className="object-cover rounded-2xl drop-shadow-xl"
+        <div className="w-5/6 mt-12 md:mt-24 lg:max-w-xl lg:w-full md:w-1/2 mb-12 flex justify-center">
+          <Image
+            className="object-cover rounded-2xl drop-shadow-xl mr-0"
             alt="Zbyněk Svoboda, já"
             src="/ja.jpg"
+            width={400}
+            height={600}
           />
         </div>
       </div>

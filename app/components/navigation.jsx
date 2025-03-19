@@ -5,7 +5,7 @@ import NavigationMobile from "./navigationMobile";
 export default function Navigation() {
   return (
     <div className="">
-      <nav className="hidden md:flex flex-wrap items-center justify-center text-base md:ml-auto>">
+      <nav className="hidden md:flex flex-wrap items-center justify-center text-sm md:ml-auto md:pt-1">
         {navData.map((item, index) => (
           <Link
             className="mr-5 hover:text-gray-400 hover:underline transition duration-150"

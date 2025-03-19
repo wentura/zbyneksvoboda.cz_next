@@ -1,19 +1,20 @@
 export const servicesData = [
   {
-    title: "Tvorba webových stránek",
-    description:
-      "Tvořím komplexní weby od uživatelského rozhraní až po technické pozadí.<br />Od jednoduchých jednostránkových webů až po e-shopy a webové aplikace.",
+    title: "Weby a e-shopy na míru",
+    description: "od návrhu po nasazení",
     // link: "/#sluzby",
     //linkTitle:"";
   },
   {
-    title: "Webdesign a UX/UI",
-    description:
-      "Navrhuji weby s důrazem na intuitivní uživatelskou zkušenost a estetiku, které zlepšují interakci vašich zákazníků s vaším brandem.",
+    title: "Technická analýza a optimalizace",
+    description: "rychlost, UX, SEO, bezpečnost",
   },
   {
-    title: "Údržba, podpora a konzultace",
-    description:
-      "Provádím dlouhodobou správu webů a technickou podporu, abyste se nemuseli o nic starat.<br />Konzultuji vaše nápady, připravované i rozpracované weby.",
+    title: "Konzultace a strategie",
+    description: "co dává smysl řešit a jak to uchopit správně",
+  },
+  {
+    title: "Automatizace a integrace",
+    description: "efektivnější propojení systémů",
   },
 ];

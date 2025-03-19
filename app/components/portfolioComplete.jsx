@@ -8,12 +8,18 @@ export default function PortfolioComplete() {
     <section className="py-10 mx-auto text-gray-600 md:py-20 px-5">
       <div className="flex flex-col">
         <div className="flex flex-col flex-wrap mb-12 sm:flex-row">
-          <h1 className="mb-2 nadpisPage sm:w-1/3 sm:mb-0">Moje práce</h1>
-          <p className="pl-0 sm:w-2/3">
-            Prohlédněte si ukázky mých projektů a nechte se inspirovat. Každý
-            web, na kterém pracuji, je navržen s ohledem na potřeby a cíle
-            klienta. Moje projekty kombinují estetiku, použitelnost a technickou
-            kvalitu, abych vždy dosáhl optimálního výsledku.
+          <h1 className="mb-2 nadpisPage leading-snug sm:w-full sm:mb-8">
+            Projekty & reference
+          </h1>
+          <p className="pl-0 text-xl leading-relaxed">
+            Každý web nebo e-shop, na kterém pracuji, má jasný cíl – ať už jde o
+            lepší uživatelský zážitek, vyšší konverze, nebo technickou
+            efektivitu. Podívejte se na vybrané projekty, kde se spojila
+            technická preciznost s promyšlenou strategií.
+          </p>
+          <p className="mt-12 pl-0 text-xl leading-relaxed">
+            Každý web, na kterém pracuji, je navržen s ohledem na potřeby a cíle
+            klienta.
           </p>
         </div>
       </div>
