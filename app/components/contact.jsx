@@ -113,7 +113,7 @@ export default function Contact() {
                 Zbyněk Svoboda
                 <br />
                 Nebužely 3<br />
-                277 34<span className="md:block hidden">, Nebužely</span>
+                277 34, Nebužely
                 <br />
                 IČ: 74811002
                 <br />
