@@ -90,7 +90,7 @@
     font-style: normal;
   }
   .ctaBtnSecondary {
-    @apply inline-flex px-6 py-2 bg-emerald-500 text-lg text-white border font-extrabold justify-center  rounded focus:outline-none hover:bg-emerald-700 hover:scale-105 transition duration-150 hover:text-gray-50;
+    @apply inline-flex px-6 py-2 bg-emerald-500 text-lg text-gray-800 border border-emerald-500 font-extrabold justify-center  rounded focus:outline-none hover:bg-emerald-700 hover:scale-105 transition duration-150 hover:text-gray-50;
     font-family: montserrat !important;
     font-optical-sizing: auto;
     font-weight: 600;

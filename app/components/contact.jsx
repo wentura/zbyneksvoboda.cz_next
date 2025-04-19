@@ -5,45 +5,48 @@ import PhoneSvg from "./phone";
 
 export default function Contact() {
   return (
-    <section className="py-10 md:py-24">
+    <section className="py-10 md:py-24 bg-modra2">
       <div className="container max-w-screen-xl px-5 mx-auto">
-        <div className="flex flex-col flex-wrap py-6">
-          <h1 className="mb-2 nadpisPage leading-snug sm:w-full sm:mb-8">
+        {/* <div className="flex flex-col flex-wrap py-6">
+          <h1 className="mb-2 nadpisPageDark leading-snug sm:w-full sm:mb-8">
             Kontaktujte mě
           </h1>
-          <p className="pl-0 text-lg">
+          <p className="pl-0 text-lg text-white">
             Chcete zjistit, jak posunout váš web, e-shop nebo digitální
             strategii?
             <br />
             Rád se podívám na váš projekt a pomohu vám najít nejlepší řešení.
           </p>
-        </div>
+        </div> */}
       </div>
       <div className="container flex flex-col-reverse items-center max-w-screen-xl px-5 mx-auto md:flex-row ">
         <div className="flex flex-col  text-center lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
           <div className="flex flex-col w-full">
-            <div className="flex flex-col gap-4 ">
+            <h1 className="mb-2 nadpisPageDark leading-snug sm:w-full sm:mb-8">
+              Kontaktujte mě
+            </h1>
+            <div className="flex flex-col gap-4 text-white">
               <div className="flex flex-col gap-4 mb-12">
                 <a
                   href="mailto:info@zbyneksvoboda.cz"
-                  className="flex align-middle items-center gap-2 text-xl font-medium odkaz"
+                  className="flex align-middle items-center gap-2 text-xl font-medium text-white tracking-widest hover:text-gray-300 hover:scale-105 transition duration-150 hover:underline underline-offset-4"
                 >
-                  <MailSvg />
+                  {/* <MailSvg /> */}
                   info@zbyneksvoboda.cz
                 </a>{" "}
                 <a
                   href="tel:00420773687792"
-                  className="flex align-middle items-center gap-2 text-xl font-medium odkaz"
+                  className="flex align-middle items-center gap-2 text-xl font-medium text-white tracking-widest hover:text-gray-300 hover:scale-105 transition duration-150 hover:underline underline-offset-4"
                 >
-                  <PhoneSvg />
-                  773 68 77 92
+                  {/* <PhoneSvg /> */}
+                  773687792
                 </a>
               </div>
               <div className="flex flex-col gap-2 mb-8">
                 {/* <span className="inline-flex justify-center mt-4 sm:ml-auto sm:mt-0 sm:justify-start"> */}
                 <div>
                   <a
-                    className="ml-3 text-modra2 odkaz flex gap-2"
+                    className="ml-3 text-white odkaz flex gap-2"
                     href="https://www.facebook.com/profile.php?id=100093105173892"
                     target="_blank"
                   >
@@ -52,7 +55,7 @@ export default function Contact() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      className="w-5 h-5 text-modra2"
+                      className="w-5 h-5 text-white"
                       viewBox="0 0 24 24"
                     >
                       <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
@@ -62,7 +65,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <a
-                    className="ml-3 text-modra2 odkaz flex gap-2"
+                    className="ml-3 text-white odkaz flex gap-2"
                     href="https://www.instagram.com/zbyndasvoboda/"
                     target="_blank"
                   >
@@ -72,7 +75,7 @@ export default function Contact() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      className="w-5 h-5 text-modra2"
+                      className="w-5 h-5 text-white"
                       viewBox="0 0 24 24"
                     >
                       <rect width={20} height={20} x={2} y={2} rx={5} ry={5} />
@@ -83,7 +86,7 @@ export default function Contact() {
                 </div>
                 <div className="">
                   <a
-                    className="ml-3 text-modra2 odkaz flex gap-2"
+                    className="ml-3 text-white odkaz flex gap-2"
                     href="https://www.linkedin.com/in/zbyneksvoboda/"
                     target="_blank"
                   >
@@ -93,7 +96,7 @@ export default function Contact() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={0}
-                      className="w-5 h-5 text-modra2"
+                      className="w-5 h-5 text-white"
                       viewBox="0 0 24 24"
                     >
                       <path
@@ -106,22 +109,15 @@ export default function Contact() {
                   </a>
                 </div>
               </div>
-              <span className="text-modra2 text-left pl-4 md:pl-3">
-                <strong>Kancelář</strong>
-                <br />
-                dobré, tiché kavárny na Mělníku, nebo
-                <br />
-                Nebužely 3, 277 34
-              </span>
-              <span className="text-modra2 text-left pl-4 md:pl-3">
-                <strong>Fakturační údaje</strong>
-                <br />
+              <span className="text-white text-left pl-4 md:pl-3">
                 Zbyněk Svoboda
                 <br />
                 Nebužely 3<br />
                 277 34, Nebužely
                 <br />
                 IČ: 74811002
+                <br />
+                <span className="text-xs">Nejsem plátcem DPH</span>
               </span>
               {/* <a
                 href="mailto:info@zbyneksvoboda.cz"

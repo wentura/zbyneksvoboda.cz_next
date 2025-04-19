@@ -33,7 +33,7 @@ export default function Hero() {
           </h1>
           <div className="mb-12 text-3xl  md:text-7xl text-modra2 jinyNadpis md:w-6/7 pLine font-bold flex flex-col gap-y-4">
             {/* <div className="mb-2 leading-[44px] md:leading-7 md:mb-4"></div> */}
-            <div className="mb-2 md:leading-normal md:mb-44">
+            <div className="mb-0 md:leading-normal leading-snug md:mb-44">
               Pomáhám firmám pochopit, co je v digitálním světě důležité
             </div>
             {/* <div className="">🚀 Pomohu vám najít správnou strategii</div> */}
@@ -47,10 +47,10 @@ export default function Hero() {
             Žádné univerzální rady, ale reálné řešení.
           </p>
 
-          <div className="flex justify-center flex-col md:flex-row mt-1 sm:mt-10 md:mt-0 mx-auto md:mx-0">
+          <div className="flex justify-center flex-col md:flex-row mt-0 sm:mt-10 md:mt-0 mx-auto md:mx-0">
             <Link
               href="/portfolio"
-              className="ctaBtnPrimary mb-4 md:mb-0 hidden md:block"
+              className="ctaBtnSecondaryDark mb-4 md:mb-0 hidden md:block"
             >
               Prohlédněte si mou práci
             </Link>
@@ -58,7 +58,7 @@ export default function Hero() {
               href="/kontakt"
               className="ctaBtnSecondary md:ml-4 text-base md:text-lg"
             >
-              Dohodněme si konzultaci
+              Dohodněme si spolupráci
             </Link>
           </div>
         </div>
