@@ -20,6 +20,6 @@ export const navData = [
   // },
   {
     title: "Kontakt & spolupráce",
-    link: "/kontakt",
+    link: "/#kontakt",
   },
 ];

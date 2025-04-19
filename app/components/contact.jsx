@@ -5,7 +5,7 @@ import PhoneSvg from "./phone";
 
 export default function Contact() {
   return (
-    <section className="py-10 md:py-24 bg-modra2">
+    <section className="py-10 md:py-24 bg-modra2" id="kontakt">
       <div className="container max-w-screen-xl px-5 mx-auto">
         {/* <div className="flex flex-col flex-wrap py-6">
           <h1 className="mb-2 nadpisPageDark leading-snug sm:w-full sm:mb-8">
@@ -26,7 +26,7 @@ export default function Contact() {
               Kontaktujte mě
             </h1>
             <div className="flex flex-col gap-4 text-white">
-              <div className="flex flex-col gap-4 mb-12">
+              <div className="flex flex-col gap-4 mb-12 justify-center items-center md:justify-start">
                 <a
                   href="mailto:info@zbyneksvoboda.cz"
                   className="flex align-middle items-center gap-2 text-xl font-medium text-white tracking-widest hover:text-gray-300 hover:scale-105 transition duration-150 hover:underline underline-offset-4"
@@ -42,7 +42,7 @@ export default function Contact() {
                   773687792
                 </a>
               </div>
-              <div className="flex flex-col gap-2 mb-8">
+              <div className="md:flex flex-col gap-2 mb-8 hidden">
                 {/* <span className="inline-flex justify-center mt-4 sm:ml-auto sm:mt-0 sm:justify-start"> */}
                 <div>
                   <a
@@ -109,11 +109,11 @@ export default function Contact() {
                   </a>
                 </div>
               </div>
-              <span className="text-white text-left pl-4 md:pl-3">
+              <span className="text-white text-center md:text-left pl-4 md:pl-3">
                 Zbyněk Svoboda
                 <br />
                 Nebužely 3<br />
-                277 34, Nebužely
+                277 34<span className="md:block hidden">, Nebužely</span>
                 <br />
                 IČ: 74811002
                 <br />
