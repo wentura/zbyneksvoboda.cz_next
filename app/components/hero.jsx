@@ -25,7 +25,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="relative flex flex-col items-start py-2 lg:flex-grow w-full min-w-fit lg:pr-8 md:pr-1 md:items-start text-left lg:my-40 my-4 z-10">
-          <h1 className="mt-2 mb-12 md:mt-0 md:mb-10 heroJmeno font-extrabold">
+          <h1 className="mt-2 mb-8 md:mt-0 md:mb-10 heroJmeno font-extrabold">
             <span className="block md:hidden">Zbyněk Svoboda</span>
             <span className="hidden">
               Digitální strategie, která dává smysl
@@ -34,7 +34,9 @@ export default function Hero() {
           <div className="mb-12 text-3xl  md:text-7xl text-modra2 jinyNadpis md:w-6/7 pLine font-bold flex flex-col gap-y-4">
             {/* <div className="mb-2 leading-[44px] md:leading-7 md:mb-4"></div> */}
             <div className="mb-0 md:leading-normal leading-snug md:mb-44">
-              Pomáhám firmám pochopit, co je v digitálním světě důležité
+              {/* Pomáhám firmám pochopit, co je v digitálním světě důležité */}
+              Spolu najdeme cestu, jak z webu udělat silný nástroj pro vaše
+              podnikání
             </div>
             {/* <div className="">🚀 Pomohu vám najít správnou strategii</div> */}
             {/* <div className="">Pomáhám růstu vašeho podnikání. </div> */}
