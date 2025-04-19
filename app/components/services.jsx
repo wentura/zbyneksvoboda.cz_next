@@ -17,12 +17,14 @@ export default function Services() {
             <div className="pl-0 text-xl leading-relaxed">
               Vytvářím <strong>promyšlené digitální strategie</strong>, které
               nejsou jen o pěkném webu, ale o <strong>výsledcích</strong>.
-              <Link
-                href="/kontakt"
-                className="my-12 ctaBtnSecondaryDark md:ml-4 text-base md:text-lg md:hidden"
-              >
-                Začněme tvořit výsledky
-              </Link>
+              <div className="flex justify-center  md:hidden">
+                <Link
+                  href="/kontakt"
+                  className="my-12 ctaBtnSecondaryDark md:ml-4 text-base md:text-lg"
+                >
+                  Začněme spolupráci
+                </Link>
+              </div>
             </div>
 
             <p className="pl-0 text-xl leading-relaxed pb-12">
