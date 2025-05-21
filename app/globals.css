@@ -114,3 +114,6 @@
     line-height: 111% !important;
   }
 }
+.cookie-consent {
+  z-index: 9999 !important;
+}

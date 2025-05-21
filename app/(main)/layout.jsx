@@ -1,5 +1,5 @@
+// import CookieConsent from "../components/CookieConsent";
 import Header from "../components/header";
-
 export default function PortfolioLayout({ children }) {
   return (
     <div>

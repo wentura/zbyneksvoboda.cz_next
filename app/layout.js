@@ -1,3 +1,4 @@
+import CookieConsent from "./components/CookieConsent";
 import Footer from "./components/footer";
 import "./globals.css";
 export const metadata = {
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
       <body>
         {children}
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   );
