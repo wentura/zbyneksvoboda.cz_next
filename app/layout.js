@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
       <body>
         {children}
         <Footer />
-        <CookieConsent />
+        {/* <CookieConsent /> */}
       </body>
     </html>
   );
