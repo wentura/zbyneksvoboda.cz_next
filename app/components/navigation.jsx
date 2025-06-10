@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { navData } from "../components/navigationData";
+import { navData } from "../data/navigationData";
 import NavigationMobile from "./navigationMobile";
 export default function Navigation() {
   return (

@@ -1,7 +1,8 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { recenzeData } from "./recenzeData";
+import { recenzeData } from "../data/recenzeData";
 export default function RecenzeShort() {
   return (
     <section className="py-20 mx-auto text-gray-300 bg-modra2 md:py-40">

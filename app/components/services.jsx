@@ -1,6 +1,7 @@
+"use client";
 import Link from "next/link";
 import React from "react";
-import { servicesData } from "./servicesData";
+import { servicesData } from "../data/servicesData";
 export default function Services() {
   return (
     <section

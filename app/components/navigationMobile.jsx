@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import { navData } from "../components/navigationData";
+import { navData } from "../data/navigationData";
 
 export default function NavigationMobile() {
   const [isOpen, setIsOpen] = useState(false);

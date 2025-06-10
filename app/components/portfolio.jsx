@@ -1,9 +1,10 @@
+"use client";
 import { easeIn } from "framer-motion";
 import * as motion from "framer-motion/client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { portfolioData } from "./portfolioData";
+import { portfolioData } from "../data/portfolioData";
 export default function Portfolio() {
   const portfolio = portfolioData.filter((item) => item.hasCaseStudy === true);
 

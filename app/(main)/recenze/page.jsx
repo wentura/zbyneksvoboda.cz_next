@@ -1,4 +1,4 @@
-import { recenzeData } from "@/app/components/recenzeData";
+import { recenzeData } from "@/app/data/recenzeData";
 import React from "react";
 
 export default function Recenze() {

@@ -7,13 +7,13 @@ import Portfolio from "./components/portfolio";
 import PortfolioComplete from "./components/portfolioComplete";
 import RecenzeShort from "./components/recenzeShort";
 import Services from "./components/services";
+import Stripe from "./components/Stripe";
 export default function Home() {
   return (
     <main>
       <Hero />
-
+      <Stripe text="Přijímám nové výzvy" />
       <Header />
-
       <Services />
       <Portfolio />
       {/* <PortfolioComplete /> */}

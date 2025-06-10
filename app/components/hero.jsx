@@ -17,6 +17,11 @@ export default function Hero() {
           fontColor="#DCF6C3"
         />
       </div>
+      <div className="md:hidden bg-red-400 text-white flex items-center justify-center h-8 w-full shadow-lg font-bold opacity-75">
+        <span className="text-xs tracking-wide text-center">
+          Přijímám nové výzvy a spolupráci
+        </span>
+      </div>
       <div className="container flex flex-col items-center max-w-screen-xl px-5 pt-0 md:pt-0 mx-auto md:flex-row max-h-[300px] md:max-h-screen">
         {/* <div className="absolute bottom-0 right-0 hidden w-1/3 md:block -z-10"> */}
         <div className="absolute bottom-0 right-0 w-2/3 sm:w-1/3 md:block -z-10">
@@ -25,7 +30,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="relative flex flex-col items-start py-2 lg:flex-grow w-full min-w-fit lg:pr-8 md:pr-1 md:items-start text-left lg:my-40 my-4 z-10">
-          <h1 className="mt-2 mb-8 md:mt-0 md:mb-10 heroJmeno font-extrabold">
+          <h1 className="mt-2 mb-4 md:mt-0 md:mb-10 heroJmeno font-extrabold">
             <span className="block md:hidden">Zbyněk Svoboda</span>
             <span className="hidden">
               Digitální strategie, která dává smysl
@@ -57,7 +62,7 @@ export default function Hero() {
               Prohlédněte si mou práci
             </Link>
             <Link
-              href="/kontakt"
+              href="/#kontakt"
               className="ctaBtnSecondary md:ml-4 text-base md:text-lg"
             >
               Dohodněme si spolupráci

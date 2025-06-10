@@ -1,7 +1,8 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { portfolioData } from "../components/portfolioData";
+import { portfolioData } from "../data/portfolioData";
 portfolioData.splice(2, 0, { title: "vasprojekt" });
 export default function PortfolioComplete() {
   return (
