@@ -20,7 +20,7 @@ export default function Services() {
               nejsou jen o pěkném webu, ale o <strong>výsledcích</strong>.
               <div className="flex justify-center  md:hidden">
                 <Link
-                  href="/kontakt"
+                  href="/#kontakt"
                   className="my-12 ctaBtnSecondaryDark md:ml-4 text-base md:text-lg"
                 >
                   Začněme spolupráci
@@ -79,7 +79,7 @@ export default function Services() {
       <div className="mx-auto flex justify-center">
         <Link
           className="ctaBtnSecondaryDark mx-auto py-6 px-12 h-8 justify-center items-center"
-          href="/kontakt"
+          href="/#kontakt"
         >
           {/* Kontaktujte mě */}
           Pojďme tvořit výsledky

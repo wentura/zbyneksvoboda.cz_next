@@ -2,6 +2,7 @@ export const portfolioData = [
   //Diavita
   {
     title: "Diavita",
+
     link: "https://diavita.cz/",
     linkViewMore: "diavita.cz",
     shortDecs:
@@ -13,35 +14,39 @@ export const portfolioData = [
       },
     ],
     hasCaseStudy: false,
+    frontpage: true,
   },
 
-  //svoucestou
-  // {
-  //   title: "Svou Cestou",
-  //   link: "https://svoucestou.info/",
-  //   linkViewMore: "svoucestou.info",
-  //   shortDecs: "shortDecsSvoucestou",
-  //   images: [
-  //     { img: "/moje_prace/zv.png", alt: "kolemkrku" },
-  //     { img: "/moje_prace/zv.png", alt: "kolemkrku" },
-  //   ],
-  //   hasCaseStudy: true,
-  //   slug: "svoucestou",
-  //   caseStudy: {
-  //     subTitle: "Originální ručně šité kravaty, Kolem-krku.cz",
-  //     year: 2022,
-  //     studyTextShort: "study<br />text",
-  //     studyTextLong:
-  //       "study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text",
-  //     technologies: ["Shoptet", "HTML", "CSS", "JavaScript", "jQuery"],
-  //     images: [
-  //       { img: "/moje_prace/zv.png", alt: "kolemkrku" },
-  //       { img: "/moje_prace/zv1.png", alt: "kolemkrku" },
-  //       { img: "/moje_prace/zv.png", alt: "kolemkrku" },
-  //     ],
-  //     bgFromColor: "from-green-500",
-  //   },
-  // },
+  // svoucestou
+  {
+    title: "Svou Cestou",
+    link: "https://svoucestou.info/",
+    linkViewMore: "svoucestou.info",
+    shortDecs: "shortDecsSvoucestou",
+    images: [
+      {
+        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1751903175/zbyneksvoboda/portfolio2/svoucestou.webp",
+        alt: "Svou Cestou",
+      },
+    ],
+    hasCaseStudy: false,
+    frontpage: true,
+    slug: "svoucestou",
+    caseStudy: {
+      subTitle: "Originální ručně šité kravaty, Kolem-krku.cz",
+      year: 2022,
+      studyTextShort: "study<br />text",
+      studyTextLong:
+        "study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text",
+      technologies: ["Shoptet", "HTML", "CSS", "JavaScript", "jQuery"],
+      images: [
+        { img: "/moje_prace/zv.png", alt: "kolemkrku" },
+        { img: "/moje_prace/zv1.png", alt: "kolemkrku" },
+        { img: "/moje_prace/zv.png", alt: "kolemkrku" },
+      ],
+      bgFromColor: "from-green-500",
+    },
+  },
 
   //autokempkokorin
   {
@@ -56,7 +61,8 @@ export const portfolioData = [
         alt: "Autokemp Kokořín",
       },
     ],
-    hasCaseStudy: true,
+    hasCaseStudy: false,
+    frontpage: true,
     slug: "autokemkokorin",
     caseStudy: {
       title: "Modernizace a tvorba responzivního webu",
@@ -99,6 +105,7 @@ export const portfolioData = [
       },
     ],
     hasCaseStudy: false,
+    frontpage: true,
   },
   //Malba
   {
@@ -114,6 +121,7 @@ export const portfolioData = [
       },
     ],
     hasCaseStudy: false,
+    frontpage: true,
   },
   //Ergoproduct
   {
@@ -129,6 +137,7 @@ export const portfolioData = [
       },
     ],
     hasCaseStudy: false,
+    frontpage: true,
   },
   //kolemkrku
   {
@@ -143,7 +152,7 @@ export const portfolioData = [
         alt: "kolemkrku",
       },
     ],
-    hasCaseStudy: true,
+    hasCaseStudy: false,
     slug: "kolemkrku",
     caseStudy: {
       title: " Optimalizace e-shopu na platformě Shoptet",
@@ -219,7 +228,7 @@ export const portfolioData = [
     linkViewMore: "zodpovednavyuka.cz",
     shortDecs:
       "Dlouhodobě provozovaný e-shop na platformě WordPress s rozšířením WooCommerce. Cílem projektu bylo přejít na stabilnější a uživatelsky přívětivější platformu Shoptet.",
-    hasCaseStudy: true,
+    hasCaseStudy: false,
     slug: "zodpovednavyuka",
     images: [
       {

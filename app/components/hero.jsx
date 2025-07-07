@@ -32,26 +32,19 @@ export default function Hero() {
         <div className="relative flex flex-col items-start py-2 lg:flex-grow w-full min-w-fit lg:pr-8 md:pr-1 md:items-start text-left lg:my-40 my-4 z-10">
           <h1 className="mt-2 mb-4 md:mt-0 md:mb-10 heroJmeno font-extrabold">
             <span className="block md:hidden">Zbyněk Svoboda</span>
-            <span className="hidden">
-              Digitální strategie, která dává smysl
-            </span>
           </h1>
           <div className="mb-12 text-3xl  md:text-7xl text-modra2 jinyNadpis md:w-6/7 pLine font-bold flex flex-col gap-y-4">
             {/* <div className="mb-2 leading-[44px] md:leading-7 md:mb-4"></div> */}
             <div className="mb-0 md:leading-normal leading-snug md:mb-14">
               {/* Pomáhám firmám pochopit, co je v digitálním světě důležité */}
               Spolu najdeme cestu, jak z webu udělat silný nástroj pro vaše
-              podnikání
+              podnikání.
             </div>
             {/* <div className="">🚀 Pomohu vám najít správnou strategii</div> */}
             {/* <div className="">Pomáhám růstu vašeho podnikání. </div> */}
           </div>
           <p className="mb-20 md:w-1/2 lg:w-full text-xl font-light leading-snug tracking-normal hidden md:block">
-            Váš web je jen jedna část skládačky.
-            <br />
-            Jak využít moderní technologie k růstu?
-            <br />
-            Žádné univerzální rady, ale reálné řešení.
+            Jsem Zbyněk Svoboda, webový konzultant a vývojář digitálních řešení.
           </p>
 
           <div className="flex justify-center flex-col md:flex-row mt-0 sm:mt-10 md:mt-0 mx-auto md:mx-0 mb-12">

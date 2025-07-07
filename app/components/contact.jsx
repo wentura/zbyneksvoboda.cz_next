@@ -1,47 +1,47 @@
 import Image from "next/image";
 import React from "react";
+import ContactForm from "./contactForm";
 import MailSvg from "./mail";
 import PhoneSvg from "./phone";
 
 export default function Contact() {
   return (
-    <section className="py-10 md:py-24 bg-modra2" id="kontakt">
-      <div className="container max-w-screen-xl px-5 mx-auto">
-        {/* <div className="flex flex-col flex-wrap py-6">
-          <h1 className="mb-2 nadpisPageDark leading-snug sm:w-full sm:mb-8">
-            Kontaktujte mě
-          </h1>
-          <p className="pl-0 text-lg text-white">
-            Chcete zjistit, jak posunout váš web, e-shop nebo digitální
-            strategii?
-            <br />
-            Rád se podívám na váš projekt a pomohu vám najít nejlepší řešení.
-          </p>
-        </div> */}
+    <section className="py-10 md:py-24 bg-modra2 px-5 xl:px-0" id="kontakt">
+      <div className="container max-w-screen-xl mx-auto">
+        <h1 className="nadpisPageDark leading-snug sm:w-full">
+          Kontaktujte mě
+        </h1>
+        <h2 className="mb-2 nadpisPageDark2 leading-snug sm:w-full sm:mb-8 text-red-400">
+          {" "}
+          a <span className="font-bold text-white">nezávazně</span> proberme
+          spolupráci
+        </h2>
       </div>
-      <div className="container flex flex-col-reverse items-center max-w-screen-xl px-5 mx-auto md:flex-row ">
-        <div className="flex flex-col  text-center lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
-          <div className="flex flex-col w-full">
-            <h1 className="mb-2 nadpisPageDark leading-snug sm:w-full sm:mb-8">
-              Kontaktujte mě
-            </h1>
-            <div className="flex flex-col gap-4 text-white">
-              <div className="flex flex-col gap-4 mb-12 justify-center items-center md:justify-start">
-                <a
-                  href="mailto:info@zbyneksvoboda.cz"
-                  className="flex align-middle items-center gap-2 text-xl font-medium text-white tracking-widest hover:text-gray-300 hover:scale-105 transition duration-150 hover:underline underline-offset-4"
-                >
-                  {/* <MailSvg /> */}
-                  info@zbyneksvoboda.cz
-                </a>{" "}
-                <a
-                  href="tel:00420773687792"
-                  className="flex align-middle items-center gap-2 text-xl font-medium text-white tracking-widest hover:text-gray-300 hover:scale-105 transition duration-150 hover:underline underline-offset-4"
-                >
-                  {/* <PhoneSvg /> */}
-                  773687792
-                </a>
-              </div>
+      <div className="container flex flex-col items-center max-w-screen-xl mx-auto md:flex-row ">
+        <div className="flex flex-col text-center lg:flex-grow lg:w-1/2 lg:pr-12 md:pr-8 md:items-start md:text-left md:mb-0">
+          <div className="flex flex-col gap-4 my-12">
+            <a
+              href="mailto:info@zbyneksvoboda.cz"
+              className="nadpisPageDark2 leading-snug text-3xl md:text-4xl hover:text-white hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-300"
+            >
+              {/* <MailSvg /> */}
+              info@zbyneksvoboda.cz
+            </a>{" "}
+            <a
+              href="tel:00420773687792"
+              className="nadpisPageDark2 leading-snug text-3xl md:text-4xl hover:text-white hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-300"
+            >
+              {/* <PhoneSvg /> */}
+              773687792
+            </a>
+          </div>
+          <div className="w-full mx-auto md:px-4">
+            <ContactForm />
+          </div>
+        </div>
+        <div className="mx-auto mt-16 w-full md:w-1/2">
+          <div className="flex flex-col text-white gap-8">
+            <div className="flex flex-col lg:flex-row lg:justify-between gap-4 text-white">
               <div className="md:flex flex-col gap-2 mb-8 hidden">
                 {/* <span className="inline-flex justify-center mt-4 sm:ml-auto sm:mt-0 sm:justify-start"> */}
                 <div>
@@ -119,91 +119,21 @@ export default function Contact() {
                 <br />
                 <span className="text-xs">Nejsem plátcem DPH</span>
               </span>
-              {/* <a
-                href="mailto:info@zbyneksvoboda.cz"
-                className="ctaBtnPrimary text-center"
-              >
-                info@zbyneksvoboda.cz
-              </a>{" "}
-              <a
-                href="tel:00420773687792"
-                className="ctaBtnPrimary text-center"
-              >
-                773 68 77 92
-              </a> */}
             </div>
-            {/* <h2 className="mb-1 text-lg font-medium text-gray-900 title-font">
-              Kon
-            </h2>
-            <p className="mb-5 leading-relaxed text-gray-600">
-              Post-ironic portland shabby chic echo park, banjo fashion axe
-            </p> */}
-            {/* <div className="relative flex flex-row items-center w-2/3 gap-3 mb-2 text-center mx-auto md:mx-0">
-              <label
-                htmlFor="name"
-                className="hidden text-sm leading-4 text-gray-600"
-              >
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-white border border-gray-300 rounded outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200"
-                placeholder="Vaše jméno"
+            <div className="flex w-full mx-auto text-center items-center justify-center">
+              <Image
+                className="object-cover rounded-2xl drop-shadow-xl mr-0"
+                alt="Zbyněk Svoboda, já"
+                src="/ja.jpg"
+                width={400}
+                height={600}
               />
             </div>
-            <div className="relative flex flex-row items-center w-2/3 gap-3 mb-2 mx-auto md:mx-0">
-              <label
-                htmlFor="email"
-                className="text-sm leading-7 text-gray-600 hidden"
-              >
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-white border border-gray-300 rounded outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200"
-                placeholder="Vaše e-mail adresa"
-              />
-            </div>
-            <div className="relative flex flex-row items-center w-2/3 gap-3 mb-2  mx-auto md:mx-0">
-              <label
-                htmlFor="message"
-                className="text-sm leading-7 text-gray-600 hidden"
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                className="w-full h-32 px-3 py-1 text-base leading-6 text-gray-700 transition-colors duration-200 ease-in-out bg-white border border-gray-300 rounded outline-none resize-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200"
-                defaultValue={""}
-                placeholder="Vaše zpráva..."
-              />
-            </div>
-            <button className="ctaBtnSecondary mx-auto md:mx-0">
-              Odeslat zprávu
-            </button>
-            <p className="mt-3 text-xs text-gray-500 mx-auto md:mx-0">
-              Chicharrones blog helvetica normcore iceland tousled brook viral
-              artisan.
-            </p> */}
           </div>
-
-          <div className="flex lg:flex-row md:flex-col"></div>
-        </div>
-        <div className="w-5/6 mt-12 md:mt-24 lg:max-w-xl lg:w-full md:w-1/2 mb-12 flex justify-center">
-          <Image
-            className="object-cover rounded-2xl drop-shadow-xl mr-0"
-            alt="Zbyněk Svoboda, já"
-            src="/ja.jpg"
-            width={400}
-            height={600}
-          />
         </div>
       </div>
+
+      {/* Contact Form Section */}
     </section>
   );
 }

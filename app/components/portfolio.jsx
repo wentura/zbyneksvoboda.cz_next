@@ -7,12 +7,13 @@ import React from "react";
 import { portfolioData } from "../data/portfolioData";
 export default function Portfolio() {
   const portfolio = portfolioData.filter((item) => item.hasCaseStudy === true);
+  const allPortfolio = portfolioData.filter((item) => item.frontpage === true); // For the grid view
 
   return (
     <div className="px-5 py-20 mx-auto md:py-40 lg:px-0">
       <div className="container flex flex-col flex-wrap max-w-screen-xl py-0 mx-auto mb-0 lg:pb-20 sm:flex-row">
         <h1 className="mb-2 nadpisPage leading-snug sm:w-full sm:mb-8">
-          Ukázky projektů, na kterých jsem pracoval
+          Ukázky z mé práce
         </h1>
         <p className="pl-0 text-xl leading-relaxed">
           Každý web nebo e-shop, na kterém pracuji, má jasný cíl – ať už jde o
@@ -24,6 +25,31 @@ export default function Portfolio() {
           Každý web, na kterém pracuji, je navržen s ohledem na potřeby a cíle
           klienta.
         </p>
+      </div>
+      <div className="container max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
+        {allPortfolio.map((item, index) => (
+          <div
+            key={index}
+            className="w-full flex flex-col items-center justify-center p-8 bg-gray-100 rounded-lg"
+          >
+            {item.images && item.images[0] && (
+              <div className="relative w-full">
+                <Image
+                  className=""
+                  src={item.images[0].img}
+                  alt={item.images[0].alt || item.title}
+                  width={600}
+                  height={900}
+                />
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+      <div className="w-full flex justify-center mx-auto mt-10 mb-10 max-w-screen-xl">
+        <Link href="/portfolio" className="ctaBtnSecondaryDark mb-4 md:mb-0">
+          Prohlédněte si více mých projektů
+        </Link>
       </div>
       {portfolio.map((item, index) => (
         // <section className="max-w-full mx-auto mb-20 bg-rose-50" key={index}>
@@ -73,7 +99,7 @@ export default function Portfolio() {
             </div>
 
             {/* <div className="w-full overflow-hidden rounded-lg lg:w-1/2 lg:mb-0 bg-gradient-to-r from-indigo-500 to-purple-200"> */}
-            <div className="w-full mx-auto mb-10 overflow-hidden rounded-lg h-fit sm:w-1/2 lg:w-1/3 lg:mb-0 md:drop-shadow-[0_20px_20px_rgba(0,0,0,0.7)] drop-shadow-2xl">
+            <div className=" w-full mx-auto mb-10 overflow-hidden rounded-lg h-fit sm:w-1/2 lg:w-1/3 lg:mb-0 md:drop-shadow-[0_20px_20px_rgba(0,0,0,0.7)] drop-shadow-2xl">
               <motion.div
                 initial={{
                   opacity: 0.2,
@@ -84,11 +110,9 @@ export default function Portfolio() {
                 transition={{ easeIn: easeIn, duration: 0.3 }}
               >
                 <Image
-                  alt={item.caseStudy.images[0].alt}
-                  className="object-cover object-center w-full h-1/3"
-                  // !!tehle obrazek je pred casestudy daty, protoze ma jiny rozmer nez chci
-                  src={item.images[0].img}
-                  // !!tehle obrazek je pred casestudy daty, protoze ma jiny rozmer nez chci
+                  alt={item.caseStudy.images[0]?.alt || item.title}
+                  className="object-cover object-center w-full h-full"
+                  src={item.caseStudy.images[0]?.img || item.images[0]?.img}
                   width={500}
                   height={700}
                 />
