@@ -19,7 +19,7 @@ export default function RecenzeShort() {
             Spolupracuji s klienty, kteří očekávají kvalitu, spolehlivost a
             inovativní přístup.
             <br />
-            Podívejte se, co o naší spolupráci říkají.
+            Podívejte se, co o naší spolupráci řekli.
           </p>
         </div>
         <div className="flex flex-wrap -m-4 px-5 md:px-0 lg:divide-x-2 divide-gray-700">
@@ -54,7 +54,7 @@ export default function RecenzeShort() {
               </div>
             ) : (
               ""
-            )
+            ),
           )}
         </div>
         <div className="pt-8 md:pt-20 flex justify-end">
