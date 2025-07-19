@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { ReactMatrixAnimation } from "react-matrix-animation";
+import RotatingTextComponent from "../components/RotatingText";
 
 export default function Hero() {
   return (
@@ -43,20 +44,21 @@ export default function Hero() {
             {/* <div className="">🚀 Pomohu vám najít správnou strategii</div> */}
             {/* <div className="">Pomáhám růstu vašeho podnikání. </div> */}
           </div>
-          <p className="mb-20 md:w-1/2 lg:w-full text-xl font-light leading-snug tracking-normal hidden md:block">
-            Jsem Zbyněk Svoboda, webový konzultant a vývojář digitálních řešení.
+          <p className="mb-20 md:w-1/2 xl:w-full text-xl md:text-3xl font-medium leading-snug tracking-normal hidden md:block">
+            <span className="text-sm md:text-base font-light">jsem</span>
+            <br />
+            Zbyněk Svoboda,
+            <br />
+            <RotatingTextComponent />
           </p>
 
           <div className="flex justify-center flex-col md:flex-row mt-0 sm:mt-10 md:mt-0 mx-auto md:mx-0 mb-12">
-            <Link
-              href="/portfolio"
-              className="ctaBtnSecondaryDark mb-4 md:mb-0 hidden md:block"
-            >
-              Prohlédněte si mou práci
+            <Link href="/#kontakt" className="ctaBtnSecondaryDark mb-4 md:mb-0">
+              Dohodněme si nezávaznou konzultaci
             </Link>
             <Link
               href="/#kontakt"
-              className="ctaBtnSecondary md:ml-4 text-base md:text-lg"
+              className="ctaBtnSecondary md:ml-4 text-base md:text-lg hidden"
             >
               Dohodněme si spolupráci
             </Link>

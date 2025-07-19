@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Cenik from "./components/Cenik";
 import Contact from "./components/contact";
 import Header from "./components/header";
 import Hero from "./components/hero";
@@ -19,6 +20,7 @@ export default function Home() {
       {/* <PortfolioComplete /> */}
       <RecenzeShort />
       <Logos />
+      <Cenik />
       <Contact />
     </main>
   );

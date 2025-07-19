@@ -22,7 +22,8 @@ export const portfolioData = [
     title: "Svou Cestou",
     link: "https://svoucestou.info/",
     linkViewMore: "svoucestou.info",
-    shortDecs: "shortDecsSvoucestou",
+    shortDecs:
+      "Informační webová prazentace pro soukromou Montessori školu a školku.</ br>Pracuji na vývoji interní aplikace pro správu prospěchu žáků, plánování lekcí a celkové administraci školy.",
     images: [
       {
         img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1751903175/zbyneksvoboda/portfolio2/svoucestou.webp",
@@ -116,7 +117,7 @@ export const portfolioData = [
       "Statický web pro penzion Malba v CHKO Kokořínsko.<br /><br />Rychlé, plně responzivní, optimalizované pro mobilní zařízení a dobrou čitelnost.",
     images: [
       {
-        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728894626/zbyneksvoboda/portfolio2/malba.webp",
+        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1752175305/zbyneksvoboda/portfolio2/malba2.webp",
         alt: "Penzion Malba",
       },
     ],

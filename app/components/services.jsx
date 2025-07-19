@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import React from "react";
 import { servicesData } from "../data/servicesData";
@@ -10,10 +9,20 @@ export default function Services() {
     >
       <div className="container max-w-screen-xl px-5 mx-auto">
         <div className="flex flex-col flex-wrap py-6 mb-20 sm:flex-row">
-          <h1 className="mb-12 nadpisPageDark leading-snug sm:w-full sm:mb-8">
+          <h1 className="nadpisPageDark leading-snug sm:w-full">
             Potřebujete web, který skutečně{" "}
-            <span className="text-white">podporuje</span> váš byznys
+            <span className="text-white">podporuje</span> váš byznys?
           </h1>
+          <div>
+            <p className="text-xl leading-relaxed py-12">
+              Dělám weby, které Vám vydělávají.
+              <br /> Rozumím technologiím, ale hlavně kontextu.
+              <br />
+              Rozumím vašim potřebám, i potřebám vašich zákazníků.
+              <br />
+              Dělám weby, které skutečně fungují, nejen hezky vypadají.
+            </p>
+          </div>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             <div className="pl-0 text-xl leading-relaxed">
               Vytvářím <strong>promyšlené digitální strategie</strong>, které
@@ -23,7 +32,7 @@ export default function Services() {
                   href="/#kontakt"
                   className="my-12 ctaBtnSecondaryDark md:ml-4 text-base md:text-lg"
                 >
-                  Začněme spolupráci
+                  Začněme tvořit
                 </Link>
               </div>
             </div>
@@ -37,7 +46,7 @@ export default function Services() {
               – od návrhu webu po efektivní online prezentaci.
             </p>
             <p className="pl-0 text-xl leading-relaxed pb-12">
-              Každý projekt je jiný – ať už potřebujete{" "}
+              Každý projekt je jedinečný – ať už potřebujete{" "}
               <strong>komplexní redesign</strong>,{" "}
               <strong>optimalizaci výkonu</strong>, nebo{" "}
               <strong>strategické konzultace</strong>, společně najdeme{" "}

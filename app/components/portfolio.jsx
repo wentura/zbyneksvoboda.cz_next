@@ -1,4 +1,3 @@
-"use client";
 import { easeIn } from "framer-motion";
 import * as motion from "framer-motion/client";
 import Image from "next/image";
@@ -13,7 +12,7 @@ export default function Portfolio() {
     <div className="px-5 py-20 mx-auto md:py-40 lg:px-0">
       <div className="container flex flex-col flex-wrap max-w-screen-xl py-0 mx-auto mb-0 lg:pb-20 sm:flex-row">
         <h1 className="mb-2 nadpisPage leading-snug sm:w-full sm:mb-8">
-          Ukázky z mé práce
+          Ukázky mé práce
         </h1>
         <p className="pl-0 text-xl leading-relaxed">
           Každý web nebo e-shop, na kterém pracuji, má jasný cíl – ať už jde o
@@ -30,7 +29,7 @@ export default function Portfolio() {
         {allPortfolio.map((item, index) => (
           <div
             key={index}
-            className="w-full flex flex-col items-center justify-center p-8 bg-gray-100 rounded-lg"
+            className="w-full flex flex-col items-center justify-center p-1 md:p-2 bg-gray-100 rounded-lg"
           >
             {item.images && item.images[0] && (
               <div className="relative w-full">
@@ -46,9 +45,12 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
-      <div className="w-full flex justify-center mx-auto mt-10 mb-10 max-w-screen-xl">
-        <Link href="/portfolio" className="ctaBtnSecondaryDark mb-4 md:mb-0">
-          Prohlédněte si více mých projektů
+      <div className="w-full flex justify-end mx-auto mt-10 mb-10 max-w-screen-xl">
+        <Link
+          href="/portfolio"
+          className="mb-4 md:mb-0 underline underline-offset-2 decoration-neutral-300"
+        >
+          Prohlédněte si více projektů
         </Link>
       </div>
       {portfolio.map((item, index) => (
