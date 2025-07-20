@@ -13,7 +13,8 @@ export const navData = [
     link: "/recenze",
   },
   //   { title: "Blog & zdroje", link: "/blog" },
-  //   { title: "ČKD / FAQ", link: "/ckdfaq" },
+  { title: "Ceník", link: "/#cenik" },
+//   { title: "ČKD / FAQ", link: "/ckdfaq" },
   // {
   //   title: "O mně",
   //   link: "/#o-mne",

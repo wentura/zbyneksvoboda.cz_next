@@ -4,7 +4,10 @@ import React from "react";
 import { cenikData } from "../data/cenikData";
 export default function PortfolioComplete() {
   return (
-    <section className="py-10 text-gray-600 md:py-20 px-5 container max-w-screen-xl mx-auto">
+    <section
+      id="cenik"
+      className="py-10 text-gray-600 md:py-20 px-5 container max-w-screen-xl mx-auto lg:scroll-mt-20"
+    >
       <div className="flex flex-col">
         <div className="flex flex-col flex-wrap mb-12 sm:flex-row">
           <h1 className="mb-2 nadpisPage leading-snug sm:w-full sm:mb-8">
@@ -33,10 +36,10 @@ export default function PortfolioComplete() {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap -mx-4 lg:divide-x-2 divide-gray-400">
+      <div className="flex flex-wrap -mx-4 lg:divide-x-2 divide-gray-400 divide-y-2 lg:divide-y-0">
         {cenikData.map((item, index) => (
           <div
-            className="p-4 lg:p-10 w-full lg:w-1/3 flex flex-col border-b-2 lg:border-b-0 border-gray-400"
+            className="p-4 lg:p-10 w-full lg:w-1/3 flex flex-col"
             key={index}
           >
             <div className="pb-4 overflow-hidden drop-shadow-[0_5px_10px_rgba(0,0,0,0.3)] lg:hover:scale-150 transition duration-200"></div>

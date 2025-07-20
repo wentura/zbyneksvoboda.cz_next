@@ -14,8 +14,8 @@ export default function RotatingTextComponent() {
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % whoAmI.length);
         setIsVisible(true);
-      }, 400); // Fade out duration
-    }, 2000); // Change every 3 seconds
+      }, 500); // Fade out duration
+    }, 2500); // Change every 3 seconds
 
     return () => clearInterval(interval);
   }, []);

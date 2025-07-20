@@ -6,7 +6,10 @@ import PhoneSvg from "./phone";
 
 export default function Contact() {
   return (
-    <section className="py-10 md:py-24 bg-modra2 px-5 xl:px-0" id="kontakt">
+    <section
+      className="py-10 md:py-24 bg-modra2 px-5 xl:px-0 scroll-mt-12 md:scroll-mt-2"
+      id="kontakt"
+    >
       <div className="container max-w-screen-xl mx-auto">
         <h1 className="nadpisPageDark leading-snug sm:w-full">
           Kontaktujte mě
@@ -22,14 +25,14 @@ export default function Contact() {
           <div className="flex flex-col gap-4 my-12">
             <a
               href="mailto:info@zbyneksvoboda.cz"
-              className="nadpisPageDark2 leading-snug text-3xl md:text-4xl hover:text-white hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-300"
+              className="nadpisPageDark2 leading-snug  text-xl md:text-3xl lg:text-4xl hover:text-white hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-300"
             >
               {/* <MailSvg /> */}
               info@zbyneksvoboda.cz
             </a>{" "}
             <a
               href="tel:00420773687792"
-              className="nadpisPageDark2 leading-snug text-3xl md:text-4xl hover:text-white hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-300"
+              className="nadpisPageDark2 leading-snug text-xl md:text-3xl lg:text-4xl hover:text-white hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-300"
             >
               {/* <PhoneSvg /> */}
               773687792

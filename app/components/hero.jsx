@@ -7,7 +7,7 @@ import RotatingTextComponent from "../components/RotatingText";
 export default function Hero() {
   return (
     // <section className="relative h-screen sm:max-h-screen max-h-[350px]">
-    <section className="relative h-screen max-h-[880px] md:max-h-[900px] ">
+    <section className="relative h-screen max-h-[880px] md:max-h-[1000px] ">
       <div className="absolute items-center justify-center w-full h-full -z-20 ">
         <ReactMatrixAnimation
           backgroundColor="#ffffff"
@@ -18,28 +18,27 @@ export default function Hero() {
           fontColor="#DCF6C3"
         />
       </div>
-      <div className="md:hidden bg-red-400 text-white flex items-center justify-center h-8 w-full shadow-lg font-bold opacity-75">
+      <div className="md:hidden bg-red-400 text-white flex items-center justify-center h-8 w-full shadow-lg font-bold opacity-100">
         <span className="text-xs tracking-wide text-center">
           Přijímám nové výzvy a spolupráci
         </span>
       </div>
       <div className="container flex flex-col items-center max-w-screen-xl px-5 pt-0 md:pt-0 mx-auto md:flex-row max-h-[300px] md:max-h-screen">
         {/* <div className="absolute bottom-0 right-0 hidden w-1/3 md:block -z-10"> */}
-        <div className="absolute bottom-0 right-0 w-2/3 sm:w-1/3 md:block -z-10">
+        <div className="absolute bottom-0 right-0 w-[180px] sm:w-1/3 md:block -z-10">
           <div className="heroFotka max-h-[800px] max-w-[400px]">
-            <Image src="/ja.png" width={600} height={800} alt="ja" />
+            <Image src="/ja.png" width={400} height={800} alt="ja" />
           </div>
         </div>
         <div className="relative flex flex-col items-start py-2 lg:flex-grow w-full min-w-fit lg:pr-8 md:pr-1 md:items-start text-left lg:my-40 my-4 z-10">
-          <h1 className="mt-2 mb-4 md:mt-0 md:mb-10 heroJmeno font-extrabold">
+          <h1 className="mt-0 mb-4 md:mt-0 md:mb-10 heroJmeno font-extrabold">
             <span className="block md:hidden">Zbyněk Svoboda</span>
           </h1>
-          <div className="mb-12 text-3xl  md:text-7xl text-modra2 jinyNadpis md:w-6/7 pLine font-bold flex flex-col gap-y-4">
+          <div className="mb-8 text-3xl  md:text-7xl text-modra2 jinyNadpis md:w-6/7 pLine font-bold flex flex-col gap-y-4">
             {/* <div className="mb-2 leading-[44px] md:leading-7 md:mb-4"></div> */}
             <div className="mb-0 md:leading-normal leading-snug md:mb-14">
               {/* Pomáhám firmám pochopit, co je v digitálním světě důležité */}
-              Spolu najdeme cestu, jak z webu udělat silný nástroj pro vaše
-              podnikání.
+              Udělejme z webu silný nástroj pro vaše podnikání.
             </div>
             {/* <div className="">🚀 Pomohu vám najít správnou strategii</div> */}
             {/* <div className="">Pomáhám růstu vašeho podnikání. </div> */}
@@ -53,15 +52,18 @@ export default function Hero() {
           </p>
 
           <div className="flex justify-center flex-col md:flex-row mt-0 sm:mt-10 md:mt-0 mx-auto md:mx-0 mb-12">
-            <Link href="/#kontakt" className="ctaBtnSecondaryDark mb-4 md:mb-0">
-              Dohodněme si nezávaznou konzultaci
-            </Link>
             <Link
               href="/#kontakt"
-              className="ctaBtnSecondary md:ml-4 text-base md:text-lg hidden"
+              className="ctaBtnSecondaryDark mb-4 md:mb-0 text-center md:text-left"
+            >
+              Dohodněme si nezávaznou konzultaci
+            </Link>
+            {/* <Link
+              href="/#kontakt"
+              className="ctaBtnSecondary md:ml-4 text-base md:text-lg"
             >
               Dohodněme si spolupráci
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="w-5/6 bg-red-400 min-h-min lg:max-w-lg lg:w-full md:w-1/2">

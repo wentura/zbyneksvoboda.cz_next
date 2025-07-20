@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Recenze() {
   return (
-    <section className="py-10 mx-auto text-gray-600 md:py-20 px-5">
+    <section className="py-10 mx-auto text-gray-600 md:py-20 md:px-5">
       <div className="container max-w-screen-xl mx-auto">
         <div className="flex flex-col flex-wrap py-0 mb-20 sm:flex-row">
           <h1 className="mb-2 nadpisPage leading-snug sm:w-full sm:mb-8">
@@ -18,7 +18,7 @@ export default function Recenze() {
         </div>
         <div className="flex flex-wrap -m-4">
           {recenzeData.map((recenze, index) => (
-            <div className="p-12 mb-6 lg:w-1/3 lg:mb-0" key={index}>
+            <div className="p-4 md:p-12 mb-6 lg:w-1/3 lg:mb-0" key={index}>
               <div className="h-full">
                 <div className="flex flex-row justify-between mb-4 items-center">
                   <img
