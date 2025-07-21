@@ -107,6 +107,10 @@ export const portfolioData = [
     ],
     hasCaseStudy: false,
     frontpage: true,
+    fpCaseStudy: false,
+    fpShortDec:
+      "Web pro bio farmu s možností úprav.<br /><br />Cílem webu je zobrazit rychle aktuální nabídku produktů.",
+    fpNumbers: "Nvyseni prodeju diky vetsimu zajmu ",
   },
   //Malba
   {
@@ -122,7 +126,12 @@ export const portfolioData = [
       },
     ],
     hasCaseStudy: false,
+
     frontpage: true,
+    fpCaseStudy: false,
+    fpShortDec:
+      "Web pro bio farmu s možností úprav.<br /><br />Cílem webu je zobrazit rychle aktuální nabídku produktů.",
+    fpNumbers: "Nvyseni prodeju diky vetsimu zajmu ",
   },
   //Ergoproduct
   {

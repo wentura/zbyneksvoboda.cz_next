@@ -1,9 +1,21 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-const whoAmI = ["webový konzultant", "vývojář digitálních řešení"];
+const whoAmI = [
+  "webový konzultant",
+  "vývojář digitálních řešení",
+  "tvůrce webů s přesahem",
+  "digitální strategický partner",
+  "partner pro smysluplné projekty",
+];
+const whoAmI2 = [
+  "Vytvářím weby a webové aplikace, které vydělávají.",
+  "Srozumitelně. Smysluplně. Tvořím web, co vám pomůže.",
+  "Pomáhám firmám pochopit, co je v digitálním světě důležité.",
+  "Udělejme z webu silný nástroj pro vaše podnikání.",
+];
 
-export default function RotatingTextComponent() {
+export default function RotatingTextComponent({ rotatingText = whoAmI2 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
 
@@ -12,21 +24,21 @@ export default function RotatingTextComponent() {
       setIsVisible(false);
 
       setTimeout(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % whoAmI.length);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % rotatingText.length);
         setIsVisible(true);
-      }, 500); // Fade out duration
-    }, 2500); // Change every 3 seconds
+      }, 200); // Fade out duration
+    }, 6500); // Change every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <span
-      className={`text-modra2 font-medium transition-opacity duration-400 ${
+      className={`transition-opacity duration-400 ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
     >
-      {whoAmI[currentIndex]}
+      {rotatingText[currentIndex]}
     </span>
   );
 }

@@ -6,15 +6,23 @@ import React from "react";
 import { portfolioData } from "../data/portfolioData";
 export default function Portfolio() {
   const portfolio = portfolioData.filter((item) => item.hasCaseStudy === true);
-  const allPortfolio = portfolioData.filter((item) => item.frontpage === true); // For the grid view
+  const titlePortfolio = portfolioData.filter(
+    (item) => item.frontpage === true,
+  );
+  const titlePortfolio2 = portfolioData.filter(
+    (item) => item.frontpage === true && item.fpCaseStudy === true,
+  );
 
   return (
-    <div className="px-5 py-20 mx-auto md:py-40 lg:px-0">
+    <div
+      className="px-5 py-20 mx-auto md:py-40 lg:px-0 scroll-mt-0 md:-scroll-mt-12"
+      id="portfolio"
+    >
       <div className="container flex flex-col flex-wrap max-w-screen-xl py-0 mx-auto mb-0 lg:pb-20 sm:flex-row">
-        <h1 className="mb-2 nadpisPage leading-snug sm:w-full sm:mb-8">
+        <h1 className="mb-8 md:mb-0 nadpisPage leading-snug sm:w-full sm:mb-8">
           Ukázky mé práce
         </h1>
-        <p className="pl-0 text-xl leading-relaxed">
+        {/* <p className="pl-0 text-xl leading-relaxed">
           Každý web nebo e-shop, na kterém pracuji, má jasný cíl – ať už jde o
           lepší uživatelský zážitek, vyšší konverze, nebo technickou efektivitu.
           Podívejte se na vybrané projekty, kde se spojila technická preciznost
@@ -23,10 +31,52 @@ export default function Portfolio() {
         <p className="mt-12 pl-0 text-xl leading-relaxed">
           Každý web, na kterém pracuji, je navržen s ohledem na potřeby a cíle
           klienta.
-        </p>
+        </p> */}
+      </div>
+      <div className="container max-w-screen-xl mx-auto flex flex-col gap-4 mb-4">
+        {titlePortfolio2.map((item, index) => (
+          <div
+            key={index}
+            className="w-full grid grid-cols-2 md:grid-cols-3 gap-4 items-center justify-center rounded-lg shadow-lg"
+          >
+            {item.images && item.images[0] && (
+              <div className="relative w-full col-span-1">
+                <Image
+                  className="rounded-l-lg p-4 border-r border-gray-100"
+                  src={item.images[0].img}
+                  alt={item.images[0].alt || item.title}
+                  width={600}
+                  height={900}
+                />
+              </div>
+            )}
+            <div className="col-span-2 flex flex-col justify-between h-full p-4 text-base md:text-xl">
+              <div>
+                <h3 className="mb-4 nadpisPortfolio">{item.title}</h3>
+                <p
+                  className="mb-4"
+                  dangerouslySetInnerHTML={{
+                    __html: item.fpShortDec,
+                  }}
+                />
+                <p
+                  className="mb-4"
+                  dangerouslySetInnerHTML={{
+                    __html: item.fpNumbers,
+                  }}
+                />
+              </div>
+              <div className="flex flex-row items-center justify-end">
+                <a href={item.link} className="odkaz text-sm md:text-base">
+                  {item.linkViewMore}
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
       <div className="container max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
-        {allPortfolio.map((item, index) => (
+        {titlePortfolio.map((item, index) => (
           <div
             key={index}
             className="w-full flex flex-col items-center justify-center p-1 md:p-2 bg-gray-100 rounded-lg"
@@ -45,7 +95,13 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
-      <div className="w-full flex justify-end mx-auto mt-10 mb-10 max-w-screen-xl">
+      <div className="w-full flex flex-col md:flex-row flex-col-reverse items-end md:items-center md:justify-between mx-auto mt-10 mb-10 max-w-screen-xl">
+        <Link
+          href="/#kontakt"
+          className="ctaBtnSecondaryDark mb-4 md:mb-0 text-center md:text-left flex flex-row items-center justify-center gap-x-2 w-full md:w-fit"
+        >
+          Začněme spolupráci
+        </Link>
         <Link
           href="/portfolio"
           className="mb-4 md:mb-0 underline underline-offset-2 decoration-neutral-300"

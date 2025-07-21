@@ -14,13 +14,13 @@ export const navData = [
   },
   //   { title: "Blog & zdroje", link: "/blog" },
   { title: "Ceník", link: "/#cenik" },
-//   { title: "ČKD / FAQ", link: "/ckdfaq" },
+  //   { title: "ČKD / FAQ", link: "/ckdfaq" },
   // {
   //   title: "O mně",
   //   link: "/#o-mne",
   // },
   {
-    title: "Kontakt & spolupráce",
+    title: "Kontakt",
     link: "/#kontakt",
   },
 ];
