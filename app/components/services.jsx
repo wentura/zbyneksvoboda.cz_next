@@ -15,18 +15,20 @@ export default function Services() {
           </h1>
           <div>
             <p className="text-xl leading-relaxed py-12">
-              Dělám weby, které Vám vydělávají.
+              Tvořím weby, které mění návštěvníky na zákazníky.
               <br /> Rozumím technologiím, ale hlavně kontextu.
               <br />
               Rozumím vašim potřebám, i potřebám vašich zákazníků.
               <br />
-              Dělám weby, které skutečně fungují, nejen hezky vypadají.
+              Navrhuji digitální strategie, které skutečně prodávají.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             <div className="pl-0 text-xl leading-relaxed">
-              Vytvářím <strong>promyšlené digitální strategie</strong>, které
-              nejsou jen o pěkném webu, ale o <strong>výsledcích</strong>.
+              <strong>Stavím weby, které vám přinášejí klienty 24/7.</strong>
+              <br />
+              Specializuji se na freelancery a malé firmy, kteří potřebují web
+              jako obchodní nástroj – ne jen vizitku.
               <div className="flex justify-center  md:hidden">
                 <Link
                   href="/#kontakt"
@@ -38,20 +40,19 @@ export default function Services() {
             </div>
 
             <p className="pl-0 text-xl leading-relaxed pb-12">
-              {" "}
-              Pomohu vám{" "}
-              <strong>
-                najít nejlepší řešení pro váš produkt, službu nebo firmu
-              </strong>{" "}
-              – od návrhu webu po efektivní online prezentaci.
+              Každé řešení navrhuji s ohledem na vaše konkrétní obchodní cíle a
+              cílovou skupinu.
+              <br />
+              Nedělám šablonové weby. Místo toho analyzuji, jak vaši klienti
+              nakupují, kde vás hledají a co je přesvědčí k akci. Teprve pak
+              navrhuji řešení, které skutečně funguje pro VÁŠE podnikání.
             </p>
-            <p className="pl-0 text-xl leading-relaxed pb-12">
-              Každý projekt je jedinečný – ať už potřebujete{" "}
-              <strong>komplexní redesign</strong>,{" "}
-              <strong>optimalizaci výkonu</strong>, nebo{" "}
-              <strong>strategické konzultace</strong>, společně najdeme{" "}
-              <strong>řešení, které má smysl</strong>.
-            </p>
+            <ul className="pl-0 text-xl leading-relaxed pb-12 gap-y-3 flex flex-col">
+              <li>Strategické konzultace s ohledem na vaše obchodní cíle</li>
+              <li>Technická optimalizace pro rychlost a konverze</li>
+              <li>Design, který vašim klientům usnadní rozhodování</li>
+              <li>Integrace s vašimi obchodními systémy</li>
+            </ul>
           </div>
         </div>
         {/* <div className="flex flex-wrap">

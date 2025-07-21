@@ -12,12 +12,12 @@ export default function Contact() {
     >
       <div className="container max-w-screen-xl mx-auto">
         <h1 className="nadpisPageDark leading-snug sm:w-full">
-          Kontaktujte mě
+          Pojďme si promluvit
         </h1>
         <h2 className="mb-2 nadpisPageDark2 leading-snug sm:w-full sm:mb-8 text-red-400">
           {" "}
-          a <span className="font-bold text-white">nezávazně</span> proberme
-          spolupráci
+          a <span className="font-bold text-white">nezávazně</span> proberme váš
+          projekt
         </h2>
       </div>
       <div className="container flex flex-col items-center max-w-screen-xl mx-auto md:flex-row ">
