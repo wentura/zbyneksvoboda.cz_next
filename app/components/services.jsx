@@ -8,22 +8,36 @@ export default function Services() {
       id="sluzby"
     >
       <div className="container max-w-screen-xl px-5 mx-auto">
-        <div className="flex flex-col flex-wrap py-6 mb-20 sm:flex-row">
-          <h1 className="nadpisPageDark leading-snug sm:w-full">
+        <div className="flex flex-col flex-wrap py-6 mb-20">
+          <h1 className="nadpisPageDark leading-snug sm:w-full text-center md:text-left">
             Potřebujete web, který skutečně{" "}
             <span className="text-white">podporuje</span> váš byznys?
           </h1>
-          <div>
-            <p className="text-xl leading-relaxed py-12">
-              Tvořím weby, které mění návštěvníky na zákazníky.
-              <br /> Rozumím technologiím, ale hlavně kontextu.
-              <br />
-              Rozumím vašim potřebám, i potřebám vašich zákazníků.
-              <br />
-              Navrhuji digitální strategie, které skutečně prodávají.
-            </p>
+          <div className="text-xl leading-relaxed pt-12 pb-4 font-extralight md:text-2xl text-center md:text-left">
+            Tvořím weby, které mění návštěvníky na{" "}
+            <span className="font-bold underline underline-offset-4">
+              zákazníky
+            </span>
+            .
           </div>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div className="text-xl leading-relaxed py-4 pb-4 md:text-2xl font-extralight lg:pl-12 text-center md:text-left">
+            Rozumím technologiím i kontextu.
+          </div>
+          <div className="text-xl leading-relaxed py-4 md:text-2xl font-extralight lg:pl-24 text-center md:text-left">
+            Rozumím{" "}
+            <span className="font-bold underline underline-offset-4">
+              vašim potřebám
+            </span>
+            , i potřebám vašich zákazníků.
+          </div>
+          <div className="text-xl leading-relaxed py-4 md:text-2xl font-extralight lg:pl-36 text-center md:text-left">
+            Navrhuji digitální řešení, které skutečně{" "}
+            <span className="font-bold underline underline-offset-4">
+              fungují
+            </span>
+            .
+          </div>
+          {/* <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             <div className="pl-0 text-xl leading-relaxed">
               <strong>Stavím weby, které vám přinášejí klienty 24/7.</strong>
               <br />
@@ -53,7 +67,7 @@ export default function Services() {
               <li>Design, který vašim klientům usnadní rozhodování</li>
               <li>Integrace s vašimi obchodními systémy</li>
             </ul>
-          </div>
+          </div> */}
         </div>
         {/* <div className="flex flex-wrap">
           {servicesData.map((service, index) => (
