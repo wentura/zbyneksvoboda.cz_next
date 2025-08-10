@@ -11,12 +11,12 @@ export default function Contact() {
       id="kontakt"
     >
       <div className="container max-w-screen-xl mx-auto">
-        <h1 className="nadpisPageDark leading-snug sm:w-full">
-          Pojďme si promluvit
+        <h1 className="nadpisPageWhite leading-snug sm:w-full">
+          Pojďme si promluvit,
         </h1>
-        <h2 className="mb-2 nadpisPageDark2 leading-snug sm:w-full sm:mb-8 text-red-400">
+        <h2 className="mb-2 nadpisPageWhite leading-snug sm:w-full sm:mb-8">
           {" "}
-          a <span className="font-bold text-white">nezávazně</span> proberme váš
+          <span className="font-bold text-white">nezávazně</span> proberme váš
           projekt
         </h2>
       </div>
@@ -25,14 +25,14 @@ export default function Contact() {
           <div className="flex flex-col gap-4 my-12">
             <a
               href="mailto:info@zbyneksvoboda.cz"
-              className="nadpisPageDark2 leading-snug  text-xl md:text-3xl lg:text-4xl hover:text-white hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-300"
+              className="nadpisPageWhite leading-snug  text-xl md:text-3xl lg:text-4xl hover:text-white hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-300"
             >
               {/* <MailSvg /> */}
               info@zbyneksvoboda.cz
             </a>{" "}
             <a
               href="tel:00420773687792"
-              className="nadpisPageDark2 leading-snug text-xl md:text-3xl lg:text-4xl hover:text-white hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-300"
+              className="nadpisPageWhite leading-snug text-xl md:text-3xl lg:text-4xl hover:text-white hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-300"
             >
               {/* <PhoneSvg /> */}
               773687792

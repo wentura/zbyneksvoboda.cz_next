@@ -6,6 +6,7 @@ import Hero from "./components/hero";
 import Logos from "./components/logos";
 import Portfolio from "./components/portfolio";
 import PortfolioComplete from "./components/portfolioComplete";
+import PortfolioLandingPage from "./components/PortfolioLandingPage";
 import RecenzeShort from "./components/recenzeShort";
 import Services from "./components/services";
 import Stripe from "./components/Stripe";
@@ -16,7 +17,7 @@ export default function Home() {
       <Stripe text="Přijímám nové výzvy" />
       <Header />
       <Services />
-      <Portfolio />
+      <PortfolioLandingPage />
       {/* <PortfolioComplete /> */}
       <RecenzeShort />
       <Logos />

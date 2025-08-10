@@ -10,8 +10,8 @@ export default function Services() {
       <div className="container max-w-screen-xl px-5 mx-auto">
         <div className="flex flex-col flex-wrap py-6 mb-20">
           <h1 className="nadpisPageDark leading-snug sm:w-full text-center md:text-left">
-            Potřebujete web, který skutečně{" "}
-            <span className="text-white">podporuje</span> váš byznys?
+            Web, který skutečně <span className="text-red-400">podporuje</span>{" "}
+            váš byznys
           </h1>
           <div className="text-xl leading-relaxed pt-12 pb-4 font-extralight md:text-2xl text-center md:text-left">
             Tvořím weby, které mění návštěvníky na{" "}
@@ -102,7 +102,7 @@ export default function Services() {
       </div>
       <div className="mx-auto flex justify-center">
         <Link
-          className="ctaBtnSecondaryDark mx-auto py-6 px-12 h-8 justify-center items-center"
+          className="ctaBtnDarkSecondary bg-white text-modra2 hover:bg-white hover:text-modra2"
           href="/#kontakt"
         >
           {/* Kontaktujte mě */}

@@ -37,12 +37,12 @@ export default function Portfolio() {
         {titlePortfolio2.map((item, index) => (
           <div
             key={index}
-            className="w-full grid grid-cols-2 md:grid-cols-3 gap-4 items-center justify-center rounded-lg shadow-lg"
+            className="w-full grid grid-cols-2 md:grid-cols-3 gap-2 items-center justify-center rounded-lg shadow-lg"
           >
             {item.images && item.images[0] && (
               <div className="relative w-full col-span-1">
                 <Image
-                  className="rounded-l-lg p-4 border-r border-gray-100"
+                  className=""
                   src={item.images[0].img}
                   alt={item.images[0].alt || item.title}
                   width={600}
@@ -75,11 +75,12 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
-      <div className="container max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
+      {/* tady to portfolio co je jen obrazkove */}
+      <div className="container max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
         {titlePortfolio.map((item, index) => (
           <div
             key={index}
-            className="w-full flex flex-col items-center justify-center p-1 md:p-2 bg-gray-100 rounded-lg"
+            className="w-full flex flex-col items-center justify-center border-2 border-modra2 p-2"
           >
             {item.images && item.images[0] && (
               <div className="relative w-full">
@@ -95,17 +96,14 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
-      <div className="w-full flex flex-col md:flex-row flex-col-reverse items-end md:items-center md:justify-between mx-auto mt-10 mb-10 max-w-screen-xl">
+      <div className="w-full flex md:flex-row flex-col-reverse items-end md:items-center md:justify-between mx-auto mt-10 mb-10 max-w-screen-xl">
         <Link
           href="/#kontakt"
-          className="ctaBtnSecondaryDark mb-4 md:mb-0 text-center md:text-left flex flex-row items-center justify-center gap-x-2 w-full md:w-fit"
+          className="ctaBtnDark mb-4 md:mb-0 text-center md:text-left flex flex-row items-center justify-center gap-x-2 w-full md:w-fit"
         >
           Začněme spolupráci
         </Link>
-        <Link
-          href="/portfolio"
-          className="mb-4 md:mb-0 underline underline-offset-2 decoration-neutral-300"
-        >
+        <Link href="/portfolio" className="ctaBtnDarkSecondary">
           Prohlédněte si více projektů
         </Link>
       </div>

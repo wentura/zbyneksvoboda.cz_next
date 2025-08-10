@@ -23,22 +23,20 @@
     font-weight: 700 !important;
   }
   .nadpisPage {
-    /* @apply text-3xl md:text-5xl font-bold text-gray-900 tracking-tight; */
-    @apply text-3xl md:text-5xl font-bold leading-tight tracking-[-0.02em] text-modra2;
+    @apply text-3xl md:text-5xl font-bold text-gray-900 tracking-tight;
     /* font-family: "Montserrat", sans-serif !important; */
-    /* font-family: notoserif !important; */
-    /* font-optical-sizing: auto; */
-    /* font-weight: 900; */
+    font-family: notoserif !important;
+    font-optical-sizing: auto;
+    font-weight: 900;
     font-style: normal;
   }
   .nadpisPageDark {
-    /* @apply text-3xl md:text-5xl font-bold text-red-400 tracking-tight; */
-    @apply text-3xl md:text-5xl font-bold leading-tight tracking-[-0.02em];
+    @apply text-3xl md:text-5xl font-bold text-red-400 tracking-tight;
     /* font-family: "Montserrat" !important; */
-    /* font-family: notoserif !important; */
-    /* font-optical-sizing: auto !important; */
-    /* font-weight: 900 !important; */
-    /* font-style: normal !important; */
+    font-family: notoserif !important;
+    font-optical-sizing: auto !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
   }
   .nadpisPageDark2 {
     @apply text-2xl md:text-3xl font-bold text-gray-100 tracking-tight;
@@ -98,12 +96,7 @@
     font-weight: 600;
     font-style: normal;
   }
-  .ctaBtnDark {
-    @apply px-6 py-3 bg-black text-white hover:opacity-90 font-bold;
-  }
-  .ctaBtnDarkSecondary {
-    @apply px-6 py-3 border border-modra2 hover:bg-modra2 hover:text-white font-bold ;
-  }
+
   .ctaBtnSecondaryDark {
     @apply inline-flex px-6 py-2 text-lg text-gray-100 font-extrabold bg-red-400 justify-center  rounded focus:outline-none  hover:scale-105 transition duration-150 hover:text-gray-50;
     font-family: montserrat !important;
@@ -112,10 +105,7 @@
     font-style: normal;
   }
   .bg-modra2 {
-    background: #101923;
-  }
-  .border-modra2 {
-    border-color: #101923;
+    background: #262626;
   }
   .text-modra2 {
     color: #262626;
@@ -126,38 +116,4 @@
 }
 .cookie-consent {
   z-index: 9999 !important;
-}
-
-/* === Swiss style overrides (minimal, typographic) === */
-:root {
-  --accent: #000000;
-}
-html,
-body {
-  background: #ffffff;
-  color: #000000;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-a {
-  text-underline-offset: 4px;
-}
-a:hover {
-  text-decoration: underline;
-}
-/* Utility to keep headings tight and body relaxed */
-h1,
-h2,
-h3 {
-  line-height: 1.1;
-}
-p {
-  line-height: 1.6;
-}
-/* Simple container rhythm can be handled by Tailwind, but ensure images don't overflow */
-img,
-svg,
-video {
-  max-width: 100%;
-  height: auto;
 }

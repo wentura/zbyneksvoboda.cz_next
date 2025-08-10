@@ -43,7 +43,9 @@ export default function PortfolioComplete() {
             key={index}
           >
             <div className="pb-4 overflow-hidden drop-shadow-[0_5px_10px_rgba(0,0,0,0.3)] lg:hover:scale-150 transition duration-200"></div>
-            <div className="pb-4 nadpisPortfolio">{item.title}</div>
+            <div className="pb-4 nadpisPage text-xl md:text-3xl">
+              {item.title}
+            </div>
             <div
               className="py-4"
               dangerouslySetInnerHTML={{ __html: item.about }}

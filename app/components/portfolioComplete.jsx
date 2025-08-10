@@ -24,47 +24,92 @@ export default function PortfolioComplete() {
           </p>
         </div>
       </div>
-      <div className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4 divide-y-2 md:divide-y-0">
+      <div className="grid grid-cols-1 lg:grid-cols-3 -mx-4 -mt-4 -mb-10 sm:-m-4 gap-8 lg:gap-12 lg:gap-y-24">
         {portfolioData.map((item, index) =>
           item.title != "vasprojekt" ? (
-            <div className="p-12 pb-10 md:pb-20 w-full md:w-1/3" key={index}>
-              <div className="py-4 nadpisPortfolio md:hidden">{item.title}</div>
-              <div className="pb-4 overflow-hidden drop-shadow-[0_5px_10px_rgba(0,0,0,0.3)] lg:hover:scale-150 transition duration-200">
-                <Image
-                  alt={item.images[0].alt}
-                  width={400}
-                  height={600}
-                  className="object-cover object-top w-full h-96"
-                  src={item.images[0].img}
+            item.colSpan ? (
+              // Special layout for items with colSpan - 2-column grid with image left, text right
+              <div
+                className={`col-span-1 ${item.colSpan} h-full md:mt-12`}
+                key={index}
+              >
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:max-h-[700px]">
+                  {/* Image on the left */}
+                  <div className="py-4 nadpisPage md:hidden text-lg md:text-xl">
+                    {item.title}
+                  </div>
+                  <div className="overflow-hidden">
+                    <Image
+                      alt={item.images[0].alt}
+                      width={400}
+                      height={600}
+                      className="object-cover object-top w-full h-full lg:max-h-[700px]"
+                      src={item.images[0].img}
+                    />
+                  </div>
+                  {/* Text content on the right */}
+                  <div className="flex flex-col justify-top md:p-4 md:py-12">
+                    <div className="hidden md:flex pb-4 nadpisPage text-lg md:text-2xl">
+                      {item.title}
+                    </div>
+                    <p
+                      className="pb-4"
+                      dangerouslySetInnerHTML={{ __html: item.shortDecs }}
+                    />
+                    <a
+                      className={item.hasCaseStudy ? `odkaz` : `hidden`}
+                      href={`/portfolio/pripadovaStudie/${item.slug}`}
+                    >
+                      případová studie
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              // Regular layout for items without colSpan
+              <div className={` ${item.colSpan}`} key={index}>
+                <div className="py-4 nadpisPage md:hidden text-lg md:text-xl">
+                  {item.title}
+                </div>
+                <div className="pb-4 overflow-hidden">
+                  <Image
+                    alt={item.images[0].alt}
+                    width={400}
+                    height={600}
+                    className="object-cover object-top w-full h-96"
+                    src={item.images[0].img}
+                  />
+                </div>
+                <div className="pb-4 nadpisPage hidden md:flex text-lg md:text-2xl">
+                  {item.title}
+                </div>
+                <p
+                  className="pb-4"
+                  dangerouslySetInnerHTML={{ __html: item.shortDecs }}
                 />
+                <a
+                  className={item.hasCaseStudy ? `odkaz` : `hidden`}
+                  href={`/portfolio/pripadovaStudie/${item.slug}`}
+                >
+                  případová studie
+                </a>
+                {/* <div className="text-sm mr-0 text-right">
+                <a
+                  className="odkazVen odkaz font-thin "
+                  href={item.link}
+                  target="_blank"
+                >
+                  {item.linkViewMore}
+                </a>
+              </div> */}
               </div>
-              <div className="pb-4 nadpisPortfolio hidden md:flex">
-                {item.title}
-              </div>
-              <p
-                className="pb-4"
-                dangerouslySetInnerHTML={{ __html: item.shortDecs }}
-              />
-              <a
-                className={item.hasCaseStudy ? `odkaz` : `hidden`}
-                href={`/portfolio/pripadovaStudie/${item.slug}`}
-              >
-                případová studie
-              </a>
-              {/* <div className="text-sm mr-0 text-right">
-              <a
-                className="odkazVen odkaz font-thin "
-                href={item.link}
-                target="_blank"
-              >
-                {item.linkViewMore}
-              </a>
-            </div> */}
-            </div>
+            )
           ) : (
-            <div className="p-12 pb-10 md:pb-20 w-full md:w-1/3" key={index}>
-              <div className="py-4 nadpisPortfolio md:hidden">Váš projekt</div>
-              <div className="pb-4 overflow-hidden drop-shadow-[0_5px_10px_rgba(0,0,0,0.3)]">
+            <div className="w-full" key={index}>
+              <div className="py-4 nadpisPage md:hidden text-lg md:text-2xl">
+                Váš projekt
+              </div>
+              <div className="pb-4 overflow-hidden">
                 <img
                   alt="váš nový projekt"
                   width={400}
@@ -73,7 +118,7 @@ export default function PortfolioComplete() {
                   src="https://dummyimage.com/400x600.png?text=zde%20m%C5%AF%C5%BEe%20b%C3%BDt%20v%C3%A1%C5%A1%20projekt"
                 />{" "}
               </div>
-              <div className="pb-4 nadpisPortfolio hidden md:flex">
+              <div className="pb-4 nadpisPage hidden md:flex text-lg md:text-2xl">
                 Váš projekt
               </div>
               <p className="pb-4">
@@ -81,11 +126,14 @@ export default function PortfolioComplete() {
                 klientům s{" "}
                 <span className="font-bold">moderním a funčním webem.</span>.
               </p>
-              <Link href="/kontakt" className="ctaBtnPrimary md:ml-4 mx-auto">
+              <Link
+                href="/#kontakt"
+                className="ctaBtnDark flex justify-center items-center"
+              >
                 Začít spolupráci
               </Link>
             </div>
-          )
+          ),
         )}
       </div>
     </section>

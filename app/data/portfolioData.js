@@ -15,38 +15,7 @@ export const portfolioData = [
     ],
     hasCaseStudy: false,
     frontpage: true,
-  },
-
-  // svoucestou
-  {
-    title: "Svou Cestou",
-    link: "https://svoucestou.info/",
-    linkViewMore: "svoucestou.info",
-    shortDecs:
-      "Informační webová prazentace pro soukromou Montessori školu a školku.</ br>Pracuji na vývoji interní aplikace pro správu prospěchu žáků, plánování lekcí a celkové administraci školy.",
-    images: [
-      {
-        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1751903175/zbyneksvoboda/portfolio2/svoucestou.webp",
-        alt: "Svou Cestou",
-      },
-    ],
-    hasCaseStudy: false,
-    frontpage: true,
-    slug: "svoucestou",
-    caseStudy: {
-      subTitle: "Originální ručně šité kravaty, Kolem-krku.cz",
-      year: 2022,
-      studyTextShort: "study<br />text",
-      studyTextLong:
-        "study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text",
-      technologies: ["Shoptet", "HTML", "CSS", "JavaScript", "jQuery"],
-      images: [
-        { img: "/moje_prace/zv.png", alt: "kolemkrku" },
-        { img: "/moje_prace/zv1.png", alt: "kolemkrku" },
-        { img: "/moje_prace/zv.png", alt: "kolemkrku" },
-      ],
-      bgFromColor: "from-green-500",
-    },
+    colSpan: "lg:col-span-3",
   },
 
   //autokempkokorin
@@ -112,6 +81,40 @@ export const portfolioData = [
       "Web pro bio farmu s možností úprav.<br /><br />Cílem webu je zobrazit rychle aktuální nabídku produktů.",
     fpNumbers: "Nvyseni prodeju diky vetsimu zajmu ",
   },
+
+  // svoucestou
+  {
+    title: "Svou Cestou",
+    link: "https://svoucestou.info/",
+    linkViewMore: "svoucestou.info",
+    shortDecs:
+      "Informační webová prazentace pro soukromou Montessori školu a školku.</ br>Pracuji na vývoji interní aplikace pro správu prospěchu žáků, plánování lekcí a celkové administraci školy.",
+    images: [
+      {
+        img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1751903175/zbyneksvoboda/portfolio2/svoucestou.webp",
+        alt: "Svou Cestou",
+      },
+    ],
+    hasCaseStudy: false,
+    frontpage: true,
+    slug: "svoucestou",
+    caseStudy: {
+      subTitle: "Originální ručně šité kravaty, Kolem-krku.cz",
+      year: 2022,
+      studyTextShort: "study<br />text",
+      studyTextLong:
+        "study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text,study<br />text",
+      technologies: ["Shoptet", "HTML", "CSS", "JavaScript", "jQuery"],
+      images: [
+        { img: "/moje_prace/zv.png", alt: "kolemkrku" },
+        { img: "/moje_prace/zv1.png", alt: "kolemkrku" },
+        { img: "/moje_prace/zv.png", alt: "kolemkrku" },
+      ],
+      bgFromColor: "from-green-500",
+    },
+    colSpan: "lg:col-span-3",
+  },
+
   //Malba
   {
     title: "Penzion Malba",

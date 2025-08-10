@@ -5,13 +5,23 @@ import Navigation from "./navigation";
 
 export default function Header() {
   return (
-    <div className={`top-0 sticky bg-modra2 z-30 max-h-16`} id="navigation">
-      <div className="container flex flex-wrap max-w-screen-xl p-4 mx-auto justify-between flex-row text-gray-50">
-        <Link className="flex mb-4 md:mb-0 cursor-pointer" href="/">
-          <span className="text-xl nadpisPageWhite">Zbyněk Svoboda</span>
+    <header className="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-black/10">
+      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <Link className="cursor-pointer" href="/">
+          <span className="text-base md:text-2xl font-extrabold tracking-tight text-modra2">
+            Zbyněk Svoboda
+          </span>
         </Link>
-        <Navigation />
+        <div className="flex items-center gap-6">
+          <Navigation />
+          <Link
+            href="#kontakt"
+            className="hidden md:inline-flex items-center px-4 py-2 border border-modra2 text-modra2 hover:bg-modra2 hover:text-white transition font-bold"
+          >
+            Konzultace
+          </Link>
+        </div>
       </div>
-    </div>
+    </header>
   );
 }
