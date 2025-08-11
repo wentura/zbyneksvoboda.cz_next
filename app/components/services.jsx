@@ -31,7 +31,7 @@ export default function Services() {
             , i potřebám vašich zákazníků.
           </div>
           <div className="text-xl leading-relaxed py-4 md:text-2xl font-extralight lg:pl-36 text-center md:text-left">
-            Navrhuji digitální řešení, které skutečně{" "}
+            Navrhuji digitální řešení, která skutečně{" "}
             <span className="font-bold underline underline-offset-4">
               fungují
             </span>

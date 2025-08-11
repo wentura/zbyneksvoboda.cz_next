@@ -1,10 +1,19 @@
 export const recenzeData = [
   {
-    kdo: "Jakub Skála",
-    co: "Autokempkokorin.cz",
+    kdo: "Běla Šestáková",
+    co: "SvouCestou.info",
     short: 1,
     textShort:
-      "Se spoluprací se Zbyňkem Svobodou jsme moc spokojeni. Stránky pro Autokemp Kokořín, které pro nás udělal, odpovídají aktuálnímu trendu....",
+      "Skvělá spolupráce – vše bylo zapracováno k oboustranné spokojenosti, včetně rychlých úprav. Výsledek je kvalitní a profesionální. Moc děkujeme!",
+    fotka:
+      "https://res.cloudinary.com/dam7wdzvx/image/upload/v1754939908/zbyneksvoboda/portfolio2/recenze/bela.webp",
+  },
+  {
+    kdo: "Jakub Skála",
+    co: "AutokempKokorin.cz",
+    short: 1,
+    textShort:
+      "Se spoluprací se Zbyňkem Svobodou jsme moc spokojeni. Stránky pro Autokemp Kokořín, které pro nás udělal, odpovídají aktuálnímu trendu...",
     text: "Se spoluprací se Zbyňkem Svobodou jsme moc spokojeni. Stránky pro Autokemp Kokořín, které pro nás udělal, odpovídají aktuálnímu trendu a při požadavku na další úpravy Zbyněk reaguje bez prodlení.",
     fotka:
       "https://res.cloudinary.com/dam7wdzvx/image/upload/v1731687135/zbyneksvoboda/ref/jakub_skala.png.webp",
@@ -12,7 +21,7 @@ export const recenzeData = [
   {
     kdo: "Jan Svárovský",
     co: "ArboristikaSvarovsky.cz",
-    short: 1,
+    short: 0,
     textShort:
       "Výborná spolupráce v tom pravém smyslu - pochopení požadavků + návrh + konzultace + realizace = spokojenost. To vše rychle a operativně.",
     text: "Výborná spolupráce v tom pravém smyslu - pochopení požadavků + návrh + konzultace + realizace = spokojenost. To vše rychle a operativně, DĚKUJI!!!",

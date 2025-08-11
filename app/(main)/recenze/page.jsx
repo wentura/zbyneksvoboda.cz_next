@@ -28,12 +28,16 @@ export default function Recenze() {
                   />
                   <div className="flex flex-col	pr-4 text-right">
                     <span className="text-lg font-bold">{recenze.kdo}</span>
-                    <span className="text-sm text-gray-400">{recenze.co}</span>
+                    <span className="text-sm text-gray-500 font-medium">
+                      {recenze.co}
+                    </span>
                   </div>
                 </div>
                 <p
-                  className="pb-12 font-extralight text-sm leading-6 tracking-wide"
-                  dangerouslySetInnerHTML={{ __html: recenze.text }}
+                  className="pb-12 font-light text-sm leading-6 tracking-wide"
+                  dangerouslySetInnerHTML={{
+                    __html: recenze.short ? recenze.textShort : recenze.text,
+                  }}
                 />
               </div>
             </div>

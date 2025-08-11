@@ -8,7 +8,7 @@ export const cenikData = [
   {
     title: "Webová aplikace",
     about:
-      "<p>Webová aplikace, Vhodné pro interní systémy, katalogy, administrační rozhraní, SaaS. K řešení používám osvědčené technologie a nebo <i>ohýbám</i> hovotá řešení.</p><ul class='list-disc list-inside pl-4 my-4'><li>Webové aplikace na míru</li><li>Systém s přihlašováním a správou dat</li><li>Katalog produktů</li><li>Napojení na externí API / integrace</li><li>E-shop</li></ul>",
+      "<p>Webová aplikace, Vhodné pro interní systémy, katalogy, administrační rozhraní, SaaS. K řešení používám osvědčené technologie a nebo <i>ohýbám</i> hototá řešení.</p><ul class='list-disc list-inside pl-4 my-4'><li>Webové aplikace na míru</li><li>Systém s přihlašováním a správou dat</li><li>Katalog produktů</li><li>Napojení na externí API / integrace</li><li>E-shop</li></ul>",
     price: "25000 Kč",
   },
   {
