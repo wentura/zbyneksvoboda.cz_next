@@ -11,10 +11,10 @@ export default function Contact() {
       id="kontakt"
     >
       <div className="container max-w-screen-xl mx-auto">
-        <h1 className="nadpisPageWhite leading-snug sm:w-full">
+        <h1 className="nadpisPageWhite leading-snug sm:w-full text-center md:text-left text-red-400">
           Pojďme si promluvit,
         </h1>
-        <h2 className="mb-2 nadpisPageWhite leading-snug sm:w-full sm:mb-8">
+        <h2 className="mb-2 nadpisPageWhite leading-snug sm:w-full sm:mb-8 text-center md:text-left text-white">
           {" "}
           <span className="font-bold text-white">nezávazně</span> proberme váš
           projekt

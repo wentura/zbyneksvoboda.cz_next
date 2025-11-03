@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -9,7 +9,15 @@ export default function ContactForm() {
     phone: "",
     website: "",
     discussion: "",
+    company: "", // honeypot
   });
+
+  const formStartRef = useRef(null);
+  useEffect(() => {
+    if (!formStartRef.current) {
+      formStartRef.current = Date.now();
+    }
+  }, []);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
@@ -34,7 +42,10 @@ export default function ContactForm() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          formStartedAt: formStartRef.current,
+        }),
       });
 
       if (response.ok) {
@@ -48,7 +59,9 @@ export default function ContactForm() {
           phone: "",
           website: "",
           discussion: "",
+          company: "",
         });
+        formStartRef.current = Date.now();
       } else {
         const errorData = await response.json();
         setSubmitStatus({
@@ -82,6 +95,20 @@ export default function ContactForm() {
       )}
 
       <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+        {/* Honeypot: keep hidden visually and from AT, but present in DOM */}
+        <div className="hidden" aria-hidden="true">
+          <label htmlFor="company">Company</label>
+          <input
+            type="text"
+            id="company"
+            name="company"
+            value={formData.company}
+            onChange={handleInputChange}
+            autoComplete="off"
+            tabIndex={-1}
+          />
+        </div>
+
         <div className="grid grid-cols-1 gap-4 text-left">
           <div>
             <label

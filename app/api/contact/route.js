@@ -3,8 +3,48 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// Simple in-memory rate limiter: max 5 requests per IP per 10 minutes
+const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
+const RATE_LIMIT_MAX = 5;
+const ipHits = new Map();
+
+function getClientIp(request) {
+  try {
+    const xf = request.headers.get("x-forwarded-for");
+    if (xf) return xf.split(",")[0].trim();
+  } catch {}
+  try {
+    return request.headers.get("x-real-ip") || "unknown";
+  } catch {}
+  return "unknown";
+}
+
+function isRateLimited(ip) {
+  const now = Date.now();
+  const entry = ipHits.get(ip) || { count: 0, start: now };
+  if (now - entry.start > RATE_LIMIT_WINDOW_MS) {
+    ipHits.set(ip, { count: 1, start: now });
+    return false;
+  }
+  if (entry.count >= RATE_LIMIT_MAX) {
+    return true;
+  }
+  entry.count += 1;
+  ipHits.set(ip, entry);
+  return false;
+}
+
 export async function POST(request) {
   try {
+    // Rate limit check
+    const ip = getClientIp(request);
+    if (isRateLimited(ip)) {
+      return NextResponse.json(
+        { message: "Příliš mnoho požadavků. Zkuste to prosím později." },
+        { status: 429 },
+      );
+    }
+
     // Check if API key is available
     if (!process.env.RESEND_API_KEY) {
       console.error("RESEND_API_KEY is not set");
@@ -18,7 +58,27 @@ export async function POST(request) {
     }
 
     const body = await request.json();
-    const { name, email, phone, website, discussion } = body;
+    const { name, email, phone, website, discussion, company, formStartedAt } =
+      body;
+
+    // Honeypot: if filled, silently accept but do not send
+    if (company && company.trim() !== "") {
+      return NextResponse.json(
+        { message: "Zpráva byla úspěšně odeslána." },
+        { status: 200 },
+      );
+    }
+
+    // Speed check: if submitted in under 3 seconds, likely bot
+    if (typeof formStartedAt === "number") {
+      const elapsed = Date.now() - formStartedAt;
+      if (elapsed < 3000) {
+        return NextResponse.json(
+          { message: "Zpráva byla úspěšně odeslána." },
+          { status: 200 },
+        );
+      }
+    }
 
     // Validate required fields
     if (!name || !email || !discussion) {

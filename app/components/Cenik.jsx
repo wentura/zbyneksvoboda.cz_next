@@ -10,7 +10,7 @@ export default function PortfolioComplete() {
     >
       <div className="flex flex-col">
         <div className="flex flex-col flex-wrap mb-12 sm:flex-row">
-          <h1 className="mb-2 nadpisPage leading-snug sm:w-full sm:mb-8">
+          <h1 className="mb-2 nadpisPage leading-snug sm:w-full sm:mb-8 text-center md:text-left">
             Orientační ceník
           </h1>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">

@@ -111,6 +111,16 @@
     font-weight: 600;
     font-style: normal;
   }
+
+.heroBtn {
+  @apply px-4 md:px-8 py-2 md:py-4 bg-red-400 text-modra2 hover:opacity-90 font-bold text-base md:text-lg transition-all duration-150 hover:translate-y-2 hover:translate-x-2 ;
+}
+.heroBtnSecondary {
+  @apply px-8 md:px-16 py-4 md:py-8 bg-white text-modra2 font-bold text-sm sm:text-base transition-all duration-150 hover:translate-y-2 hover:translate-x-2 border border-modra2;
+}
+
+
+
   .bg-modra2 {
     background: #101923;
   }
@@ -160,4 +170,7 @@ svg,
 video {
   max-width: 100%;
   height: auto;
+}
+.redborder  * {
+  border: 1px solid red;
 }

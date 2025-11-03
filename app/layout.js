@@ -1,5 +1,6 @@
 import CookieConsent from "./components/CookieConsent";
 import Footer from "./components/footer";
+import Matomo from "./components/matomo";
 import "./globals.css";
 
 export const metadata = {
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         {/* <CookieConsent /> */}
+        <Matomo />
       </body>
     </html>
   );

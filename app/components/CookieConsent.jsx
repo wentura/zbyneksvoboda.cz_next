@@ -20,6 +20,12 @@ export default function CookieConsent() {
     }
   }, []);
 
+  const notifyConsentUpdated = () => {
+    try {
+      window.dispatchEvent(new Event("cookieConsentUpdated"));
+    } catch (_) {}
+  };
+
   const handleAcceptAll = () => {
     const newConsent = {
       necessary: true,
@@ -29,12 +35,14 @@ export default function CookieConsent() {
     setConsent(newConsent);
     localStorage.setItem("cookieConsent", JSON.stringify(newConsent));
     setShowConsent(false);
+    notifyConsentUpdated();
   };
 
   const handleSavePreferences = () => {
     localStorage.setItem("cookieConsent", JSON.stringify(consent));
     setShowPreferences(false);
     setShowConsent(false);
+    notifyConsentUpdated();
   };
 
   const handleRejectAll = () => {
@@ -46,6 +54,7 @@ export default function CookieConsent() {
     setConsent(newConsent);
     localStorage.setItem("cookieConsent", JSON.stringify(newConsent));
     setShowConsent(false);
+    notifyConsentUpdated();
   };
 
   // Don't render anything if both consent and preferences are hidden

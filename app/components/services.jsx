@@ -13,30 +13,32 @@ export default function Services() {
             Web, který skutečně <span className="text-red-400">podporuje</span>{" "}
             váš byznys
           </h1>
-          <div className="text-xl leading-relaxed pt-12 pb-4 font-extralight md:text-2xl text-center md:text-left">
-            Tvořím weby, které mění návštěvníky na{" "}
-            <span className="font-bold underline underline-offset-4">
-              zákazníky
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-4 mt-16">
+          <div className="text-xl leading-relaxed pb-4 font-light md:text-2xl text-center md:text-left">
+            Tvořím weby, které z návštěvníků dělají{" "}
+            <span className="text-red-400 font-bold">
+              skutečné zákazníky
             </span>
             .
           </div>
-          <div className="text-xl leading-relaxed py-4 pb-4 md:text-2xl font-extralight lg:pl-12 text-center md:text-left">
-            Rozumím technologiím i kontextu.
+          <div className="text-xl leading-relaxed md:text-2xl font-light text-center md:text-left">
+            Rozumím technologiím, trendům i <span className="text-red-400 font-bold">kontextu 
+            </span>.
           </div>
-          <div className="text-xl leading-relaxed py-4 md:text-2xl font-extralight lg:pl-24 text-center md:text-left">
+          <div className="text-xl leading-relaxed md:text-2xl font-light text-center md:text-left">
             Rozumím{" "}
-            <span className="font-bold underline underline-offset-4">
+            <span className="text-red-400 font-bold">
               vašim potřebám
             </span>
             , i potřebám vašich zákazníků.
           </div>
-          <div className="text-xl leading-relaxed py-4 md:text-2xl font-extralight lg:pl-36 text-center md:text-left">
+          <div className="text-xl leading-relaxed md:text-2xl font-light text-center md:text-left">
             Navrhuji digitální řešení, která skutečně{" "}
-            <span className="font-bold underline underline-offset-4">
+            <span className="text-red-400 font-bold">
               fungují
             </span>
             .
-          </div>
+          </div></div>
           {/* <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             <div className="pl-0 text-xl leading-relaxed">
               <strong>Stavím weby, které vám přinášejí klienty 24/7.</strong>

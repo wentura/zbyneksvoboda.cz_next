@@ -7,7 +7,7 @@ export default function RecenzeShort() {
     <section className="py-20 mx-auto text-gray-300 bg-modra2 md:py-40">
       <div className="container max-w-screen-xl px-5 mx-auto">
         <div className="flex flex-col flex-wrap py-0 mb-20 sm:flex-row">
-          <h1 className="mb-2 nadpisPageDark leading-snug sm:w-full sm:mb-8">
+          <h1 className="mb-2 nadpisPageDark leading-snug sm:w-full sm:mb-8 text-center md:text-left">
             Řekli o mé práci
           </h1>
           <p className="pl-0 text-xl leading-relaxed">

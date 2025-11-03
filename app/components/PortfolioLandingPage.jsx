@@ -11,7 +11,7 @@ export default function PortfolioLandingPage() {
   return (
     <div className="relative overflow-hidden bg-white py-20 md:py-40">
       <div className="container max-w-screen-xl mx-auto flex flex-col gap-4 mb-4">
-        <h1 className="mb-8 nadpisPage leading-snug sm:w-full sm:mb-8">
+        <h1 className="mb-8 nadpisPage leading-snug sm:w-full sm:mb-8 text-center md:text-left">
           Ukázky mé práce
         </h1>
       </div>

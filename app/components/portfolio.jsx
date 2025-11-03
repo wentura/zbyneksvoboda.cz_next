@@ -145,12 +145,12 @@ export default function Portfolio() {
                     __html: item.caseStudy.studyTextShort,
                   }}
                 />
-                <a
+                <Link
                   className="odkaz"
                   href={`/portfolio/pripadovaStudie/${item.slug}`}
                 >
                   zobrazit případovou studii {item.title}
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -175,7 +175,7 @@ export default function Portfolio() {
               </motion.div>
             </div>
             {/* </div> */}
-            <div className="flex flex-col flex-wrap px-2 -mb-10 text-left lg:py-6 lg:w-2/3 lg:pl-12 sm:w-1/2 w-full justify-start md:flex hidden">
+            <div className="hidden md:flex flex-col flex-wrap px-2 -mb-10 text-left lg:py-6 lg:w-2/3 lg:pl-12 sm:w-1/2 w-full justify-start">
               <div className="flex flex-col mb-10">
                 {/* <div className="inline-flex items-center justify-center w-12 h-12 mb-5 text-indigo-500 bg-indigo-100 rounded-full">
                   asd
@@ -202,12 +202,12 @@ export default function Portfolio() {
                       __html: item.caseStudy.studyTextShort,
                     }}
                   />
-                  <a
+                  <Link
                     className="odkaz"
                     href={`/portfolio/pripadovaStudie/${item.slug}`}
                   >
                     zobrazit případovou studii {item.title}
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="flex flex-col items-start mb-10">

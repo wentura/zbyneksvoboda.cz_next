@@ -3,8 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { portfolioData } from "../data/portfolioData";
-portfolioData.splice(2, 0, { title: "vasprojekt" });
 export default function PortfolioComplete() {
+  const portfolioWithSpot = [
+    ...portfolioData.slice(0, 2),
+    { title: "vasprojekt" },
+    ...portfolioData.slice(2),
+  ];
   return (
     <section className="py-10 mx-auto text-gray-600 md:py-20 px-5">
       <div className="flex flex-col">
@@ -25,7 +29,7 @@ export default function PortfolioComplete() {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 -mx-4 -mt-4 -mb-10 sm:-m-4 gap-8 lg:gap-12 lg:gap-y-24">
-        {portfolioData.map((item, index) =>
+        {portfolioWithSpot.map((item, index) =>
           item.title != "vasprojekt" ? (
             item.colSpan ? (
               // Special layout for items with colSpan - 2-column grid with image left, text right
@@ -56,12 +60,12 @@ export default function PortfolioComplete() {
                       className="pb-4"
                       dangerouslySetInnerHTML={{ __html: item.shortDecs }}
                     />
-                    <a
+                    <Link
                       className={item.hasCaseStudy ? `odkaz` : `hidden`}
                       href={`/portfolio/pripadovaStudie/${item.slug}`}
                     >
                       případová studie
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -87,12 +91,12 @@ export default function PortfolioComplete() {
                   className="pb-4"
                   dangerouslySetInnerHTML={{ __html: item.shortDecs }}
                 />
-                <a
+                <Link
                   className={item.hasCaseStudy ? `odkaz` : `hidden`}
                   href={`/portfolio/pripadovaStudie/${item.slug}`}
                 >
                   případová studie
-                </a>
+                </Link>
                 {/* <div className="text-sm mr-0 text-right">
                 <a
                   className="odkazVen odkaz font-thin "
