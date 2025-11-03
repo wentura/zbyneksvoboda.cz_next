@@ -31,7 +31,7 @@ export default function Hero2() {
             <RotatingTextComponent rotatingText={kdoJsem} />
           </h1>
           <p className="md:mt-16 mt-8 text-lg sm:text-xl md:text-2xl md:max-w-2xl leading-relaxed">
-           Jsem full‑stack vývojář s marketingovým přesahem.<span className="hidden sm:block"><br /></span>{" "}Web chápu jako
+           Jsem webdesigner a vývojář webových aplikací s marketingovým přesahem.<span className="hidden sm:block"><br /></span>{" "}Web chápu jako
             nástroj růstu — od nápadu po měřitelný výsledek.
           </p>
           <div className="my-16 sm:mt-24 flex gap-4 flex-col sm:flex-row">
