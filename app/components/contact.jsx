@@ -1,5 +1,8 @@
+'use client';
+
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 import ContactForm from "./contactForm";
 import MailSvg from "./mail";
 import PhoneSvg from "./phone";
@@ -124,13 +127,20 @@ export default function Contact() {
               </span>
             </div>
             <div className="flex w-full mx-auto text-center items-center justify-center">
-              <Image
-                className="object-cover rounded-2xl drop-shadow-xl mr-0"
-                alt="Zbyněk Svoboda, já"
-                src="/ja.jpg"
-                width={400}
-                height={600}
-              />
+              <motion.div
+                initial={{ rotate: 0 }}
+                whileInView={{ rotate: 6 }}
+                viewport={{ once: true, amount: 0.6 }}
+                transition={{ delay: 2, duration: 0.8, ease: "easeInOut" }}
+              >
+                <Image
+                  className="object-contain bg-neutral-200 p-2 pb-8 mr-0"
+                  alt="Zbyněk Svoboda, já"
+                  src="/ja.jpg"
+                  width={400}
+                  height={600}
+                />
+              </motion.div>
             </div>
           </div>
         </div>

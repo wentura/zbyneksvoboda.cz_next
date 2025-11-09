@@ -18,7 +18,7 @@ export default function Hero2() {
   return (
     <section className="h-[100vh] flex xl:grid xl:grid-cols-5 xl:grid-rows-6 max-w-screen-3xl mx-auto ">
       <div className="sticky top-0 md:col-span-2 md:col-start-4 items-end bg-red-400  text-right row-span-2 hidden xl:block">
-          <h1 className="xl:text-4xl 2xl:text-5xl font-black leading-tight tracking-[-0.03em] text-white sticky top-16 pr-16 pb-16">
+          <h1 className="xl:text-4xl 2xl:text-5xl font-black leading-tight tracking-[-0.03em] text-white sticky top-16 pr-16 pb-24">
             Zbyněk&nbsp;Svoboda
           </h1>
         </div>
@@ -34,7 +34,7 @@ export default function Hero2() {
            Jsem webdesigner a vývojář webových aplikací s marketingovým přesahem.<span className="hidden sm:block"><br /></span>{" "}Web chápu jako
             nástroj růstu — od nápadu po měřitelný výsledek.
           </p>
-          <div className="my-16 sm:mt-24 flex gap-4 flex-col sm:flex-row">
+          <div className="my-8 flex gap-4 flex-col sm:flex-row">
             <button
               onClick={() => setModalOpen(true)}
               className="heroBtn"

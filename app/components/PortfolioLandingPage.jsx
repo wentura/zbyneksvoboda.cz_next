@@ -84,7 +84,7 @@ export default function PortfolioLandingPage() {
         </div>
       </div>
       <div className="flex justify-center mt-16">
-        <Link href="/portfolio" className="ctaBtnDarkSecondary text-center">
+        <Link href="/portfolio" className="heroBtn text-center">
           Portfolio projektů
         </Link>
       </div>

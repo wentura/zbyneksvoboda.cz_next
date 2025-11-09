@@ -10,8 +10,8 @@ export default function Services() {
       <div className="container max-w-screen-xl px-5 mx-auto">
         <div className="flex flex-col flex-wrap py-6 mb-20">
           <h1 className="nadpisPageDark leading-snug sm:w-full text-center md:text-left">
-            Web, který skutečně <span className="text-red-400">podporuje</span>{" "}
-            váš byznys
+            Tvořím weby a aplikace, které<span className="hidden sm:inline"><br /></span>skutečně <span className="text-red-400">podporují</span>{" "}
+            váš růst.
           </h1>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-4 mt-16">
           <div className="text-xl leading-relaxed pb-4 font-light md:text-2xl text-center md:text-left">
@@ -104,11 +104,11 @@ export default function Services() {
       </div>
       <div className="mx-auto flex justify-center">
         <Link
-          className="ctaBtnDarkSecondary bg-white text-modra2 hover:bg-white hover:text-modra2"
+          className="heroBtnSecondary bg-white text-modra2 "
           href="/#kontakt"
         >
           {/* Kontaktujte mě */}
-          Pojďme tvořit výsledky
+          Pojďme společně tvořit
         </Link>
       </div>
     </section>

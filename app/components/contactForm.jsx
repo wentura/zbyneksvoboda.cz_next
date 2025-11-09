@@ -124,7 +124,7 @@ export default function ContactForm() {
               value={formData.name}
               onChange={handleInputChange}
               required
-              className="w-full px-4 py-3 rounded-lg bg-gray-700 text-white placeholder-gray-200"
+              className="w-full px-4 py-3 bg-gray-700 text-white placeholder-gray-200"
               placeholder="Vaše jméno"
             />
           </div>
@@ -143,7 +143,7 @@ export default function ContactForm() {
               value={formData.email}
               onChange={handleInputChange}
               required
-              className="w-full px-4 py-3 rounded-lg bg-gray-700 text-white placeholder-gray-200"
+              className="w-full px-4 py-3 bg-gray-700 text-white placeholder-gray-200"
               placeholder="vas@email.cz"
             />
           </div>
@@ -163,7 +163,7 @@ export default function ContactForm() {
               name="website"
               value={formData.website}
               onChange={handleInputChange}
-              className="w-full px-4 py-3 rounded-lg bg-gray-700 text-white placeholder-gray-200"
+              className="w-full px-4 py-3 bg-gray-700 text-white placeholder-gray-200"
               placeholder="vasweb.cz"
             />
           </div>
@@ -183,7 +183,7 @@ export default function ContactForm() {
             onChange={handleInputChange}
             required
             rows={4}
-            className="w-full px-4 py-3 rounded-lg bg-gray-700 text-white placeholder-gray-200"
+            className="w-full px-4 py-3 bg-gray-700 text-white placeholder-gray-200"
             placeholder="Popište, s čím vám mohu pomoci..."
           />
         </div>
@@ -197,7 +197,8 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-white text-modra2 py-3 px-6 font-bold hover:underline underline-offset-4 decoration-2 decoration-modra2 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+          // className="w-full bg-white text-modra2 py-3 px-6 font-bold hover:underline underline-offset-4 decoration-2 decoration-modra2 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="heroBtn text-center mx-auto w-full"
         >
           {isSubmitting ? "Odesílám..." : "Odeslat zprávu..."}
         </button>
