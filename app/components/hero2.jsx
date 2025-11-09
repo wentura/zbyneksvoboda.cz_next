@@ -18,7 +18,7 @@ export default function Hero2() {
   return (
     <section className="h-[100vh] flex xl:grid xl:grid-cols-5 xl:grid-rows-6 max-w-screen-3xl mx-auto ">
       <div className="sticky top-0 md:col-span-2 md:col-start-4 items-end bg-red-400  text-right row-span-2 hidden xl:block">
-          <h1 className="xl:text-4xl 2xl:text-5xl font-black leading-tight tracking-[-0.03em] text-white sticky top-16 pr-16 pb-24">
+          <h1 className="xl:text-4xl 2xl:text-5xl font-black leading-tight tracking-[-0.03em] text-white sticky top-16 pr-16 pb-24s">
             Zbyněk&nbsp;Svoboda
           </h1>
         </div>
@@ -30,10 +30,15 @@ export default function Hero2() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-8xl font-bold leading-tight tracking-[-0.02em] text-modra2 text-center sm:text-left">
             <RotatingTextComponent rotatingText={kdoJsem} />
           </h1>
-          <p className="md:mt-16 mt-8 text-lg sm:text-xl md:text-2xl md:max-w-2xl leading-relaxed">
-           Jsem webdesigner a vývojář webových aplikací s marketingovým přesahem.<span className="hidden sm:block"><br /></span>{" "}Web chápu jako
-            nástroj růstu — od nápadu po měřitelný výsledek.
+          <p className="hidden md:block md:mt-16 mt-8 text-lg sm:text-xl md:text-2xl md:max-w-3xl leading-relaxed">
+           Jsem webdesigner a vývojář webových aplikací s marketingovým přesahem. Web chápu jako
+           nástroj růstu.<span className="hidden sm:block"><br /></span>{" "}Od nápadu po měřitelný výsledek.
           </p>
+          <p className="block md:hidden md:mt-16 mt-8 text-lg sm:text-xl md:text-2xl md:max-w-2xl leading-relaxed text-center">
+           Jsem webdesigner a vývojář webových aplikací s marketingovým přesahem. Web chápu jako
+           nástroj růstu.
+          </p>
+          <p className="block md:hidden md:mt-16 mt-8 text-xl sm:text-2lx leading-relaxed text-center font-bold">Od nápadu po měřitelný výsledek.</p>
           <div className="my-8 flex gap-4 flex-col sm:flex-row">
             <button
               onClick={() => setModalOpen(true)}
