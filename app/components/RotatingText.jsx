@@ -39,7 +39,7 @@ export default function RotatingTextComponent({ rotatingText = whoAmI2 }) {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % rotatingText.length);
         setIsVisible(true);
       }, 200); // Fade out duration
-    }, 3500); // Change every 3 seconds
+    }, 1800); // Change every 3 seconds
 
     return () => clearInterval(interval);
   }, []);

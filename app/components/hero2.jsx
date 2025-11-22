@@ -10,7 +10,8 @@ const kdoJsem = [
 //   "minimum ozdob, maximum funkce",
 //   "rychlost, přístupnost, měření a návratnost",
 //   "tvůrce webů s přesahem",
-"*web*/designer", "*web*/developer", "*web*/konzultant"
+// "*web*/designer", "*web*/developer", "*web*/konzultant"
+"designer", "developer", "konzultant"
 ];
 
 export default function Hero2() {
@@ -27,7 +28,8 @@ export default function Hero2() {
         <h1 className="text-4xl font-bold leading-tight tracking-[-0.03em] text-modra2 text-center sm:text-right xl:hidden pb-2 pt-8">
             Zbyněk&nbsp;Svoboda
           </h1>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-8xl font-bold leading-tight tracking-[-0.02em] text-modra2 text-center sm:text-left">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-8xl font-bold leading-tight tracking-[-0.02em] text-modra2 text-center sm:text-left -space-y-3 flex flex-col items-center md:items-start">
+            <div className="text-red-400">web</div>
             <RotatingTextComponent rotatingText={kdoJsem} />
           </h1>
           <p className="hidden md:block md:mt-16 mt-8 text-lg sm:text-xl md:text-2xl md:max-w-3xl leading-relaxed">
