@@ -15,7 +15,7 @@ export default function Hero() {
               Weby, které mají strategii, strukturu a přinášejí výsledky.
             </h1>
             <p className="text-lg md:text-xl leading-relaxed mb-8 text-gray-700">
-              Jsem Zbyněk Svoboda,<br />webový konzultant a digitální stratég.</p>
+              Jsem Zbyněk Svoboda,<br />webový konzultant, digitální stratég a full-stack vývojář.</p>
               <p className="text-lg md:text-xl leading-relaxed mb-8 text-gray-700">
               Pomáhám firmám mít web, který není jen vizitka - ale funkční nástroj pro získávání klientů.
             </p>

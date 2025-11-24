@@ -1,7 +1,20 @@
+import localFont from "next/font/local";
 import CookieConsent from "./components/CookieConsent";
 import Footer from "./components/footer";
 import Matomo from "./components/matomo";
 import "./globals.css";
+
+const montserrat = localFont({
+  src: [{ path: "../public/montserrat.woff2", weight: "400", style: "normal" }],
+  variable: "--font-montserrat",
+  display: "swap",
+});
+
+const notoserif = localFont({
+  src: [{ path: "../public/noto.woff2", weight: "400", style: "normal" }],
+  variable: "--font-notoserif",
+  display: "swap",
+});
 
 export const metadata = {
   title: "Zbyněk Svoboda, tvořím weby",
@@ -14,7 +27,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="cs" className="scroll-smooth textPage">
+    <html
+      lang="cs"
+      className={`${montserrat.variable} ${notoserif.variable} scroll-smooth textPage`}
+    >
       <body>
         {children}
         <Footer />
