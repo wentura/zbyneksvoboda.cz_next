@@ -14,12 +14,12 @@ export default function Hero() {
             <h1 className="nadpisPage mb-6 md:mb-8">
               Weby, které mají strategii, strukturu a přinášejí výsledky.
             </h1>
-            <p className="text-lg md:text-xl leading-relaxed mb-8 text-gray-700">
-              Jsem Zbyněk Svoboda,<br />webový konzultant, digitální stratég a full-stack vývojář.</p>
-              <p className="text-lg md:text-xl leading-relaxed mb-8 text-gray-700">
+            <p className="text-lg md:text-xl mb-8 text-gray-700 tracking-tight">
+              Jsem Zbyněk Svoboda,<br />webový konzultant, digitální stratég a vývojář.</p>
+              <p className="text-lg md:text-xl mb-8 text-gray-700 tracking-tight">
               Pomáhám firmám mít web, který není jen vizitka - ale funkční nástroj pro získávání klientů.
             </p>
-            <ul className="space-y-2 mb-8 text-base md:text-lg text-gray-700">
+            <ul className="space-y-1.5 md:space-y-2 mb-8 text-base md:text-lg text-gray-700 tracking-tight">
               <li className="flex items-start">
                 <span className="text-red-400 mr-2">•</span>
                 <span>od nápadu po měřitelný výsledek</span>

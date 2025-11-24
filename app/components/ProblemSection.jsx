@@ -4,11 +4,11 @@ export default function ProblemSection() {
   return (
     <section className="py-8 md:py-16 bg-white">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
-        <h2 className="nadpisPage mb-6 md:mb-8 text-center md:text-left">
+        <h2 className="nadpisPage mb-6 md:mb-8">
           Většina webů neprodává.<br />Ne proto, že špatně vypadají.
         </h2>
         <p className="text-lg md:text-xl leading-relaxed mb-12 text-gray-700 max-w-3xl">
-          Mnoho firem má web, který „nějak funguje“, ale reálně nepřináší nové klienty nebo poptávky.
+          Mnoho firem má web, který <i className="italic">„nějak funguje“</i>, ale reálně nepřináší nové klienty nebo poptávky.
           Problém většinou není v kódu nebo grafice, ale v tom, jak je web postavený.
         </p>
         
@@ -51,7 +51,7 @@ export default function ProblemSection() {
         </div>
         
         <p className="text-lg md:text-xl leading-relaxed text-center md:text-left text-gray-900 font-medium max-w-3xl">
-          Moje práce začíná tam, kde klasická &quot;tvorba webů&quot; končí – u <strong>strategie, struktury a měřitelných výsledků</strong>.
+          Moje práce začíná, kde klasická <i className="italic">&quot;tvorba webů&quot;</i> končí – u <strong>strategie, struktury a měřitelných výsledků</strong>.
         </p>
       </div>
     </section>

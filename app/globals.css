@@ -9,12 +9,7 @@
     font-weight: 700 !important;
   }
   .nadpisPage {
-    /* @apply text-3xl md:text-5xl font-bold text-gray-900 tracking-tight; */
-    @apply text-3xl md:text-5xl font-bold tracking-tight text-modra2 leading-relaxed;
-    /* font-family: "Montserrat", sans-serif !important; */
-    /* font-family: notoserif !important; */
-    /* font-optical-sizing: auto; */
-    /* font-weight: 900; */
+    @apply text-3xl md:text-5xl font-bold tracking-tight text-modra2 leading-tight;
     font-style: normal;
   }
   .nadpisPageDark {

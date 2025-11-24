@@ -38,9 +38,7 @@ export default function RecenzeShort() {
           Co o spolupráci říkají klienti
         </h2>
         <p className="text-lg md:text-xl leading-relaxed mb-12 text-gray-700 max-w-3xl">
-          Spolupracuji s klienty, kteří očekávají kvalitu, spolehlivost a lidský přístup.  
-          Takhle popisují naši spolupráci:
-        </p>
+          Spolupracuji s klienty, kteří očekávají kvalitu, spolehlivost a lidský přístup.</p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12">
           {testimonials.map((testimonial, index) => (

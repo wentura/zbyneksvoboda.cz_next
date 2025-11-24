@@ -190,7 +190,7 @@ export default function ContactForm() {
 
         <div className="flex items-start space-x-3">
           <label htmlFor="gdpr" className="text-sm text-gray-300">
-            Odesláním zprávy souhlasíte s následnou naší komunikací.
+            Odesláním zprávy souhlasíte s naší následnou komunikací.
           </label>
         </div>
 
