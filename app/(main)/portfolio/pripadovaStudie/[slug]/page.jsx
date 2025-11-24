@@ -2,8 +2,9 @@ import { portfolioData } from "@/app/data/portfolioData";
 import { color } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-export default function PripadovaStudie({ params }) {
-  const item = portfolioData.find((item) => item.slug === params.slug);
+export default async function PripadovaStudie({ params }) {
+  const { slug } = await params;
+  const item = portfolioData.find((item) => item.slug === slug);
 
   return (
     <section className="container px-5 py-24 mx-auto flex flex-col">

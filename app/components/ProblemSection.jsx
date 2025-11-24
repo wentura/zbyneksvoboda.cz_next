@@ -51,7 +51,7 @@ export default function ProblemSection() {
         </div>
         
         <p className="text-lg md:text-xl leading-relaxed text-center md:text-left text-gray-900 font-medium max-w-3xl">
-          Moje práce začíná tam, kde klasická „tvorba webů" končí – u <strong>strategie, struktury a měřitelných výsledků</strong>.
+          Moje práce začíná tam, kde klasická &quot;tvorba webů&quot; končí – u <strong>strategie, struktury a měřitelných výsledků</strong>.
         </p>
       </div>
     </section>

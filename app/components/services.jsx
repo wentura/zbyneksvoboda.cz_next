@@ -65,11 +65,11 @@ export default function Services() {
               Web Leadership
             </h3>
             <p className="text-lg font-medium mb-4 text-gray-700">
-              Dlouhodobé vedení webových projektů bez nutnosti mít vlastního „webového šéfa".
+              Dlouhodobé vedení webových projektů bez nutnosti mít vlastního &quot;webového šéfa&quot;.
             </p>
             <p className="text-base leading-relaxed mb-6 text-gray-600">
               Pokud máte více webů, e-shop, interní systém nebo rozjetý projekt, je snadné se ztratit v detailech.  
-              V roli webového konzultanta / „CTO na částečný úvazek" pomáhám firmám držet směr a udržet weby funkční a rozvíjené.
+              V roli webového konzultanta / &quot;CTO na částečný úvazek&quot; pomáhám firmám držet směr a udržet weby funkční a rozvíjené.
             </p>
             <div className="mb-6">
               <p className="text-sm font-semibold mb-3 text-gray-900">Co získáte:</p>
@@ -112,7 +112,7 @@ export default function Services() {
             </p>
             <p className="text-base leading-relaxed mb-6 text-gray-600">
               Navrhnu a zrealizuji web, který vychází z vašich cílů, dat a reálných potřeb vašich zákazníků.  
-              Ne „web za 15 tisíc", ale promyšlené řešení, na které se můžete spolehnout.
+              Ne &quot;web za 15 tisíc&quot;, ale promyšlené řešení, na které se můžete spolehnout.
             </p>
             <div className="mb-6">
               <p className="text-sm font-semibold mb-3 text-gray-900">Co získáte:</p>

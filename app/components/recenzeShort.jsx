@@ -50,7 +50,7 @@ export default function RecenzeShort() {
             >
               <div className="mb-4">
                 <p className="text-base leading-relaxed text-gray-700 mb-6">
-                  "{testimonial.text}"
+                  &quot;{testimonial.text}&quot;
                 </p>
               </div>
               <div className="mt-auto pt-4 border-t border-neutral-200">

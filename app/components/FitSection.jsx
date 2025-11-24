@@ -24,7 +24,7 @@ export default function FitSection() {
               <li className="flex items-start">
                 <span className="text-emerald-600 mr-3 font-bold">•</span>
                 <span className="text-base md:text-lg leading-relaxed text-gray-700">
-                  pro projekty, které chtějí promyšlený web, ne jen „nějaké stránky"
+                  pro projekty, které chtějí promyšlený web, ne jen &quot;nějaké stránky&quot;
                 </span>
               </li>
               <li className="flex items-start">
@@ -57,13 +57,13 @@ export default function FitSection() {
               <li className="flex items-start">
                 <span className="text-red-600 mr-3 font-bold">•</span>
                 <span className="text-base md:text-lg leading-relaxed text-gray-700">
-                  pro „rychlý web do pátku" bez jasného zadání a cíle
+                  pro &quot;rychlý web do pátku&quot; bez jasného zadání a cíle
                 </span>
               </li>
               <li className="flex items-start">
                 <span className="text-red-600 mr-3 font-bold">•</span>
                 <span className="text-base md:text-lg leading-relaxed text-gray-700">
-                  pro zadání typu „udělejte něco hezkého, ono se to nějak použije"
+                  pro zadání typu &quot;udělejte něco hezkého, ono se to nějak použije&quot;
                 </span>
               </li>
               <li className="flex items-start">

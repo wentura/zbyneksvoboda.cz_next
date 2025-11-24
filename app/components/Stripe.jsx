@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Stripe({ text = "Sample Text" }) {
   return (
     // <div className="hidden md:block md:absolute top-0 right-0 w-full z-50">
@@ -7,12 +9,12 @@ export default function Stripe({ text = "Sample Text" }) {
           Přijímám nové výzvy a spolupráci{" "}
           <span className="hidden sm:inline">-</span>{" "}
           <br className="md:hidden block" />
-          <a
+          <Link
             href="/#kontakt"
             className="underline hover:no-underline hover:text-white"
           >
             kontaktujte mě
-          </a>
+          </Link>
         </span>
       </div>
     </div>
