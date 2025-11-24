@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { recenzeData } from "@/app/data/recenzeData";
 import React from "react";
 
@@ -21,10 +22,12 @@ export default function Recenze() {
             <div className="p-4 md:p-12 mb-6 lg:w-1/3 lg:mb-0" key={index}>
               <div className="h-full">
                 <div className="flex flex-row justify-between mb-4 items-center">
-                  <img
+                  <Image
                     alt="testimonial"
                     className="inline-block object-cover object-center w-20 h-20 rounded-full drop-shadow-xl"
                     src={recenze.fotka}
+                    width={80}
+                    height={80}
                   />
                   <div className="flex flex-col	pr-4 text-right">
                     <span className="text-lg font-bold">{recenze.kdo}</span>

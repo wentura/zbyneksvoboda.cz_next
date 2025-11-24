@@ -114,7 +114,7 @@ export default function PortfolioComplete() {
                 Váš projekt
               </div>
               <div className="pb-4 overflow-hidden">
-                <img
+                <Image
                   alt="váš nový projekt"
                   width={400}
                   height={600}

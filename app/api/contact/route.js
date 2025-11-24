@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 // Simple in-memory rate limiter: max 5 requests per IP per 10 minutes
 const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
 const RATE_LIMIT_MAX = 5;
@@ -46,7 +44,8 @@ export async function POST(request) {
     }
 
     // Check if API key is available
-    if (!process.env.RESEND_API_KEY) {
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) {
       console.error("RESEND_API_KEY is not set");
       return NextResponse.json(
         {
@@ -111,6 +110,7 @@ export async function POST(request) {
     `;
 
     // Send email using Resend
+    const resend = new Resend(apiKey);
     const { data, error } = await resend.emails.send({
       from: "Kontaktní formulář <info@zbyneksvoboda.cz>",
       to: ["info@zbyneksvoboda.cz", "zbynek.svoboda@gmail.com"], // Replace with your email
