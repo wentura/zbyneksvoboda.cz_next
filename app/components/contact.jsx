@@ -14,14 +14,17 @@ export default function Contact() {
       id="kontakt"
     >
       <div className="container max-w-screen-xl mx-auto">
-        <h1 className="nadpisPageWhite leading-snug sm:w-full text-center md:text-left text-red-400">
-          Pojďme si promluvit,
+        <h1 className="nadpisPageWhite leading-snug sm:w-full text-center md:text-left mb-6 md:mb-8">
+          Pojďme probrat váš web
         </h1>
-        <h2 className="mb-2 nadpisPageWhite leading-snug sm:w-full sm:mb-8 text-center md:text-left text-white">
-          {" "}
-          <span className="font-bold text-white">nezávazně</span> proberme váš
-          projekt
-        </h2>
+        <p className="text-lg md:text-xl leading-relaxed text-white mb-8 max-w-3xl">
+          Máte pocit, že váš web by mohl fungovat lépe?  
+          Nebo teprve přemýšlíte, jak ho uchopit, aby dával smysl a podporoval váš byznys?
+        </p>
+        <p className="text-lg md:text-xl leading-relaxed text-white mb-12 max-w-3xl">
+          Napište mi pár vět o vašem projektu.  
+          Ozvu se vám a domluvíme krátkou nezávaznou konzultaci.
+        </p>
       </div>
       <div className="container flex flex-col items-center max-w-screen-xl mx-auto md:flex-row ">
         <div className="flex flex-col text-center lg:flex-grow lg:w-1/2 lg:pr-12 md:pr-8 md:items-start md:text-left md:mb-0">

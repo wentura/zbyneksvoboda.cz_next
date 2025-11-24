@@ -1,62 +1,78 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { cenikData } from "../data/cenikData";
-export default function PortfolioComplete() {
+
+export default function Cenik() {
+  const pricing = [
+    {
+      title: "UX & Web Consulting",
+      description: "Když potřebujete zjistit, proč váš web nefunguje – a co s tím.",
+      price: "od 5 000 Kč",
+      note: "(podle rozsahu webu a hloubky analýzy)",
+    },
+    {
+      title: "Web Leadership (měsíční spolupráce)",
+      description: "Dlouhodobé vedení webových projektů bez nutnosti mít vlastního 'webového šéfa'.",
+      price: "10–20 000 Kč měsíčně",
+      note: "(podle počtu projektů a očekávané role)",
+    },
+    {
+      title: "High-end web / redesign",
+      description: "Když nechcete jen nový web, ale funkční systém pro prezentaci vaší firmy.",
+      price: "30–60 000 Kč",
+      note: "(podle rozsahu, funkcí a náročnosti projektu)",
+    },
+  ];
+
   return (
     <section
       id="cenik"
-      className="py-10 text-gray-600 md:py-20 px-5 container max-w-screen-xl mx-auto lg:scroll-mt-20"
+      className="py-16 md:py-24 bg-neutral-50"
     >
-      <div className="flex flex-col">
-        <div className="flex flex-col flex-wrap mb-12 sm:flex-row">
-          <h1 className="mb-2 nadpisPage leading-snug sm:w-full sm:mb-8 text-center md:text-left">
-            Orientační ceník
-          </h1>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            <div className="pl-0 text-xl leading-relaxed col-span-2">
-              Cena vždy vychází z reálného rozsahu, ambicí projektu a
-              požadovaných funkcí.
-            </div>
-            <div className="leading-relaxed justify-end w-full flex justify-end flex-col px-0 lg:px-10">
-              <div className="text-xl md:text-2xl font-medium">
-                Úvodní konzultace
-              </div>
-              <div className="py-2">
-                Abychom se lépe poznali, pochopil jsem Váš záměr, či projekt
-                nabízím Vám úvodní konzultaci v délce 30 minut{" "}
-                <span className="font-medium">zdarma</span>.
-              </div>
-              {/* <ul>
-                <li>Nedělám „weby s pěti podstránkami za 10 000 Kč“.</li>
-                <li>Nedělám „SEO na jedno kliknutí“.</li>
-                <li>Nedělám černou magii.</li>
-              </ul> */}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-wrap -mx-4 lg:divide-x-2 divide-gray-400 divide-y-2 lg:divide-y-0">
-        {cenikData.map((item, index) => (
-          <div
-            className="p-4 lg:p-10 w-full lg:w-1/3 flex flex-col"
-            key={index}
-          >
-            <div className="pb-4 overflow-hidden drop-shadow-[0_5px_10px_rgba(0,0,0,0.3)] lg:hover:scale-150 transition duration-200"></div>
-            <div className="pb-4 nadpisPage text-xl md:text-3xl">
-              {item.title}
-            </div>
+      <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
+        <h2 className="nadpisPage mb-6 md:mb-8 text-center md:text-left">
+          Orientační ceny
+        </h2>
+        <p className="text-lg md:text-xl leading-relaxed mb-12 text-gray-700 max-w-3xl">
+          Každý projekt je jiný. Cena vždy vychází z reálného rozsahu, cílů a nároků na funkce.  
+          Po úvodní konzultaci připravím konkrétní návrh řešení i rozpočtu.
+        </p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12">
+          {pricing.map((item, index) => (
             <div
-              className="py-4"
-              dangerouslySetInnerHTML={{ __html: item.about }}
-            />
-            {item.price !== "0" && (
-              <div className="flex justify-end text-lg md:text-xl font-medium mt-auto pt-4">
-                od {item.price}
+              key={index}
+              className="p-6 md:p-8 bg-white rounded-2xl border border-neutral-200 shadow-sm flex flex-col"
+            >
+              <h3 className="text-xl md:text-2xl font-semibold mb-4 text-gray-900">
+                {item.title}
+              </h3>
+              <p className="text-base leading-relaxed mb-6 text-gray-700">
+                {item.description}
+              </p>
+              <div className="mt-auto pt-4 border-t border-neutral-200">
+                <p className="text-xl md:text-2xl font-semibold text-gray-900 mb-2">
+                  {item.price}
+                </p>
+                <p className="text-sm text-gray-600">
+                  {item.note}
+                </p>
               </div>
-            )}
-          </div>
-        ))}
+            </div>
+          ))}
+        </div>
+        
+        <div className="p-6 md:p-8 bg-white rounded-2xl border border-neutral-200 shadow-sm max-w-2xl mx-auto text-center">
+          <h3 className="text-xl md:text-2xl font-semibold mb-4 text-gray-900">
+            Úvodní konzultace
+          </h3>
+          <p className="text-base md:text-lg leading-relaxed text-gray-700 mb-4">
+            Abychom se lépe poznali, pochopil jsem váš záměr či projekt, nabízím vám úvodní konzultaci v délce 30 minut{" "}
+            <strong className="text-gray-900">zdarma</strong>.
+          </p>
+          <Link href="/#kontakt" className="heroBtn inline-block">
+            Domluvit konzultaci
+          </Link>
+        </div>
       </div>
     </section>
   );

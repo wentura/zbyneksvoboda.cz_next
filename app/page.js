@@ -1,28 +1,25 @@
-import Image from "next/image";
 import Cenik from "./components/Cenik";
+import CaseStudiesSection from "./components/CaseStudiesSection";
 import Contact from "./components/contact";
+import FitSection from "./components/FitSection";
 import Header from "./components/header";
-import Hero from "./components/hero";
 import Hero2 from "./components/hero2";
-import Logos from "./components/logos";
-import Portfolio from "./components/portfolio";
-import PortfolioComplete from "./components/portfolioComplete";
-import PortfolioLandingPage from "./components/PortfolioLandingPage";
+import ProblemSection from "./components/ProblemSection";
+import ProcessSection from "./components/ProcessSection";
 import RecenzeShort from "./components/recenzeShort";
 import Services from "./components/services";
-import Stripe from "./components/Stripe";
+
 export default function Home() {
   return (
     <main className="max-w-screen-full mx-auto">
-      <Hero2 />
-      {/* <Hero /> */}
-      {/* <Stripe text="Přijímám nové výzvy" /> */}
       <Header />
+      <Hero2 />
+      <ProblemSection />
       <Services />
-      <PortfolioLandingPage />
-      {/* <PortfolioComplete /> */}
+      <ProcessSection />
+      <CaseStudiesSection />
       <RecenzeShort />
-      <Logos />
+      <FitSection />
       <Cenik />
       <Contact />
     </main>
