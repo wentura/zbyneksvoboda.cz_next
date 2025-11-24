@@ -4,7 +4,7 @@ import React from "react";
 export default function Cenik() {
   const pricing = [
     {
-      title: "UX & Web Consulting",
+      title: "UX & Web konzultace",
       description: "Když potřebujete zjistit, proč váš web nefunguje – a co s tím.",
       price: "od 5 000 Kč",
       note: "(podle rozsahu webu a hloubky analýzy)",
@@ -12,13 +12,13 @@ export default function Cenik() {
     {
       title: "Web Leadership (měsíční spolupráce)",
       description: "Dlouhodobé vedení webových projektů bez nutnosti mít vlastního 'webového šéfa'.",
-      price: "10–20 000 Kč měsíčně",
+      price: "od 10 000 Kč měsíčně",
       note: "(podle počtu projektů a očekávané role)",
     },
     {
       title: "High-end web / redesign",
       description: "Když nechcete jen nový web, ale funkční systém pro prezentaci vaší firmy.",
-      price: "30–60 000 Kč",
+      price: "od 30 000 Kč",
       note: "(podle rozsahu, funkcí a náročnosti projektu)",
     },
   ];
@@ -34,7 +34,7 @@ export default function Cenik() {
         </h2>
         <p className="text-lg md:text-xl leading-relaxed mb-12 text-gray-700 max-w-3xl">
           Každý projekt je jiný. Cena vždy vychází z reálného rozsahu, cílů a nároků na funkce.  
-          Po úvodní konzultaci připravím konkrétní návrh řešení i rozpočtu.
+          Po úvodní konzultaci připravím konkrétní návrh řešení i rozpočet.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12">
@@ -50,7 +50,7 @@ export default function Cenik() {
                 {item.description}
               </p>
               <div className="mt-auto pt-4 border-t border-neutral-200">
-                <p className="text-xl md:text-2xl font-semibold text-gray-900 mb-2">
+                <p className="text-base md:text-lg font-semibold text-gray-900 mb-2">
                   {item.price}
                 </p>
                 <p className="text-sm text-gray-600">
@@ -69,8 +69,8 @@ export default function Cenik() {
             Abychom se lépe poznali, pochopil jsem váš záměr či projekt, nabízím vám úvodní konzultaci v délce 30 minut{" "}
             <strong className="text-gray-900">zdarma</strong>.
           </p>
-          <Link href="/#kontakt" className="heroBtn inline-block">
-            Domluvit konzultaci
+          <Link href="/#kontakt" className="heroBtn inline-block w-full">
+            Domluvit nezávaznou konzultaci
           </Link>
         </div>
       </div>

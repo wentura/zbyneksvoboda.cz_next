@@ -4,8 +4,8 @@ export default function FitSection() {
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
-        <h2 className="nadpisPage mb-6 md:mb-8 text-center md:text-left">
-          Pro koho jsem – a pro koho ne
+        <h2 className="nadpisPage mb-6 md:mb-8 text-center md:text-left leading-tight">
+          Pro koho jsem - <br className="md:hidden" /><span className="text-neutral-300 font-normal"><b>a pro koho ne</b></span>
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
@@ -18,13 +18,13 @@ export default function FitSection() {
               <li className="flex items-start">
                 <span className="text-emerald-600 mr-3 font-bold">•</span>
                 <span className="text-base md:text-lg leading-relaxed text-gray-700">
-                  pro malé a střední firmy, které chtějí růst a berou web jako důležitý kanál
+                  jednotlivce, pro malé a střední firmy, které chtějí růst a berou web jako důležitý kanál
                 </span>
               </li>
               <li className="flex items-start">
                 <span className="text-emerald-600 mr-3 font-bold">•</span>
                 <span className="text-base md:text-lg leading-relaxed text-gray-700">
-                  pro projekty, které chtějí promyšlený web, ne jen &quot;nějaké stránky&quot;
+                  pro projekty, které chtějí funkční a promyšlený web, ne &quot;nějaké stránky&quot;
                 </span>
               </li>
               <li className="flex items-start">

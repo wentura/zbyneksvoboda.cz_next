@@ -6,10 +6,10 @@ export default function CaseStudiesSection() {
     {
       title: "Autokemp Kokořín",
       tag: "Redesign webu",
-      subtitle: "Od starého webu k plné sezóně",
+      subtitle: "Od zastaralého webu k plné sezóně",
       problem: {
         title: "Co klient řešil",
-        text: "Autokemp Kokořín měl zastaralý web, který se špatně zobrazoval na mobilu, byl nepřehledný a neodpovídal současnému standardu. Hosté na webu těžko hledali základní informace a rezervace přes web nebyly prioritním kanálem.",
+        text: "Autokemp Kokořín měl zastaralý web, který se špatně zobrazoval na mobilu, byl nepřehledný a neodpovídal současnému standardu. Hosté na webu těžko hledali základní informace.",
       },
       solution: {
         title: "Co jsem udělal",
@@ -31,7 +31,7 @@ export default function CaseStudiesSection() {
       subtitle: "E-shop, kde produkty konečně vyniknou",
       problem: {
         title: "Co klient řešil",
-        text: "E-shop s ručně vyráběnými produkty na Shoptetu nedokázal na mobilu dobře odprezentovat produkty. Layout byl přeplácaný a zákazníci se hůř orientovali v kategoriích.",
+        text: "E-shop s ručně vyráběnými produkty na Shoptetu nedokázal na mobilu dobře odprezentovat produkty. Layout byl přeplácaný a zákazníci se hůř orientovali v kategoriích a produktech.",
       },
       solution: {
         title: "Co jsem udělal",
@@ -45,11 +45,11 @@ export default function CaseStudiesSection() {
         title: "Výsledek",
         text: "Přehlednější e-shop, kde produkty vyniknou a zákazník se snáze dostane od úvodní stránky až k dokončení objednávky.",
       },
-      link: "#",
+      link: "https://www.kolem-krku.cz/",
     },
     {
       title: "Zodpovědná výuka",
-      tag: "Migrace",
+      tag: "Migrace na Shoptet",
       subtitle: "Bezpečný přesun na Shoptet",
       problem: {
         title: "Co klient řešil",
@@ -67,7 +67,7 @@ export default function CaseStudiesSection() {
         title: "Výsledek",
         text: "Stabilní e-shop, který šetří čas i nervy majitelce a je dobře použitelný pro cílovou skupinu.",
       },
-      link: "#",
+      link: "https://www.zodpovednavyuka.cz/",
     },
   ];
 
@@ -78,11 +78,11 @@ export default function CaseStudiesSection() {
           Případové studie
         </h2>
         
-        <div className="space-y-16 md:space-y-24">
+        <div className="space-y-16 md:space-y-24 divide-y divide-neutral-100">
           {caseStudies.map((study, index) => (
             <div
               key={index}
-              className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12"
+              className="grid grid-cols-1 md:grid-cols-3 pt-12 md:pt-16"
             >
               <div className="md:col-span-1">
                 <div className="mb-4">

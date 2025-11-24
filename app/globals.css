@@ -24,7 +24,7 @@
   }
   .nadpisPage {
     /* @apply text-3xl md:text-5xl font-bold text-gray-900 tracking-tight; */
-    @apply text-3xl md:text-5xl font-bold leading-tight tracking-[-0.02em] text-modra2;
+    @apply text-3xl md:text-5xl font-bold tracking-tight text-modra2 leading-relaxed;
     /* font-family: "Montserrat", sans-serif !important; */
     /* font-family: notoserif !important; */
     /* font-optical-sizing: auto; */

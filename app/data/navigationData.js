@@ -1,15 +1,15 @@
 export const navData = [
   {
-    title: "Řešení & služby",
+    title: "Služby",
     link: "/#sluzby",
   },
   {
-    title: "Projekty & reference",
+    title: "Případové studie",
     link: "/portfolio",
   },
   //   { title: "Jak pracuji", link: "/jakpracuji" },
   {
-    title: "Recenze",
+    title: "Reference",
     link: "/recenze",
   },
   //   { title: "Blog & zdroje", link: "/blog" },

@@ -5,7 +5,7 @@ export default function ProcessSection() {
     {
       number: "1",
       title: "Nezávazná konzultace (cca 30 minut)",
-      description: "Seznámíme se s vaším projektem, cíli a aktuálním stavem webu. Řekneme si, jestli a jak vám můžu pomoci.",
+      description: "Seznámím se s vaším projektem, cíli a aktuálním stavem webu. Řekneme si, jestli a jak vám můžu pomoci.",
     },
     {
       number: "2",
@@ -20,7 +20,7 @@ export default function ProcessSection() {
     {
       number: "4",
       title: "Realizace / vedení projektu",
-      description: "Můžu řešení sám realizovat, nebo vést váš tým či externí dodavatele. Pomáhám držet kvalitu a směr projektu.",
+      description: "Mohu řešení sám realizovat, nebo vést váš tým či externí dodavatele. Pomáhám držet kvalitu a směr projektu.",
     },
     {
       number: "5",
@@ -48,14 +48,14 @@ export default function ProcessSection() {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="flex flex-col md:flex-row gap-6 md:gap-8 items-start"
+              className="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start"
             >
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-red-400 text-white flex items-center justify-center text-xl md:text-2xl font-bold">
                   {step.number}
                 </div>
               </div>
-              <div className="flex-1">
+              <div className="flex-1 text-center md:text-left">
                 <h3 className="text-xl md:text-2xl font-semibold mb-3 text-gray-900">
                   {step.title}
                 </h3>

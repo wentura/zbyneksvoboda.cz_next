@@ -9,7 +9,7 @@ export default function Services() {
     >
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
         <h2 className="nadpisPage mb-6 md:mb-8 text-center md:text-left">
-          S čím vám pomůžu
+          S čím vám pomohu
         </h2>
         <p className="text-lg md:text-xl leading-relaxed mb-12 text-gray-700 max-w-3xl">
           Tři hlavní pilíře, jak pomáhám firmám mít web, který skutečně funguje.
@@ -19,7 +19,7 @@ export default function Services() {
           {/* Service 1: UX & Web Consulting */}
           <div className="p-6 md:p-8 bg-white rounded-2xl border border-neutral-200 shadow-sm flex flex-col">
             <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900">
-              UX & Web Consulting
+              UX & Web konzultace
             </h3>
             <p className="text-lg font-medium mb-4 text-gray-700">
               Když potřebujete zjistit, proč váš web nefunguje – a co s tím.
@@ -49,14 +49,14 @@ export default function Services() {
                 </li>
               </ul>
             </div>
-            <div className="mt-auto pt-4 border-t border-neutral-200">
+            {/* <div className="mt-auto pt-4 border-t border-neutral-200">
               <p className="text-lg font-semibold text-gray-900 mb-2">
                 od 5 000 Kč
               </p>
               <p className="text-sm text-gray-600">
                 (podle rozsahu webu a hloubky analýzy)
               </p>
-            </div>
+            </div> */}
           </div>
           
           {/* Service 2: Web Leadership */}
@@ -92,14 +92,14 @@ export default function Services() {
                 </li>
               </ul>
             </div>
-            <div className="mt-auto pt-4 border-t border-neutral-200">
+            {/* <div className="mt-auto pt-4 border-t border-neutral-200">
               <p className="text-lg font-semibold text-gray-900 mb-2">
-                10–20 000 Kč měsíčně
+                od 10 000 Kč měsíčně
               </p>
               <p className="text-sm text-gray-600">
                 (podle rozsahu a očekávané role)
               </p>
-            </div>
+            </div> */}
           </div>
           
           {/* Service 3: High-end web / redesign */}
@@ -135,14 +135,14 @@ export default function Services() {
                 </li>
               </ul>
             </div>
-            <div className="mt-auto pt-4 border-t border-neutral-200">
+            {/* <div className="mt-auto pt-4 border-t border-neutral-200">
               <p className="text-lg font-semibold text-gray-900 mb-2">
-                30–60 000 Kč
+                od 30 000 Kč
               </p>
               <p className="text-sm text-gray-600">
                 (podle rozsahu a náročnosti projektu)
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
         
@@ -151,7 +151,7 @@ export default function Services() {
             className="heroBtn"
             href="/#kontakt"
           >
-            Chci toto řešení
+            Chci spoluracovat
           </Link>
         </div>
       </div>

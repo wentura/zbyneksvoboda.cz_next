@@ -23,12 +23,12 @@ export default function RecenzeShort() {
 
   const otherClients = [
     "Doomantia",
-    "AntonieEmma",
-    "Hexfit",
-    "Kolem-krku",
+    "Kokorin.cz",
+    "UGHighers",
+    "SvouCestou.info",
+    "Letovisko Harasov",
     "Kokostezky",
-    "Zoe8",
-    "Zodpovědný Hub",
+    "Zodpovědná výuka",
   ];
 
   return (
