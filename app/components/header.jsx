@@ -20,7 +20,7 @@ export default function Header({ kde }) {
           <Navigation />
           <Link
             href="#kontakt"
-            className="hidden md:inline-flex items-center px-4 py-2 border border-modra2 text-modra2 hover:bg-modra2 hover:text-white transition font-bold"
+            className="hidden lg:inline-flex items-center px-4 py-2 border border-modra2 text-modra2 hover:bg-modra2 hover:text-white transition font-bold"
           >
             Konzultace
           </Link>

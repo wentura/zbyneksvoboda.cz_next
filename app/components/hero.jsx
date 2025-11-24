@@ -8,9 +8,9 @@ export default function Hero() {
   return (
     <section className="min-h-[50vh] flex items-center py-8 md:py-16 bg-white">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-12 lg:gap-18 items-center">
           {/* Left: Text content */}
-          <div className="flex flex-col">
+          <div className="flex flex-col col-span-1 md:col-span-2 lg:col-span-1">
             <h1 className="nadpisPage mb-6 md:mb-8">
               Weby, které mají strategii, strukturu a přinášejí výsledky.
             </h1>

@@ -15,7 +15,7 @@ export default function Services() {
           Tři hlavní pilíře, jak pomáhám firmám mít web, který skutečně funguje.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 mb-12">
           {/* Service 1: UX & Web Consulting */}
           <div className="p-6 md:p-8 bg-white rounded-2xl border border-neutral-200 shadow-sm flex flex-col">
             <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900">
