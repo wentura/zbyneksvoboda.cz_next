@@ -17,8 +17,8 @@ const notoserif = localFont({
 });
 
 export const metadata = {
-  title: "Zbyněk Svoboda, tvořím weby",
-  description: "Zbyněk Svoboda, webový designér a vývojář na volné noze.",
+  title: "Zbyněk Svoboda - digitální stratég, konzultant a webový vývojář",
+  description: "Zbyněk Svoboda - digitální stratég, konzultant a webový vývojář. Pomáhám firmám mít web, který není jen vizitka - ale funkční nástroj pro získávání klientů.",
   metadataBase: new URL("https://zbyneksvoboda.cz"),
   alternates: {
     canonical: "/",
