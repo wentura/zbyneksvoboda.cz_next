@@ -107,9 +107,9 @@ export default function PortfolioPage() {
           {/* Projekty bez case study - jednodušší grid */}
           {projectsWithoutCaseStudy.length > 0 && (
             <div>
-              <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-gray-900">
+              {/* <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-gray-900">
                 Další projekty
-              </h2>
+              </h2> */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
                 {projectsWithoutCaseStudy.map((item, index) => (
                   <div
@@ -123,7 +123,7 @@ export default function PortfolioPage() {
                           alt={item.images[0].alt || item.title}
                           width={600}
                           height={400}
-                          className="object-cover w-full h-48 md:h-64"
+                          className="object-cover object-top w-full h-48 md:h-64"
                         />
                       </div>
                     )}
