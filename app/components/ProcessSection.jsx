@@ -4,33 +4,33 @@ export default function ProcessSection() {
   const steps = [
     {
       number: "1",
-      title: "Nezávazná konzultace (cca 30 minut)",
-      description: "Seznámím se s vaším projektem, cíli a aktuálním stavem webu. Řekneme si, jestli a jak vám můžu pomoci.",
+      title: "Krátká nezávazná konzultace",
+      description: "Seznámíme se, ujasníme cíle a očekávání.",
     },
     {
       number: "2",
       title: "Analýza a audit",
-      description: "Podívám se na váš web, data (pokud jsou), konkurenci a cílové skupiny. V této fázi vznikají první konkrétní doporučení.",
+      description: "Web, data, konkurence, cílové skupiny.",
     },
     {
       number: "3",
       title: "Návrh strategie a řešení",
-      description: "Připravím návrh struktury, změn na webu a doporučení k obsahu a technologii. Výstupem je přehledný dokument, podle kterého se dá postupovat.",
+      description: "Přehledný plán, podle kterého se dá rozhodovat i postupovat.",
     },
     {
       number: "4",
-      title: "Realizace / vedení projektu",
-      description: "Mohu řešení sám realizovat, nebo vést váš tým či externí dodavatele. Pomáhám držet kvalitu a směr projektu.",
+      title: "Realizace nebo vedení projektu",
+      description: "Buď řešení realizuji, nebo vedu váš tým / dodavatele.",
     },
     {
       number: "5",
       title: "Ladění a měření výsledků",
-      description: "Po spuštění se díváme na data, reakce uživatelů a reálné fungování webu. Podle toho děláme další úpravy.",
+      description: "Práce s daty, chováním uživatelů a reálným fungováním webu.",
     },
     {
       number: "6",
-      title: "Dlouhodobá podpora (volitelně)",
-      description: "Pokud to dává smysl, pokračuji jako váš webový konzultant a pomáhám s dalším rozvojem.",
+      title: "Dlouhodobá spolupráce (volitelně)",
+      description: "Pokud dává smysl, pokračujeme dál.",
     },
   ];
 
@@ -40,8 +40,12 @@ export default function ProcessSection() {
         <h2 className="nadpisPage mb-6 md:mb-8 text-center md:text-left">
           Jak spolupráce probíhá
         </h2>
+        <p className="text-lg md:text-xl leading-relaxed mb-6 text-gray-700 max-w-3xl font-medium">
+          Spolupráci beru jako dialog.
+        </p>
         <p className="text-lg md:text-xl leading-relaxed mb-12 text-gray-700 max-w-3xl">
-          Každý projekt je jiný, ale osvědčil se mi následující postup:
+          Nejdřív potřebuji pochopit vás, váš byznys a kontext.
+          Teprve potom řešíme web.
         </p>
         
         <div className="space-y-6 md:space-y-8">

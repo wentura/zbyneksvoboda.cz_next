@@ -17,13 +17,14 @@ export default function Contact() {
         <h1 className="nadpisPageWhite leading-snug sm:w-full text-center md:text-left mb-6 md:mb-8">
           Pojďme probrat váš web
         </h1>
+        <p className="text-lg md:text-xl leading-relaxed text-white mb-4 max-w-3xl">
+          Možná cítíte, že by váš web mohl fungovat lépe.
+        </p>
         <p className="text-lg md:text-xl leading-relaxed text-white mb-8 max-w-3xl">
-          Máte pocit, že váš web by mohl fungovat lépe?  
-          Nebo teprve přemýšlíte, jak ho uchopit, aby dával smysl a podporoval váš byznys?
+          Nemusíte mít jasno – od toho je úvodní konzultace.
         </p>
         <p className="text-lg md:text-xl leading-relaxed text-white mb-12 max-w-3xl">
-          Napište mi pár vět o vašem projektu.  
-          Ozvu se vám a domluvíme krátkou nezávaznou konzultaci.
+          Napište mi pár vět o vašem projektu. Ozvu se vám a domluvíme krátkou nezávaznou konzultaci.
         </p>
       </div>
       <div className="container flex flex-col items-center max-w-screen-xl mx-auto md:flex-row ">

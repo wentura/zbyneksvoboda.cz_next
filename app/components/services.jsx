@@ -16,17 +16,17 @@ export default function Services() {
         </p>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 mb-12">
-          {/* Service 1: UX & Web Consulting */}
+          {/* Service 1: Strategická webová konzultace */}
           <div className="p-6 md:p-8 bg-white rounded-2xl border border-neutral-200 shadow-sm flex flex-col">
             <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900">
-              UX & Web konzultace
+              Strategická webová konzultace
             </h3>
             <p className="text-lg font-medium mb-4 text-gray-700">
-              Když potřebujete zjistit, proč váš web nefunguje – a co s tím.
+              Když potřebujete nadhled, jasno a konkrétní doporučení.
             </p>
             <p className="text-base leading-relaxed mb-6 text-gray-600">
-              Podívám se na váš web očima zákazníka i odborníka.  
-              Analyzuji strukturu, obsah, navigaci, důvěryhodnost i technické řešení.
+              Podívám se na váš web očima zákazníka i odborníka.
+              Analyzuji strukturu, obsah, UX, důvěryhodnost i technické řešení – a pojmenuji, co dává smysl zlepšit.
             </p>
             <div className="mb-6">
               <p className="text-sm font-semibold mb-3 text-gray-900">Co získáte:</p>
@@ -37,7 +37,7 @@ export default function Services() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-red-400 mr-2">•</span>
-                  <span>konkrétní návrhy změn na webu</span>
+                  <span>konkrétní návrhy změn</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-red-400 mr-2">•</span>
@@ -45,7 +45,7 @@ export default function Services() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-red-400 mr-2">•</span>
-                  <span>jednoduchou roadmapu, co má smysl řešit jako první</span>
+                  <span>srozumitelnou roadmapu dalších kroků</span>
                 </li>
               </ul>
             </div>
@@ -67,16 +67,18 @@ export default function Services() {
             <p className="text-lg font-medium mb-4 text-gray-700">
               Dlouhodobé vedení webových projektů bez nutnosti mít vlastního &quot;webového šéfa&quot;.
             </p>
+            <p className="text-base leading-relaxed mb-4 text-gray-600 font-medium">
+              Jsem partner pro firmy, které nechtějí web řešit operativně, ale strategicky.
+            </p>
             <p className="text-base leading-relaxed mb-6 text-gray-600">
-              Pokud máte více webů, e-shop, interní systém nebo rozjetý projekt, je snadné se ztratit v detailech.  
-              V roli webového konzultanta / &quot;CTO na částečný úvazek&quot; pomáhám firmám držet směr a udržet weby funkční a rozvíjené.
+              Pomáhám držet směr, kvalitu a souvislosti napříč webem, e-shopem nebo interními systémy.
             </p>
             <div className="mb-6">
               <p className="text-sm font-semibold mb-3 text-gray-900">Co získáte:</p>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex items-start">
                   <span className="text-red-400 mr-2">•</span>
-                  <span>dlouhodobý dohled nad webem a souvisejícími projekty</span>
+                  <span>dlouhodobý dohled nad webem a digitálními projekty</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-red-400 mr-2">•</span>
@@ -84,7 +86,7 @@ export default function Services() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-red-400 mr-2">•</span>
-                  <span>kontrolu kvality a směru vývoje</span>
+                  <span>kontrolu kvality a smysluplnosti řešení</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-red-400 mr-2">•</span>
@@ -108,11 +110,11 @@ export default function Services() {
               High-end web / redesign
             </h3>
             <p className="text-lg font-medium mb-4 text-gray-700">
-              Když nechcete jen nový web, ale funkční systém pro prezentaci vaší firmy.
+              Když nechcete jen nový web, ale funkční systém pro prezentaci firmy.
             </p>
             <p className="text-base leading-relaxed mb-6 text-gray-600">
-              Navrhnu a zrealizuji web, který vychází z vašich cílů, dat a reálných potřeb vašich zákazníků.  
-              Ne &quot;web za 15 tisíc&quot;, ale promyšlené řešení, na které se můžete spolehnout.
+              Navrhnu a zrealizuji web, který vychází z vašich cílů, dat a reálných potřeb zákazníků.
+              Vhodné pro firmy, které chtějí web jako stabilní součást svého podnikání – ne jednorázový projekt.
             </p>
             <div className="mb-6">
               <p className="text-sm font-semibold mb-3 text-gray-900">Co získáte:</p>
@@ -123,15 +125,15 @@ export default function Services() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-red-400 mr-2">•</span>
-                  <span>návrh UX a obsahové kostry</span>
+                  <span>promyšlený UX návrh a obsahovou kostru</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-red-400 mr-2">•</span>
-                  <span>technické řešení postavené na moderních technologiích</span>
+                  <span>moderní technické řešení připravené na další rozvoj</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-red-400 mr-2">•</span>
-                  <span>web optimalizovaný pro rychlost, mobil a budoucí rozvoj</span>
+                  <span>web optimalizovaný pro rychlost, mobil a dlouhodobou udržitelnost</span>
                 </li>
               </ul>
             </div>

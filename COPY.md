@@ -11,26 +11,27 @@ Jazyk: čeština, vykání, profesionální, lidský, bez přehnané omáčky.
 
 **Hlavní nadpis (H1):**
 
-> Weby, které mají strategii, strukturu a přinášejí výsledky.
+> Pomáhám firmám dělat lepší rozhodnutí v digitálu.
 
 **Podnadpis:**
 
-> Jsem Zbyněk Svoboda, webový konzultant a digitální stratég.  
-> Pomáhám firmám mít web, který není jen vizitka – ale funkční nástroj pro získávání klientů.
+> Jsem digitální konzultant, stratég a vývojář.  
+> Pomáhám firmám ujasnit si směr, postavit funkční web a dlouhodobě ho rozvíjet tak, aby podporoval jejich byznys – ne ho brzdil.
 
-**Bulletpointy – možnosti:**
+**Doplňující text:**
 
-- od nápadu po měřitelný výsledek  
-- UX, obsah, strategie i technologie v jednom  
-- spolupráce s menšími a středními firmami, které chtějí růst  
+> Web nevnímám jako vizitku.  
+> Beru ho jako nástroj, který má jasný cíl, strukturu a měřitelný přínos.
+
+**Bulletpointy:**
+
+- nejdřív směr, potom řešení  
+- byznys, UX a technologie v jednom kontextu  
+- spolupráce založená na důvěře a dlouhodobém partnerství  
 
 **Primární CTA:**
 
 > Domluvit nezávaznou konzultaci
-
-**Sekundární CTA:**
-
-> Podívat se na případové studie
 
 ---
 
@@ -38,80 +39,105 @@ Jazyk: čeština, vykání, profesionální, lidský, bez přehnané omáčky.
 
 **Nadpis:**
 
-> Většina webů neprodává. Ne proto, že špatně vypadají.
+> Spousta webů vznikla s dobrým úmyslem.
+
+**Podnadpis:**
+
+> Dnes ale firmám nepomáhá růst.
 
 **Úvodní odstavec:**
 
-Mnoho firem má web, který „nějak funguje“, ale reálně nepřináší nové klienty nebo poptávky.  
-Problém většinou není v kódu nebo grafice, ale v tom, jak je web postavený.
+Mnoho firem má web, který „nějak funguje".  
+Je online, je hezký, ale nepřináší nové poptávky ani lepší obchodní výsledky.
 
-**Boxy – příčiny:**
+Ne proto, že by byl špatně nakódovaný.  
+Většinou chybí jasný záměr a struktura.
 
-1. **Není jasné, co nabízíte**  
-   Návštěvník během pár vteřin nepochopí, jestli jste pro něj ti praví.
+**Typické situace, se kterými se setkávám:**
 
-2. **Web mluví o vás, ne o zákazníkovi**  
-   Texty jsou psané z vašeho pohledu, ne z pohledu člověka, který řeší konkrétní problém.
-
-3. **Chybí struktura a logická cesta**  
-   Uživatel neví, kam kliknout dál, kde začít a jak se dostat k poptávce.
-
-4. **Nikdo neměří, co funguje**  
-   Web žije vlastním životem. Změny se dělají pocitově, ne na základě dat.
+- návštěvník během pár vteřin nepochopí, co firma nabízí  
+- web mluví hlavně o firmě, ne o problémech zákazníků  
+- uživatel neví, kam jít dál a co je dalším krokem  
+- změny se dělají pocitově, bez dat a zpětné vazby  
 
 **Závěrečná věta:**
 
-Moje práce začíná tam, kde klasická „tvorba webů“ končí – u **strategie, struktury a měřitelných výsledků**.
+Web pak žije vlastním životem – a firma s ním.
+
+---
+
+## 2.1. Role / Pozicování
+
+**Nadpis:**
+
+> Moje role nezačíná u designu ani u kódu.
+
+**Text:**
+
+Pomáhám firmám přemýšlet o webu v širším kontextu:
+
+- jakou má roli v byznysu  
+- koho má oslovovat  
+- co má podporovat  
+- a jak se má vyvíjet v čase  
+
+**Klíčová věta:**
+
+> Web je výsledek rozhodnutí.  
+> Ne jejich začátek.
 
 ---
 
 ## 3. Služby / Řešení
 
-### 3.1 UX & Web Consulting
+### 3.1 Strategická webová konzultace
 
 **Podnadpis:**
 
-> Když potřebujete zjistit, proč váš web nefunguje – a co s tím.
+> Když potřebujete nadhled, jasno a konkrétní doporučení.
 
 **Text:**
 
 Podívám se na váš web očima zákazníka i odborníka.  
-Analyzuji strukturu, obsah, navigaci, důvěryhodnost i technické řešení.
+Analyzuji strukturu, obsah, UX, důvěryhodnost i technické řešení – a pojmenuji, co dává smysl zlepšit.
 
 **Co získáte:**
 
 - jasně pojmenované problémy a příležitosti  
-- konkrétní návrhy změn na webu  
+- konkrétní návrhy změn  
 - doporučení k obsahu, UX a technické architektuře  
-- jednoduchou roadmapu, co má smysl řešit jako první
+- srozumitelnou roadmapu dalších kroků
 
 **Orientační cena:**
 
-> od 5 000 Kč (podle rozsahu webu a hloubky analýzy)
+> od 5 000 Kč
 
 ---
 
-### 3.2 Web Leadership (Fractional CTO)
+### 3.2 Web Leadership
 
 **Podnadpis:**
 
-> Dlouhodobé vedení webových projektů bez nutnosti mít vlastního „webového šéfa“.
+> Dlouhodobé vedení webových projektů bez nutnosti mít vlastního „webového šéfa".
+
+**Úvodní věta:**
+
+> Jsem partner pro firmy, které nechtějí web řešit operativně, ale strategicky.
 
 **Text:**
 
-Pokud máte více webů, e-shop, interní systém nebo rozjetý projekt, je snadné se ztratit v detailech.  
-V roli webového konzultanta / „CTO na částečný úvazek“ pomáhám firmám držet směr a udržet weby funkční a rozvíjené.
+Pomáhám držet směr, kvalitu a souvislosti napříč webem, e-shopem nebo interními systémy.
 
 **Co získáte:**
 
-- dlouhodobý dohled nad webem a souvisejícími projekty  
+- dlouhodobý dohled nad webem a digitálními projekty  
 - pomoc s výběrem dodavatelů a technologií  
-- kontrolu kvality a směru vývoje  
+- kontrolu kvality a smysluplnosti řešení  
 - partnera, který rozumí byznysu i technické stránce věci
 
 **Orientační cena:**
 
-> 10–20 000 Kč měsíčně (podle rozsahu a očekávané role)
+> od 10 000 Kč měsíčně
 
 ---
 
@@ -119,23 +145,23 @@ V roli webového konzultanta / „CTO na částečný úvazek“ pomáhám firm�
 
 **Podnadpis:**
 
-> Když nechcete jen nový web, ale funkční systém pro prezentaci vaší firmy.
+> Když nechcete jen nový web, ale funkční systém pro prezentaci firmy.
 
 **Text:**
 
-Navrhnu a zrealizuji web, který vychází z vašich cílů, dat a reálných potřeb vašich zákazníků.  
-Ne „web za 15 tisíc“, ale promyšlené řešení, na které se můžete spolehnout.
+Navrhnu a zrealizuji web, který vychází z vašich cílů, dat a reálných potřeb zákazníků.  
+Vhodné pro firmy, které chtějí web jako stabilní součást svého podnikání – ne jednorázový projekt.
 
 **Co získáte:**
 
 - jasné pozicování a strukturu webu  
-- návrh UX a obsahové kostry  
-- technické řešení postavené na moderních technologiích  
-- web optimalizovaný pro rychlost, mobil a budoucí rozvoj
+- promyšlený UX návrh a obsahovou kostru  
+- moderní technické řešení připravené na další rozvoj  
+- web optimalizovaný pro rychlost, mobil a dlouhodobou udržitelnost
 
 **Orientační cena:**
 
-> 30–60 000 Kč (podle rozsahu a náročnosti projektu)
+> od 30 000 Kč
 
 ---
 
@@ -147,32 +173,30 @@ Ne „web za 15 tisíc“, ale promyšlené řešení, na které se můžete spo
 
 **Úvodní text:**
 
-Každý projekt je jiný, ale osvědčil se mi následující postup:
+> Spolupráci beru jako dialog.
+
+Nejdřív potřebuji pochopit vás, váš byznys a kontext.  
+Teprve potom řešíme web.
 
 **Kroky:**
 
-1. **Nezávazná konzultace (cca 30 minut)**  
-   Seznámíme se s vaším projektem, cíli a aktuálním stavem webu.  
-   Řekneme si, jestli a jak vám můžu pomoci.
+1. **Nezávazná konzultace (30 minut)**  
+   Seznámíme se, ujasníme cíle a očekávání.
 
 2. **Analýza a audit**  
-   Podívám se na váš web, data (pokud jsou), konkurenci a cílové skupiny.  
-   V této fázi vznikají první konkrétní doporučení.
+   Web, data, konkurence, cílové skupiny.
 
 3. **Návrh strategie a řešení**  
-   Připravím návrh struktury, změn na webu a doporučení k obsahu a technologii.  
-   Výstupem je přehledný dokument, podle kterého se dá postupovat.
+   Přehledný plán, podle kterého se dá rozhodovat i postupovat.
 
-4. **Realizace / vedení projektu**  
-   Můžu řešení sám realizovat, nebo vést váš tým či externí dodavatele.  
-   Pomáhám držet kvalitu a směr projektu.
+4. **Realizace nebo vedení projektu**  
+   Buď řešení realizuji, nebo vedu váš tým / dodavatele.
 
 5. **Ladění a měření výsledků**  
-   Po spuštění se díváme na data, reakce uživatelů a reálné fungování webu.  
-   Podle toho děláme další úpravy.
+   Práce s daty, chováním uživatelů a reálným fungováním webu.
 
-6. **Dlouhodobá podpora (volitelně)**  
-   Pokud to dává smysl, pokračuji jako váš webový konzultant a pomáhám s dalším rozvojem.
+6. **Dlouhodobá spolupráce (volitelně)**  
+   Pokud dává smysl, pokračujeme dál.
 
 ---
 
@@ -287,19 +311,19 @@ Pod recenzemi může být krátká věta:
 
 > Pro koho jsem – a pro koho ne
 
-**Pro koho jsem ideální partner:**
+**Ideální spolupráce:**
 
-- pro malé a střední firmy, které chtějí růst a berou web jako důležitý kanál  
-- pro projekty, které chtějí promyšlený web, ne jen „nějaké stránky“  
-- pro klienty, kteří ocení otevřenou komunikaci a upřímnou zpětnou vazbu  
-- pro podnikatele, kteří chtějí dlouhodobý vztah, ne jednorázovou levnou zakázku
+- jednotlivci a firmy, které chtějí mít ve svém digitálu jasno  
+- projekty, které berou web jako důležitý nástroj, ne nutnost  
+- klienti, kteří ocení otevřenou komunikaci a upřímnou zpětnou vazbu  
+- dlouhodobé spolupráce založené na důvěře
 
-**Pro koho nejsem:**
+**Kdy spolupráce nedává smysl:**
 
-- pro projekty, kde je hlavním kritériem nejnižší cena  
-- pro „rychlý web do pátku“ bez jasného zadání a cíle  
-- pro zadání typu „udělejte něco hezkého, ono se to nějak použije“  
-- pro firmy, které nechtějí přemýšlet o svém byznysu a zákaznících
+- když je hlavním kritériem nejnižší cena  
+- „rychlý web do pátku" bez cíle a zadání  
+- zadání typu „udělejte něco hezkého"  
+- projekty, které nechtějí přemýšlet o svém byznysu
 
 ---
 
@@ -311,29 +335,26 @@ Pod recenzemi může být krátká věta:
 
 **Úvodní odstavec:**
 
-Každý projekt je jiný. Cena vždy vychází z reálného rozsahu, cílů a nároků na funkce.  
-Po úvodní konzultaci připravím konkrétní návrh řešení i rozpočtu.
+Každý projekt je jiný.  
+Cena vždy vychází z reálného rozsahu, cílů a nároků.
 
 ---
 
-**UX & Web Consulting**
+**Strategická webová konzultace**
 
-> od 5 000 Kč  
-> (podle rozsahu webu a hloubky analýzy)
+> od 5 000 Kč
 
 ---
 
-**Web Leadership (měsíční spolupráce)**
+**Web Leadership (měsíčně)**
 
-> 10–20 000 Kč měsíčně  
-> (podle počtu projektů a očekávané role)
+> od 10 000 Kč
 
 ---
 
 **High-end web / redesign**
 
-> 30–60 000 Kč  
-> (podle rozsahu, funkcí a náročnosti projektu)
+> od 30 000 Kč
 
 ---
 
@@ -345,11 +366,10 @@ Po úvodní konzultaci připravím konkrétní návrh řešení i rozpočtu.
 
 **Text:**
 
-Máte pocit, že váš web by mohl fungovat lépe?  
-Nebo teprve přemýšlíte, jak ho uchopit, aby dával smysl a podporoval váš byznys?
+Možná cítíte, že by váš web mohl fungovat lépe.  
+Nemusíte mít jasno – od toho je úvodní konzultace.
 
-Napište mi pár vět o vašem projektu.  
-Ozvu se vám a domluvíme krátkou nezávaznou konzultaci.
+Napište mi pár vět o vašem projektu. Ozvu se vám a domluvíme krátkou nezávaznou konzultaci.
 
 **Formulář – popisky:**
 

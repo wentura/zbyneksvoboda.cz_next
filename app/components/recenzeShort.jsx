@@ -22,8 +22,8 @@ export default function RecenzeShort() {
   ];
 
   const otherClients = [
-    "Doomantia",
-    "Kokorin.cz",
+    "Doomentia",
+    "Ergo-product.cz",
     "UGHighers",
     "SvouCestou.info",
     "Letovisko Harasov",

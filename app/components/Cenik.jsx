@@ -4,20 +4,20 @@ import React from "react";
 export default function Cenik() {
   const pricing = [
     {
-      title: "UX & Web konzultace",
-      description: "Když potřebujete zjistit, proč váš web nefunguje – a co s tím.",
+      title: "Strategická webová konzultace",
+      description: "Když potřebujete nadhled, jasno a konkrétní doporučení.",
       price: "od 5 000 Kč",
       note: "(podle rozsahu webu a hloubky analýzy)",
     },
     {
-      title: "Web Leadership (měsíční spolupráce)",
+      title: "Web Leadership (měsíčně)",
       description: "Dlouhodobé vedení webových projektů bez nutnosti mít vlastního 'webového šéfa'.",
-      price: "od 10 000 Kč měsíčně",
+      price: "od 10 000 Kč",
       note: "(podle počtu projektů a očekávané role)",
     },
     {
       title: "High-end web / redesign",
-      description: "Když nechcete jen nový web, ale funkční systém pro prezentaci vaší firmy.",
+      description: "Když nechcete jen nový web, ale funkční systém pro prezentaci firmy.",
       price: "od 30 000 Kč",
       note: "(podle rozsahu, funkcí a náročnosti projektu)",
     },
@@ -33,8 +33,8 @@ export default function Cenik() {
           Orientační ceny
         </h2>
         <p className="text-lg md:text-xl leading-relaxed mb-12 text-gray-700 max-w-3xl">
-          Každý projekt je jiný. Cena vždy vychází z reálného rozsahu, cílů a nároků na funkce.  
-          Po úvodní konzultaci připravím konkrétní návrh řešení i rozpočet.
+          Každý projekt je jiný.
+          Cena vždy vychází z reálného rozsahu, cílů a nároků.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12">
