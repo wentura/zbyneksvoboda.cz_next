@@ -1,16 +1,19 @@
+// * Importy pro obrázky, odkazy, React a data portfolia.
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { portfolioData } from "../../data/portfolioData";
+import SafeHtml from "../../components/SafeHtml";
 
+// * Export stránky portfolia s rozdělením na case studies a ostatní projekty.
 export default function PortfolioPage() {
-  // Projekty s case study - zobrazíme ve formátu podobném CaseStudiesSection
-  // Zahrneme projekty, které mají caseStudy a nejsou explicitně označené jako hasCaseStudy: false
+  // * Projekty s case study - zobrazíme ve formátu podobném CaseStudiesSection.
+  // * Zahrneme projekty, které mají caseStudy a nejsou explicitně označené jako hasCaseStudy: false.
   const projectsWithCaseStudy = portfolioData.filter(
     (item) => item.caseStudy && item.hasCaseStudy !== false && item.slug
   );
 
-  // Projekty bez case study - zobrazíme jednodušší formát
+  // * Projekty bez case study - zobrazíme jednodušší formát.
   const projectsWithoutCaseStudy = portfolioData.filter(
     (item) => !item.caseStudy || item.hasCaseStudy === false || !item.slug
   );
@@ -29,18 +32,19 @@ export default function PortfolioPage() {
             technická preciznost s promyšlenou strategií.
           </p>
 
-          {/* Projekty s case study - detailní formát */}
+          {/* * Projekty s case study - detailní formát */}
           {projectsWithCaseStudy.length > 0 && (
             <div className="space-y-16 md:space-y-24 mb-24">
               <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-gray-900">
                 Případové studie
               </h2>
+              {/* * Smyčka přes projekty s case study */}
               {projectsWithCaseStudy.map((item, index) => (
                 <div
                   key={index}
                   className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12"
                 >
-                  {/* Levá strana - název, tag, obrázek */}
+                  {/* * Levá strana - název, tag, obrázek */}
                   <div className="md:col-span-1">
                     <div className="mb-4">
                       <span className="inline-block px-3 py-1 text-sm font-medium bg-neutral-100 text-gray-700 rounded">
@@ -50,11 +54,13 @@ export default function PortfolioPage() {
                     <h3 className="text-2xl md:text-3xl font-semibold mb-2 text-gray-900">
                       {item.title}
                     </h3>
+                    {/* * Podnadpis je zobrazen pouze pokud existuje */}
                     {item.caseStudy?.subTitle && (
                       <p className="text-lg text-gray-600 mb-6">
                         {item.caseStudy.subTitle}
                       </p>
                     )}
+                    {/* * Náhledový obrázek pokud je k dispozici */}
                     {item.images && item.images[0] && (
                       <div className="mb-6 overflow-hidden rounded-lg shadow-md">
                         <Image
@@ -66,6 +72,7 @@ export default function PortfolioPage() {
                         />
                       </div>
                     )}
+                    {/* * Externí odkaz na web projektu */}
                     {item.link && (
                       <a
                         href={item.link}
@@ -78,16 +85,16 @@ export default function PortfolioPage() {
                     )}
                   </div>
 
-                  {/* Pravá strana - problém, řešení, výsledek */}
+                  {/* * Pravá strana - problém, řešení, výsledek */}
                   <div className="md:col-span-2 space-y-8">
+                    {/* * Dlouhý text case study */}
                     {item.caseStudy?.studyTextLong && (
-                      <div
+                      <SafeHtml
+                        html={item.caseStudy.studyTextLong}
                         className="text-base leading-relaxed text-gray-700 prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-strong:text-gray-900"
-                        dangerouslySetInnerHTML={{
-                          __html: item.caseStudy.studyTextLong,
-                        }}
                       />
                     )}
+                    {/* * Odkaz na detailní case study pokud existuje slug */}
                     {item.slug && (
                       <div className="pt-4 border-t border-neutral-200">
                         <Link
@@ -104,18 +111,20 @@ export default function PortfolioPage() {
             </div>
           )}
 
-          {/* Projekty bez case study - jednodušší grid */}
+          {/* * Projekty bez case study - jednodušší grid */}
           {projectsWithoutCaseStudy.length > 0 && (
             <div>
-              {/* <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-gray-900">
+              {/* * <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-gray-900">
                 Další projekty
               </h2> */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+                {/* * Smyčka přes projekty bez case study */}
                 {projectsWithoutCaseStudy.map((item, index) => (
                   <div
                     key={index}
                     className="flex flex-col bg-white rounded-lg border border-neutral-200 overflow-hidden hover:shadow-lg transition-shadow"
                   >
+                    {/* * Náhledový obrázek pokud je k dispozici */}
                     {item.images && item.images[0] && (
                       <div className="overflow-hidden">
                         <Image
@@ -131,12 +140,14 @@ export default function PortfolioPage() {
                       <h3 className="text-xl md:text-2xl font-semibold mb-3 text-gray-900">
                         {item.title}
                       </h3>
+                      {/* * Krátký popis, pokud existuje */}
                       {item.shortDecs && (
-                        <div
+                        <SafeHtml
+                          html={item.shortDecs}
                           className="text-base leading-relaxed text-gray-700 mb-4 flex-grow"
-                          dangerouslySetInnerHTML={{ __html: item.shortDecs }}
                         />
                       )}
+                      {/* * Externí odkaz na projekt */}
                       {item.link && (
                         <a
                           href={item.link}
@@ -154,7 +165,7 @@ export default function PortfolioPage() {
             </div>
           )}
 
-          {/* CTA na konci */}
+          {/* * CTA na konci */}
           <div className="mt-16 md:mt-24 p-8 md:p-12 bg-neutral-50 rounded-2xl text-center">
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900">
               Máte projekt, který byste chtěli realizovat?

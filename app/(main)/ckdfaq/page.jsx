@@ -1,5 +1,8 @@
+// * Importy pro React, data FAQ a bezpečný HTML render.
 import React from "react";
 import { Ckd } from "./ckd";
+import SafeHtml from "@/app/components/SafeHtml";
+// * Export FAQ stránky s často kladenými dotazy.
 export default function Ckdfaq() {
   return (
     <section className="py-10 mx-auto md:py-20 px-5 h-[92vh]">
@@ -19,6 +22,7 @@ export default function Ckdfaq() {
         </div>
 
         <div className="container px-5 py-10 mx-auto">
+          {/* * Smyčka přes FAQ položky z dat */}
           {Ckd.map((ckd, index) => (
             <div className="py-8 flex flex-wrap flex-col" key={index}>
               <div className="md:mb-0 mb-4">
@@ -33,9 +37,10 @@ export default function Ckdfaq() {
                   vaše požadavky a cíle. Následně navrhnu řešení na míru vašim
                   potřebám.
                 </h2> */}
-                <p
+                {/* * Vykreslení HTML obsahu odpovědi */}
+                <SafeHtml
+                  html={ckd.text}
                   className="leading-relaxed"
-                  dangerouslySetInnerHTML={{ __html: ckd.text }}
                 />
               </div>
             </div>

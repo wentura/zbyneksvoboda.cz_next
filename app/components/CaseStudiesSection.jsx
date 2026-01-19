@@ -1,7 +1,10 @@
+// * Importy pro odkazy a React.
 import Link from "next/link";
 import React from "react";
 
+// * Export sekce případových studií.
 export default function CaseStudiesSection() {
+  // * Lokální data případových studií.
   const caseStudies = [
     {
       title: "Autokemp Kokořín",
@@ -79,6 +82,7 @@ export default function CaseStudiesSection() {
         </h2>
         
         <div className="space-y-16 md:space-y-24 divide-y divide-neutral-100">
+          {/* * Smyčka přes případové studie */}
           {caseStudies.map((study, index) => (
             <div
               key={index}
@@ -113,6 +117,7 @@ export default function CaseStudiesSection() {
                     {study.solution.title}
                   </h4>
                   <ul className="space-y-2">
+                    {/* * Smyčka přes body řešení */}
                     {study.solution.text.map((item, idx) => (
                       <li key={idx} className="flex items-start text-base leading-relaxed text-gray-700">
                         <span className="text-red-400 mr-2">•</span>
@@ -131,6 +136,7 @@ export default function CaseStudiesSection() {
                   </p>
                 </div>
                 
+                {/* * Odkaz na web pouze pokud existuje */}
                 {study.link && study.link !== "#" && (
                   <div className="pt-4">
                     <a

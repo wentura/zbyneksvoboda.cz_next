@@ -1,5 +1,7 @@
+// * Import React pro SVG komponentu.
 import * as React from "react";
 
+// * Ikona mailu jako SVG komponenta.
 function MailSvg(props) {
   return (
     <svg
@@ -21,4 +23,5 @@ function MailSvg(props) {
   );
 }
 
+// * Export MailSvg ikony.
 export default MailSvg;

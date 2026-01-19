@@ -1,9 +1,14 @@
+// * Klientská komponenta kvůli renderu na frontendu.
 "use client";
+// * Importy pro obrázky, odkazy, React a data portfolia.
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { portfolioData } from "../data/portfolioData";
+import SafeHtml from "./SafeHtml";
+// * Export kompletního portfolia se slotem pro "váš projekt".
 export default function PortfolioComplete() {
+  // * Vložení placeholderu mezi položky portfolia.
   const portfolioWithSpot = [
     ...portfolioData.slice(0, 2),
     { title: "vasprojekt" },
@@ -29,16 +34,18 @@ export default function PortfolioComplete() {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 -mx-4 -mt-4 -mb-10 sm:-m-4 gap-8 lg:gap-12 lg:gap-y-24">
+        {/* * Smyčka přes projekty včetně placeholderu */}
         {portfolioWithSpot.map((item, index) =>
+          // * Rozlišení mezi běžným projektem a placeholderem.
           item.title != "vasprojekt" ? (
             item.colSpan ? (
-              // Special layout for items with colSpan - 2-column grid with image left, text right
+              // * Speciální layout pro položky s colSpan.
               <div
                 className={`col-span-1 ${item.colSpan} h-full md:mt-12`}
                 key={index}
               >
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:max-h-[700px]">
-                  {/* Image on the left */}
+                  {/* * Obrázek vlevo */}
                   <div className="py-4 nadpisPage md:hidden text-lg md:text-xl">
                     {item.title}
                   </div>
@@ -51,16 +58,17 @@ export default function PortfolioComplete() {
                       src={item.images[0].img}
                     />
                   </div>
-                  {/* Text content on the right */}
+                  {/* * Textový obsah vpravo */}
                   <div className="flex flex-col justify-top md:p-4 md:py-12">
                     <div className="hidden md:flex pb-4 nadpisPage text-lg md:text-2xl">
                       {item.title}
                     </div>
-                    <p
+                    <SafeHtml
+                      html={item.shortDecs}
                       className="pb-4"
-                      dangerouslySetInnerHTML={{ __html: item.shortDecs }}
                     />
                     <Link
+                      // * Odkaz na case study pouze pokud existuje.
                       className={item.hasCaseStudy ? `odkaz` : `hidden`}
                       href={`/portfolio/pripadovaStudie/${item.slug}`}
                     >
@@ -70,7 +78,7 @@ export default function PortfolioComplete() {
                 </div>
               </div>
             ) : (
-              // Regular layout for items without colSpan
+              // * Běžný layout pro položky bez colSpan.
               <div className={` ${item.colSpan}`} key={index}>
                 <div className="py-4 nadpisPage md:hidden text-lg md:text-xl">
                   {item.title}
@@ -87,11 +95,12 @@ export default function PortfolioComplete() {
                 <div className="pb-4 nadpisPage hidden md:flex text-lg md:text-2xl">
                   {item.title}
                 </div>
-                <p
+                <SafeHtml
+                  html={item.shortDecs}
                   className="pb-4"
-                  dangerouslySetInnerHTML={{ __html: item.shortDecs }}
                 />
                 <Link
+                  // * Odkaz na case study pouze pokud existuje.
                   className={item.hasCaseStudy ? `odkaz` : `hidden`}
                   href={`/portfolio/pripadovaStudie/${item.slug}`}
                 >

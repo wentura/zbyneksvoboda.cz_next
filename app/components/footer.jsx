@@ -1,6 +1,14 @@
+/**
+ * * Footer komponenta - patička webu
+ * * Obsahuje logo, odkazy na sociální sítě (Facebook, Instagram, LinkedIn)
+ * * A Matomo tracking komponentu
+ */
+// * Importy pro linky, React a analytics.
 import Link from "next/link";
 import React from "react";
 import Matomo from "./matomo";
+
+// * Export Footer komponenty s odkazy a Matomo trackingem.
 export default function Footer() {
   return (
     <footer className="text-gray-400 bg-modra2">
@@ -8,7 +16,9 @@ export default function Footer() {
         <Link className="nadpisPageWhite text-base" href="/">
           Zbyněk Svoboda
         </Link>{" "}
+        {/* * Sekce s odkazy na sociální sítě */}
         <span className="inline-flex justify-center mt-4 sm:ml-auto sm:mt-0 sm:justify-start">
+          {/* * Facebook odkaz */}
           <a
             className="text-gray-400"
             href="https://www.facebook.com/profile.php?id=100093105173892"
@@ -26,6 +36,7 @@ export default function Footer() {
             </svg>
           </a>
 
+          {/* * Instagram odkaz */}
           <a
             className="ml-3"
             href="https://www.instagram.com/zbyndasvoboda/"
@@ -44,6 +55,7 @@ export default function Footer() {
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
             </svg>
           </a>
+          {/* * LinkedIn odkaz */}
           <a
             className="ml-3"
             href="https://www.linkedin.com/in/zbyneksvoboda/"
@@ -67,6 +79,7 @@ export default function Footer() {
           </a>
         </span>
       </div>
+      {/* * Vložení Matomo tracking skriptu */}
       <Matomo />
     </footer>
   );

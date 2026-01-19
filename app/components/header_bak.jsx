@@ -1,8 +1,10 @@
+// * Importy pro odkazy, React a navigaci (bak varianta).
 import * as motion from "framer-motion/client";
 import Link from "next/link";
 import React from "react";
 import Navigation from "./navigation";
 
+// * Export záložní verze headeru.
 export default function Header() {
   return (
     <div className={`top-0 sticky bg-modra2 z-30 max-h-16`} id="navigation">

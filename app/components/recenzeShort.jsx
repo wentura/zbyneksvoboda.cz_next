@@ -1,8 +1,11 @@
+// * Importy pro odkazy a React.
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+// * Export zkrácené sekce recenzí na homepage.
 export default function RecenzeShort() {
+  // * Lokální seznam hlavních referencí.
   const testimonials = [
     {
       name: "Běla Šestáková",
@@ -21,6 +24,7 @@ export default function RecenzeShort() {
     },
   ];
 
+  // * Seznam dalších klientů pro textovou řádku.
   const otherClients = [
     "Doomentia",
     "Ergo-product.cz",
@@ -41,6 +45,7 @@ export default function RecenzeShort() {
           Spolupracuji s klienty, kteří očekávají kvalitu, spolehlivost a lidský přístup.</p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12">
+          {/* * Smyčka přes hlavní recenze */}
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
@@ -66,9 +71,12 @@ export default function RecenzeShort() {
         <div className="mt-12 pt-8 border-t border-neutral-200">
           <p className="text-base md:text-lg text-center text-gray-700 mb-6">
             Dlouhodobě spolupracuji mimo jiné s projekty jako{" "}
+            {/* * Vypiš seznam klientů s čárkami a spojkou */}
             {otherClients.map((client, index) => (
               <React.Fragment key={index}>
+                {/* * Přidej čárku mezi položkami */}
                 {index > 0 && index < otherClients.length - 1 && ", "}
+                {/* * Přidej spojku před poslední položku */}
                 {index === otherClients.length - 1 && " a "}
                 <strong>{client}</strong>
               </React.Fragment>

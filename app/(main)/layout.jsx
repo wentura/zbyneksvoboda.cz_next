@@ -1,6 +1,9 @@
+// * Import CookieConsent je zatím vypnutý.
 // import CookieConsent from "../components/CookieConsent";
+// * Import hlavního headeru.
 import Header from "../components/header";
 
+// * Export layoutu pro hlavní stránky.
 export default function MainLayout({ children }) {
   return (
     <div className="min-h-screen flex flex-col">

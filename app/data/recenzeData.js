@@ -1,3 +1,4 @@
+// * Export dat recenzí pro sekce recenzí.
 export const recenzeData = [
   {
     kdo: "Běla Šestáková",

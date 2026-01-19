@@ -1,5 +1,7 @@
+// * Import React pro jednoduchou Matomo komponentu.
 import React from "react";
 
+// * Export jednoduchého Matomo pixelu.
 export default function Matomo() {
   return (
     <div>

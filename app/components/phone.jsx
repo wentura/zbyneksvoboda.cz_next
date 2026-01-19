@@ -1,5 +1,7 @@
+// * Import React pro SVG komponentu.
 import * as React from "react";
 
+// * Ikona telefonu jako SVG komponenta.
 function PhoneSvg(props) {
   return (
     <svg
@@ -20,4 +22,5 @@ function PhoneSvg(props) {
   );
 }
 
+// * Export PhoneSvg ikony.
 export default PhoneSvg;

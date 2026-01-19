@@ -1,6 +1,8 @@
+// * Importy pro odkazy a React.
 import Link from "next/link";
 import React from "react";
 
+// * Export sekce služeb se třemi pilíři.
 export default function Services() {
   return (
     <section
@@ -16,7 +18,7 @@ export default function Services() {
         </p>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 mb-12">
-          {/* Service 1: Strategická webová konzultace */}
+          {/* * Service 1: Strategická webová konzultace */}
           <div className="p-6 md:p-8 bg-white rounded-2xl border border-neutral-200 shadow-sm flex flex-col">
             <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900">
               Strategická webová konzultace
@@ -59,7 +61,7 @@ export default function Services() {
             </div> */}
           </div>
           
-          {/* Service 2: Web Leadership */}
+          {/* * Service 2: Web Leadership */}
           <div className="p-6 md:p-8 bg-white rounded-2xl border border-neutral-200 shadow-sm flex flex-col">
             <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900">
               Web Leadership
@@ -104,7 +106,7 @@ export default function Services() {
             </div> */}
           </div>
           
-          {/* Service 3: High-end web / redesign */}
+          {/* * Service 3: High-end web / redesign */}
           <div className="p-6 md:p-8 bg-white rounded-2xl border border-neutral-200 shadow-sm flex flex-col">
             <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900">
               High-end web / redesign

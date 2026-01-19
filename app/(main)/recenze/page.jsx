@@ -1,7 +1,10 @@
+// * Importy pro obrázky, data recenzí a bezpečný HTML render.
 import Image from "next/image";
 import { recenzeData } from "@/app/data/recenzeData";
 import React from "react";
+import SafeHtml from "@/app/components/SafeHtml";
 
+// * Export stránky s detailními recenzemi.
 export default function Recenze() {
   return (
     <section className="py-10 mx-auto text-gray-600 md:py-20 md:px-5">
@@ -18,6 +21,7 @@ export default function Recenze() {
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
+          {/* * Smyčka přes recenze */}
           {recenzeData.map((recenze, index) => (
             <div className="p-4 md:p-12 mb-6 lg:w-1/3 lg:mb-0" key={index}>
               <div className="h-full">
@@ -36,11 +40,10 @@ export default function Recenze() {
                     </span>
                   </div>
                 </div>
-                <p
+                {/* * Vykreslení dlouhé/krátké recenze podle přepínače */}
+                <SafeHtml
+                  html={recenze.short ? recenze.textShort : recenze.text}
                   className="pb-12 font-light text-sm leading-6 tracking-wide"
-                  dangerouslySetInnerHTML={{
-                    __html: recenze.short ? recenze.textShort : recenze.text,
-                  }}
                 />
               </div>
             </div>

@@ -1,5 +1,7 @@
+// * Import animací je zatím vypnutý (ponecháno pro případné použití).
 // import { m } from "framer-motion";
 
+// * Export seznamu FAQ položek pro CKD stránku.
 export const Ckd = [
   {
     headTitle: "🛠 Kolik stojí web na míru?",

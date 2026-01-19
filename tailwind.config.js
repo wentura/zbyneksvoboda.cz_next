@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+// * Export Tailwind konfigurace projektu.
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",

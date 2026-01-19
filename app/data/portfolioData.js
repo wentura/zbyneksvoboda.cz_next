@@ -1,3 +1,4 @@
+// * Export dat portfolia a případových studií.
 export const portfolioData = [
   //Diavita
   {

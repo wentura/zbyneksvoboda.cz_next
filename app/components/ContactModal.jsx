@@ -1,8 +1,12 @@
+// * Klientská komponenta kvůli modalu.
 "use client";
+// * Importy pro React a kontaktní formulář.
 import React, { useState } from "react";
 import ContactForm from "./contactForm";
 
+// * Export modalu pro kontakt.
 export default function ContactModal({ isOpen, onClose }) {
+  // * Pokud modal není otevřený, nic nerenderuj.
   if (!isOpen) return null;
 
   return (

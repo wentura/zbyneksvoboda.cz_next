@@ -1,3 +1,4 @@
+// * Export dat navigace pro header/menu.
 export const navData = [
   {
     title: "Služby",

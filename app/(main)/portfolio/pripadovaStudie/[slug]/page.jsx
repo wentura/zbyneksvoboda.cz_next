@@ -1,9 +1,14 @@
+// * Importy pro data, obrázky a bezpečný HTML render.
 import { portfolioData } from "@/app/data/portfolioData";
 import { color } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+import SafeHtml from "@/app/components/SafeHtml";
+// * Export detailu případové studie podle slugu.
 export default async function PripadovaStudie({ params }) {
+  // * Načtení slugu z routy.
   const { slug } = await params;
+  // * Výběr konkrétního projektu z dat.
   const item = portfolioData.find((item) => item.slug === slug);
 
   return (
@@ -36,9 +41,7 @@ export default async function PripadovaStudie({ params }) {
           />
         </div>
         <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0text-left  leading-relaxed">
-          <div
-            dangerouslySetInnerHTML={{ __html: item.caseStudy.studyTextLong }}
-          />
+          <SafeHtml html={item.caseStudy.studyTextLong} />
 
           <div className="flex flex-col items-center text-center justify-center md:w-1/2 mx-auto mt-12">
             {/* <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">

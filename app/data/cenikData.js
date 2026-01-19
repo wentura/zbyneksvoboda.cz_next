@@ -1,3 +1,4 @@
+// * Export dat ceníku pro starší/alternativní sekce.
 export const cenikData = [
   {
     title: "Webová prezentace",

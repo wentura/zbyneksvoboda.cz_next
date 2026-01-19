@@ -1,5 +1,7 @@
+// * Import Image pro loga klientů.
 import Image from "next/image";
 
+// * Data log klientů.
 const LOGOS = [
   {
     src: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1685532414/zbyneksvoboda/logos/doom_gdkhes.webp",
@@ -92,12 +94,14 @@ const LOGOS = [
   },
 ];
 
+// * Export sekce s logy klientů.
 export default function Logos() {
   return (
     <div className="relative overflow-hidden bg-white py-12">
       <div className="animate-scroll whitespace-nowrap hidden md:flex">
-        {/* First set of logos */}
+        {/* * První sada log */}
         <div className="flex items-center md:space-x-44 md:pl-44 pl-12 space-x-12">
+          {/* * Smyčka přes loga */}
           {LOGOS.map((logo, index) => (
             <div
               key={`first-${index}`}
@@ -109,14 +113,16 @@ export default function Logos() {
                 width={logo.width}
                 height={logo.height}
                 className={`${logo.widthClass} ${
+                  // * Volitelná inverze loga.
                   logo.invert ? "invert" : ""
                 } grayscale hover:grayscale-0 transition-all md:duration-300 duration-100`}
               />
             </div>
           ))}
         </div>
-        {/* Duplicate set for seamless loop */}
+        {/* * Duplikovaná sada pro plynulý loop */}
         <div className="flex items-center space-x-44 pl-44">
+          {/* * Smyčka přes loga */}
           {LOGOS.map((logo, index) => (
             <div
               key={`second-${index}`}
@@ -128,6 +134,7 @@ export default function Logos() {
                 width={logo.width}
                 height={logo.height}
                 className={`${logo.widthClass} ${
+                  // * Volitelná inverze loga.
                   logo.invert ? "invert" : ""
                 } grayscale hover:grayscale-0 transition-all md:duration-300 duration-100`}
               />
@@ -135,6 +142,7 @@ export default function Logos() {
           ))}
         </div>
         <div className="flex items-center space-x-44 pl-44">
+          {/* * Smyčka přes loga */}
           {LOGOS.map((logo, index) => (
             <div
               key={`second-${index}`}
@@ -146,6 +154,7 @@ export default function Logos() {
                 width={logo.width}
                 height={logo.height}
                 className={`${logo.widthClass} ${
+                  // * Volitelná inverze loga.
                   logo.invert ? "invert" : ""
                 } grayscale hover:grayscale-0 transition-all md:duration-300 duration-100`}
               />
@@ -155,6 +164,7 @@ export default function Logos() {
       </div>
       <div className="container flex justify-center w-full mx-auto text-centerr">
         <div className="grid grid-cols-2 gap-2 md:hidden justify-center content-center text-center items-center">
+          {/* * Smyčka přes loga pro mobil */}
           {LOGOS.map((logo, index) => (
             <Image
               key={index}
@@ -163,6 +173,7 @@ export default function Logos() {
               width={logo.width}
               height={logo.height}
               className={`${
+                // * Volitelná inverze loga.
                 logo.invert ? "invert" : ""
               } grayscale hover:grayscale-0 transition-all duration-100 w-auto h-8 mx-auto mt-2`}
             />

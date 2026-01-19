@@ -1,6 +1,9 @@
+// * Klientská komponenta kvůli intervalům a měření viewportu.
 "use client";
+// * Importy React hooků pro animaci textu.
 import React, { useEffect, useState } from "react";
 
+// * Výchozí varianty textu.
 const whoAmI = [
   "webový konzultant",
   "vývojář digitálních řešení",
@@ -15,12 +18,15 @@ const whoAmI2 = [
   "Udělejme z webu silný nástroj pro vaše podnikání.",
 ];
 
+// * Export rotujícího textu s jednoduchým fade efektem.
 export default function RotatingTextComponent({ rotatingText = whoAmI2 }) {
+  // * Stav indexu a viditelnosti textu.
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // * Detekce šířky viewportu pro mobilní zobrazení.
     const checkViewport = () => {
       setIsMobile(window.innerWidth < 640); // 640px is sm breakpoint in Tailwind
     };
@@ -32,6 +38,7 @@ export default function RotatingTextComponent({ rotatingText = whoAmI2 }) {
   }, []);
 
   useEffect(() => {
+    // * Interval pro rotaci textů s fade efektem.
     const interval = setInterval(() => {
       setIsVisible(false);
 
@@ -44,9 +51,11 @@ export default function RotatingTextComponent({ rotatingText = whoAmI2 }) {
     return () => clearInterval(interval);
   }, []);
 
+  // * Render textu s inline stylingem a zalomením.
   const renderTextWithStyling = (text) => {
     const parts = text.split(/(\*[^*]+\*)/);
     return parts.map((part, index) => {
+      // * Zvýraznění textu mezi hvězdičkami.
       if (part.startsWith('*') && part.endsWith('*')) {
         return (
           <span key={index} className="text-red-400">
@@ -54,7 +63,7 @@ export default function RotatingTextComponent({ rotatingText = whoAmI2 }) {
           </span>
         );
       }
-      // Handle line breaks only on sm and larger viewports
+      // * Zalomení jen na větších obrazovkách.
       if (part.includes('/') && !isMobile) {
         return part.split('/').map((segment, segIndex, array) => (
           <React.Fragment key={`${index}-${segIndex}`}>
@@ -63,7 +72,7 @@ export default function RotatingTextComponent({ rotatingText = whoAmI2 }) {
           </React.Fragment>
         ));
       }
-      // On mobile, replace / with space
+      // * Na mobilu nahraď / mezerou.
       if (part.includes('/') && isMobile) {
         return part.replace(/\//g, ' ');
       }
@@ -74,6 +83,7 @@ export default function RotatingTextComponent({ rotatingText = whoAmI2 }) {
   return (
     <span
       className={`transition-opacity duration-400 ${
+        // * Fade in/out podle viditelnosti.
         isVisible ? "opacity-100" : "opacity-0"
       }`}
     >

@@ -1,9 +1,13 @@
+// * Importy pro obrázky, odkazy a data portfolia.
 import Image from "next/image";
 import Link from "next/link";
 import { portfolioData } from "../data/portfolioData";
 
+// * Export landing sekce s logy portfolia.
 export default function PortfolioLandingPage() {
+  // * Kompletní seznam portfolia pro marquee.
   const portfolio = portfolioData;
+  // * Výběr frontpage položek (aktuálně nepoužité).
   const titlePortfolio = portfolioData.filter(
     (item) => item.frontpage === true,
   );
@@ -16,8 +20,9 @@ export default function PortfolioLandingPage() {
         </h1>
       </div>
       <div className="animate-scroll whitespace-nowrap flex flex-row gap-12">
-        {/* First set of logos */}
+        {/* * První sada log pro plynulý scroll */}
         <div className="flex items-center md:space-x-12 md:pl-12 pl-12 space-x-12">
+          {/* * Smyčka přes položky portfolia */}
           {portfolio.map((item, index) => (
             <div
               key={`first-${index}`}
@@ -33,8 +38,9 @@ export default function PortfolioLandingPage() {
             </div>
           ))}
         </div>
-        {/* Duplicate set for seamless loop */}
+        {/* * Duplikovaná sada pro nekonečný loop */}
         <div className="flex items-center md:space-x-12 md:pl-12 pl-12 space-x-12">
+          {/* * Smyčka přes položky portfolia */}
           {portfolio.map((item, index) => (
             <div
               key={`first-${index}`}
@@ -51,6 +57,7 @@ export default function PortfolioLandingPage() {
           ))}
         </div>
         <div className="hidden md:flex items-center md:space-x-12 md:pl-12 pl-12 space-x-12">
+          {/* * Smyčka přes položky portfolia (desktop navíc) */}
           {portfolio.map((item, index) => (
             <div
               key={`first-${index}`}
@@ -67,6 +74,7 @@ export default function PortfolioLandingPage() {
           ))}
         </div>
         <div className="hidden md:flex items-center md:space-x-12 md:pl-12 pl-12 space-x-12">
+          {/* * Smyčka přes položky portfolia (desktop navíc) */}
           {portfolio.map((item, index) => (
             <div
               key={`first-${index}`}

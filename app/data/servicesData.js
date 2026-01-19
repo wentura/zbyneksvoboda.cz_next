@@ -1,3 +1,4 @@
+// * Export dat služeb pro starší/alternativní sekce.
 export const servicesData = [
   {
     title: "Weby a e-shopy na míru",

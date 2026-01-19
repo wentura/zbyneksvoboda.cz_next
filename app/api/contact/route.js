@@ -1,77 +1,93 @@
+// * Importy pro Next response, Resend a interní utility.
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { escapeHtml, MAX_LENGTHS, validateLength } from "@/lib/utils";
+import { ValidationError, ExternalServiceError, ConfigurationError, RateLimitError } from "@/lib/errors";
+import logger from "@/lib/logger";
+import { checkRateLimit, RATE_LIMIT_MAX_REQUESTS, RATE_LIMIT_WINDOW_SECONDS } from "@/lib/rateLimit";
 
-// Simple in-memory rate limiter: max 5 requests per IP per 10 minutes
-const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
-const RATE_LIMIT_MAX = 5;
-const ipHits = new Map();
-
+// * Pomocná funkce pro zjištění IP klienta z headerů.
 function getClientIp(request) {
   try {
     const xf = request.headers.get("x-forwarded-for");
+    // * Pokud je k dispozici X-Forwarded-For, použij první IP.
     if (xf) return xf.split(",")[0].trim();
   } catch {}
   try {
+    // * Fallback na X-Real-IP nebo výchozí hodnotu.
     return request.headers.get("x-real-ip") || "unknown";
   } catch {}
   return "unknown";
 }
 
-function isRateLimited(ip) {
-  const now = Date.now();
-  const entry = ipHits.get(ip) || { count: 0, start: now };
-  if (now - entry.start > RATE_LIMIT_WINDOW_MS) {
-    ipHits.set(ip, { count: 1, start: now });
-    return false;
-  }
-  if (entry.count >= RATE_LIMIT_MAX) {
-    return true;
-  }
-  entry.count += 1;
-  ipHits.set(ip, entry);
-  return false;
-}
-
+// * Handler POST pro odeslání kontaktního formuláře.
 export async function POST(request) {
+  const startTime = Date.now();
+  const ip = getClientIp(request);
+  
   try {
-    // Rate limit check
-    const ip = getClientIp(request);
-    if (isRateLimited(ip)) {
+    // * Kontrola rate limitu.
+    const rateLimitResult = await checkRateLimit(ip);
+    // * Pokud je limit překročen, vrátit 429.
+    if (rateLimitResult.limited) {
+      logger.warn({
+        event: 'rate_limit_exceeded',
+        ip,
+        path: '/api/contact',
+        remaining: rateLimitResult.remaining,
+        reset: rateLimitResult.reset
+      });
       return NextResponse.json(
         { message: "Příliš mnoho požadavků. Zkuste to prosím později." },
-        { status: 429 },
+        { 
+          status: 429,
+          headers: {
+            'X-RateLimit-Limit': (rateLimitResult.limit || RATE_LIMIT_MAX_REQUESTS).toString(),
+            'X-RateLimit-Remaining': rateLimitResult.remaining.toString(),
+            'X-RateLimit-Reset': rateLimitResult.reset.toString(),
+            'Retry-After': RATE_LIMIT_WINDOW_SECONDS.toString(),
+          }
+        },
       );
     }
 
-    // Check if API key is available
+    // * Kontrola, zda je k dispozici RESEND_API_KEY.
     const apiKey = process.env.RESEND_API_KEY;
+    // * Pokud klíč chybí, vrátit chybu konfigurace.
     if (!apiKey) {
-      console.error("RESEND_API_KEY is not set");
-      return NextResponse.json(
-        {
-          message:
-            "Email service is not configured. Please contact administrator.",
-        },
-        { status: 500 },
-      );
+      logger.error({
+        event: 'configuration_error',
+        error: 'RESEND_API_KEY is not set',
+        ip
+      });
+      throw new ConfigurationError("Email service is not configured. Please contact administrator.");
     }
 
     const body = await request.json();
-    const { name, email, phone, website, discussion, company, formStartedAt } =
-      body;
+    const { name, email, phone, website, discussion, company, formStartedAt } = body;
 
-    // Honeypot: if filled, silently accept but do not send
+    // * Honeypot: pokud je vyplněný, nic neposílat.
     if (company && company.trim() !== "") {
+      logger.info({
+        event: 'honeypot_triggered',
+        ip
+      });
       return NextResponse.json(
         { message: "Zpráva byla úspěšně odeslána." },
         { status: 200 },
       );
     }
 
-    // Speed check: if submitted in under 3 seconds, likely bot
+    // * Speed check: pokud formulář odešel příliš rychle, ignorovat.
     if (typeof formStartedAt === "number") {
       const elapsed = Date.now() - formStartedAt;
+      // * Pokud je čas pod 3 sekundy, považuj za bot.
       if (elapsed < 3000) {
+        logger.info({
+          event: 'speed_check_failed',
+          ip,
+          elapsed
+        });
         return NextResponse.json(
           { message: "Zpráva byla úspěšně odeslána." },
           { status: 200 },
@@ -79,65 +95,97 @@ export async function POST(request) {
       }
     }
 
-    // Validate required fields
+    // * Validace povinných polí.
     if (!name || !email || !discussion) {
-      return NextResponse.json(
-        { message: "Všechna povinná pole musí být vyplněna." },
-        { status: 400 },
-      );
+      throw new ValidationError("Všechna povinná pole musí být vyplněna.");
     }
 
-    // Validate email format
+    // * Validace délek vstupů.
+    try {
+      validateLength('Jméno', name, MAX_LENGTHS.name);
+      validateLength('Email', email, MAX_LENGTHS.email);
+      // * Pokud je telefon uveden, zkontroluj délku.
+      if (phone) validateLength('Telefon', phone, MAX_LENGTHS.phone);
+      // * Pokud je web uveden, zkontroluj délku.
+      if (website) validateLength('Web', website, MAX_LENGTHS.website);
+      validateLength('Zpráva', discussion, MAX_LENGTHS.discussion);
+    } catch (lengthError) {
+      throw new ValidationError(lengthError.message);
+    }
+
+    // * Validace formátu emailu.
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // * Pokud email neodpovídá regexu, vyhodit chybu.
     if (!emailRegex.test(email)) {
-      return NextResponse.json(
-        { message: "Neplatný formát emailu." },
-        { status: 400 },
-      );
+      throw new ValidationError("Neplatný formát emailu.");
     }
 
-    // Create email content
+    // * Sestavení obsahu emailu s escapováním proti XSS.
     const emailContent = `
       <h2>Nová zpráva z kontaktního formuláře</h2>
-      <p><strong>Jméno:</strong> ${name}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      ${phone ? `<p><strong>Telefon:</strong> ${phone}</p>` : ""}
-      ${website ? `<p><strong>Web:</strong> ${website}</p>` : ""}
+      <p><strong>Jméno:</strong> ${escapeHtml(name)}</p>
+      <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+      ${phone ? `<p><strong>Telefon:</strong> ${escapeHtml(phone)}</p>` : ""}
+      ${website ? `<p><strong>Web:</strong> ${escapeHtml(website)}</p>` : ""}
       <p><strong>O čem budeme diskutovat:</strong></p>
-      <p>${discussion.replace(/\n/g, "<br>")}</p>
+      <p>${escapeHtml(discussion).replace(/\n/g, "<br>")}</p>
       <hr>
       <p><small>Zpráva byla odeslána z kontaktního formuláře na webu zbyneksvoboda.cz</small></p>
     `;
 
-    // Send email using Resend
+    // * Odeslání emailu přes Resend.
     const resend = new Resend(apiKey);
     const { data, error } = await resend.emails.send({
       from: "Kontaktní formulář <info@zbyneksvoboda.cz>",
-      to: ["info@zbyneksvoboda.cz", "zbynek.svoboda@gmail.com"], // Replace with your email
-      subject: `Nová zpráva od ${name} - zbyneksvoboda.cz`,
+      to: ["info@zbyneksvoboda.cz", "zbynek.svoboda@gmail.com"],
+      subject: `Nová zpráva od ${escapeHtml(name)} - zbyneksvoboda.cz`,
       html: emailContent,
       replyTo: email,
     });
 
+    // * Pokud Resend vrátí chybu, zalogovat a vyhodit error.
     if (error) {
-      console.error("Resend error:", error);
-      return NextResponse.json(
-        {
-          message: `Chyba při odesílání emailu: ${error.message || "Neznámá chyba"}. Zkuste to prosím znovu.`,
-        },
-        { status: 500 },
-      );
+      logger.error({
+        event: 'external_service_error',
+        service: 'Resend',
+        error: error.message,
+        ip
+      });
+      throw new ExternalServiceError("Chyba při odesílání emailu. Zkuste to prosím znovu.", "Resend");
     }
+
+    // * Log úspěšného odeslání formuláře.
+    logger.info({
+      event: 'contact_form_submitted',
+      ip,
+      email: email.substring(0, 3) + '***', // Partial email for privacy
+      duration: Date.now() - startTime
+    });
 
     return NextResponse.json(
       { message: "Zpráva byla úspěšně odeslána." },
       { status: 200 },
     );
   } catch (error) {
-    console.error("Contact form error:", error);
+    // * Log chyby s kontextem.
+    logger.error({
+      event: 'api_error',
+      errorType: error.name || 'UnknownError',
+      message: error.message,
+      statusCode: error.statusCode || 500,
+      ip,
+      stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
+    });
+
+    // * Vrať odpověď podle typu chyby.
+    const statusCode = error.statusCode || 500;
+    const message = statusCode >= 500 
+      ? "Něco se pokazilo. Zkuste to prosím znovu."
+      : error.message;
+
     return NextResponse.json(
-      { message: "Něco se pokazilo. Zkuste to prosím znovu." },
-      { status: 500 },
+      { message },
+      { status: statusCode }
     );
   }
 }

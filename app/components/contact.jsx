@@ -1,5 +1,7 @@
+// * Klientská komponenta kvůli animacím a formuláři.
 'use client';
 
+// * Importy pro obrázky, animace a kontaktní formulář.
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
@@ -7,6 +9,7 @@ import ContactForm from "./contactForm";
 import MailSvg from "./mail";
 import PhoneSvg from "./phone";
 
+// * Export kontaktní sekce s formulářem a kontakty.
 export default function Contact() {
   return (
     <section
@@ -150,7 +153,7 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* Contact Form Section */}
+      {/* * Contact Form Section */}
     </section>
   );
 }

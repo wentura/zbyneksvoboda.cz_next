@@ -1,13 +1,19 @@
+// * Klientská komponenta kvůli localStorage a eventům.
 "use client";
 
+// * Importy React hooků pro správu souhlasu.
 import React, { useEffect, useState } from "react";
 
+// * Export Matomo trackeru s respektem k souhlasu.
 export default function Matomo() {
+  // * Stav, zda je měření povoleno.
   const [enabled, setEnabled] = useState(false);
 
+  // * Načtení souhlasu z localStorage.
   const refreshConsent = () => {
     try {
       const saved = localStorage.getItem("cookieConsent");
+      // * Pokud souhlas chybí, vypnout tracking.
       if (!saved) {
         setEnabled(false);
         return;
@@ -20,12 +26,14 @@ export default function Matomo() {
   };
 
   useEffect(() => {
+    // * Načti souhlas při mountu a poslouchej změny.
     refreshConsent();
     const handler = () => refreshConsent();
     window.addEventListener("cookieConsentUpdated", handler);
     return () => window.removeEventListener("cookieConsentUpdated", handler);
   }, []);
 
+  // * Pokud není souhlas, nic nerenderuj.
   if (!enabled) return null;
 
   return (

@@ -1,14 +1,20 @@
+// * Importy pro animace, obrázky, odkazy a data portfolia.
 import { easeIn } from "framer-motion";
 import * as motion from "framer-motion/client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { portfolioData } from "../data/portfolioData";
+import SafeHtml from "./SafeHtml";
+// * Export sekce portfolia pro homepage.
 export default function Portfolio() {
+  // * Filtrace projektů s case study.
   const portfolio = portfolioData.filter((item) => item.hasCaseStudy === true);
+  // * Výběr projektů zobrazených na frontpage.
   const titlePortfolio = portfolioData.filter(
     (item) => item.frontpage === true,
   );
+  // * Výběr projektů s case study pro frontpage.
   const titlePortfolio2 = portfolioData.filter(
     (item) => item.frontpage === true && item.fpCaseStudy === true,
   );
@@ -34,11 +40,13 @@ export default function Portfolio() {
         </p> */}
       </div>
       <div className="container max-w-screen-xl mx-auto flex flex-col gap-4 mb-4">
+        {/* * Smyčka přes zvýrazněné projekty */}
         {titlePortfolio2.map((item, index) => (
           <div
             key={index}
             className="w-full grid grid-cols-2 md:grid-cols-3 gap-2 items-center justify-center rounded-lg shadow-lg"
           >
+            {/* * Náhledový obrázek pokud je k dispozici */}
             {item.images && item.images[0] && (
               <div className="relative w-full col-span-1">
                 <Image
@@ -53,17 +61,15 @@ export default function Portfolio() {
             <div className="col-span-2 flex flex-col justify-between h-full p-4 text-base md:text-xl">
               <div>
                 <h3 className="mb-4 nadpisPortfolio">{item.title}</h3>
-                <p
+                {/* * Krátký popis projektu */}
+                <SafeHtml
+                  html={item.fpShortDec}
                   className="mb-4"
-                  dangerouslySetInnerHTML={{
-                    __html: item.fpShortDec,
-                  }}
                 />
-                <p
+                {/* * Číselné výsledky (pokud jsou v datech) */}
+                <SafeHtml
+                  html={item.fpNumbers}
                   className="mb-4"
-                  dangerouslySetInnerHTML={{
-                    __html: item.fpNumbers,
-                  }}
                 />
               </div>
               <div className="flex flex-row items-center justify-end">
@@ -75,13 +81,15 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
-      {/* tady to portfolio co je jen obrazkove */}
+      {/* * Tady je obrazkové portfolio bez detailu */}
       <div className="container max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+        {/* * Smyčka přes projekty pouze s obrázky */}
         {titlePortfolio.map((item, index) => (
           <div
             key={index}
             className="w-full flex flex-col items-center justify-center border-2 border-modra2 p-2"
           >
+            {/* * Náhledový obrázek pokud je k dispozici */}
             {item.images && item.images[0] && (
               <div className="relative w-full">
                 <Image
@@ -107,10 +115,12 @@ export default function Portfolio() {
           Prohlédněte si více projektů
         </Link>
       </div>
+      {/* * Smyčka přes case study sekce */}
       {portfolio.map((item, index) => (
         // <section className="max-w-full mx-auto mb-20 bg-rose-50" key={index}>
         <section
           className={`${
+            // * Střídání směru layoutu podle indexu.
             index % 2 === 0
               ? "lg:bg-gradient-to-r"
               : "lg:bg-gradient-to-l flex-row-reverse"
@@ -126,24 +136,18 @@ export default function Portfolio() {
           >
             <div className="md:hidden mb-8 text-left flex justify-start w-full">
               <div className="flex-grow">
-                <p
+                <SafeHtml
+                  html={item.title}
                   className="jinyNadpis text-lg mb-2"
-                  dangerouslySetInnerHTML={{
-                    __html: item.title,
-                  }}
                 />
                 <h2 className="mb-4 nadpisPortfolio">{item.caseStudy.title}</h2>
-                <p
+                <SafeHtml
+                  html={item.caseStudy.subTitle}
                   className="mb-2"
-                  dangerouslySetInnerHTML={{
-                    __html: item.caseStudy.subTitle,
-                  }}
                 />
-                <p
+                <SafeHtml
+                  html={item.caseStudy.studyTextShort}
                   className="mb-2"
-                  dangerouslySetInnerHTML={{
-                    __html: item.caseStudy.studyTextShort,
-                  }}
                 />
                 <Link
                   className="odkaz"
@@ -181,26 +185,20 @@ export default function Portfolio() {
                   asd
                 </div> */}
                 <div className="flex-grow">
-                  <p
+                  <SafeHtml
+                    html={item.title}
                     className="jinyNadpis text-xl mb-4"
-                    dangerouslySetInnerHTML={{
-                      __html: item.title,
-                    }}
                   />
                   <h2 className="mb-8 nadpisPortfolio">
                     {item.caseStudy.title}
                   </h2>
-                  <p
+                  <SafeHtml
+                    html={item.caseStudy.subTitle}
                     className="mb-4"
-                    dangerouslySetInnerHTML={{
-                      __html: item.caseStudy.subTitle,
-                    }}
                   />
-                  <p
+                  <SafeHtml
+                    html={item.caseStudy.studyTextShort}
                     className="mb-4"
-                    dangerouslySetInnerHTML={{
-                      __html: item.caseStudy.studyTextShort,
-                    }}
                   />
                   <Link
                     className="odkaz"

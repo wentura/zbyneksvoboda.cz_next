@@ -1,5 +1,7 @@
+// * Import Link pro návratové odkazy.
 import Link from "next/link";
 
+// * Export 404 stránky.
 export default function NotFound() {
   return (
     <section className="border-b border-black/10">

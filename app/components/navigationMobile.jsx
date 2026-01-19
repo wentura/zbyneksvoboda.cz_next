@@ -1,10 +1,15 @@
+// * Klientská komponenta kvůli stavu menu.
 "use client";
+// * Importy pro odkazy, state a data navigace.
 import Link from "next/link";
 import React, { useState } from "react";
 import { navData } from "../data/navigationData";
 
+// * Export mobilní navigace s hamburger menu.
 export default function NavigationMobile() {
+  // * Stav otevření mobilního menu.
   const [isOpen, setIsOpen] = useState(false);
+  // * Toggle pro otevření/zavření menu.
   function toggleMenu() {
     setIsOpen(!isOpen);
   }
@@ -28,6 +33,7 @@ export default function NavigationMobile() {
       </button>
       <nav
         className={`${
+          // * Podmíněné zobrazení menu.
           isOpen ? "block" : "hidden"
         }  top-0 left-0 right-0 bg-white px-2 pt-2 pb-4 z-20 flex flex-col text-gray-900 shadow-md opacity-90 w-full h-screen fixed`}
       >
@@ -53,6 +59,7 @@ export default function NavigationMobile() {
               Zbyněk Svoboda
             </Link>{" "}
           </li>
+          {/* * Smyčka přes položky menu */}
           {navData.map((menu, index) => {
             return (
               <li className="flex py-2" key={index}>

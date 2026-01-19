@@ -1,7 +1,10 @@
+// * Importy pro odkazy a React.
 import Link from "next/link";
 import React from "react";
 
+// * Export sekce orientačního ceníku.
 export default function Cenik() {
+  // * Definice položek ceníku.
   const pricing = [
     {
       title: "Strategická webová konzultace",
@@ -38,6 +41,7 @@ export default function Cenik() {
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12">
+          {/* * Smyčka přes položky ceníku */}
           {pricing.map((item, index) => (
             <div
               key={index}

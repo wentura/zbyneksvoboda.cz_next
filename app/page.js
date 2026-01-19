@@ -1,3 +1,4 @@
+// * Importy sekcí homepage.
 import Cenik from "./components/Cenik";
 import CaseStudiesSection from "./components/CaseStudiesSection";
 import Contact from "./components/contact";
@@ -9,6 +10,7 @@ import ProcessSection from "./components/ProcessSection";
 import RecenzeShort from "./components/recenzeShort";
 import Services from "./components/services";
 
+// * Export hlavní homepage s poskládanými sekcemi.
 export default function Home() {
   return (
     <main className="max-w-screen-full mx-auto">

@@ -1,8 +1,12 @@
+// * Klientská komponenta kvůli formulářovému stavu.
 "use client";
 
+// * Importy React hooků pro práci s formulářem.
 import { useEffect, useRef, useState } from "react";
 
+// * Export kontaktního formuláře s odesláním na API.
 export default function ContactForm() {
+  // * Stav formuláře včetně honeypotu.
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -12,16 +16,20 @@ export default function ContactForm() {
     company: "", // honeypot
   });
 
+  // * Timestamp pro detekci příliš rychlého odeslání.
   const formStartRef = useRef(null);
   useEffect(() => {
+    // * Nastavit čas startu formuláře pouze jednou.
     if (!formStartRef.current) {
       formStartRef.current = Date.now();
     }
   }, []);
 
+  // * Stav odesílání a výsledku.
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
+  // * Zpracování změn ve formuláři.
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prev) => ({
@@ -30,6 +38,7 @@ export default function ContactForm() {
     }));
   };
 
+  // * Odeslání formuláře na API.
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -48,6 +57,7 @@ export default function ContactForm() {
         }),
       });
 
+      // * Úspěšná odpověď z API.
       if (response.ok) {
         setSubmitStatus({
           type: "success",
@@ -63,6 +73,7 @@ export default function ContactForm() {
         });
         formStartRef.current = Date.now();
       } else {
+        // * Zpracování chybové odpovědi.
         const errorData = await response.json();
         setSubmitStatus({
           type: "error",
@@ -71,20 +82,24 @@ export default function ContactForm() {
         });
       }
     } catch (error) {
+      // * Síťová nebo neočekávaná chyba.
       setSubmitStatus({
         type: "error",
         message: "Něco se pokazilo. Zkuste to prosím znovu.",
       });
     } finally {
+      // * Reset stavu odesílání.
       setIsSubmitting(false);
     }
   };
 
   return (
     <div className="mx-auto text-white">
+      {/* * Zobrazení stavu odeslání */}
       {submitStatus && (
         <div
           className={`my-6 p-4 rounded-lg ${
+            // * Barva boxu podle typu výsledku.
             submitStatus.type === "success"
               ? "bg-green-100 text-green-800 border border-green-200"
               : "bg-red-100 text-red-800 border border-red-200"
@@ -95,7 +110,7 @@ export default function ContactForm() {
       )}
 
       <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
-        {/* Honeypot: keep hidden visually and from AT, but present in DOM */}
+        {/* * Honeypot: skrytý pro uživatele, ale přítomný v DOM */}
         <div className="hidden" aria-hidden="true">
           <label htmlFor="company">Company</label>
           <input
@@ -197,9 +212,10 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          // className="w-full bg-white text-modra2 py-3 px-6 font-bold hover:underline underline-offset-4 decoration-2 decoration-modra2 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+          // * className="w-full bg-white text-modra2 py-3 px-6 font-bold hover:underline underline-offset-4 decoration-2 decoration-modra2 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
           className="heroBtn text-center mx-auto w-full"
         >
+          {/* * Text tlačítka se mění při odesílání */}
           {isSubmitting ? "Odesílám..." : "Odeslat zprávu..."}
         </button>
       </form>

@@ -1,5 +1,7 @@
+// * Import animací je zatím vypnutý (backup varianta).
 // import { m } from "framer-motion";
 
+// * Export záložních FAQ dat.
 export const Ckd = [
   {
     headTitle: "jak probíhá",

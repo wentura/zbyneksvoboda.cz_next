@@ -1,6 +1,9 @@
+// * Import React pro komponentu procesu.
 import React from "react";
 
+// * Export sekce procesu spolupráce.
 export default function ProcessSection() {
+  // * Definice kroků spolupráce.
   const steps = [
     {
       number: "1",
@@ -49,6 +52,7 @@ export default function ProcessSection() {
         </p>
         
         <div className="space-y-6 md:space-y-8">
+          {/* * Smyčka přes jednotlivé kroky */}
           {steps.map((step, index) => (
             <div
               key={index}

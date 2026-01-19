@@ -1,10 +1,15 @@
+// * Klientská komponenta kvůli localStorage a eventům.
 "use client";
 
+// * Importy React hooků pro stav cookie souhlasu.
 import { useEffect, useState } from "react";
 
+// * Export komponenty pro správu cookie souhlasu.
 export default function CookieConsent() {
+  // * Stav zobrazení banneru a preferencí.
   const [showConsent, setShowConsent] = useState(true); // Start with true to show in dev
   const [showPreferences, setShowPreferences] = useState(true);
+  // * Stav uloženého souhlasu.
   const [consent, setConsent] = useState({
     necessary: true,
     analytics: false,
@@ -12,7 +17,7 @@ export default function CookieConsent() {
   });
 
   useEffect(() => {
-    // Check if user has already made a choice
+    // * Kontrola, zda už má uživatel uložený souhlas.
     const savedConsent = localStorage.getItem("cookieConsent");
     if (savedConsent) {
       setConsent(JSON.parse(savedConsent));
@@ -20,12 +25,14 @@ export default function CookieConsent() {
     }
   }, []);
 
+  // * Notifikace ostatních částí aplikace o změně souhlasu.
   const notifyConsentUpdated = () => {
     try {
       window.dispatchEvent(new Event("cookieConsentUpdated"));
     } catch (_) {}
   };
 
+  // * Handler pro přijetí všech cookies.
   const handleAcceptAll = () => {
     const newConsent = {
       necessary: true,
@@ -38,6 +45,7 @@ export default function CookieConsent() {
     notifyConsentUpdated();
   };
 
+  // * Handler pro uložení vybraných preferencí.
   const handleSavePreferences = () => {
     localStorage.setItem("cookieConsent", JSON.stringify(consent));
     setShowPreferences(false);
@@ -45,6 +53,7 @@ export default function CookieConsent() {
     notifyConsentUpdated();
   };
 
+  // * Handler pro odmítnutí všech volitelných cookies.
   const handleRejectAll = () => {
     const newConsent = {
       necessary: true,
@@ -57,7 +66,7 @@ export default function CookieConsent() {
     notifyConsentUpdated();
   };
 
-  // Don't render anything if both consent and preferences are hidden
+  // * Pokud jsou preference i banner skryté, zobraz jen tlačítko nastavení.
   if (!showConsent && !showPreferences) {
     return (
       <div className="fixed bottom-4 right-4 z-50">
@@ -74,6 +83,7 @@ export default function CookieConsent() {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-99 p-4 bg-white border-t border-gray-200 shadow-lg cookie-consent">
       <div className="container max-w-screen-xl mx-auto z-99">
+        {/* * Přepínání mezi preferencemi a zjednodušeným bannerem */}
         {showPreferences ? (
           <div className="space-y-4">
             <h2 className="text-lg font-semibold">Nastavení cookies</h2>
@@ -102,6 +112,7 @@ export default function CookieConsent() {
                 <input
                   type="checkbox"
                   checked={consent.analytics}
+                  // * Změna souhlasu pro analytické cookies.
                   onChange={(e) =>
                     setConsent({ ...consent, analytics: e.target.checked })
                   }
@@ -118,6 +129,7 @@ export default function CookieConsent() {
                 <input
                   type="checkbox"
                   checked={consent.marketing}
+                  // * Změna souhlasu pro marketingové cookies.
                   onChange={(e) =>
                     setConsent({ ...consent, marketing: e.target.checked })
                   }
@@ -143,7 +155,7 @@ export default function CookieConsent() {
         ) : (
           <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
             <div className="max-w-2xl">
-              {/* <h2 className="text-lg font-semibold">Používáme cookies</h2> */}
+              {/* * <h2 className="text-lg font-semibold">Používáme cookies</h2> */}
               <p className="text-sm text-gray-600">
                 Používáme cookies pro zlepšení vašeho zážitku na našem webu.
                 Můžete si vybrat, které cookies chcete povolit.
