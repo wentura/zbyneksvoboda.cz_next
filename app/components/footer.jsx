@@ -1,12 +1,11 @@
 /**
  * * Footer komponenta - patička webu
  * * Obsahuje logo, odkazy na sociální sítě (Facebook, Instagram, LinkedIn)
- * * A Matomo tracking komponentu
+ * * Obsahuje logo a odkazy na sociální sítě
  */
 // * Importy pro linky, React a analytics.
 import Link from "next/link";
 import React from "react";
-import Matomo from "./matomo";
 
 // * Export Footer komponenty s odkazy a Matomo trackingem.
 export default function Footer() {
@@ -79,8 +78,6 @@ export default function Footer() {
           </a>
         </span>
       </div>
-      {/* * Vložení Matomo tracking skriptu */}
-      <Matomo />
     </footer>
   );
 }

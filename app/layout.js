@@ -1,6 +1,5 @@
 // * Importy pro fonty, globální styly a layout komponenty.
 import localFont from "next/font/local";
-import CookieConsent from "./components/CookieConsent";
 import Footer from "./components/footer";
 import Matomo from "./components/matomo";
 import "./globals.css";
@@ -39,7 +38,6 @@ export default function RootLayout({ children }) {
       <body>
         {children}
         <Footer />
-        {/* * <CookieConsent /> */}
         <Matomo />
       </body>
     </html>
