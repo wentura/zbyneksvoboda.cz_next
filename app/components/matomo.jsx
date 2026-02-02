@@ -1,14 +1,13 @@
 // * Matomo tracking bez cookies (SPA pageview).
 "use client";
 
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 
 const MATOMO_URL = "https://matomo.zbyneksvoboda.cz/";
 const MATOMO_SITE_ID = "1";
 
-// * Export Matomo trackeru bez cookies.
-export default function Matomo() {
+function MatomoClient() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -53,5 +52,14 @@ export default function Matomo() {
         height={0}
       />
     </noscript>
+  );
+}
+
+// * Export Matomo trackeru bez cookies.
+export default function Matomo() {
+  return (
+    <Suspense fallback={null}>
+      <MatomoClient />
+    </Suspense>
   );
 }
