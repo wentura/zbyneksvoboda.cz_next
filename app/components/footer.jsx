@@ -11,17 +11,35 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="text-gray-400 bg-modra2">
-      <div className="container flex flex-col items-center max-w-screen-xl px-5 py-5 mx-auto sm:flex-row ">
-        <Link className="nadpisPageWhite text-base" href="/">
-          Zbyněk Svoboda
-        </Link>{" "}
+      <div className="container flex flex-col max-w-screen-xl px-5 py-8 mx-auto sm:flex-row sm:items-start sm:justify-between">
+        <div className="flex flex-col items-center sm:items-start">
+          <Link className="nadpisPageWhite text-base" href="/">
+            Zbyněk Svoboda
+          </Link>
+          <div className="mt-4 text-sm text-gray-300 text-center sm:text-left leading-relaxed">
+            <a href="mailto:info@zbyneksvoboda.cz" className="odkaz text-gray-300">
+              info@zbyneksvoboda.cz
+            </a>
+            <br />
+            <a href="tel:+420773687792" className="odkaz text-gray-300">
+              +420 773 687 792
+            </a>
+            <br />
+            Nebužely 3, 277 34 Nebužely
+            <br />
+            IČ: 74811002
+            <br />
+            Nejsem plátcem DPH
+          </div>
+        </div>
         {/* * Sekce s odkazy na sociální sítě */}
-        <span className="inline-flex justify-center mt-4 sm:ml-auto sm:mt-0 sm:justify-start">
+        <span className="inline-flex justify-center mt-6 sm:mt-0 sm:justify-start">
           {/* * Facebook odkaz */}
           <a
             className="text-gray-400"
             href="https://www.facebook.com/profile.php?id=100093105173892"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <svg
               fill="currentColor"
@@ -40,6 +58,7 @@ export default function Footer() {
             className="ml-3"
             href="https://www.instagram.com/zbyndasvoboda/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <svg
               fill="none"
@@ -59,6 +78,7 @@ export default function Footer() {
             className="ml-3"
             href="https://www.linkedin.com/in/zbyneksvoboda/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <svg
               fill="currentColor"

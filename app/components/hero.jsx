@@ -23,7 +23,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-12 lg:gap-18 items-center">
           {/* * Left: Text content */}
           <div className="flex flex-col col-span-1 md:col-span-2 lg:col-span-1 min-h-[83vh] md:min-h-0 justify-between md:justify-start">
-            <h1 className="nadpisPage mb-6 md:mb-8 text-5xl md:text-4xl">
+            <h1 className="nadpisPage mb-6 md:mb-8">
               Pomáhám firmám dělat lepší rozhodnutí v digitálu.
             </h1>
             {/* <p className="text-lg md:text-xl mb-8 text-gray-700 tracking-tight hidden md:block">
@@ -39,15 +39,15 @@ export default function Hero() {
             </p> */}
             <ul className="space-y-1.5 md:space-y-2 mb-8 text-base text-gray-700 tracking-tight">
               <li className="flex items-start">
-                <span className="text-red-400 mr-2">•</span>
+                <span className="text-gray-400 mr-2">•</span>
                 <span>nejdřív směr, potom řešení</span>
               </li>
               <li className="flex items-start">
-                <span className="text-red-400 mr-2">•</span>
+                <span className="text-gray-400 mr-2">•</span>
                 <span>byznys, UX a technologie v jednom kontextu</span>
               </li>
               <li className="flex items-start">
-                <span className="text-red-400 mr-2">•</span>
+                <span className="text-gray-400 mr-2">•</span>
                 <span>spolupráce založená na důvěře a dlouhodobém partnerství</span>
               </li>
             </ul></div>
@@ -59,12 +59,12 @@ export default function Hero() {
               >
                 Domluvit nezávaznou konzultaci
               </button>
-              {/* <Link
+              <Link
                 href="/#pripadove-studie"
                 className="heroBtnSecondary text-right mt-4"
               >
                 Podívat se na případové studie
-              </Link> */}
+              </Link>
             </div>
           </div>
           {/* * Right: Photo or visual element */}

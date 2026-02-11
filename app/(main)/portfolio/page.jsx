@@ -5,6 +5,13 @@ import React from "react";
 import { portfolioData } from "../../data/portfolioData";
 import SafeHtml from "../../components/SafeHtml";
 
+export const metadata = {
+  title: "Případové studie a projekty – Zbyněk Svoboda",
+  description:
+    "Výběr projektů a případových studií. Ukázky práce, přístup k řešení a výsledky spolupráce.",
+  alternates: { canonical: "/portfolio" },
+};
+
 // * Export stránky portfolia s rozdělením na case studies a ostatní projekty.
 export default function PortfolioPage() {
   // * Projekty s case study - zobrazíme ve formátu podobném CaseStudiesSection.

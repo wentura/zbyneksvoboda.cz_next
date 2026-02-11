@@ -47,8 +47,8 @@ export default function ProcessSection() {
           Spolupráci beru jako dialog.
         </p>
         <p className="text-lg md:text-xl leading-relaxed mb-12 text-gray-700 max-w-3xl">
-          Nejdřív potřebuji pochopit vás, váš byznys a kontext.
-          Teprve potom řešíme web.
+          Nejdřív potřebuji pochopit vás, váš byznys a kontext.<br />
+          A poté řešíme digitální řešení.
         </p>
         
         <div className="space-y-6 md:space-y-8">

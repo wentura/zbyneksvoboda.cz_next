@@ -11,7 +11,7 @@ export default function Navigation() {
         {/* * Smyčka přes položky menu */}
         {navData.map((item, index) => (
           <Link
-            className="mr-5 hover:text-gray-600 hover:underline transition duration-200 underline-offset-4 decoration-4 decoration-red-400"
+            className="mr-5 hover:text-gray-600 hover:underline transition duration-200 underline-offset-4 decoration-2 decoration-gray-400"
             key={index}
             href={item.link}
           >

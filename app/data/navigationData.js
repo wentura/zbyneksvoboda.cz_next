@@ -6,7 +6,7 @@ export const navData = [
   },
   {
     title: "Případové studie",
-    link: "/portfolio",
+    link: "/#pripadove-studie",
   },
   //   { title: "Jak pracuji", link: "/jakpracuji" },
   {

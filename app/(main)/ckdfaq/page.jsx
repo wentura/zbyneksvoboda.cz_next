@@ -3,9 +3,36 @@ import React from "react";
 import { Ckd } from "./ckd";
 import SafeHtml from "@/app/components/SafeHtml";
 // * Export FAQ stránky s často kladenými dotazy.
+export const metadata = {
+  title: "Často kladené dotazy – Zbyněk Svoboda",
+  description:
+    "Odpovědi na nejčastější otázky ohledně webů, spolupráce a procesu.",
+  alternates: { canonical: "/ckdfaq" },
+};
+
+const stripHtml = (value) =>
+  String(value || "").replace(/<[^>]*>/g, "").trim();
+
 export default function Ckdfaq() {
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: Ckd.map((item) => ({
+      "@type": "Question",
+      name: stripHtml(item.headTitle),
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: stripHtml(item.text),
+      },
+    })),
+  };
+
   return (
     <section className="py-10 mx-auto md:py-20 px-5 h-[92vh]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
+      />
       <div className="container max-w-screen-xl mx-auto">
         <div className="flex flex-col flex-wrap py-0 mb-20 sm:flex-row">
           <h1 className="nadpisPage">

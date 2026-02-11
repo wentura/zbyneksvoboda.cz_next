@@ -1,10 +1,55 @@
 // * Importy pro data, obrázky a bezpečný HTML render.
 import { portfolioData } from "@/app/data/portfolioData";
-import { color } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import SafeHtml from "@/app/components/SafeHtml";
 // * Export detailu případové studie podle slugu.
+const stripHtml = (value) =>
+  String(value || "").replace(/<[^>]*>/g, "").trim();
+
+export function generateMetadata({ params }) {
+  const { slug } = params;
+  const item = portfolioData.find((entry) => entry.slug === slug);
+
+  if (!item) {
+    return {
+      title: "Případová studie – Zbyněk Svoboda",
+      description: "Detailní případová studie z webových projektů.",
+      alternates: {
+        canonical: `/portfolio/pripadovaStudie/${slug}`,
+      },
+    };
+  }
+
+  const title = `${item.title} – případová studie`;
+  const description =
+    stripHtml(item.caseStudy?.studyTextShort) ||
+    stripHtml(item.shortDecs) ||
+    "Detailní případová studie z webových projektů.";
+  const image =
+    item.caseStudy?.images?.[0]?.img || item.images?.[0]?.img || "/ja.jpg";
+
+  return {
+    title,
+    description,
+    alternates: { canonical: `/portfolio/pripadovaStudie/${item.slug}` },
+    openGraph: {
+      title,
+      description,
+      url: `https://zbyneksvoboda.cz/portfolio/pripadovaStudie/${item.slug}`,
+      images: [{ url: image }],
+      type: "article",
+      locale: "cs_CZ",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [image],
+    },
+  };
+}
+
 export default async function PripadovaStudie({ params }) {
   // * Načtení slugu z routy.
   const { slug } = await params;

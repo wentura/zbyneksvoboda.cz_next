@@ -13,7 +13,7 @@ export default function Cenik() {
       note: "(podle rozsahu webu a hloubky analýzy)",
     },
     {
-      title: "Web Leadership (měsíčně)",
+      title: "Webová režie a vedení",
       description: "Dlouhodobé vedení webových projektů bez nutnosti mít vlastního 'webového šéfa'.",
       price: "od 10 000 Kč",
       note: "(podle počtu projektů a očekávané role)",

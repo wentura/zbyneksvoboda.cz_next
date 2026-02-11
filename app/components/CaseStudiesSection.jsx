@@ -1,5 +1,6 @@
 // * Importy pro odkazy a React.
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 
 // * Export sekce případových studií.
@@ -27,6 +28,7 @@ export default function CaseStudiesSection() {
         text: "Web, který působí důvěryhodně, je snadno použitelný na mobilu a lépe podporuje obsazenost kempu v sezóně.",
       },
       link: "https://www.autokempkokorin.cz/",
+      image: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728894623/zbyneksvoboda/portfolio2/autokempkokorin.webp",
     },
     {
       title: "KolemKrku",
@@ -49,6 +51,7 @@ export default function CaseStudiesSection() {
         text: "Přehlednější e-shop, kde produkty vyniknou a zákazník se snáze dostane od úvodní stránky až k dokončení objednávky.",
       },
       link: "https://www.kolem-krku.cz/",
+      image: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728894625/zbyneksvoboda/portfolio2/kolemkrku.webp",
     },
     {
       title: "Zodpovědná výuka",
@@ -71,6 +74,7 @@ export default function CaseStudiesSection() {
         text: "Stabilní e-shop, který šetří čas i nervy majitelce a je dobře použitelný pro cílovou skupinu.",
       },
       link: "https://www.zodpovednavyuka.cz/",
+      image: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728894627/zbyneksvoboda/portfolio2/zodpovednavyuka.webp",
     },
   ];
 
@@ -100,6 +104,9 @@ export default function CaseStudiesSection() {
                 <p className="text-lg text-gray-600 mb-6">
                   {study.subtitle}
                 </p>
+                <div className="px-4 md:px-16 w-full h-44 md:h-64 overflow-hidden">
+                <Image src={study.image} alt={study.title} width={600} height={300} className="w-full h-full object-top object-cover" />
+                </div>
               </div>
               
               <div className="md:col-span-2 space-y-8">

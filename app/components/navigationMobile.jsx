@@ -35,7 +35,7 @@ export default function NavigationMobile() {
         className={`${
           // * Podmíněné zobrazení menu.
           isOpen ? "block" : "hidden"
-        }  top-0 left-0 right-0 bg-white px-2 pt-2 pb-4 z-20 flex flex-col text-gray-900 shadow-md opacity-90 w-full h-screen fixed`}
+        } top-0 left-0 right-0 bg-white px-2 pt-2 pb-4 z-50 flex flex-col text-gray-900 shadow-md w-full h-screen fixed`}
       >
         <button className="flex justify-end p-4" onClick={toggleMenu}>
           <svg
@@ -49,7 +49,7 @@ export default function NavigationMobile() {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              d="M 0 0 L 20 20 L 0 0 M 20 0 L 0 20 L 20 0"
+              d="M6 18L18 6M6 6l12 12"
             ></path>
           </svg>
         </button>
@@ -73,6 +73,15 @@ export default function NavigationMobile() {
               </li>
             );
           })}
+          <li className="flex py-4">
+            <Link
+              href="/#kontakt"
+              className="ctaBtnPrimary"
+              onClick={toggleMenu}
+            >
+              Domluvit konzultaci
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

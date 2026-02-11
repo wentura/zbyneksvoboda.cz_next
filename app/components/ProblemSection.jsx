@@ -10,7 +10,7 @@ export default function ProblemSection() {
           Spousta webů vznikla s dobrým úmyslem.
         </h2>
         <p className="text-lg md:text-xl leading-relaxed mb-4 text-gray-700 font-medium">
-          Dnes ale mnohým firmám web nepomáhá růst.
+          Ale mnohým firmám už dnes web nepomáhá růst.
         </p>
         <p className="text-lg md:text-xl leading-relaxed mb-4 text-gray-700">
           Firemní web, který <i className="italic">„nějak funguje"</i>.<br />
@@ -53,15 +53,15 @@ export default function ProblemSection() {
         {/* * Role / Pozicování sekce */}
         <div className="mt-16 pt-12">
           <h2 className="nadpisPage mb-6 md:mb-8">
-            Moje role nezačíná u designu ani u kódu.
+            Nezačínám u designu ani u kódu.
           </h2>
           <p className="text-lg md:text-xl leading-relaxed mb-2 text-gray-700 mb-8">
-            Pomáhám firmám přemýšlet o webu a digitálních řešeních v širším kontextu...
+            Pomáhám vám se zamyslet o digitálních řešeních a webu v širším kontextu...
           </p>
           <div className="mb-8 text-base md:text-lg text-gray-700 flex flex-wrap gap-2">
           <div className="p-4 bg-red-50 rounded-lg w-fit">
             <h3 className="text-xl font-semibold  text-gray-900">
-              Jakou má roli má digitál ve vašem byznysu<span className="text-red-400 text-2xl font-extrabold ml-1">?</span></h3>
+              Jaká je role digitálu ve vašem byznysu<span className="text-red-400 text-2xl font-extrabold ml-1">?</span></h3>
             </div>
             <div className="p-4 bg-red-50 rounded-lg w-fit">
               <h3 className="text-xl font-semibold  text-gray-900">
@@ -69,7 +69,7 @@ export default function ProblemSection() {
             </div>
             <div className="p-4 bg-red-50 rounded-lg w-fit">
               <h3 className="text-xl font-semibold  text-gray-900">
-                Co vám má web podporovat a přinášet<span className="text-red-400 text-2xl font-extrabold ml-1">?</span></h3>
+                Co vám má web přinášet<span className="text-red-400 text-2xl font-extrabold ml-1">?</span></h3>
             </div>
             {/* <div className="p-4 bg-red-50 rounded-lg w-fit">
               <h3 className="text-xl font-semibold  text-gray-900">
@@ -77,7 +77,7 @@ export default function ProblemSection() {
             </div> */}
           </div>
           <p className="text-xl md:text-2xl leading-relaxed text-center md:text-right text-gray-900 font-semibold mb-8">
-            Web je výsledek rozhodnutí. <br />Ne jejich začátek.
+            Web je výsledek rozhodnutí.<br />Ne jeho začátek.
           </p>
         </div>
       </div>

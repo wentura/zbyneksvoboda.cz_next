@@ -4,10 +4,41 @@ import { recenzeData } from "@/app/data/recenzeData";
 import React from "react";
 import SafeHtml from "@/app/components/SafeHtml";
 
+export const metadata = {
+  title: "Recenze – Zbyněk Svoboda",
+  description:
+    "Reference a zkušenosti klientů se spoluprací. Výběr ověřených recenzí.",
+  alternates: { canonical: "/recenze" },
+};
+
+const stripHtml = (value) =>
+  String(value || "").replace(/<[^>]*>/g, "").trim();
+
 // * Export stránky s detailními recenzemi.
 export default function Recenze() {
+  const reviewStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: recenzeData.map((recenze, index) => ({
+      "@type": "Review",
+      position: index + 1,
+      author: { "@type": "Person", name: recenze.kdo },
+      reviewBody: stripHtml(recenze.short ? recenze.textShort : recenze.text),
+      itemReviewed: {
+        "@type": "Person",
+        name: "Zbyněk Svoboda",
+      },
+    })),
+  };
+
   return (
     <section className="py-10 mx-auto text-gray-600 md:py-20 md:px-5">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(reviewStructuredData),
+        }}
+      />
       <div className="container max-w-screen-xl mx-auto">
         <div className="flex flex-col flex-wrap py-0 mb-20 sm:flex-row">
           <h1 className="mb-2 nadpisPage leading-snug sm:w-full sm:mb-8">

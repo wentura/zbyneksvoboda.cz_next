@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        accent: "var(--accent)",
       },
       animation: {
         scroll: "scroll 50s linear infinite",

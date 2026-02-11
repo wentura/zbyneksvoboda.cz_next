@@ -17,9 +17,9 @@ export default function Contact() {
       id="kontakt"
     >
       <div className="container max-w-screen-xl mx-auto">
-        <h1 className="nadpisPageWhite leading-snug sm:w-full text-center md:text-left mb-6 md:mb-8">
+        <h2 className="nadpisPageWhite leading-snug sm:w-full text-center md:text-left mb-6 md:mb-8">
           Pojďme probrat váš web
-        </h1>
+        </h2>
         <p className="text-lg md:text-xl leading-relaxed text-white mb-4 max-w-3xl">
           Možná cítíte, že by váš web mohl fungovat lépe.
         </p>
