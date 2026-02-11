@@ -6,7 +6,7 @@ export default function FitSection() {
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
-        <h2 className="nadpisPage mb-6 md:mb-8 text-center md:text-left leading-tight">
+        <h2 className="nadpisPage mb-6 md:mb-8 text-left leading-tight">
           Pro koho jsem - <br className="md:hidden" /><span className="text-neutral-300 font-normal"><b>a pro koho ne</b></span>
         </h2>
         

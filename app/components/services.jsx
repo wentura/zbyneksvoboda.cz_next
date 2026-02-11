@@ -10,7 +10,7 @@ export default function Services() {
       id="sluzby"
     >
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
-        <h2 className="nadpisPage mb-6 md:mb-8 text-center md:text-left">
+        <h2 className="nadpisPage mb-6 md:mb-8 text-left">
           S čím vám pomohu
         </h2>
         <p className="text-lg md:text-xl leading-relaxed mb-12 text-gray-700 max-w-3xl">

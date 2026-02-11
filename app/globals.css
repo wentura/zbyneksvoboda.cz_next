@@ -9,7 +9,7 @@
     font-weight: 700 !important;
   }
   .nadpisPage {
-    @apply text-3xl md:text-5xl font-bold tracking-tight text-modra2 leading-tight;
+    @apply text-5xl md:text-6xl font-bold tracking-tight text-modra2 leading-tight;
     font-style: normal;
   }
   .nadpisPageDark {
@@ -28,7 +28,7 @@
     font-style: normal;
   }
   .nadpisPageWhite {
-    @apply text-3xl md:text-5xl font-bold text-gray-100 tracking-tight;
+    @apply text-5xl md:text-6xl font-bold text-gray-100 tracking-tight;
     font-family: var(--font-montserrat), sans-serif;
     font-weight: 700;
     font-style: normal;

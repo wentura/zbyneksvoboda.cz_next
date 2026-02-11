@@ -32,7 +32,7 @@ export default function Cenik() {
       className="py-16 md:py-24 bg-neutral-50"
     >
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
-        <h2 className="nadpisPage mb-6 md:mb-8 text-center md:text-left">
+        <h2 className="nadpisPage mb-6 md:mb-8 text-left">
           Orientační ceny
         </h2>
         <p className="text-lg md:text-xl leading-relaxed mb-12 text-gray-700 max-w-3xl">
