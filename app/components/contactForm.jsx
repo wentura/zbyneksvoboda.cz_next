@@ -199,7 +199,7 @@ export default function ContactForm() {
             required
             rows={4}
             className="w-full px-4 py-3 bg-gray-700 text-white placeholder-gray-200"
-            placeholder="Popište, s čím vám mohu pomoci..."
+            placeholder="Jaký je cíl, kterého chcete dosáhnout?"
           />
         </div>
 
@@ -213,7 +213,7 @@ export default function ContactForm() {
           type="submit"
           disabled={isSubmitting}
           // * className="w-full bg-white text-modra2 py-3 px-6 font-bold hover:underline underline-offset-4 decoration-2 decoration-modra2 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-          className="heroBtn text-center mx-auto w-full"
+          className="heroBtn text-center mx-auto w-full border-2 border-white"
         >
           {/* * Text tlačítka se mění při odesílání */}
           {isSubmitting ? "Odesílám..." : "Odeslat zprávu..."}

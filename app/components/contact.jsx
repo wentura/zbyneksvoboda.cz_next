@@ -18,17 +18,12 @@ export default function Contact() {
     >
       <div className="container max-w-screen-xl mx-auto">
         <h2 className="nadpisPageWhite leading-snug sm:w-full text-left mb-6 md:mb-8">
-          Pojďme probrat váš web
-        </h2>
-        <p className="text-lg md:text-xl leading-relaxed text-white mb-4 max-w-3xl">
-          Možná cítíte, že by váš web mohl fungovat lépe.
-        </p>
-        <p className="text-lg md:text-xl leading-relaxed text-white mb-8 max-w-3xl">
-          Nemusíte mít jasno – od toho je úvodní konzultace.
-        </p>
-        <p className="text-lg md:text-xl leading-relaxed text-white mb-12 max-w-3xl">
+        Pojďme probrat směr vašeho digitálu.        </h2>
+        <p className="text-lg md:text-xl leading-relaxed text-white mb-4 max-w-4xl">
+        Pokud váš web nepřináší výsledky, které očekáváte, je čas podívat se na něj jinak.        </p>
+        {/* <p className="text-lg md:text-xl leading-relaxed text-white mb-12 max-w-3xl">
           Napište mi pár vět o vašem projektu. Ozvu se vám a domluvíme krátkou nezávaznou konzultaci.
-        </p>
+        </p> */}
       </div>
       <div className="container flex flex-col items-center max-w-screen-xl mx-auto md:flex-row ">
         <div className="flex flex-col text-center lg:flex-grow lg:w-1/2 lg:pr-12 md:pr-8 md:items-start md:text-left md:mb-0">

@@ -20,8 +20,8 @@ export const navData = [
   //   title: "O mně",
   //   link: "/#o-mne",
   // },
-  {
-    title: "Kontakt",
-    link: "/#kontakt",
-  },
+  // {
+  //   title: "Kontakt",
+  //   link: "/#kontakt",
+  // },
 ];

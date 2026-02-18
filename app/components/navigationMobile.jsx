@@ -76,11 +76,10 @@ export default function NavigationMobile() {
           <li className="flex py-4">
             <Link
               href="/#kontakt"
-              className="ctaBtnPrimary"
+              className="ctaBtnPrimary uppercase tracking-tight"
               onClick={toggleMenu}
             >
-              Domluvit konzultaci
-            </Link>
+kontakt            </Link>
           </li>
         </ul>
       </nav>

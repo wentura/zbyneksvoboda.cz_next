@@ -9,7 +9,7 @@
     font-weight: 700 !important;
   }
   .nadpisPage {
-    @apply text-5xl md:text-6xl font-bold tracking-tight text-modra2 leading-tight;
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-modra2 leading-relaxed;
     font-style: normal;
   }
   .nadpisPageDark {

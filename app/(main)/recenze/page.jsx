@@ -1,5 +1,6 @@
 // * Importy pro obrázky, data recenzí a bezpečný HTML render.
 import Image from "next/image";
+// import {content} from "@/content";
 import { recenzeData } from "@/app/data/recenzeData";
 import React from "react";
 import SafeHtml from "@/app/components/SafeHtml";

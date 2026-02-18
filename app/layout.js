@@ -1,8 +1,10 @@
 // * Importy pro fonty, globální styly a layout komponenty.
 import localFont from "next/font/local";
-import Footer from "./components/footer";
-import Matomo from "./components/matomo";
 import "./globals.css";
+// import { content } from "@/content";
+// import Header from "./components/header";
+import Matomo from "./components/matomo";
+import Footer from "./components/footer";
 
 // * Lokální font Montserrat.
 const montserrat = localFont({

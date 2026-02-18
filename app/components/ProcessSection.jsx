@@ -2,7 +2,7 @@
 import React from "react";
 
 // * Export sekce procesu spolupráce.
-export default function ProcessSection() {
+export default function ProcessSection({ content }) {
   // * Definice kroků spolupráce.
   const steps = [
     {
@@ -41,25 +41,24 @@ export default function ProcessSection() {
     <section className="py-16 md:py-24 bg-neutral-50">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
         <h2 className="nadpisPage mb-6 md:mb-8 text-left">
-          Jak spolupráce probíhá
+          {content.title}
         </h2>
         <p className="text-lg md:text-xl leading-relaxed mb-6 text-gray-700 max-w-3xl font-medium">
-          Spolupráci beru jako dialog.
+            Spolupráci beru jako dialog.
         </p>
-        <p className="text-lg md:text-xl leading-relaxed mb-12 text-gray-700 max-w-3xl">
-          Nejdřív potřebuji pochopit vás, váš byznys a kontext.<br />
-          A poté řešíme digitální řešení.
+        <p className="text-lg md:text-xl leading-relaxed mb-12 text-gray-700 max-w-xl">
+          {content.description2}
         </p>
         
         <div className="space-y-6 md:space-y-8">
           {/* * Smyčka přes jednotlivé kroky */}
-          {steps.map((step, index) => (
+          {content.steps.map((step, index) => (
             <div
               key={index}
               className="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start"
             >
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-red-400 text-white flex items-center justify-center text-xl md:text-2xl font-bold">
+                <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-red-400 text-white flex items-center justify-center text-xl md:text-2xl font-bold">
                   {step.number}
                 </div>
               </div>
@@ -70,12 +69,14 @@ export default function ProcessSection() {
                 <p className="text-base md:text-lg leading-relaxed text-gray-700">
                   {step.description}
                 </p>
+                <p className="text-base md:text-lg leading-relaxed text-gray-700">
+                  <span className="font-bold"> Výstup: </span>{step.output}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
-  );
-}
-
+      </section>
+    );
+  }
