@@ -55,14 +55,14 @@ export default function ProcessSection({ content }) {
           {content.steps.map((step, index) => (
             <div
               key={index}
-              className="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start"
+              className="flex flex-row gap-6 md:gap-8 items-start"
             >
               <div className="flex-shrink-0">
                 <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-red-400 text-white flex items-center justify-center type-body font-semibold">
                   {step.number}
                 </div>
               </div>
-              <div className="flex-1 text-center md:text-left">
+              <div className="flex-1">
                 <h3 className="type-h3 mb-2 text-gray-900">
                   {step.title}
                 </h3>
