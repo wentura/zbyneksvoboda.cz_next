@@ -21,7 +21,7 @@ export default function PortfolioImpactSection({ content }) {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-12 bg-white scroll-mt-12" id="studie-a-reference">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
         <h2 className="nadpisPage mb-6 md:mb-8 text-left">{content.title}</h2>
         <p className="type-body-lg text-gray-700 max-w-4xl">

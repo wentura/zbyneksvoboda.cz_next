@@ -6,7 +6,7 @@ import React from "react";
 export default function Services({ content }) {
   return (
     <section
-      className="py-16 md:py-24 bg-white"
+      className="py-16 md:py-12 bg-white scroll-mt-12"
       id="sluzby"
     >
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">

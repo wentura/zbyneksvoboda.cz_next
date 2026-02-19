@@ -4,15 +4,15 @@ export const navData = [
     title: "Služby",
     link: "/#sluzby",
   },
+  // { title: "Spolupráce", link: "/jakpracuji" },
   {
     title: "Případové studie",
-    link: "/#pripadove-studie",
+    link: "/#studie-a-reference",
   },
-  //   { title: "Jak pracuji", link: "/jakpracuji" },
-  {
-    title: "Reference",
-    link: "/recenze",
-  },
+  // {
+    // title: "Reference",
+    // link: "/recenze",
+  // },
   //   { title: "Blog & zdroje", link: "/blog" },
   { title: "Ceník", link: "/#cenik" },
   //   { title: "ČKD / FAQ", link: "/ckdfaq" },

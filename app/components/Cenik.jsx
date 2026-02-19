@@ -4,32 +4,10 @@ import React from "react";
 
 // * Export sekce orientačního ceníku.
 export default function Cenik({ content }) {
-  // * Definice položek ceníku.
-  const pricing = [
-    {
-      title: "Strategická webová konzultace",
-      description: "Když potřebujete nadhled, jasno a konkrétní doporučení.",
-      price: "od 5 000 Kč",
-      note: "(podle rozsahu webu a hloubky analýzy)",
-    },
-    {
-      title: "Webová režie a vedení",
-      description: "Dlouhodobé vedení webových projektů bez nutnosti mít vlastního 'webového šéfa'.",
-      price: "od 10 000 Kč",
-      note: "(podle počtu projektů a očekávané role)",
-    },
-    {
-      title: "High-end web / redesign",
-      description: "Když nechcete jen nový web, ale funkční systém pro prezentaci firmy.",
-      price: "od 30 000 Kč",
-      note: "(podle rozsahu, funkcí a náročnosti projektu)",
-    },
-  ];
-
   return (
     <section
       id="cenik"
-      className="py-16 md:py-24 bg-neutral-100"
+      className="py-16 md:py-24 bg-neutral-100 scroll-mt-12"
     >
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
         <h2 className="nadpisPage mb-6 md:mb-8 text-left">

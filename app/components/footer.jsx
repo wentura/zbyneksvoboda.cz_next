@@ -16,7 +16,7 @@ export default function Footer() {
           <Link className="nadpisPageWhite" href="/">
             Zbyněk Svoboda
           </Link>
-          <div className="mt-4 type-meta text-gray-300 text-center sm:text-left">
+          <div className="mt-4 type-meta text-gray-300 text-center sm:text-left leading-loose md:leading-normal">
             <a href="mailto:info@zbyneksvoboda.cz" className="odkaz text-gray-300">
               info@zbyneksvoboda.cz
             </a>
