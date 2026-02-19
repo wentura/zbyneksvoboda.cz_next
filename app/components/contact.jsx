@@ -17,9 +17,9 @@ export default function Contact() {
       id="kontakt"
     >
       <div className="container max-w-screen-xl mx-auto">
-        <h2 className="nadpisPageWhite leading-snug sm:w-full text-left mb-6 md:mb-8">
+        <h2 className="nadpisPageWhite sm:w-full text-left mb-6 md:mb-8">
         Pojďme probrat směr vašeho digitálu.        </h2>
-        <p className="text-lg md:text-xl leading-relaxed text-white mb-4 max-w-4xl">
+        <p className="type-body-lg text-white mb-4 max-w-4xl">
         Pokud váš web nepřináší výsledky, které očekáváte, je čas podívat se na něj jinak.        </p>
         {/* <p className="text-lg md:text-xl leading-relaxed text-white mb-12 max-w-3xl">
           Napište mi pár vět o vašem projektu. Ozvu se vám a domluvíme krátkou nezávaznou konzultaci.
@@ -30,14 +30,14 @@ export default function Contact() {
           <div className="flex flex-col gap-4 my-12">
             <a
               href="mailto:info@zbyneksvoboda.cz"
-              className="nadpisPageWhite leading-snug  text-xl md:text-3xl lg:text-4xl hover:text-white hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-300"
+              className="nadpisPageWhite type-h2 hover:text-white hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-300"
             >
               {/* <MailSvg /> */}
               info@zbyneksvoboda.cz
             </a>{" "}
             <a
               href="tel:00420773687792"
-              className="nadpisPageWhite leading-snug text-xl md:text-3xl lg:text-4xl hover:text-white hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-300"
+              className="nadpisPageWhite type-h2 hover:text-white hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-300"
             >
               {/* <PhoneSvg /> */}
               773687792
@@ -117,7 +117,7 @@ export default function Contact() {
                   </a>
                 </div>
               </div>
-              <span className="text-white text-center md:text-left pl-4 md:pl-3">
+              <span className="text-white type-body text-center md:text-left pl-4 md:pl-3">
                 Zbyněk Svoboda
                 <br />
                 Nebužely 3<br />
@@ -125,7 +125,7 @@ export default function Contact() {
                 <br />
                 IČ: 74811002
                 <br />
-                <span className="text-xs">Nejsem plátcem DPH</span>
+                <span className="type-meta">Nejsem plátcem DPH</span>
               </span>
             </div>
             <div className="flex w-full mx-auto text-center items-center justify-center">

@@ -79,7 +79,7 @@ export default function CaseStudiesSection() {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white" id="pripadove-studie">
+    <section className="py-16 md:py-24 bg-white scroll-mt-24" id="pripadove-studie">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
         <h2 className="nadpisPage mb-6 md:mb-8 text-left">
           Případové studie
@@ -94,14 +94,14 @@ export default function CaseStudiesSection() {
             >
               <div className="md:col-span-1">
                 <div className="mb-4">
-                  <span className="inline-block px-3 py-1 text-sm font-medium bg-neutral-100 text-gray-700 rounded">
+                  <span className="inline-block px-3 py-1 type-meta bg-neutral-100 text-gray-700 rounded">
                     {study.tag}
                   </span>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-semibold mb-2 text-gray-900">
+                <h3 className="type-h2 mb-2 text-gray-900">
                   {study.title}
                 </h3>
-                <p className="text-lg text-gray-600 mb-6">
+                <p className="type-body-lg text-gray-600 mb-6">
                   {study.subtitle}
                 </p>
                 <div className="px-4 md:px-16 w-full h-44 md:h-64 overflow-hidden">
@@ -111,22 +111,22 @@ export default function CaseStudiesSection() {
               
               <div className="md:col-span-2 space-y-8">
                 <div>
-                  <h4 className="text-lg font-semibold mb-3 text-gray-900">
+                  <h4 className="type-h3 mb-3 text-gray-900">
                     {study.problem.title}
                   </h4>
-                  <p className="text-base leading-relaxed text-gray-700">
+                  <p className="type-body text-gray-700">
                     {study.problem.text}
                   </p>
                 </div>
                 
                 <div>
-                  <h4 className="text-lg font-semibold mb-3 text-gray-900">
+                  <h4 className="type-h3 mb-3 text-gray-900">
                     {study.solution.title}
                   </h4>
                   <ul className="space-y-2">
                     {/* * Smyčka přes body řešení */}
                     {study.solution.text.map((item, idx) => (
-                      <li key={idx} className="flex items-start text-base leading-relaxed text-gray-700">
+                      <li key={idx} className="flex items-start type-body text-gray-700">
                         <span className="text-red-400 mr-2">•</span>
                         <span>{item}</span>
                       </li>
@@ -135,10 +135,10 @@ export default function CaseStudiesSection() {
                 </div>
                 
                 <div>
-                  <h4 className="text-lg font-semibold mb-3 text-gray-900">
+                  <h4 className="type-h3 mb-3 text-gray-900">
                     {study.result.title}
                   </h4>
-                  <p className="text-base leading-relaxed text-gray-700">
+                  <p className="type-body text-gray-700">
                     {study.result.text}
                   </p>
                 </div>
@@ -150,7 +150,7 @@ export default function CaseStudiesSection() {
                       href={study.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="odkaz text-base"
+                      className="odkaz type-body"
                     >
                       Navštívit web →
                     </a>

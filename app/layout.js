@@ -86,7 +86,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="cs"
-      className={`${montserrat.variable} ${notoserif.variable} scroll-smooth textPage`}
+      className={`${montserrat.variable} ${notoserif.variable} scroll-smooth`}
     >
       <body>
         <script

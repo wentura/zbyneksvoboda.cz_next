@@ -51,7 +51,7 @@ export default function RecenzeShort() {
         <h2 className="nadpisPage mb-6 md:mb-8 text-left">
           Co o spolupráci říkají klienti
         </h2>
-        <p className="text-lg md:text-xl leading-relaxed mb-12 text-gray-700 max-w-3xl">
+        <p className="type-body-lg mb-12 text-gray-700 max-w-3xl">
           Spolupracuji s klienty, kteří očekávají kvalitu, spolehlivost a lidský přístup.</p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12">
@@ -62,7 +62,7 @@ export default function RecenzeShort() {
               className="p-6 md:p-8 bg-white rounded-2xl border border-neutral-200 shadow-sm flex flex-col"
             >
               <div className="mb-4">
-                <p className="text-base leading-relaxed text-gray-700 mb-6">
+                <p className="type-body text-gray-700 mb-6">
                   &quot;{testimonial.text}&quot;
                 </p>
               </div>
@@ -71,7 +71,7 @@ export default function RecenzeShort() {
                 <p className="font-semibold text-gray-900 mb-1">
                   {testimonial.name}
                 </p>
-                <p className="text-sm text-gray-600">
+                <p className="type-meta text-gray-600">
                   {testimonial.project}
                 </p>
                 </div>
@@ -88,7 +88,7 @@ export default function RecenzeShort() {
         </div>
         
         <div className="mt-12 pt-8 border-t border-neutral-200">
-          <p className="text-base md:text-lg text-gray-700 mb-6">
+          <p className="type-body text-gray-700 mb-6">
             Dlouhodobě spolupracuji s {" "}
             {/* * Vypiš seznam klientů s čárkami a spojkou */}
             {otherClients.map((client, index) => (
@@ -104,7 +104,7 @@ export default function RecenzeShort() {
         </div>
         
         <div className="mt-8 flex justify-center">
-          <Link href="/recenze" className="odkaz text-base">
+          <Link href="/recenze" className="odkaz type-body">
             více recenzí
           </Link>
         </div>

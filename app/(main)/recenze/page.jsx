@@ -45,7 +45,7 @@ export default function Recenze() {
           <h1 className="mb-2 nadpisPage leading-snug sm:w-full sm:mb-8">
             Co říkají moji klienti
           </h1>
-          <p className="pl-0 text-xl leading-relaxed">
+          <p className="pl-0 type-body-lg">
             Spolupracuji s klienty, kteří očekávají kvalitu, spolehlivost a
             inovativní přístup.
             <br />
@@ -66,8 +66,8 @@ export default function Recenze() {
                     height={80}
                   />
                   <div className="flex flex-col	pr-4 text-right">
-                    <span className="text-lg font-bold">{recenze.kdo}</span>
-                    <span className="text-sm text-gray-500 font-medium">
+                    <span className="type-body-lg font-bold">{recenze.kdo}</span>
+                    <span className="type-meta text-gray-500 font-medium">
                       {recenze.co}
                     </span>
                   </div>
@@ -75,7 +75,7 @@ export default function Recenze() {
                 {/* * Vykreslení dlouhé/krátké recenze podle přepínače */}
                 <SafeHtml
                   html={recenze.short ? recenze.textShort : recenze.text}
-                  className="pb-12 font-light text-sm leading-6 tracking-wide"
+                  className="pb-12 font-light type-meta tracking-wide"
                 />
               </div>
             </div>

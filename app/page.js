@@ -1,12 +1,14 @@
 // * Importy sekcí homepage.
 import Cenik from "./components/Cenik";
-import CaseStudiesSection from "./components/CaseStudiesSection";
+import CollaborationFitSection from "./components/CollaborationFitSection";
 import Contact from "./components/contact";
 import FitSection from "./components/FitSection";
 import Header from "./components/header";
 import Hero from "./components/hero";
+import PortfolioImpactSection from "./components/PortfolioImpactSection";
 import ProblemSection from "./components/ProblemSection";
 import ProcessSection from "./components/ProcessSection";
+import CaseStudiesSection from "./components/CaseStudiesSection";
 import StartSection from "./components/StartSection";
 import RecenzeShort from "./components/recenzeShort";
 import Services from "./components/services";
@@ -22,8 +24,10 @@ export default function Home() {
       <StartSection content={content.start}/>
       {/* </div> */}
       <Services content={content.services}/>
+      {/* <CollaborationFitSection /> */}
       <ProcessSection content={ content.process}/>
-      <CaseStudiesSection />
+      {/* <CaseStudiesSection /> */}
+      <PortfolioImpactSection content={content.portfolioImpact} />
       <RecenzeShort />
       <FitSection content={content.fit} />
       <Cenik content={content.cenik} />

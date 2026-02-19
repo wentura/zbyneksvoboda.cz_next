@@ -32,7 +32,7 @@ export default function PortfolioPage() {
           <h1 className="nadpisPage mb-6 md:mb-8 text-center md:text-left">
             Projekty & reference
           </h1>
-          <p className="text-lg md:text-xl leading-relaxed mb-12 text-gray-700 max-w-3xl">
+          <p className="type-body-lg mb-12 text-gray-700 max-w-3xl">
             Každý web nebo e-shop, na kterém pracuji, má jasný cíl – ať už jde o
             lepší uživatelský zážitek, vyšší konverze, nebo technickou
             efektivitu. Podívejte se na vybrané projekty, kde se spojila
@@ -42,7 +42,7 @@ export default function PortfolioPage() {
           {/* * Projekty s case study - detailní formát */}
           {projectsWithCaseStudy.length > 0 && (
             <div className="space-y-16 md:space-y-24 mb-24">
-              <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-gray-900">
+              <h2 className="type-h2 mb-8 text-gray-900">
                 Případové studie
               </h2>
               {/* * Smyčka přes projekty s case study */}
@@ -54,16 +54,16 @@ export default function PortfolioPage() {
                   {/* * Levá strana - název, tag, obrázek */}
                   <div className="md:col-span-1">
                     <div className="mb-4">
-                      <span className="inline-block px-3 py-1 text-sm font-medium bg-neutral-100 text-gray-700 rounded">
+                      <span className="inline-block px-3 py-1 type-meta bg-neutral-100 text-gray-700 rounded">
                         {item.caseStudy?.title || "Projekt"}
                       </span>
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-semibold mb-2 text-gray-900">
+                    <h3 className="type-h2 mb-2 text-gray-900">
                       {item.title}
                     </h3>
                     {/* * Podnadpis je zobrazen pouze pokud existuje */}
                     {item.caseStudy?.subTitle && (
-                      <p className="text-lg text-gray-600 mb-6">
+                      <p className="type-body-lg text-gray-600 mb-6">
                         {item.caseStudy.subTitle}
                       </p>
                     )}
@@ -85,7 +85,7 @@ export default function PortfolioPage() {
                         href={item.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="odkaz text-base"
+                        className="odkaz type-body"
                       >
                         Navštívit web →
                       </a>
@@ -98,7 +98,7 @@ export default function PortfolioPage() {
                     {item.caseStudy?.studyTextLong && (
                       <SafeHtml
                         html={item.caseStudy.studyTextLong}
-                        className="text-base leading-relaxed text-gray-700 prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-strong:text-gray-900"
+                        className="type-body text-gray-700 prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-strong:text-gray-900"
                       />
                     )}
                     {/* * Odkaz na detailní case study pokud existuje slug */}
@@ -106,7 +106,7 @@ export default function PortfolioPage() {
                       <div className="pt-4 border-t border-neutral-200">
                         <Link
                           href={`/portfolio/pripadovaStudie/${item.slug}`}
-                          className="odkaz text-base font-medium"
+                          className="odkaz type-body font-medium"
                         >
                           Zobrazit detailní případovou studii →
                         </Link>
@@ -144,14 +144,14 @@ export default function PortfolioPage() {
                       </div>
                     )}
                     <div className="p-6 flex flex-col flex-grow">
-                      <h3 className="text-xl md:text-2xl font-semibold mb-3 text-gray-900">
+                      <h3 className="type-h3 mb-3 text-gray-900">
                         {item.title}
                       </h3>
                       {/* * Krátký popis, pokud existuje */}
                       {item.shortDecs && (
                         <SafeHtml
                           html={item.shortDecs}
-                          className="text-base leading-relaxed text-gray-700 mb-4 flex-grow"
+                          className="type-body text-gray-700 mb-4 flex-grow"
                         />
                       )}
                       {/* * Externí odkaz na projekt */}
@@ -160,7 +160,7 @@ export default function PortfolioPage() {
                           href={item.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="odkaz text-sm mt-auto"
+                          className="odkaz type-meta mt-auto"
                         >
                           {item.linkViewMore || "Navštívit web"} →
                         </a>
@@ -174,10 +174,10 @@ export default function PortfolioPage() {
 
           {/* * CTA na konci */}
           <div className="mt-16 md:mt-24 p-8 md:p-12 bg-neutral-50 rounded-2xl text-center">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900">
+            <h2 className="type-h2 mb-4 text-gray-900">
               Máte projekt, který byste chtěli realizovat?
             </h2>
-            <p className="text-lg leading-relaxed text-gray-700 mb-6 max-w-2xl mx-auto">
+            <p className="type-body-lg text-gray-700 mb-6 max-w-2xl mx-auto">
               Začněme spolupráci ještě dnes a posuňme vaše podnikání blíže
               klientům s moderním a funkčním webem.
             </p>

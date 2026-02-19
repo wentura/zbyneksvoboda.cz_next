@@ -40,10 +40,10 @@ export default function Ckdfaq() {
             <span className="nadpisPageDark">K</span>ladené{" "}
             <span className="nadpisPageDark">D</span>otazy
             <br />
-            <span className="text-lg">
-              <span className="nadpisPageDark text-lg">F</span>requently{" "}
-              <span className="nadpisPageDark text-lg">A</span>sked{" "}
-              <span className="nadpisPageDark text-lg">Q</span>uestion
+            <span className="type-body-lg">
+              <span className="nadpisPageDark type-body-lg">F</span>requently{" "}
+              <span className="nadpisPageDark type-body-lg">A</span>sked{" "}
+              <span className="nadpisPageDark type-body-lg">Q</span>uestion
             </span>
           </h1>
         </div>
@@ -53,7 +53,7 @@ export default function Ckdfaq() {
           {Ckd.map((ckd, index) => (
             <div className="py-8 flex flex-wrap flex-col" key={index}>
               <div className="md:mb-0 mb-4">
-                <span className="nadpisPageDark uppercase text-2xl md:text-3xl">
+                <span className="nadpisPageDark uppercase type-h2">
                   {ckd.headTitle}
                 </span>
                 <span className="mt-0">{ckd.title}</span>

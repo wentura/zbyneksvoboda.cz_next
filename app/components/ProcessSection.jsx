@@ -43,10 +43,10 @@ export default function ProcessSection({ content }) {
         <h2 className="nadpisPage mb-6 md:mb-8 text-left">
           {content.title}
         </h2>
-        <p className="text-lg md:text-xl leading-relaxed mb-6 text-gray-700 max-w-3xl font-medium">
+        <p className="type-body mb-4 text-gray-700 max-w-3xl">
             Spolupráci beru jako dialog.
         </p>
-        <p className="text-lg md:text-xl leading-relaxed mb-12 text-gray-700 max-w-xl">
+        <p className="type-body mb-12 text-gray-700 max-w-3xl">
           {content.description2}
         </p>
         
@@ -58,18 +58,18 @@ export default function ProcessSection({ content }) {
               className="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start"
             >
               <div className="flex-shrink-0">
-                <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-red-400 text-white flex items-center justify-center text-xl md:text-2xl font-bold">
+                <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-red-400 text-white flex items-center justify-center type-body font-semibold">
                   {step.number}
                 </div>
               </div>
               <div className="flex-1 text-center md:text-left">
-                <h3 className="text-xl md:text-2xl font-semibold mb-3 text-gray-900">
+                <h3 className="type-h3 mb-2 text-gray-900">
                   {step.title}
                 </h3>
-                <p className="text-base md:text-lg leading-relaxed text-gray-700">
+                <p className="type-body text-gray-700">
                   {step.description}
                 </p>
-                <p className="text-base md:text-lg leading-relaxed text-gray-700">
+                <p className="type-body text-gray-700">
                   <span className="font-bold"> Výstup: </span>{step.output}
                   </p>
                 </div>

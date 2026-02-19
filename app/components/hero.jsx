@@ -18,17 +18,19 @@ export default function Hero({ content }) {
   // * State pro řízení otevření/zavření kontaktního modalu
   // const [modalOpen, setModalOpen] = useState(false);
   return (
-    <section className="min-h-[50vh] flex items-center py-8 md:py-16 lg:py-24 bg-neutral-100">
+    <section className="min-h-[70vh] flex items-center py-8 md:py-16 lg:py-24 bg-neutral-100">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-12 lg:gap-18 items-center">
           {/* * Left: Text content */}
           <div className="flex flex-col col-span-1 md:col-span-2 lg:col-span-1 min-h-[50vh] md:min-h-0 justify-between md:justify-start">
-            <h1 className="nadpisPage mb-8 md:mb-16 leading-[1.2] md:leading-[1.23]">
-            Pomáhám firmám proměnit web z <span className="text-red-600 font-thin">nákladové položky</span> na <span className="text-green-800 font-black underline font-extrabold decoration-[0.2em] decoration-green-800 underline-offset-[0.3em]">obchodní nástroj</span>.</h1>
+            <h1 className="type-hero mb-8 md:mb-16 tracking-tight text-modra2">
+            Navrhuji weby a digitální systémy, které nahrazují <span className="text-red-800 font-thin">chaos</span> a podporují <span className="text-green-800 font-black underline font-extrabold decoration-[0.2em] decoration-green-800 underline-offset-[0.3em]">růst firmy</span>.
+            {/* Pomáhám firmám proměnit web z <span className="text-red-600 font-thin">nákladové položky</span> na <span className="text-green-800 font-black underline font-extrabold decoration-[0.2em] decoration-green-800 underline-offset-[0.3em]">obchodní nástroj</span>. */}
+            </h1>
             {/* <p className="text-lg md:text-xl mb-8 text-gray-700 tracking-tight hidden md:block">
               Jsem digitální konzultant, stratég a vývojář.</p> */}
               
-              <div><p className="text-2xl md:text-lg mb-4 text-gray-700 tracking-tight hidden">
+              <div><p className="type-body-lg mb-4 text-gray-700 tracking-tight hidden">
               Pomáhám firmám ujasnit si směr, postavit funkční web a dlouhodobě ho rozvíjet tak, aby podporoval jejich byznys.
                {/* – ne ho brzdil. */}
             </p>
@@ -45,10 +47,10 @@ export default function Hero({ content }) {
                   height={400}
                 />
                 </div>
-            <ul className="space-y-1.5 md:space-y-2 mb-8 text-base text-gray-700 tracking-tight leading-tight">
+            <ul className="space-y-1.5 md:space-y-2 mb-8 type-body-lg text-gray-700 tracking-tight">
               {content.bulletpoints.map((bulletpoint, index) => (
                 <li className="flex items-start" key={index}>
-                <span className="text-blue-800 font-bold mr-2">•</span>
+                <span className="text-green-800 font-bold mr-2">•</span>
                 <span>{bulletpoint}</span>
               </li>
               ))}

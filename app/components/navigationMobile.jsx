@@ -53,7 +53,7 @@ export default function NavigationMobile() {
             ></path>
           </svg>
         </button>
-        <ul className="flex flex-col gap-y-2 w-full items-center text-xl my-2">
+        <ul className="flex flex-col gap-y-2 w-full items-center type-body-lg my-2">
           <li className="flex px-8 py-4" key="home">
             <Link href="/" className="heroJmeno">
               Zbyněk Svoboda
@@ -65,7 +65,7 @@ export default function NavigationMobile() {
               <li className="flex py-2" key={index}>
                 <Link
                   href={menu.link}
-                  className="text-lg font-semibold text-gray-600"
+                  className="type-body-lg font-semibold text-gray-600"
                   onClick={toggleMenu}
                 >
                   {menu.title}

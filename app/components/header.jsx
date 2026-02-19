@@ -23,7 +23,7 @@ export default function Header({ content_name }) {
     <header className="sticky top-0 z-30 bg-neutral-100/95 backdrop-blur border-b border-black/10 max-w-screen-full mx-auto w-full">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <Link className="cursor-pointer" href="/">
-          <span className="text-base md:text-2xl font-extrabold tracking-tight text-modra2">
+          <span className="type-body-lg font-extrabold tracking-tight text-modra2">
             {content_name}
           </span>
         </Link>

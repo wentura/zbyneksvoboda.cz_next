@@ -7,9 +7,9 @@ export default function NotFound() {
     <section className="border-b border-black/10">
       <div className="mx-auto max-w-screen-xl px-6 md:px-10 py-20 md:py-40">
         <div className="text-center">
-          <p className="uppercase tracking-widest text-sm text-black/50">404</p>
+          <p className="uppercase tracking-widest type-meta text-black/50">404</p>
           <h1 className="nadpisPage mt-2">Stránka nenalezena</h1>
-          <p className="mt-6 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-6 type-body-lg max-w-2xl mx-auto">
             Je nám líto, ale stránka, kterou hledáte, neexistuje nebo byla
             přesunuta. Zkuste se vrátit na úvodní stránku nebo mě kontaktujte.
           </p>

@@ -1,8 +1,8 @@
 export const content = {
   name: "Zbyněk Svoboda",
   hero: {
-    title: "Pomáhám firmám proměnit web z nákladové položky na obchodní nástroj.",
-    description: "Pomáhám firmám ujasnit si směr, postavit funkční web a dlouhodobě ho rozvíjet tak, aby podporoval jejich byznys.",
+    title: "Navrhuji weby a systémy pro růst firmy.",
+    description: "Nejdřív směr. Teprve potom design a kód.",
     bulletpoints: [
       "nejdřív směr, potom řešení",
       "byznys, UX a technologie v jednom kontextu",
@@ -11,18 +11,18 @@ export const content = {
     cta: "Chci spolupracovat",
   },
   problem: {
-    title: "Většina webů nevzniká ze strategie.",
-    description: "Vzniká z potřeby „něco mít“.",
+    title: "Web je jen část skládanky.",
+    description: "Navrhuji řešení, která přináší kontrolu a prostor k růstu.",
     bulletpoints: [
-      "návštěvník během pár vteřin nepochopí, co firma nabízí",
-      "web mluví hlavně o firmě, ne o problémech zákazníků",
-      "uživatel neví, kam jít dál a co je dalším krokem",
-      "změny se dělají pocitově, bez dat a zpětné vazby",
+      "roztříštěná data",
+      "manuální procesy",
+      "technologické limity",
+      "nevyužitý potenciál",
     ],
   },
   start: {
     title: "Nezačínám u designu ani u kódu.",
-    description: "Pomáhám vám se zamyslet o digitálních řešeních a webu v širším kontextu...",
+    description: "Pomáhám vám se zamyslet o digitálních řešeních a webu v širším kontextu.",
     bulletpoints: [
       "Jaká je role digitálu ve vašem byznysu?",
       "Koho chcete oslovit?",
@@ -60,6 +60,86 @@ export const content = {
       
     ],
     cta: "Chci spolupracovat",
+  },
+  portfolioImpact: {
+    title: "Digitální systémy a weby s dopadem na výkon firmy",
+    introOne: "Ne všechny problémy firmy řeší nový web. Některé vyžadují nový systém.",
+    introTwo:
+      "Níže jsou projekty, kde jsem měl mandát navrhnout směr, ne jen realizovat zadání.",
+    items: [
+      {
+        name: "UGHighers.com",
+        image: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1771523925/zbyneksvoboda/portfolio2/ugh.webp",
+        subtitle: "Web a <strong>interní operační systém</strong> pro řízení výroby hudebních nosičů.",
+        context:
+          "Výroba běžela na kombinaci emailů a tabulek. Cíl byl získat kontrolu nad procesem, maržemi a škálováním.",
+        results: [
+          "zpracování 30+ zakázek měsíčně",
+          "evidence 600+ projektů v jednom systému",
+          "nahrazení emailové komunikace kontrolovaným workflow",
+          "kontrola marží a stabilnější provoz",
+        ],
+        role:
+          "návrh procesního modelu, datové architektury a vývoj webového a interního systému",
+      },
+      {
+        name: "Zodpovědná výuka",
+        image: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728894627/zbyneksvoboda/portfolio2/zodpovednavyuka.webp",
+        subtitle: "Digitální transformace e-shopu a následný <strong>růst tržeb o 30 %</strong>",
+        context:
+          "Původní WooCommerce řešení naráželo na technické limity a brzdilo konverze i správu.",
+        results: [
+          "růst tržeb minimálně o 30 %",
+          "stabilní technický základ pro další růst",
+          "lepší práce s marketingem a kampaněmi",
+          "dlouhodobé partnerství po migraci",
+        ],
+        role: "návrh migrace, restrukturalizace e-shopu a vedení realizace",
+      },
+      {
+        name: "Harasov",
+        image: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1754939908/zbyneksvoboda/portfolio2/harasov.webp",
+        subtitle: "Dlouhodobé digitální partnerství a správa digitální infrastruktury",
+        context:
+          "Spolupráce začala webem, postupně přešla do správy celé digitální infrastruktury.",
+        results: [
+          "správa 40+ domén",
+          "vývoj a správa 8 webů",
+          "stabilní digitální prostředí bez provozních výpadků",
+          "kvalitativní posun značky v online prostoru",
+        ],
+        role: "dlouhodobá webová režie, technické vedení a strategické konzultace",
+      },
+      {
+        name: "Autokemp Kokořín",
+        image: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728894623/zbyneksvoboda/portfolio2/autokempkokorin.webp",
+        subtitle: "Od amatérského webu k responzivnímu webu s <strong>10x vyšší návštěvností</strong>",
+        context:
+          "Původní web byl neresponzivní, bez marketingového výkonu a bez viditelných výsledků.",
+        results: [
+          "10x vyšší návštěvnost",
+          "růst obratu",
+          "možnost zvýšení cen služeb díky lepší pozici značky",
+          "návratnost investice v násobcích investice do nového webového řešení",
+        ],
+        role: "návrh směru, nový web a nastavení výkonu pro SEO i mobilní uživatele",
+      },
+      {
+        name: "Interní informační systém",
+        image: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1751903175/zbyneksvoboda/portfolio2/svoucestou.webp",
+        subtitle: "Školní docházka, správa studentů a jejich hodnocení v jednom systému.",
+        context:
+          "Škola potřebovala centralizovat agendu docházky, kompletní správy studentů a jejich pokroků s následným hodnocením bez složité obsluhy.",
+        results: [
+          "pokrytí provozu pro 30+ žáků",
+          "správa 1200+ lekcí",
+          "real-time aktualizace dat",
+          "zjednodušení hodnocení a centralizace dat",
+        ],
+        role: "návrh stavového modelu a realizace interního informačního systému",
+      },
+    ],
+    cta: "Chci probrat svůj projekt",
   },
   fit: {
     title: "Pro koho jsem ideální partner?",

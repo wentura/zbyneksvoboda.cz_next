@@ -72,7 +72,7 @@ export default function CookieConsent() {
       <div className="fixed bottom-4 right-4 z-50">
         <button
           onClick={() => setShowPreferences(true)}
-          className="text-sm text-blue-600 underline hover:text-blue-800 transition-colors"
+          className="type-meta text-blue-600 underline hover:text-blue-800 transition-colors"
         >
           Změnit nastavení cookies
         </button>
@@ -86,12 +86,12 @@ export default function CookieConsent() {
         {/* * Přepínání mezi preferencemi a zjednodušeným bannerem */}
         {showPreferences ? (
           <div className="space-y-4">
-            <h2 className="text-lg font-semibold">Nastavení cookies</h2>
+            <h2 className="type-h3 font-semibold">Nastavení cookies</h2>
             <div className="space-y-2">
               <div className="flex items-center justify-between">
-                <div className="text-sm text-gray-600 flex flex-row gap-1 items-center">
+                <div className="type-meta text-gray-600 flex flex-row gap-1 items-center">
                   <h3 className="font-medium">Nezbytné</h3>
-                  <p className="text-xs text-gray-600">
+                  <p className="type-meta text-gray-600">
                     - nutné pro fungování webu a nelze je vypnout.
                   </p>
                 </div>
@@ -103,9 +103,9 @@ export default function CookieConsent() {
                 />
               </div>
               <div className="flex items-center justify-between">
-                <div className="text-sm text-gray-600 flex flex-row gap-1 items-center">
+                <div className="type-meta text-gray-600 flex flex-row gap-1 items-center">
                   <h3 className="font-medium">Analytické</h3>
-                  <p className="text-sm text-gray-600">
+                  <p className="type-meta text-gray-600">
                     - pomáhají zlepšovat web.
                   </p>
                 </div>
@@ -120,9 +120,9 @@ export default function CookieConsent() {
                 />
               </div>
               <div className="flex items-center justify-between">
-                <div className="text-sm text-gray-600 flex flex-row gap-1 items-center">
+                <div className="type-meta text-gray-600 flex flex-row gap-1 items-center">
                   <h3 className="font-medium">Marketingové</h3>
-                  <p className="text-sm text-gray-600">
+                  <p className="type-meta text-gray-600">
                     - sledování účinnosti reklamy.
                   </p>
                 </div>
@@ -140,13 +140,13 @@ export default function CookieConsent() {
             <div className="flex justify-end space-x-4">
               <button
                 onClick={() => setShowPreferences(false)}
-                className="px-4 py-2 text-sm text-gray-600 hover:text-gray-800"
+                className="px-4 py-2 type-meta text-gray-600 hover:text-gray-800"
               >
                 Zrušit
               </button>
               <button
                 onClick={handleSavePreferences}
-                className="px-4 py-2 text-sm text-white bg-blue-600 rounded hover:bg-blue-700"
+                className="px-4 py-2 type-meta text-white bg-blue-600 rounded hover:bg-blue-700"
               >
                 Uložit nastavení
               </button>
@@ -156,7 +156,7 @@ export default function CookieConsent() {
           <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
             <div className="max-w-2xl">
               {/* * <h2 className="text-lg font-semibold">Používáme cookies</h2> */}
-              <p className="text-sm text-gray-600">
+              <p className="type-meta text-gray-600">
                 Používáme cookies pro zlepšení vašeho zážitku na našem webu.
                 Můžete si vybrat, které cookies chcete povolit.
               </p>
@@ -164,19 +164,19 @@ export default function CookieConsent() {
             <div className="flex space-x-4">
               <button
                 onClick={handleRejectAll}
-                className="px-4 py-2 text-sm text-gray-600 hover:text-gray-800"
+                className="px-4 py-2 type-meta text-gray-600 hover:text-gray-800"
               >
                 Odmítnout vše
               </button>
               <button
                 onClick={() => setShowPreferences(true)}
-                className="px-4 py-2 text-sm text-gray-600 hover:text-gray-800"
+                className="px-4 py-2 type-meta text-gray-600 hover:text-gray-800"
               >
                 Nastavení
               </button>
               <button
                 onClick={handleAcceptAll}
-                className="px-4 py-2 text-sm text-white bg-blue-600 rounded hover:bg-blue-700"
+                className="px-4 py-2 type-meta text-white bg-blue-600 rounded hover:bg-blue-700"
               >
                 Přijmout vše
               </button>

@@ -13,10 +13,10 @@ export default function Footer() {
     <footer className="text-gray-400 bg-modra2">
       <div className="container flex flex-col max-w-screen-xl px-5 py-8 mx-auto sm:flex-row sm:items-start sm:justify-between">
         <div className="flex flex-col items-center sm:items-start">
-          <Link className="nadpisPageWhite text-base" href="/">
+          <Link className="nadpisPageWhite" href="/">
             Zbyněk Svoboda
           </Link>
-          <div className="mt-4 text-sm text-gray-300 text-center sm:text-left leading-relaxed">
+          <div className="mt-4 type-meta text-gray-300 text-center sm:text-left">
             <a href="mailto:info@zbyneksvoboda.cz" className="odkaz text-gray-300">
               info@zbyneksvoboda.cz
             </a>
