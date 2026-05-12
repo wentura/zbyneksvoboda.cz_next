@@ -19,16 +19,16 @@ export default function Contact({ contact, form }) {
       </div>
       <div className="container flex flex-col items-center max-w-screen-xl mx-auto md:flex-row ">
         <div className="flex flex-col text-center lg:flex-grow lg:w-1/2 lg:pr-12 md:pr-8 md:items-start md:text-left md:mb-0">
-          <div className="flex flex-col gap-4 my-12">
+          <div className="flex flex-col gap-6 my-12 ">
             <a
               href={`mailto:${contact.email}`}
-              className="nadpisPageWhite type-h2 hover:text-white hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-300"
+              className="type-h2 text-brand-offwhite underline decoration-2 underline-offset-8 transition-all duration-300 text-2xl md:text-5xl tracking-wide "
             >
               {contact.email}
             </a>{" "}
             <a
               href={contact.phoneHref}
-              className="nadpisPageWhite type-h2 hover:text-white hover:underline hover:decoration-2 hover:underline-offset-4 transition-all duration-300"
+              className="type-h2 text-brand-offwhite underline decoration-2 underline-offset-8 transition-all duration-300 text-3xl md:text-5xl tracking-wider"
             >
               {contact.phoneDisplay}
             </a>

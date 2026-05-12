@@ -22,17 +22,17 @@ const notoserif = localFont({
 
 // * Metadata pro SEO.
 export const metadata = {
-  title: "Zbyněk Svoboda – webový konzultant a digitální stratég",
+  title: "Zbyněk Svoboda - digitální strategie, firemní weby a interní systémy",
   description:
-    "Pomáhám firmám ujasnit směr, postavit funkční web a dlouhodobě ho rozvíjet tak, aby podporoval jejich byznys.",
+    "Pomáhám malým a středním firmám sjednotit web, data a interní procesy do funkčního digitálního systému. Navrhuji firemní weby, klientské portály a interní aplikace.",
   metadataBase: new URL("https://zbyneksvoboda.cz"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Zbyněk Svoboda – webový konzultant a digitální stratég",
+    title: "Zbyněk Svoboda - digitální strategie, firemní weby a interní systémy",
     description:
-      "Pomáhám firmám ujasnit směr, postavit funkční web a dlouhodobě ho rozvíjet tak, aby podporoval jejich byznys.",
+      "Pomáhám malým a středním firmám sjednotit web, data a interní procesy do funkčního digitálního systému. Navrhuji firemní weby, klientské portály a interní aplikace.",
     url: "https://zbyneksvoboda.cz",
     siteName: "Zbyněk Svoboda",
     images: [
@@ -48,9 +48,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zbyněk Svoboda – webový konzultant a digitální stratég",
+    title: "Zbyněk Svoboda - digitální strategie, firemní weby a interní systémy",
     description:
-      "Pomáhám firmám ujasnit směr, postavit funkční web a dlouhodobě ho rozvíjet tak, aby podporoval jejich byznys.",
+      "Pomáhám malým a středním firmám sjednotit web, data a interní procesy do funkčního digitálního systému. Navrhuji firemní weby, klientské portály a interní aplikace.",
     images: ["/ja.jpg"],
   },
 };
@@ -64,7 +64,7 @@ export default function RootLayout({ children }) {
         "@type": "Person",
         name: "Zbyněk Svoboda",
         url: "https://zbyneksvoboda.cz",
-        jobTitle: "Webový konzultant a digitální stratég",
+        jobTitle: "Digitální stratég, webový konzultant a vývojář",
         email: "info@zbyneksvoboda.cz",
         telephone: "+420773687792",
         address: {

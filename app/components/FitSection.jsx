@@ -14,7 +14,7 @@ export default function FitSection({ content }) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* * Pro koho jsem */}
           
-          <div className="p-6 bg-emerald-50 rounded-2xl border border-emerald-200">
+          <div className="p-6 bg-brand-green/10 rounded-2xl border border-brand-green/25">
             <h3 className="type-h2 mb-6 text-gray-900">
               {content.for_title}
             </h3>
@@ -22,7 +22,7 @@ export default function FitSection({ content }) {
             <ul className="space-y-1 md:space-y-2">
               {content.for.map((item, index) => (
                 <li key={index} className="flex items-start">
-                  <span className="text-emerald-600 mr-2 font-bold">•</span>
+                  <span className="text-brand-green mr-2 font-bold">•</span>
                   <span className="type-body text-gray-700">{item}</span>
                 </li>
               ))}
@@ -30,14 +30,14 @@ export default function FitSection({ content }) {
           </div>
           
           {/* * Pro koho nejsem */}
-          <div className="p-6 bg-red-50 rounded-2xl border border-red-200">
+          <div className="p-6 bg-brand-accent/5 rounded-2xl border border-brand-accent/20">
             <h3 className="type-h2 mb-6 text-gray-900">
               {content.not_for_title}
             </h3>
             <ul className="space-y-1 md:space-y-2">
               {content.not_for.map((item, index) => (
                 <li key={index} className="flex items-start">
-                  <span className="text-red-600 mr-2 font-bold">•</span>
+                  <span className="text-brand-accent mr-2 font-bold">•</span>
                   <span className="type-body text-gray-700">{item}</span>
                 </li>
               ))}

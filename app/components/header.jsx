@@ -20,10 +20,10 @@ export default function Header({ content_name, navCta }) {
   const isLanding = content_name === "Zbyněk Svoboda" || pathname === "/";
 
   return (
-    <header className="sticky top-0 z-30 bg-neutral-100/95 backdrop-blur border-b border-black/10 max-w-screen-full mx-auto w-full">
+    <header className="sticky top-0 z-30 bg-modra2 backdrop-blur border-b border-black/10 max-w-screen-full mx-auto w-full">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <Link className="cursor-pointer" href="/">
-          <span className="type-body-lg font-extrabold tracking-tight text-modra2">
+        <Link className="cursor-pointer hover:no-underline transition-all duration-500 md:hover:scale-105" href="/">
+          <span className="type-body-lg font-extrabold tracking-tight text-brand-offwhite">
             {content_name}
           </span>
         </Link>
@@ -33,7 +33,7 @@ export default function Header({ content_name, navCta }) {
           {/* * CTA tlačítko - zobrazuje se pouze na větších obrazovkách */}
           <Link
             href="#kontakt"
-            className="hidden lg:inline-flex items-center px-3 py-1 border border-modra2 text-modra2 hover:bg-modra2 hover:text-white transition font-bold uppercase tracking-tight"
+            className="hidden lg:inline-flex items-center px-3 py-1 border border-brand-offwhite text-brand-offwhite hover:bg-brand-offwhite hover:text-modra2 transition font-bold uppercase tracking-tight hover:no-underline transition-all duration-500"
           >
             {navCta}
           </Link>

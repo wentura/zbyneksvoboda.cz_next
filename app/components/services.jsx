@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React from "react";
 
-// * Export sekce služeb se třemi pilíři.
+// * Export sekce služeb (čtyři pilíře).
 export default function Services({ content }) {
   return (
     <section
@@ -13,11 +13,11 @@ export default function Services({ content }) {
         <h2 className="type-h1 tracking-tight text-modra2 mb-6 md:mb-8 text-left">
           {content.title}
         </h2>
-        <p className="type-body-lg mb-12 text-gray-700 max-w-3xl">
+        <p className="type-body-lg mb-12 text-gray-700">
           {content.description}
         </p>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-12">
           {/* * Service 1: Strategická webová konzultace */}
           {content.bulletpoints.map((service, index) => (
 
@@ -38,7 +38,7 @@ export default function Services({ content }) {
               <ul className="space-y-2 type-body text-gray-700">
                 {service.gain.map((gain, index) => (
                   <li className="flex items-start" key={index}>
-                    <span className="text-gray-400 mr-2">•</span>
+                    <span className="text-brand-accent mr-2">•</span>
                     <span>{gain}</span>
                   </li>
                 ))}
@@ -49,7 +49,7 @@ export default function Services({ content }) {
         </div>
         <div className="flex justify-center mt-8">
           <Link
-            className="heroBtn uppercase tracking-wide"
+className="ctaBtnSecondaryDark uppercase tracking-wide text-center mx-auto"
             href="/#kontakt"
           >
             {content.cta}

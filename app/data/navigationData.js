@@ -9,6 +9,7 @@ export const navData = [
     title: "Případové studie",
     link: "/#studie-a-reference",
   },
+  { title: "Recenze", link: "/#recenze" },
   // {
     // title: "Reference",
     // link: "/recenze",

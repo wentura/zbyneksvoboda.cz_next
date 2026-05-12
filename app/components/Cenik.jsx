@@ -7,17 +7,17 @@ export default function Cenik({ content }) {
   return (
     <section
       id="cenik"
-      className="py-16 md:py-24 bg-neutral-100 scroll-mt-12"
+      className="py-16 md:py-24 bg-brand-offwhite scroll-mt-12"
     >
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
         <h2 className="nadpisPage mb-6 md:mb-8 text-left">
           {content.title}
         </h2>
-        <p className="type-body-lg mb-12 text-gray-700 max-w-3xl">
+        <p className="type-body-lg mb-12 text-gray-700">
           {content.description}
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12 mb-12">
           {/* * Smyčka přes položky ceníku */}
           {content.pricing.map((item, index) => (
             <div
@@ -30,32 +30,54 @@ export default function Cenik({ content }) {
               <p className="type-body mb-6 text-gray-700">
                 {item.description}
               </p>
-              <div className="mt-auto pt-4 border-t border-neutral-200">
-                <p className="type-body font-semibold text-gray-900 mb-2 text-right">
+              <div className="mt-auto">
+                <p className="type-body font-semibold text-gray-900 mb-0 text-right">
                   {item.price}
                 </p>
-                <p className="type-meta text-gray-600 text-right">
+                {/* <p className="type-meta text-gray-600 text-right">
                   {item.note}
-                </p>
+                </p> */}
               </div>
             </div>
           ))}
-        </div>
-        
-        <div className="p-6 md:p-8 bg-white rounded-2xl border border-neutral-200 shadow-sm max-w-2xl mx-auto text-center">
+          <div className="p-6 md:p-8 bg-white rounded-2xl border border-neutral-200 shadow-sm flex flex-col">
           <h3 className="type-h3 mb-4 text-gray-900">
             {content.consultationCallout.title}
           </h3>
           <p
-            className="type-body text-gray-700 mb-4 [&_strong]:text-gray-900"
+            className="type-body text-gray-700 mb-6 [&_strong]:text-gray-900"
             dangerouslySetInnerHTML={{
               __html: content.consultationCallout.bodyHtml,
             }}
           />
-          <Link href="/#kontakt" className="heroBtn inline-block w-full">
+          <Link href="/#kontakt" className="ctaBtnSecondaryDark uppercase tracking-wide">
             {content.consultationCallout.cta}
           </Link>
+          <div className="mt-auto">
+                <p className="type-body font-semibold text-gray-900 mb-0 text-right">
+                  {content.consultationCallout.price}
+                </p>
+                {/* <p className="type-meta text-gray-600 text-right">
+                  {item.note}
+                </p> */}
+              </div>
         </div>
+        </div>
+        
+        {/* <div className="p-6 md:p-8 bg-white rounded-2xl border border-neutral-200 shadow-sm max-w-2xl mx-auto text-center">
+          <h3 className="type-h3 mb-4 text-gray-900">
+            {content.consultationCallout.title}
+          </h3>
+          <p
+            className="type-body text-gray-700 mb-4 [&_strong]:text-gray-900 text-center"
+            dangerouslySetInnerHTML={{
+              __html: content.consultationCallout.bodyHtml,
+            }}
+          />
+          <Link href="/#kontakt" className="ctaBtnSecondaryDark uppercase tracking-wide">
+            {content.consultationCallout.cta}
+          </Link>
+        </div> */}
       </div>
     </section>
   );

@@ -12,6 +12,13 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         accent: "var(--accent)",
+        brand: {
+          navy: "#0D1824",
+          navy2: "#101923",
+          offwhite: "#F4F3F0",
+          accent: "#E85D3F",
+          green: "#168A5B",
+        },
       },
       animation: {
         scroll: "scroll 50s linear infinite",

@@ -3,19 +3,27 @@
   "hero": {
     "title": "Web, data a procesy do funkčního digitálního systému.",
     "leadParagraphs": [
-      "Navrhuji weby, e-shopy, klientské portály a interní aplikace pro malé a střední firmy, které už nechtějí řídit digitál přes improvizaci, e-maily a tabulky."
+      "Navrhuji firemní weby, e-shopové a předprodejové řešení, klientské portály a interní aplikace pro malé a střední firmy, které už nechtějí řídit digitál přes improvizaci, e-maily a tabulky.",
+      "Nejdřív pochopím váš byznys, zákazníky a provoz. Potom navrhnu směr, fáze realizace a technické řešení, které dává dlouhodobý smysl."
     ],
-    "accentParagraphs": [],
-    "bulletpoints": [],
+    "accentParagraphs": [
+      "Web nevnímám jako izolovanou vizitku.",
+      "Beru ho jako součást obchodu, obsahu, dat, procesů a každodenního fungování firmy."
+    ],
+    "bulletpoints": [
+      "web, e-shop nebo portál jako obchodní nástroj",
+      "procesy, data, UX a technologie v jednom kontextu",
+      "návrh směru, realizace a dlouhodobá péče"
+    ],
     "cta": "Domluvit úvodní konzultaci",
     "imageAlt": "Zbyněk Svoboda, digitální stratég a full-stack vývojář"
   },
   "problem": {
     "title": "Web sám o sobě firmu nezachrání.",
-    "subtitle": "Nový web má smysl ve chvíli, kdy je jasné, co má dělat.",
+    "subtitle": "Nový web má smysl až ve chvíli, kdy je jasné, co má dělat.",
     "introParagraphs": [
-      "Firmy nehledají jen nový vzhled. Ve skutečnosti řeší slabou prezentaci, nejasnou nabídku, roztříštěná data, pomalé procesy, zbytečnou ruční práci nebo systémy, které spolu nemluví.",
-      "Nejdřív potřebujete přesně pojmenovat, kde vzniká chaos a co má smysl řešit jako první."
+      "Firmy často nehledají jen nový vzhled. Ve skutečnosti řeší slabou prezentaci, nejasnou nabídku, roztříštěná data, pomalé procesy, zbytečnou ruční práci nebo systémy, které spolu nemluví.",
+      "Někdy je řešením nový firemní web. Někdy e-shop nebo předprodejová část. Někdy klientský portál. Někdy interní aplikace. A někdy nejdřív potřebujete přesně pojmenovat, kde vzniká chaos a co má smysl řešit jako první."
     ],
     "listLead": "Typické situace, které pomáhám řešit:",
     "bulletpoints": [
@@ -30,7 +38,7 @@
   },
   "start": {
     "title": "Nezačínám designem ani kódem.",
-    "intro": "Nejdřív hledám odpovědi, které rozhodují o výsledku:",
+    "intro": "Nejdřív hledám odpovědi na otázky, které rozhodují o výsledku:",
     "bulletpoints": [
       "co má web nebo systém firmě přinášet",
       "kde dnes vzniká ztráta času, peněz nebo kontroly",
@@ -187,7 +195,7 @@
       },
       {
         "name": "Doomentia",
-        "image": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1778581224/zbyneksvoboda/portfolio2/doomentia.webp",
+        "image": null,
         "subtitle": "Úprava vzhledu a UX e-shopu na Shoptetu.",
         "context": "Doomentia potřebovala upravit vzhled e-shopu na Shoptetu tak, aby lépe odpovídal značce a konkrétním potřebám klienta. Nešlo o kompletní vývoj na zelené louce, ale o cílené přizpůsobení existující platformy.",
         "results": [
@@ -200,7 +208,7 @@
       },
       {
         "name": "FKTR",
-        "image": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1778581224/zbyneksvoboda/portfolio2/fktr.webp",
+        "image": null,
         "subtitle": "Vlastní fakturační aplikace pro správu klientů, faktur a cashflow.",
         "context": "FKTR vznikl jako vlastní náhrada běžného fakturačního nástroje. Cílem bylo mít jednoduchý systém přizpůsobený vlastnímu způsobu práce, bez zbytečné složitosti a s větší kontrolou nad klienty, fakturami a cashflow.",
         "results": [
@@ -214,7 +222,7 @@
       },
       {
         "name": "Cyklovýzvy",
-        "image": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1778581224/zbyneksvoboda/portfolio2/cyklovyzvy.webp",
+        "image": null,
         "subtitle": "Webová aplikace pro komunitní cyklistické výzvy.",
         "context": "Cyklovýzvy jsou vlastní rozpracovaný projekt zaměřený na pohodové cyklistické výzvy bez honění žebříčků a výkonu. Uživatel si koupí trasu, jede podle GPX, označí výzvu jako dokončenou a následně může získat odměnu nebo merch.",
         "results": [
@@ -227,7 +235,7 @@
         "role": "produktový návrh, UX logika, datový model a vývoj aplikace"
       }
     ],
-    "cta": "Domluvit konzultaci vašeho projektu",
+    "cta": "Domluvit konzultaci nad podobným projektem",
     "labels": {
       "context": "Kontext",
       "results": "Co řešení pokrývá",
@@ -264,19 +272,19 @@
       {
         "title": "Digitální diagnostika",
         "description": "Zmapování současného stavu webu, obsahu, procesů, dat a technického řešení. Vhodné jako první krok před větší investicí.",
-        "price": "od 8.000 Kč",
+        "price": "od 9.000 Kč",
         "note": "(podle rozsahu a hloubky analýzy)"
       },
       {
         "title": "Návrh směru a architektury řešení",
         "description": "Strategický návrh webu, portálu, e-shopové části nebo interního systému včetně priorit, struktury, fází a doporučené technologie.",
-        "price": "od 20.000 Kč",
+        "price": "od 25.000 Kč",
         "note": "(vhodné jako podklad pro rozhodnutí a realizaci)"
       },
       {
         "title": "Firemní web nebo redesign",
         "description": "Návrh a realizace firemního webu s jasnou strukturou, UX, obsahovou logikou a technickým základem pro další rozvoj.",
-        "price": "od 35.000 Kč",
+        "price": "od 55.000 Kč",
         "note": "(větší redesigny a obsahově náročnější weby typicky od 80.000 Kč)"
       },
       {
@@ -294,9 +302,8 @@
     ],
     "consultationCallout": {
       "title": "Úvodní konzultace",
-      "bodyHtml": "Úvodní konzultace v délce 20 minut, pro pochopení vášho projektu, záměru a potřeb.",
-      "price": "...zdarma",
-      "cta": "Domluvit konzultaci"
+      "bodyHtml": "Projdeme váš záměr, současný stav a rozhodneme, jestli potřebujete nový web, interní systém, klientský portál nebo nejdřív jasnější směr. Úvodní konzultace v délce 30 minut je <strong>zdarma</strong>.",
+      "cta": "Domluvit úvodní konzultaci"
     }
   },
   "testimonials": {
@@ -383,7 +390,7 @@
     "websitePlaceholder": "vasweb.cz",
     "messageLabel": "S čím potřebujete pomoci? *",
     "messagePlaceholder": "Popište současný stav, problém a cíl, kterého chcete dosáhnout.",
-    "gdprNote": "Odesláním zprávy souhlasíte s naší následnou komunikací. Vaše údaje využiji výhradně pro komunikaci s vámi a nikde je nesdílím ani nevyužívám pro marketingové účely.",
+    "gdprNote": "Odesláním zprávy souhlasíte s naší následnou komunikací.",
     "submitSending": "Odesílám...",
     "submitIdle": "Odeslat zprávu"
   },

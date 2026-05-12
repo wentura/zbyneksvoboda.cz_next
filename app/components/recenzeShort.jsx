@@ -6,10 +6,10 @@ export default function RecenzeShort({ content }) {
   const { items, otherClients } = content;
 
   return (
-    <section className="py-16 md:py-24 bg-neutral-100">
+    <section id="recenze" className="py-16 md:py-24 bg-white scroll-mt-12">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
         <h2 className="nadpisPage mb-6 md:mb-8 text-left">{content.title}</h2>
-        <p className="type-body-lg mb-12 text-gray-700 max-w-3xl">
+        <p className="type-body-lg mb-12 text-gray-700">
           {content.intro}
         </p>
 

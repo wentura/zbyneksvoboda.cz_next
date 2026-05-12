@@ -20,17 +20,18 @@ export default function Home() {
       <Header content_name={content.name} navCta={content.header.navCta} />
       <Hero content={content.hero}/>
       {/* <div className="w-full bg-gray-500 py-12"> */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24 max-w-screen-xl mx-auto">
       <ProblemSection content={content.problem}/>
       <StartSection content={content.start}/>
-      {/* </div> */}
+      </div>
       <Services content={content.services}/>
       {/* <CollaborationFitSection /> */}
-      <ProcessSection content={ content.process}/>
+      {/* <ProcessSection content={ content.process}/> */}
       {/* <CaseStudiesSection /> */}
       <PortfolioImpactSection content={content.portfolioImpact} />
       <RecenzeShort content={content.testimonials} />
-      <FitSection content={content.fit} />
-      <Cenik content={content.cenik} />
+      {/* <FitSection content={content.fit} /> */}
+      <Cenik content={content.cenik}/>
       <Contact contact={content.contact} form={content.form} />
     </main>
   );

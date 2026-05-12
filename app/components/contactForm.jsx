@@ -203,7 +203,7 @@ export default function ContactForm({ form }) {
         </div>
 
         <div className="flex items-start space-x-3">
-          <label htmlFor="gdpr" className="text-sm text-gray-300">
+          <label htmlFor="gdpr" className="text-sm text-gray-400 text-left">
             {form.gdprNote}
           </label>
         </div>
@@ -212,7 +212,8 @@ export default function ContactForm({ form }) {
           type="submit"
           disabled={isSubmitting}
           // * className="w-full bg-white text-modra2 py-3 px-6 font-bold hover:underline underline-offset-4 decoration-2 decoration-modra2 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-          className="heroBtn text-center mx-auto w-full border-2 border-white"
+          // className="heroBtn text-center mx-auto w-full border-2 border-white"
+          className="ctaBtnSecondaryDark w-full"
         >
           {/* * Text tlačítka se mění při odesílání */}
           {isSubmitting ? form.submitSending : form.submitIdle}

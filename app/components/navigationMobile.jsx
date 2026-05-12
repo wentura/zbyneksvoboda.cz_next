@@ -15,7 +15,7 @@ export default function NavigationMobile() {
   }
   return (
     <div className="mobilniMenu">
-      <button className="flex justify-end p-4 lg:hidden" onClick={toggleMenu}>
+      <button className="flex justify-end p-4 text-neutral-400 lg:hidden" onClick={toggleMenu}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -35,14 +35,14 @@ export default function NavigationMobile() {
         className={`${
           // * Podmíněné zobrazení menu.
           isOpen ? "block" : "hidden"
-        } top-0 left-0 right-0 bg-white px-2 pt-2 pb-4 z-50 flex flex-col text-gray-900 shadow-md w-full h-screen fixed`}
+        } top-0 left-0 right-0 bg-modra2 px-2 pt-2 pb-4 z-50 flex flex-col text-brand-offwhite shadow-md w-full h-screen fixed`}
       >
-        <button className="flex justify-end p-4" onClick={toggleMenu}>
+        <button className="flex justify-end p-4 text-neutral-400" onClick={toggleMenu}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke="black"
+            stroke="currentColor"
             className="w-6 h-6"
           >
             <path
@@ -55,7 +55,7 @@ export default function NavigationMobile() {
         </button>
         <ul className="flex flex-col gap-y-2 w-full items-center type-body-lg my-2">
           <li className="flex px-8 py-4" key="home">
-            <Link href="/" className="heroJmeno">
+            <Link href="/" className="heroJmeno text-brand-offwhite">
               Zbyněk Svoboda
             </Link>{" "}
           </li>
@@ -65,7 +65,7 @@ export default function NavigationMobile() {
               <li className="flex py-2" key={index}>
                 <Link
                   href={menu.link}
-                  className="type-body-lg font-semibold text-gray-600"
+                  className="type-body-lg font-semibold text-brand-offwhite"
                   onClick={toggleMenu}
                 >
                   {menu.title}
@@ -76,7 +76,7 @@ export default function NavigationMobile() {
           <li className="flex py-4">
             <Link
               href="/#kontakt"
-              className="ctaBtnPrimary uppercase tracking-tight"
+              className="ctaBtnSecondaryDark uppercase tracking-wide text-center mx-auto w-full text-brand-offwhite"
               onClick={toggleMenu}
             >
 kontakt            </Link>

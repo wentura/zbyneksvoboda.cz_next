@@ -33,7 +33,7 @@ export default function Recenze() {
   };
 
   return (
-    <section className="py-10 mx-auto text-gray-600 md:py-20 md:px-5">
+    <section className="py-10 mx-auto text-gray-600 md:py-20 md:px-5 scroll-mt-12">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
