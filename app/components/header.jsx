@@ -13,7 +13,7 @@ import React from "react";
 import Navigation from "./navigation";
 
 // * Export Header komponenty s navigací a CTA.
-export default function Header({ content_name }) {
+export default function Header({ content_name, navCta }) {
   // * Získání aktuální cesty pro detekci landing page
   const pathname = usePathname();
   // * Kontrola, zda je aktuální stránka landing page
@@ -35,7 +35,7 @@ export default function Header({ content_name }) {
             href="#kontakt"
             className="hidden lg:inline-flex items-center px-3 py-1 border border-modra2 text-modra2 hover:bg-modra2 hover:text-white transition font-bold uppercase tracking-tight"
           >
-            kontakt
+            {navCta}
           </Link>
         </div>
       </div>

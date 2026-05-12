@@ -44,14 +44,16 @@ export default function Cenik({ content }) {
         
         <div className="p-6 md:p-8 bg-white rounded-2xl border border-neutral-200 shadow-sm max-w-2xl mx-auto text-center">
           <h3 className="type-h3 mb-4 text-gray-900">
-            Úvodní konzultace
+            {content.consultationCallout.title}
           </h3>
-          <p className="type-body text-gray-700 mb-4">
-            Abychom se lépe poznali, pochopil jsem váš záměr či projekt, nabízím vám úvodní konzultaci v délce 30 minut{" "}
-            <strong className="text-gray-900">zdarma</strong>.
-          </p>
+          <p
+            className="type-body text-gray-700 mb-4 [&_strong]:text-gray-900"
+            dangerouslySetInnerHTML={{
+              __html: content.consultationCallout.bodyHtml,
+            }}
+          />
           <Link href="/#kontakt" className="heroBtn inline-block w-full">
-            Domluvit nezávaznou konzultaci
+            {content.consultationCallout.cta}
           </Link>
         </div>
       </div>

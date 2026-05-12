@@ -1,0 +1,347 @@
+{
+  "name": "Zbyněk Svoboda",
+  "hero": {
+    "title": "Pomáhám firmám dělat lepší rozhodnutí v digitálu.",
+    "leadParagraphs": [
+      "Jsem digitální konzultant, stratég a vývojář.",
+      "Pomáhám firmám ujasnit si směr, postavit funkční web a dlouhodobě ho rozvíjet tak, aby podporoval jejich byznys – ne ho brzdil."
+    ],
+    "accentParagraphs": [
+      "Web nevnímám jako vizitku.",
+      "Beru ho jako nástroj, který má jasný cíl, strukturu a měřitelný přínos."
+    ],
+    "bulletpoints": [
+      "nejdřív směr, potom řešení",
+      "byznys, UX a technologie v jednom kontextu",
+      "spolupráce založená na důvěře a dlouhodobém partnerství"
+    ],
+    "cta": "Domluvit nezávaznou konzultaci",
+    "imageAlt": "Zbyněk Svoboda, portrét"
+  },
+  "problem": {
+    "title": "Spousta webů vznikla s dobrým úmyslem.",
+    "subtitle": "Dnes ale firmám nepomáhá růst.",
+    "introParagraphs": [
+      "Mnoho firem má web, který „nějak funguje“. Je online, je hezký, ale nepřináší nové poptávky ani lepší obchodní výsledky.",
+      "Ne proto, že by byl špatně nakódovaný. Většinou chybí jasný záměr a struktura."
+    ],
+    "listLead": "Typické situace, se kterými se setkávám:",
+    "bulletpoints": [
+      "návštěvník během pár vteřin nepochopí, co firma nabízí",
+      "web mluví hlavně o firmě, ne o problémech zákazníků",
+      "uživatel neví, kam jít dál a co je dalším krokem",
+      "změny se dělají pocitově, bez dat a zpětné vazby"
+    ],
+    "closing": "Web pak žije vlastním životem – a firma s ním."
+  },
+  "start": {
+    "title": "Moje role nezačíná u designu ani u kódu.",
+    "intro": "Pomáhám firmám přemýšlet o webu v širším kontextu:",
+    "bulletpoints": [
+      "jakou má roli v byznysu",
+      "koho má oslovovat",
+      "co má podporovat",
+      "a jak se má vyvíjet v čase"
+    ],
+    "closingLine1": "Web je výsledek rozhodnutí.",
+    "closingLine2": "Ne jejich začátek."
+  },
+  "services": {
+    "title": "S čím vám pomohu",
+    "description": "Tři hlavní pilíře, jak pomáhám s digitálními řešeními, které fungují.",
+    "bulletpoints": [
+      {
+        "title": "Nevíte, proč web nepřináší výsledky?",
+        "description": "Potřebujete nadhled, mít jasno a konkrétní doporučení.",
+        "description2": "Dívám se na web očima zákazníka i odborníka. Analyzuji strukturu, obsah, UX, důvěryhodnost i technické řešení – a pojmenuji, co dává smysl zlepšit.",
+        "gain": [
+          "jasně pojmenované problémy a příležitosti",
+          "konkrétní návrhy změn",
+          "doporučení k obsahu, UX a technické architektuře",
+          "srozumitelnou roadmapu dalších kroků"
+        ]
+      },
+      {
+        "title": "Máte web, ale chybí mu vedení?",
+        "description": "Dlouhodobé vedení vašich webových projektů bez nutnosti mít vlastního „webového šéfa”.",
+        "description2": "Držím směr, kvalitu a souvislosti napříč webem, e-shopem nebo interními systémy.",
+        "gain": [
+          "dlouhodobý dohled nad webem a digitálními projekty",
+          "pomoc s výběrem dodavatelů a technologií",
+          "kontrolu kvality a smysluplnosti řešení",
+          "partnera, který rozumí byznysu i technické stránce věci"
+        ]
+      },
+      {
+        "title": "Potřebujete reprezentativní a funkční nový web?",
+        "description": "Nechcete-li jen web, ale funkční systém pro prezentaci firmy.",
+        "description2": "Tvořím weby, které vychází z vašich cílů, dat a reálných potřeb zákazníků. ",
+        "gain": [
+          "jasné pozicování a strukturu webu",
+          "promyšlený UX návrh a obsahovou kostru",
+          "moderní technické řešení připravené na další rozvoj",
+          "web optimalizovaný pro rychlost, mobil a dlouhodobou udržitelnost"
+        ]
+      }
+    ],
+    "cta": "Chci spolupracovat",
+    "gainTitle": "Co získáte:"
+  },
+  "process": {
+    "title": "Jak spolupráce probíhá",
+    "description": "Spolupráci beru jako dialog.",
+    "description2": "Nejdřív potřebuji pochopit vás, váš byznys a kontext. Teprve potom řešíme web.",
+    "outputLabel": "Výstup:",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Nezávazná konzultace (30 minut)",
+        "description": "Seznámíme se, ujasníme cíle a očekávání."
+      },
+      {
+        "number": "2",
+        "title": "Analýza a audit",
+        "description": "Web, data, konkurence, cílové skupiny."
+      },
+      {
+        "number": "3",
+        "title": "Návrh strategie a řešení",
+        "description": "Přehledný plán, podle kterého se dá rozhodovat i postupovat."
+      },
+      {
+        "number": "4",
+        "title": "Realizace nebo vedení projektu",
+        "description": "Buď řešení realizuji, nebo vedu váš tým / dodavatele."
+      },
+      {
+        "number": "5",
+        "title": "Ladění a měření výsledků",
+        "description": "Práce s daty, chováním uživatelů a reálným fungováním webu."
+      },
+      {
+        "number": "6",
+        "title": "Dlouhodobá spolupráce (volitelně)",
+        "description": "Pokud dává smysl, pokračujeme dál."
+      }
+    ]
+  },
+  "portfolioImpact": {
+    "title": "Digitální systémy a weby s dopadem na výkon firmy",
+    "introOne": "Ne všechny problémy firmy řeší nový web. Některé vyžadují nový systém.",
+    "introTwo": "Níže jsou projekty, kde jsem měl mandát navrhnout směr, ne jen realizovat zadání.",
+    "items": [
+      {
+        "name": "UGHighers.com",
+        "image": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1771523925/zbyneksvoboda/portfolio2/ugh.webp",
+        "subtitle": "Web a <strong>interní operační systém</strong> pro řízení výroby hudebních nosičů.",
+        "context": "Výroba běžela na kombinaci emailů a tabulek. Cíl byl získat kontrolu nad procesem, maržemi a škálováním.",
+        "results": [
+          "zpracování 30+ zakázek měsíčně",
+          "evidence 600+ projektů v jednom systému",
+          "nahrazení emailové komunikace kontrolovaným workflow",
+          "kontrola marží a stabilnější provoz"
+        ],
+        "role": "návrh procesního modelu, datové architektury a vývoj webového a interního systému"
+      },
+      {
+        "name": "Zodpovědná výuka",
+        "image": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728894627/zbyneksvoboda/portfolio2/zodpovednavyuka.webp",
+        "subtitle": "Digitální transformace e-shopu a následný <strong>růst tržeb o 30 %</strong>",
+        "context": "Původní WooCommerce řešení naráželo na technické limity a brzdilo konverze i správu.",
+        "results": [
+          "růst tržeb minimálně o 30 %",
+          "stabilní technický základ pro další růst",
+          "lepší práce s marketingem a kampaněmi",
+          "dlouhodobé partnerství po migraci"
+        ],
+        "role": "návrh migrace, restrukturalizace e-shopu a vedení realizace"
+      },
+      {
+        "name": "Harasov",
+        "image": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1754939908/zbyneksvoboda/portfolio2/harasov.webp",
+        "subtitle": "Dlouhodobé digitální partnerství a správa digitální infrastruktury",
+        "context": "Spolupráce začala webem, postupně přešla do správy celé digitální infrastruktury.",
+        "results": [
+          "správa 40+ domén",
+          "vývoj a správa 8 webů",
+          "stabilní digitální prostředí bez provozních výpadků",
+          "kvalitativní posun značky v online prostoru"
+        ],
+        "role": "dlouhodobá webová režie, technické vedení a strategické konzultace"
+      },
+      {
+        "name": "Autokemp Kokořín",
+        "image": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1728894623/zbyneksvoboda/portfolio2/autokempkokorin.webp",
+        "subtitle": "Od amatérského webu k responzivnímu webu s <strong>10x vyšší návštěvností</strong>",
+        "context": "Původní web byl neresponzivní, bez marketingového výkonu a bez viditelných výsledků.",
+        "results": [
+          "10x vyšší návštěvnost",
+          "růst obratu",
+          "možnost zvýšení cen služeb díky lepší pozici značky",
+          "návratnost investice v násobcích investice do nového webového řešení"
+        ],
+        "role": "návrh směru, nový web a nastavení výkonu pro SEO i mobilní uživatele"
+      },
+      {
+        "name": "Interní informační systém",
+        "image": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1751903175/zbyneksvoboda/portfolio2/svoucestou.webp",
+        "subtitle": "Školní docházka, správa studentů a jejich hodnocení v jednom systému.",
+        "context": "Škola potřebovala centralizovat agendu docházky, kompletní správy studentů a jejich pokroků s následným hodnocením bez složité obsluhy.",
+        "results": [
+          "pokrytí provozu pro 30+ žáků",
+          "správa 1200+ lekcí",
+          "real-time aktualizace dat",
+          "zjednodušení hodnocení a centralizace dat"
+        ],
+        "role": "návrh stavového modelu a realizace interního informačního systému"
+      }
+    ],
+    "cta": "Chci probrat svůj projekt",
+    "labels": {
+      "context": "Kontext",
+      "results": "Výsledek",
+      "role": "Moje role",
+      "imagePlaceholder": "Obrázek projektu doplníme"
+    }
+  },
+  "fit": {
+    "title": "Pro koho jsem ideální partner?",
+    "description": "Pro koho jsem ideální partner?",
+    "not_for_description": "a pro koho ne",
+    "for_title": "Pro koho jsem ideální partner?",
+    "not_for_title": "Pro koho nejsem:",
+    "for": [
+      "jednotlivci a firmy, které chtějí mít ve svém digitálu jasno",
+      "projekty, které berou web jako důležitý nástroj, ne nutnost",
+      "klienti, kteří ocení otevřenou komunikaci a upřímnou zpětnou vazbu",
+      "dlouhodobé spolupráce založené na důvěře"
+    ],
+    "not_for": [
+      "když je hlavním kritériem nejnižší cena",
+      "„rychlý web do pátku“ bez cíle a zadání",
+      "zadání typu „udělejte něco hezkého“",
+      "projekty, které nechtějí přemýšlet o svém byznysu"
+    ]
+  },
+  "cenik": {
+    "title": "Orientační ceny",
+    "description": "Každý projekt je jiný. Cena vždy vychází z reálného rozsahu, cílů a nároků.",
+    "pricing": [
+      {
+        "title": "Strategická digitální konzultace",
+        "description": "Získáte nadhled, budete mít jasno a dostanete konkrétní doporučení.",
+        "price": "od 7.500 Kč",
+        "note": "(podle rozsahu a hloubky analýzy)"
+      },
+      {
+        "title": "Webová režie a vedení",
+        "description": "Dlouhodobé vedení webových projektů bez nutnosti mít vlastního „webového šéfa”.",
+        "price": "individuálně nacením",
+        "note": "(podle počtu projektů a očekávané role)"
+      },
+      {
+        "title": "High-end web / redesign",
+        "description": "Pokud chcete funkční systém pro prezentaci firmy, který opravdu funguje a podporuje růst.",
+        "price": "od 30.000 Kč",
+        "note": "(podle rozsahu, funkcí a náročnosti projektu)"
+      }
+    ],
+    "consultationCallout": {
+      "title": "Úvodní konzultace",
+      "bodyHtml": "Abychom se lépe poznali, pochopil jsem váš záměr či projekt, nabízím vám úvodní konzultaci v délce 30 minut <strong>zdarma</strong>.",
+      "cta": "Domluvit nezávaznou konzultaci"
+    }
+  },
+  "testimonials": {
+    "title": "Co o spolupráci říkají klienti",
+    "intro": "Spolupracuji s klienty, kteří očekávají kvalitu, spolehlivost a lidský přístup.",
+    "clientsLinePrefix": "Dlouhodobě spolupracuji s",
+    "clientsLineSuffix": "a dalšími.",
+    "moreLinkLabel": "více recenzí",
+    "items": [
+      {
+        "name": "Běla Šestáková",
+        "project": "SvouCestou.info",
+        "text": "Skvělá spolupráce – vše bylo zapracováno k oboustranné spokojenosti, včetně rychlých úprav. Výsledek je kvalitní a profesionální. Moc děkujeme!",
+        "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1754939908/zbyneksvoboda/portfolio2/recenze/bela.webp"
+      },
+      {
+        "name": "Jakub Skála",
+        "project": "AutokempKokorin.cz",
+        "text": "Se spoluprací se Zbyňkem Svobodou jsme moc spokojeni. Stránky pro Autokemp Kokořín, které pro nás udělal, odpovídají aktuálnímu trendu a hosté na ně reagují velmi pozitivně.",
+        "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1731687135/zbyneksvoboda/ref/jakub_skala.png.webp"
+      },
+      {
+        "name": "Kateřina Hrabíková",
+        "project": "Zodpovědná výuka",
+        "text": "Velmi jsem ocenila pečlivost a ochotu přizpůsobit se mým potřebám. Každý detail byl promyšlen a díky tomu teď mám web, který je plně funkční a snadno použitelný pro naše návštěvníky.",
+        "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1730489771/zbyneksvoboda/portfolio2/recenze/kaca.webp"
+      }
+    ],
+    "otherClients": [
+      "Doomentia",
+      "Ergo-product.cz",
+      "UGHighers",
+      "SvouCestou.info",
+      "Letovisko Harasov",
+      "Kokostezky",
+      "Zodpovědná výuka",
+      "Biozahájí",
+      "Autokemp Kokořín",
+      "Diavita",
+      "Nikola Smejkalová"
+    ]
+  },
+  "contact": {
+    "imageAlt": "Zbyněk Svoboda, portrét",
+    "title": "Pojďme probrat směr vašeho digitálu.",
+    "lead": "Pokud váš web nepřináší výsledky, které očekáváte, je čas podívat se na něj jinak.",
+    "email": "info@zbyneksvoboda.cz",
+    "phoneDisplay": "773687792",
+    "phoneHref": "tel:00420773687792",
+    "ownerName": "Zbyněk Svoboda",
+    "addressLines": [
+      "Nebužely 3",
+      "277 34, Nebužely",
+      "IČ: 74811002"
+    ],
+    "notVat": "Nejsem plátcem DPH",
+    "social": [
+      {
+        "href": "https://www.facebook.com/profile.php?id=100093105173892",
+        "label": "Zbynek.Svoboda"
+      },
+      {
+        "href": "https://www.instagram.com/zbyndasvoboda/",
+        "label": "ZbyndaSvoboda"
+      },
+      {
+        "href": "https://www.linkedin.com/in/zbyneksvoboda/",
+        "label": "Zbyneksvoboda"
+      }
+    ]
+  },
+  "header": {
+    "navCta": "kontakt"
+  },
+  "form": {
+    "successMessage": "Děkuji za zprávu! Budu Vás kontaktovat co nejdříve.",
+    "errorGeneric": "Něco se pokazilo. Zkuste to prosím znovu.",
+    "honeypotLabel": "Company",
+    "nameLabel": "Jméno a příjmení *",
+    "namePlaceholder": "Vaše jméno",
+    "emailLabel": "Email *",
+    "emailPlaceholder": "vas@email.cz",
+    "websiteLabel": "Váš web (volitelné)",
+    "websitePlaceholder": "vasweb.cz",
+    "messageLabel": "S čím Vás můžu pomoci? *",
+    "messagePlaceholder": "Jaký je cíl, kterého chcete dosáhnout?",
+    "gdprNote": "Odesláním zprávy souhlasíte s naší následnou komunikací.",
+    "submitSending": "Odesílám...",
+    "submitIdle": "Odeslat zprávu..."
+  },
+  "contactModal": {
+    "title": "Dohodněme si konzultaci",
+    "closeAriaLabel": "Zavřít"
+  }
+}

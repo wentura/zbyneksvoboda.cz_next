@@ -51,7 +51,7 @@ export default function PortfolioImpactSection({ content }) {
                       </div>
                   ) : (
                     <div className="w-full min-h-[200px] md:min-h-96 flex items-center justify-center type-meta text-gray-500">
-                      Obrázek projektu doplníme
+                      {content.labels.imagePlaceholder}
                     </div>
                   )}
                 </div>
@@ -59,12 +59,16 @@ export default function PortfolioImpactSection({ content }) {
 
               <div className="md:col-span-2 space-y-8 mt-8 md:mt-32">
                 <div>
-                  <h4 className="type-meta uppercase tracking-tight font-bold mb-1 text-gray-400">Kontext</h4>
+                  <h4 className="type-meta uppercase tracking-tight font-bold mb-1 text-gray-400">
+                    {content.labels.context}
+                  </h4>
                   <p className="type-body text-gray-900">{item.context}</p>
                 </div>
 
                 <div>
-                  <h4 className="type-meta uppercase tracking-tight font-bold mb-1 text-gray-400">Výsledek</h4>
+                  <h4 className="type-meta uppercase tracking-tight font-bold mb-1 text-gray-400">
+                    {content.labels.results}
+                  </h4>
                   <ul className="space-y-2">
                     {item.results.map((result) => (
                       <li key={result} className="flex items-start type-body text-gray-700">
@@ -76,7 +80,9 @@ export default function PortfolioImpactSection({ content }) {
                 </div>
 
                 <div>
-                  <h4 className="type-meta uppercase tracking-tight font-bold mb-1 text-gray-400">Moje role</h4>
+                  <h4 className="type-meta uppercase tracking-tight font-bold mb-1 text-gray-400">
+                    {content.labels.role}
+                  </h4>
                   <p className="type-body text-gray-900">{item.role}</p>
                 </div>
               </div>

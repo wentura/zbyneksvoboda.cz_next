@@ -32,7 +32,9 @@ export default function Services({ content }) {
               {service.description2}
             </p>
             <div className="mb-6">
-              <p className="type-body font-semibold mb-3 text-gray-900">Co získáte:</p>
+              <p className="type-body font-semibold mb-3 text-gray-900">
+                {content.gainTitle}
+              </p>
               <ul className="space-y-2 type-body text-gray-700">
                 {service.gain.map((gain, index) => (
                   <li className="flex items-start" key={index}>

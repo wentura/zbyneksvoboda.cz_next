@@ -1,7 +1,5 @@
-// * Import React pro JSX v komponentě.
 import React from "react";
 
-// * ProblemSection: sekce s formulací problému a rolí konzultanta.
 export default function ProblemSection({ content }) {
   return (
     <section className="py-8 md:py-16">
@@ -9,30 +7,32 @@ export default function ProblemSection({ content }) {
         <h2 className="type-h1 tracking-tight text-modra2 mb-4 md:mb-2">
           {content.title}
         </h2>
-        <p className="type-h3 mb-4 text-gray-700">
-          {content.description}
-        </p>
-        {/* <p className="text-lg md:text-xl leading-relaxed my-12 text-gray-700">
-          Firemní web, který <i className="italic">„nějak funguje"</i>.<br />
-          Sice hezký na pohled, ale nepřináší nové poptávky ani lepší obchodní výsledky.
-        </p> */}
+        <p className="type-h3 mb-6 text-gray-700">{content.subtitle}</p>
+
+        <div className="space-y-4 mb-10 type-body-lg text-gray-700 max-w-3xl">
+          {content.introParagraphs.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </div>
 
         <div className="my-12 type-body-lg text-gray-700">
-          Firmy často řeší:<br />
+          <p className="mb-2 font-semibold text-gray-900">{content.listLead}</p>
           <ul className="p-0 w-fit flex md:flex-row flex-col gap-4 items-start justify-start mt-4 list-disc list-outside pl-8 gap-x-8">
             {content.bulletpoints.map((bulletpoint, index) => (
-              <li className="w-fit type-body font-semibold text-red-800 mb-2 whitespace-nowrap" key={index}>
+              <li
+                className="w-fit type-body font-semibold text-red-800 mb-2 whitespace-nowrap md:whitespace-normal"
+                key={index}
+              >
                 {bulletpoint}
               </li>
             ))}
           </ul>
         </div>
-        {/* <p className="text-lg md:text-xl leading-relaxed mb-12 text-gray-700">
-          Chybí jasný záměr a struktura.
-        </p> */}
-        
+
+        <p className="type-body-lg text-gray-800 max-w-3xl font-medium">
+          {content.closing}
+        </p>
       </div>
     </section>
   );
 }
-

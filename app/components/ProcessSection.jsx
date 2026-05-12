@@ -1,57 +1,20 @@
-// * Import React pro komponentu procesu.
 import React from "react";
 
-// * Export sekce procesu spolupráce.
 export default function ProcessSection({ content }) {
-  // * Definice kroků spolupráce.
-  const steps = [
-    {
-      number: "1",
-      title: "Krátká nezávazná konzultace",
-      description: "Seznámíme se, ujasníme cíle a očekávání.",
-    },
-    {
-      number: "2",
-      title: "Analýza a audit",
-      description: "Web, data, konkurence, cílové skupiny.",
-    },
-    {
-      number: "3",
-      title: "Návrh strategie a řešení",
-      description: "Přehledný plán, podle kterého se dá rozhodovat i postupovat.",
-    },
-    {
-      number: "4",
-      title: "Realizace nebo vedení projektu",
-      description: "Buď řešení realizuji, nebo vedu váš tým / dodavatele.",
-    },
-    {
-      number: "5",
-      title: "Ladění a měření výsledků",
-      description: "Práce s daty, chováním uživatelů a reálným fungováním webu.",
-    },
-    {
-      number: "6",
-      title: "Dlouhodobá spolupráce (volitelně)",
-      description: "Pokud dává smysl, pokračujeme dál.",
-    },
-  ];
+  const outputLabel = content.outputLabel ?? "Výstup:";
 
   return (
     <section className="py-16 md:py-24 bg-neutral-50">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
-        <h2 className="nadpisPage mb-6 md:mb-8 text-left">
-          {content.title}
-        </h2>
+        <h2 className="nadpisPage mb-6 md:mb-8 text-left">{content.title}</h2>
         <p className="type-body mb-4 text-gray-700 max-w-3xl">
-            Spolupráci beru jako dialog.
+          {content.description}
         </p>
         <p className="type-body mb-12 text-gray-700 max-w-3xl">
           {content.description2}
         </p>
-        
+
         <div className="space-y-6 md:space-y-8">
-          {/* * Smyčka přes jednotlivé kroky */}
           {content.steps.map((step, index) => (
             <div
               key={index}
@@ -63,20 +26,19 @@ export default function ProcessSection({ content }) {
                 </div>
               </div>
               <div className="flex-1">
-                <h3 className="type-h3 mb-2 text-gray-900">
-                  {step.title}
-                </h3>
-                <p className="type-body text-gray-700">
-                  {step.description}
-                </p>
-                <p className="type-body text-gray-700">
-                  <span className="font-bold"> Výstup: </span>{step.output}
+                <h3 className="type-h3 mb-2 text-gray-900">{step.title}</h3>
+                <p className="type-body text-gray-700">{step.description}</p>
+                {step.output ? (
+                  <p className="type-body text-gray-700 mt-2">
+                    <span className="font-bold"> {outputLabel} </span>
+                    {step.output}
                   </p>
-                </div>
+                ) : null}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  );
+}

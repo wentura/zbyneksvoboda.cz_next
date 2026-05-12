@@ -4,8 +4,8 @@
 // * Importy React hooků pro práci s formulářem.
 import { useEffect, useRef, useState } from "react";
 
-// * Export kontaktního formuláře s odesláním na API.
-export default function ContactForm() {
+// * Export kontaktního formuláře s odesláním na API (texty z copy.json přes `form`).
+export default function ContactForm({ form }) {
   // * Stav formuláře včetně honeypotu.
   const [formData, setFormData] = useState({
     name: "",
@@ -61,7 +61,7 @@ export default function ContactForm() {
       if (response.ok) {
         setSubmitStatus({
           type: "success",
-          message: "Děkuji za zprávu! Budu Vás kontaktovat co nejdříve.",
+          message: form.successMessage,
         });
         setFormData({
           name: "",
@@ -77,15 +77,14 @@ export default function ContactForm() {
         const errorData = await response.json();
         setSubmitStatus({
           type: "error",
-          message:
-            errorData.message || "Něco se pokazilo. Zkuste to prosím znovu.",
+          message: errorData.message || form.errorGeneric,
         });
       }
     } catch (error) {
       // * Síťová nebo neočekávaná chyba.
       setSubmitStatus({
         type: "error",
-        message: "Něco se pokazilo. Zkuste to prosím znovu.",
+        message: form.errorGeneric,
       });
     } finally {
       // * Reset stavu odesílání.
@@ -112,7 +111,7 @@ export default function ContactForm() {
       <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
         {/* * Honeypot: skrytý pro uživatele, ale přítomný v DOM */}
         <div className="hidden" aria-hidden="true">
-          <label htmlFor="company">Company</label>
+          <label htmlFor="company">{form.honeypotLabel}</label>
           <input
             type="text"
             id="company"
@@ -130,7 +129,7 @@ export default function ContactForm() {
               htmlFor="name"
               className="block text-sm font-medium text-gray-200 mb-2"
             >
-              Jméno a příjmení *
+              {form.nameLabel}
             </label>
             <input
               type="text"
@@ -140,7 +139,7 @@ export default function ContactForm() {
               onChange={handleInputChange}
               required
               className="w-full px-4 py-3 bg-gray-700 text-white placeholder-gray-200"
-              placeholder="Vaše jméno"
+              placeholder={form.namePlaceholder}
             />
           </div>
 
@@ -149,7 +148,7 @@ export default function ContactForm() {
               htmlFor="email"
               className="block text-sm font-medium text-gray-200 mb-2"
             >
-              Email *
+              {form.emailLabel}
             </label>
             <input
               type="email"
@@ -159,7 +158,7 @@ export default function ContactForm() {
               onChange={handleInputChange}
               required
               className="w-full px-4 py-3 bg-gray-700 text-white placeholder-gray-200"
-              placeholder="vas@email.cz"
+              placeholder={form.emailPlaceholder}
             />
           </div>
         </div>
@@ -170,7 +169,7 @@ export default function ContactForm() {
               htmlFor="website"
               className="block text-sm font-medium text-gray-200 mb-2 text-left"
             >
-              Váš web (volitelné)
+              {form.websiteLabel}
             </label>
             <input
               type="text"
@@ -179,7 +178,7 @@ export default function ContactForm() {
               value={formData.website}
               onChange={handleInputChange}
               className="w-full px-4 py-3 bg-gray-700 text-white placeholder-gray-200"
-              placeholder="vasweb.cz"
+              placeholder={form.websitePlaceholder}
             />
           </div>
         </div>
@@ -189,7 +188,7 @@ export default function ContactForm() {
             htmlFor="discussion"
             className="block text-sm font-medium text-gray-200 mb-2 text-left"
           >
-            S čím Vás můžu pomoci? *
+            {form.messageLabel}
           </label>
           <textarea
             id="discussion"
@@ -199,13 +198,13 @@ export default function ContactForm() {
             required
             rows={4}
             className="w-full px-4 py-3 bg-gray-700 text-white placeholder-gray-200"
-            placeholder="Jaký je cíl, kterého chcete dosáhnout?"
+            placeholder={form.messagePlaceholder}
           />
         </div>
 
         <div className="flex items-start space-x-3">
           <label htmlFor="gdpr" className="text-sm text-gray-300">
-            Odesláním zprávy souhlasíte s naší následnou komunikací.
+            {form.gdprNote}
           </label>
         </div>
 
@@ -216,7 +215,7 @@ export default function ContactForm() {
           className="heroBtn text-center mx-auto w-full border-2 border-white"
         >
           {/* * Text tlačítka se mění při odesílání */}
-          {isSubmitting ? "Odesílám..." : "Odeslat zprávu..."}
+          {isSubmitting ? form.submitSending : form.submitIdle}
         </button>
       </form>
     </div>
