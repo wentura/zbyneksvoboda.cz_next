@@ -14,9 +14,12 @@ export default function Hero({ content }) {
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-12 lg:gap-18 items-center">
           <div className="flex flex-col col-span-1 md:col-span-2 lg:col-span-1 min-h-[50vh] md:min-h-0 justify-between md:justify-start">
-            <h1 className="type-hero mb-6 md:mb-10 tracking-tight text-brand-offwhite">
+            <h1 className="type-hero-title mb-2 md:mb-3 tracking-tight text-brand-offwhite lowercase">
               {content.title}
             </h1>
+            <h2 className="type-hero mb-6 md:mb-10 tracking-tight text-brand-offwhite">
+              {content.title2}
+            </h2>
 
             <div className="mb-6 space-y-3">
               {content.leadParagraphs.map((paragraph, index) => (
