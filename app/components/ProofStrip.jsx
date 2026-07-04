@@ -9,7 +9,7 @@ export default function ProofStrip({ content }) {
         {content.items.map((item) => (
           <li
             key={item}
-            className="type-body text-modra2 border-l-2 border-brand-accent first:border-l-0 pl-4"
+            className="type-body text-modra2 border-l-2 border-brand-accent lg:first:border-l-0 :pl-0 pl-4"
           >
             {item}
           </li>

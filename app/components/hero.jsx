@@ -4,8 +4,10 @@ import SectionShell from "./SectionShell";
 
 export default function Hero({ content }) {
   return (
-    <SectionShell className="bg-modra2 text-brand-offwhite">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+    <section className="bg-modra2 text-brand-offwhite pb-16 md:py-24">
+      <div className="container max-w-screen-xl mx-auto px-4 md:px-2">
+    
+        <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-10 lg:gap-16 items-center">
           <div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6">
               {content.title}
@@ -48,6 +50,7 @@ export default function Hero({ content }) {
             ))}
           </ul>
         )} */}
-    </SectionShell>
+        </div>
+</section>
   );
 }
