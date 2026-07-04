@@ -1,38 +1,32 @@
-// * Importy sekcí homepage.
+import AboutPreview from "./components/AboutPreview";
+import CaseStudiesPreview from "./components/CaseStudiesPreview";
 import Cenik from "./components/Cenik";
-import CollaborationFitSection from "./components/CollaborationFitSection";
 import Contact from "./components/contact";
-import FitSection from "./components/FitSection";
 import Header from "./components/header";
 import Hero from "./components/hero";
-import PortfolioImpactSection from "./components/PortfolioImpactSection";
 import ProblemSection from "./components/ProblemSection";
 import ProcessSection from "./components/ProcessSection";
-import CaseStudiesSection from "./components/CaseStudiesSection";
-import StartSection from "./components/StartSection";
 import RecenzeShort from "./components/recenzeShort";
+import ProofStrip from "./components/ProofStrip";
 import Services from "./components/services";
 import { content } from "@/content";
-// * Export hlavní homepage s poskládanými sekcemi.
+
 export default function Home() {
   return (
-    <main className="max-w-screen-full mx-auto">
+    <>
       <Header content_name={content.name} navCta={content.header.navCta} />
-      <Hero content={content.hero}/>
-      {/* <div className="w-full bg-gray-500 py-12"> */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24 max-w-screen-xl mx-auto">
-      <ProblemSection content={content.problem}/>
-      <StartSection content={content.start}/>
-      </div>
-      <Services content={content.services}/>
-      {/* <CollaborationFitSection /> */}
-      {/* <ProcessSection content={ content.process}/> */}
-      {/* <CaseStudiesSection /> */}
-      <PortfolioImpactSection content={content.portfolioImpact} />
-      <RecenzeShort content={content.testimonials} />
-      {/* <FitSection content={content.fit} /> */}
-      <Cenik content={content.cenik}/>
-      <Contact contact={content.contact} form={content.form} />
-    </main>
+      <main>
+        <Hero content={content.hero} />
+        <ProofStrip content={content.proof} />
+        <ProblemSection content={content.problem} />
+        <Services content={content.services} />
+        <CaseStudiesPreview content={content.caseStudies} />
+        <RecenzeShort content={content.testimonials} />
+        <ProcessSection content={content.process} />
+        <Cenik content={content.cenik} />
+        {/* <AboutPreview content={content.about} /> */}
+        <Contact contact={content.contact} form={content.form} />
+      </main>
+    </>
   );
 }

@@ -1,21 +1,29 @@
-// * Export dat ceníku pro starší/alternativní sekce.
+// Starší/alternativní ceník. Pokud ho web stále používá, drž ho v souladu s pricingData.js.
+// VYNECHAT původní levné položky "Webová prezentace od 15 000 Kč" a "Webová aplikace od 25 000 Kč".
+
 export const cenikData = [
   {
-    title: "Webová prezentace",
+    title: "Diagnostika digitálního problému",
     about:
-      "<p>Jednoduchá webová prezentace, která Vám pomůže získat nové klienty.<ul class='list-disc list-inside pl-4 my-4'><li>Jednoduchý prezentační web</li><li>Možnost redakčního systému</li><li>Jasná a funkční struktura</li></ul>Web nikdy není jen o „počtu podstránek“. Klíčová je funkce, obsah a smysluplná struktura.</p>",
-    price: "15000 Kč",
+      "<p>Zmapování současného stavu webu, poptávek, zakázek, klientů, dokumentů, dat nebo interní komunikace. Výstupem jsou pojmenované ztráty, priority a doporučený další krok.</p>",
+    price: "od 10 000 Kč",
   },
   {
-    title: "Webová aplikace",
+    title: "Návrh systému a scope freeze",
     about:
-      "<p>Webová aplikace, Vhodné pro interní systémy, katalogy, administrační rozhraní, SaaS. K řešení používám osvědčené technologie a nebo <i>ohýbám</i> hototá řešení.</p><ul class='list-disc list-inside pl-4 my-4'><li>Webové aplikace na míru</li><li>Systém s přihlašováním a správou dat</li><li>Katalog produktů</li><li>Napojení na externí API / integrace</li><li>E-shop</li></ul>",
-    price: "25000 Kč",
+      "<p>Návrh procesní logiky, rolí, stavů, datového modelu, klíčových obrazovek, MVP rozsahu a realizační roadmapy před vývojem.</p>",
+    price: "od 20 000 Kč",
   },
   {
-    title: "Průběh spolupráce",
+    title: "Datově řízený web / produktová prezentace",
     about:
-      "<p><ol class='list-decimal list-inside pl-4 my-4'><li>Nezávazná konzultace</li><li>Získání podkladů, cílů, rozsah</li><li>Návrh řešení a odhad ceny</li><li>Po schválení začínám s vývojem</li><li>Představení 1. verze</li><li>Ladění a úpravy</li><li>Dodání hotového řešení</li><li>Podpora a údržba...</li></ol></p>",
-    price: "0",
+      "<p>Web pro firmy, kde nestačí statická prezentace. Typicky produkty, použití, dokumenty, reference, poptávky, vícejazyčnost, SEO a příprava na další datovou vrstvu.</p>",
+    price: "od 50 000 Kč",
+  },
+  {
+    title: "Klientský portál / interní systém",
+    about:
+      "<p>Aplikace pro zakázky, klienty, nabídky, dokumenty, workflow, role, notifikace, reporting nebo jedno místo pravdy pro provozní data.</p>",
+    price: "obvykle od 90 000 Kč",
   },
 ];

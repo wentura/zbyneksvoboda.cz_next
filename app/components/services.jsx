@@ -1,61 +1,57 @@
-// * Importy pro odkazy a React.
 import Link from "next/link";
-import React from "react";
+import SectionShell from "./SectionShell";
 
-// * Export sekce služeb (čtyři pilíře).
 export default function Services({ content }) {
   return (
-    <section
-      className="py-16 md:py-12 bg-white scroll-mt-12"
-      id="sluzby"
-    >
-      <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
-        <h2 className="type-h1 tracking-tight text-modra2 mb-6 md:mb-8 text-left">
-          {content.title}
-        </h2>
-        <p className="type-body-lg mb-12 text-gray-700">
-          {content.description}
-        </p>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-12">
-          {/* * Service 1: Strategická webová konzultace */}
-          {content.bulletpoints.map((service, index) => (
+    <SectionShell id="sluzby" className="bg-brand-offwhite">
+      <h2 className="type-h1 text-modra2 mb-4">{content.title}</h2>
+      <p className="type-body-lg text-gray-700 mb-12 max-w-3xl">
+        {content.description}
+      </p>
 
-          <div key={index} className="p-6 md:p-8 bg-white rounded-2xl border border-neutral-200 shadow-sm flex flex-col">
-            <h3 className="type-h3 mb-4 text-gray-900">
-              {service.title}
-            </h3>
-            <p className="type-body mb-4 text-gray-700">
-              {service.description}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        {content.items.map((service) => (
+          <article
+            key={service.slug}
+            className="p-6 md:p-8 bg-white border border-neutral-200 flex flex-col"
+          >
+            <h3 className="type-h3 text-modra2 mb-3">{service.title}</h3>
+            <p className="type-body text-gray-700 mb-3">
+              <span className="font-semibold text-gray-900">Situace: </span>
+              {service.situation}
             </p>
-            <p className="type-body mb-6 text-gray-600">
-              {service.description2}
+            <p className="type-body text-gray-700 mb-6">
+              <span className="font-semibold text-gray-900">Výsledek: </span>
+              {service.outcome}
             </p>
-            <div className="mb-6">
-              <p className="type-body font-semibold mb-3 text-gray-900">
+            <div className="mb-6 flex-grow">
+              <p className="type-body font-semibold text-gray-900 mb-3">
                 {content.gainTitle}
               </p>
-              <ul className="space-y-2 type-body text-gray-700">
-                {service.gain.map((gain, index) => (
-                  <li className="flex items-start" key={index}>
-                    <span className="text-brand-accent mr-2">•</span>
-                    <span>{gain}</span>
+              <ul className="space-y-2">
+                {service.benefits.map((benefit) => (
+                  <li key={benefit} className="flex items-start type-body text-gray-700">
+                    <span className="text-brand-green mr-2 shrink-0">•</span>
+                    <span>{benefit}</span>
                   </li>
                 ))}
               </ul>
             </div>
-          </div>  
-          ))}
-        </div>
-        <div className="flex justify-center mt-8">
-          <Link
-className="ctaBtnSecondaryDark uppercase tracking-wide text-center mx-auto"
-            href="/#kontakt"
-          >
-            {content.cta}
-          </Link>
-        </div>
+            {/* <Link
+              href={service.detailHref}
+              className="ctaBtnSecondaryLight w-full sm:w-auto text-center self-start"
+            >
+              {content.detailLinkLabel}
+            </Link> */}
+          </article>
+        ))}
       </div>
-    </section>
+
+      <div className="flex justify-center mt-12">
+        <Link href={content.ctaHref} className="ctaBtnSecondaryDark">
+          {content.cta}
+        </Link>
+      </div>
+    </SectionShell>
   );
 }

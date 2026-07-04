@@ -76,10 +76,11 @@ export default function NavigationMobile() {
           <li className="flex py-4">
             <Link
               href="/#kontakt"
-              className="ctaBtnSecondaryDark uppercase tracking-wide text-center mx-auto w-full text-brand-offwhite"
+              className="ctaBtnPrimary text-center mx-auto w-full"
               onClick={toggleMenu}
             >
-kontakt            </Link>
+              Konzultace
+            </Link>
           </li>
         </ul>
       </nav>

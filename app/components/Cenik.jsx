@@ -1,84 +1,48 @@
-// * Importy pro odkazy a React.
 import Link from "next/link";
-import React from "react";
+import SectionShell from "./SectionShell";
 
-// * Export sekce orientačního ceníku.
 export default function Cenik({ content }) {
   return (
-    <section
-      id="cenik"
-      className="py-16 md:py-24 bg-brand-offwhite scroll-mt-12"
-    >
-      <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
-        <h2 className="nadpisPage mb-6 md:mb-8 text-left">
-          {content.title}
-        </h2>
-        <p className="type-body-lg mb-12 text-gray-700">
-          {content.description}
-        </p>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12 mb-12">
-          {/* * Smyčka přes položky ceníku */}
-          {content.pricing.map((item, index) => (
-            <div
-              key={index}
-              className="p-6 md:p-8 bg-white rounded-2xl border border-neutral-200 shadow-sm flex flex-col"
-            >
-              <h3 className="type-h3 mb-4 text-gray-900">
-                {item.title}
-              </h3>
-              <p className="type-body mb-6 text-gray-700">
-                {item.description}
-              </p>
-              <div className="mt-auto">
-                <p className="type-body font-semibold text-gray-900 mb-0 text-right">
-                  {item.price}
-                </p>
-                {/* <p className="type-meta text-gray-600 text-right">
-                  {item.note}
-                </p> */}
-              </div>
-            </div>
-          ))}
-          <div className="p-6 md:p-8 bg-white rounded-2xl border border-neutral-200 shadow-sm flex flex-col">
-          <h3 className="type-h3 mb-4 text-gray-900">
+    <SectionShell id="cenik" className="bg-white">
+      <h2 className="type-h1 text-modra2 mb-4">{content.title}</h2>
+      <p className="type-body-lg text-gray-700 mb-12 max-w-3xl">
+        {content.description}
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        {content.pricing.map((item) => (
+          <div
+            key={item.title}
+            className="p-6 md:p-8 border border-neutral-200 flex flex-col"
+          >
+            <h3 className="type-h3 text-modra2 mb-3">{item.title}</h3>
+            <p className="type-body text-gray-700 mb-6 flex-grow">
+              {item.description}
+            </p>
+            <p className="type-body font-semibold text-modra2 text-right">
+              {item.price}
+            </p>
+          </div>
+        ))}
+
+        <div className="p-6 md:p-8 border border-neutral-200 flex flex-col bg-brand-offwhite md:col-span-2">
+          <h3 className="type-h3 text-modra2 mb-3">
             {content.consultationCallout.title}
           </h3>
-          <p
-            className="type-body text-gray-700 mb-6 [&_strong]:text-gray-900"
-            dangerouslySetInnerHTML={{
-              __html: content.consultationCallout.bodyHtml,
-            }}
-          />
-          <Link href="/#kontakt" className="ctaBtnSecondaryDark uppercase tracking-wide">
+          <p className="type-body text-gray-700 mb-6 flex-grow">
+            {content.consultationCallout.body}
+          </p>
+          <Link
+            href={content.consultationCallout.ctaHref}
+            className="ctaBtnSecondaryDark mb-4 text-center"
+          >
             {content.consultationCallout.cta}
           </Link>
-          <div className="mt-auto">
-                <p className="type-body font-semibold text-gray-900 mb-0 text-right">
-                  {content.consultationCallout.price}
-                </p>
-                {/* <p className="type-meta text-gray-600 text-right">
-                  {item.note}
-                </p> */}
-              </div>
+          <p className="type-body font-semibold text-modra2 text-right">
+            {content.consultationCallout.price}
+          </p>
         </div>
-        </div>
-        
-        {/* <div className="p-6 md:p-8 bg-white rounded-2xl border border-neutral-200 shadow-sm max-w-2xl mx-auto text-center">
-          <h3 className="type-h3 mb-4 text-gray-900">
-            {content.consultationCallout.title}
-          </h3>
-          <p
-            className="type-body text-gray-700 mb-4 [&_strong]:text-gray-900 text-center"
-            dangerouslySetInnerHTML={{
-              __html: content.consultationCallout.bodyHtml,
-            }}
-          />
-          <Link href="/#kontakt" className="ctaBtnSecondaryDark uppercase tracking-wide">
-            {content.consultationCallout.cta}
-          </Link>
-        </div> */}
       </div>
-    </section>
+    </SectionShell>
   );
 }

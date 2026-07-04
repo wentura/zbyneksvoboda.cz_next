@@ -8,18 +8,18 @@ Nejde o pixel-perfect design, ale o **logiku sekcí, hierarchii informací a lay
 
 ## 1. Globální prvky
 
-### 1.1 Navigace (header)
+### 1.1 Navigace (header) – aktuální stav (2026)
 
 **Obsah:**
 - Logo / jméno: `Zbyněk Svoboda`
 - Menu položky:
-  - O mně
-  - Služby
-  - Případové studie
-  - Recenze
-  - Jak spolupracuji
-  - Ceník
-  - Kontakt / Konzultace (CTA jako button)
+  - Služby (`/#sluzby`)
+  - Případové studie (`/#pripadove-studie`)
+  - O mně (`/#o-mne`)
+  - Kontakt (`/#kontakt`)
+- CTA tlačítko: **Konzultace** → `/#kontakt`
+- Články: zatím bez položky v menu (blog neexistuje)
+- Recenze a ceník: dostupné na homepage přes scroll, ne v hlavním menu
 
 **Layout (desktop):**
 - vlevo: logo / jméno
@@ -51,7 +51,23 @@ Layout: jednoduchý, dvousloupcový (desktop), jednokolonový (mobile).
 
 ---
 
-## 2. Homepage – sekce
+## 2. Homepage – sekce (implementováno)
+
+**Pořadí sekcí:**
+1. Header
+2. Hero (tmavé pozadí, 2 CTA, fotka, trust strip)
+3. Proof strip (důkazní body)
+4. Problem – „Když web, data a procesy přestanou držet pohromadě“
+5. Services – 4 karty + odkazy na `/sluzby/[slug]`
+6. Case studies preview – 4 featured projekty
+7. Process – 5 kroků, „Nezačínám grafikou ani kódem“
+8. Pricing – orientační ceny
+9. About preview – `#o-mne`
+10. Contact – `#kontakt`
+
+**Data:** `app/data/*.js` agregovaná přes `content.js`.
+
+---
 
 ### 2.1 Hero sekce
 

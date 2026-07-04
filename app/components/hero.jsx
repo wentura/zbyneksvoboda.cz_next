@@ -1,83 +1,53 @@
-// * Komponenta běží na klientu kvůli stavu modalu.
-// "use client";
-
-/**
- * * Hero sekce - hlavní úvodní sekce homepage
- * * Texty z copy.json přes props `content`.
- */
 import Link from "next/link";
 import Image from "next/image";
+import SectionShell from "./SectionShell";
 
 export default function Hero({ content }) {
   return (
-    <section className="min-h-[95vh] md:min-h-[70vh] flex items-center py-8 md:py-16 lg:py-24 bg-modra2">
-      <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-12 lg:gap-18 items-center">
-          <div className="flex flex-col col-span-1 md:col-span-2 lg:col-span-1 min-h-[50vh] md:min-h-0 justify-between md:justify-start">
-            <h1 className="type-hero-title mb-2 md:mb-3 tracking-tight text-brand-offwhite lowercase">
+    <SectionShell className="bg-modra2 text-brand-offwhite">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6">
               {content.title}
             </h1>
-            <h2 className="type-hero mb-6 md:mb-10 tracking-tight text-brand-offwhite">
-              {content.title2}
-            </h2>
-
-            <div className="mb-6 space-y-3">
-              {content.leadParagraphs.map((paragraph, index) => (
-                <p
-                  key={index}
-                  className="type-body-lg text-brand-offwhite tracking-tight max-w-2xl"
-                >
-                  {paragraph}
-                </p>
-              ))}
-              {/* {content.accentParagraphs.map((paragraph, index) => (
-                <p
-                  key={`accent-${index}`}
-                  className="type-body text-brand-offwhite tracking-tight max-w-2xl"
-                >
-                  {paragraph}
-                </p>
-              ))} */}
-            </div>
-
-            <div className="hidden flex items-center justify-center mb-12">
-              <Image
-                className="object-contain bg-white p-3 pb-4 mr-0 border border-brand-navy/10 drop-shadow-sm rotate-6 w-56 h-auto"
-                alt={content.imageAlt}
-                src="/ja.jpg"
-                width={200}
-                height={400}
-              />
-            </div>
-            {/* <ul className="space-y-1.5 md:space-y-2 mb-8 type-body-lg text-gray-200 tracking-tight">
-              {content.bulletpoints.map((bulletpoint, index) => (
-                <li className="flex items-start" key={index}>
-                  <span className="text-brand-green font-bold mr-2">•</span>
-                  <span>{bulletpoint}</span>
-                </li>
-              ))}
-            </ul> */}
-            <div className="flex flex-col">
+            <p className="type-body-lg text-brand-offwhite/90 mb-8">
+              {content.subheadline}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <Link href={content.ctaPrimaryHref} className="ctaBtnPrimary text-center">
+                {content.ctaPrimary}
+              </Link>
               <Link
-                href="/#kontakt"
-              className="ctaBtnSecondaryDark uppercase tracking-wide text-center mx-auto w-full"
+                href={content.ctaSecondaryHref}
+                className="ctaBtnSecondary text-center"
               >
-                {content.cta}
+                {content.ctaSecondary}
               </Link>
             </div>
           </div>
-          <div className="hidden md:flex items-center justify-center">
-          {/* <div className="flex items-center justify-center"> */}
+
+          <div className="flex justify-center lg:justify-end order-first lg:order-last">
             <Image
-              className="object-contain md:bg-white md:p-3 md:pb-8 mr-0 border border-brand-navy/10 drop-shadow-sm rotate-6"
+              className="object-cover p-1 pr-12 w-full h-full"
               alt={content.imageAlt}
-              src="/ja.jpg"
+              src="/hero_img.webp"
               width={400}
-              height={600}
+              height={500}
+              priority
             />
           </div>
         </div>
-      </div>
-    </section>
+
+        {/* {content.trustStrip?.length > 0 && (
+          <ul className="mt-12 pt-8 border-t border-brand-offwhite/15 flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-x-6 sm:gap-y-2">
+            {content.trustStrip.map((item) => (
+              <li key={item} className="type-meta text-brand-offwhite/75 flex items-start gap-2">
+                <span className="text-brand-accent shrink-0">•</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        )} */}
+    </SectionShell>
   );
 }

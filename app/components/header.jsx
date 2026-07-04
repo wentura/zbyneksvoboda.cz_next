@@ -22,7 +22,7 @@ export default function Header({ content_name, navCta }) {
   return (
     <header className="sticky top-0 z-30 bg-modra2 backdrop-blur border-b border-black/10 max-w-screen-full mx-auto w-full">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <Link className="cursor-pointer hover:no-underline transition-all duration-500 md:hover:scale-105" href="/">
+        <Link className="cursor-pointer hover:no-underline" href="/">
           <span className="type-body-lg font-extrabold tracking-tight text-brand-offwhite">
             {content_name}
           </span>
@@ -32,8 +32,8 @@ export default function Header({ content_name, navCta }) {
           <Navigation />
           {/* * CTA tlačítko - zobrazuje se pouze na větších obrazovkách */}
           <Link
-            href="#kontakt"
-            className="hidden lg:inline-flex items-center px-3 py-1 border border-brand-offwhite text-brand-offwhite hover:bg-brand-offwhite hover:text-modra2 transition font-bold uppercase tracking-tight hover:no-underline transition-all duration-500"
+            href="/#kontakt"
+            className="hidden lg:inline-flex ctaBtnPrimary px-5 py-2 type-meta"
           >
             {navCta}
           </Link>

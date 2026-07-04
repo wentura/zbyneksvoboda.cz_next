@@ -15,32 +15,29 @@ Tento dokument slouží jako pracovní seznam úkolů pro redesign webu **Zbyňk
 
 ## 2. Struktura homepage
 
-- [ ] Vytvořit nové komponenty pro jednotlivé sekce (viz `WIREFRAME.md`):
-  - [ ] `HeroSection`
-  - [ ] `ProblemSection`
-  - [ ] `ServicesSection`
-  - [ ] `ProcessSection`
-  - [ ] `CaseStudiesSection`
-  - [ ] `TestimonialsSection`
-  - [ ] `FitSection` (Pro koho jsem / nejsem)
-  - [ ] `PricingSection`
-  - [ ] `ContactSection`
-- [ ] Upravit hlavní stránku (`app/page.tsx` nebo ekvivalent) tak, aby používala tyto komponenty v definovaném pořadí.
-- [ ] Aktualizovat navigaci (header) podle nové struktury menu.
+- [x] Vytvořit komponenty pro jednotlivé sekce (viz `WIREFRAME.md`):
+  - [x] `Hero` + trust strip
+  - [x] `ProofStrip`
+  - [x] `ProblemSection`
+  - [x] `Services` (4 karty)
+  - [x] `CaseStudiesPreview`
+  - [x] `ProcessSection`
+  - [x] `AboutPreview`
+  - [x] `Cenik` (Pricing)
+  - [x] `Contact`
+- [x] Upravit `app/page.js` podle nové struktury.
+- [x] Aktualizovat navigaci (header) podle nové struktury menu.
+- [x] Podstránky služeb `/sluzby/[slug]`.
+- [ ] `TestimonialsSection` na homepage (recenze zůstávají na `/recenze`).
+- [ ] `FitSection` (Pro koho jsem / nejsem) – zatím nahrazeno `AboutPreview`.
 
 ---
 
 ## 3. Implementace textů
 
-- [ ] Do `HeroSection` vložit texty z `COPY.md` → sekce 1.
-- [ ] Do `ProblemSection` vložit texty z `COPY.md` → sekce 2.
-- [ ] Do `ServicesSection` vložit 3 pilíře služeb z `COPY.md` → sekce 3.
-- [ ] Do `ProcessSection` vložit kroky spolupráce z `COPY.md` → sekce 4.
-- [ ] Do `CaseStudiesSection` vložit minimálně 3 případové studie z `COPY.md` → sekce 5.
-- [ ] Do `TestimonialsSection` vložit referenční texty z `COPY.md` → sekce 6.
-- [ ] Do `FitSection` vložit „Pro koho jsem / nejsem“ z `COPY.md` → sekce 7.
-- [ ] Do `PricingSection` vložit orientační ceny z `COPY.md` → sekce 8.
-- [ ] Do `ContactSection` vložit text a popisky z `COPY.md` → sekce 9.
+- [x] Texty v `app/data/*.js` (hero, problem, services, case studies, process, pricing, about, contact).
+- [ ] Synchronizovat `COPY.md` s novým positioningem (volitelné).
+- [ ] Testimonials na homepage (volitelné).
 
 ---
 

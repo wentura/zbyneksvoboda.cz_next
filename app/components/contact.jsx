@@ -1,5 +1,6 @@
 "use client";
 
+import SectionShell from "./SectionShell";
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
@@ -7,8 +8,8 @@ import ContactForm from "./contactForm";
 
 export default function Contact({ contact, form }) {
   return (
-    <section
-      className="py-10 md:py-24 bg-modra2 px-5 xl:px-0 scroll-mt-12 md:scroll-mt-2"
+    <SectionShell
+      className="bg-modra2"
       id="kontakt"
     >
       <div className="container max-w-screen-xl mx-auto">
@@ -86,7 +87,7 @@ export default function Contact({ contact, form }) {
           </div>
         </div>
       </div>
-    </section>
+    </SectionShell>
   );
 }
 

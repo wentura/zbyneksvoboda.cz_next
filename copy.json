@@ -1,237 +1,182 @@
 {
   "name": "Zbyněk Svoboda",
   "hero": {
-    "title": "Firemní weby a systémy,",
-    "title2": "když šablona nestačí",
+    "title": "Weby, portály a interní systémy,",
+    "title2": "které dávají obchod a provoz do použitelného systému",
     "leadParagraphs": [
-      "Navrhuji a stavím firemní weby, klientské portály a interní nástroje pro menší a střední firmy, které potřebují zpřehlednit nabídku, poptávky, data a provozní procesy."
+      "Pomáhám firmám pojmenovat, kde digitál brzdí obchod nebo provoz, a navrhnout řešení, které dá nabídku, klienty, zakázky, dokumenty nebo interní agendu do jednoho použitelného celku."
     ],
-    "accentParagraphs": [],
-    "bulletpoints": [],
-    "cta": "Domluvit konzultaci",
-    "imageAlt": "Zbyněk Svoboda, webový konzultant a full-stack vývojář"
+    "accentParagraphs": [
+      "Nezačínám kódem ani barvami. Nejdřív zmapuji, kde dnes vzniká ztráta času, přehledu, důvěry nebo kvality poptávek. Potom navrhnu nejmenší smysluplnou první fázi, která má šanci fungovat v reálném provozu."
+    ],
+    "bulletpoints": [
+      "800+ projektů v klientském portálu a interním systému",
+      "10 měsíců ostrého provozu u UGHighers",
+      "návrh procesu, UX, datového modelu i vývoj v jedné odpovědnosti"
+    ],
+    "cta": "Ověřit vhodnost spolupráce",
+    "imageAlt": "Zbyněk Svoboda, webový konzultant a vývojář klientských portálů, interních systémů a datově řízených webů"
   },
   "problem": {
-    "title": "Nový web má smysl až ve chvíli, kdy víme, co má změnit.",
-    "subtitle": "Samotný vzhled obvykle nevyřeší slabou nabídku, špatný tok poptávek ani chaos v procesech.",
+    "title": "Web, data a provoz často nefungují jako jeden celek.",
+    "subtitle": "Hezčí web sám nevyřeší nejasnou nabídku, slabou poptávkovou cestu ani provozní informace rozptýlené mezi lidmi, e-maily a tabulkami.",
     "introParagraphs": [
-      "Firmy často nehledají jen nový web. Ve skutečnosti řeší nejasnou nabídku, slabou důvěryhodnost, roztříštěná data, pomalé předávání informací nebo systémy, které spolu nemluví.",
-      "Než se začne kreslit nebo programovat, je potřeba přesně pojmenovat, kde vzniká ztráta a co má největší smysl řešit jako první."
+      "Mnoho firem nemá problém jen v tom, že jejich web vypadá zastarale. Skutečný problém bývá hlubší: nabídka není srozumitelně vysvětlená, poptávky nejsou dostatečně kvalifikované, dokumenty a produktové informace jsou rozházené a důležité provozní věci běží přes e-maily, tabulky nebo osobní poznámky.",
+      "Někdy stačí lépe navržený web s jasnou strukturou služeb, produktů, referencí, dokumentů a poptávkové cesty. Jindy už firma potřebuje klientský portál, interní systém nebo datovou vrstvu, která dá zakázky, klienty, dokumenty, stavy a odpovědnosti na jedno místo.",
+      "Proto nezačínám otázkou, jak má řešení vypadat. Nejdřív hledám, kde firma ztrácí čas, přehled, důvěru nebo obchodní příležitosti. Teprve potom má smysl rozhodnout, jestli výsledkem bude web, portál, interní systém nebo menší první fáze."
     ],
-    "listLead": "Nejčastěji řeším situace, kdy:",
+    "listLead": "Pomáhám hlavně ve chvíli, kdy:",
     "bulletpoints": [
-      "web nevysvětluje, proč si má zákazník vybrat právě vás",
-      "nabídka je pro zákazníka nepřehledná nebo příliš technická",
-      "poptávky, objednávky a zakázky se ztrácejí v e-mailech a tabulkách",
-      "data jsou roztroušená mezi nástroji, lidmi a soubory",
-      "vedení firmy nemá dostatečný přehled pro rozhodování",
-      "interní procesy nejsou promítnuté do jednoho použitelného systému"
+      "návštěvník webu rychle nepochopí, co firma dělá, pro koho je vhodná a proč jí věřit",
+      "služby, produkty, použití, dokumenty nebo reference nemají jasnou informační strukturu",
+      "web sice existuje, ale nepomáhá obchodníkům získávat kvalitnější poptávky",
+      "zakázky, projekty, nabídky, dokumenty nebo interní agenda se řeší přes e-maily, tabulky a ruční dohledávání",
+      "klienti, partneři, rodiče nebo tým se opakovaně ptají na informace, které by měl systém ukázat automaticky",
+      "firma nemá jedno místo pravdy pro důležité stavy, schválení, termíny, dokumenty nebo odpovědnosti",
+      "důležité know-how je v hlavách lidí místo v systému, který může používat celý tým",
+      "vedení nemá jasný přehled, kde vzniká ztráta času, co brzdí provoz a co má prioritu",
+      "není jasné, jestli má firma začít redesignem webu, portálem, interním systémem nebo nejdřív diagnostikou"
     ],
-    "closing": "Cílem není jen hezčí web. Cílem je řešení, které zlepší obchod, provoz nebo rozhodování."
+    "closing": "Cílem není dodat další stránku, další tabulku nebo další izolovaný nástroj. Cílem je pojmenovat skutečný problém, navrhnout realistický další krok a vytvořit řešení, které pomůže obchodu, provozu nebo rozhodování."
   },
   "start": {
     "title": "Nezačínám barvami ani kódem.",
-    "intro": "Nejdřív potřebuji zjistit, co má řešení ve firmě opravdu změnit:",
+    "intro": "Nejdřív potřebuji zjistit, co má být ve firmě skutečně vyjasněné a kde má vzniknout jedno místo pravdy:",
     "bulletpoints": [
-      "jaký obchodní nebo provozní výsledek má web či systém přinést",
-      "kde dnes vzniká ztráta času, peněz, důvěry nebo kontroly",
-      "kdo bude řešení používat a jaké rozhodnutí má udělat",
-      "které procesy, data a odpovědnosti musí řešení unést",
+      "které informace se dnes ztrácejí na webu, v e-mailech, tabulkách nebo hlavách lidí",
+      "kdo řešení používá a jaké rozhodnutí má v každém kroku udělat",
+      "kde vzniká ztráta času, přehledu, důvěry nebo odpovědnosti",
+      "které entity, stavy, role a dokumenty musí řešení unést",
       "co postavit v první fázi a co vědomě nechat na později"
     ],
-    "closingLine1": "Dobrý web je důsledek správných rozhodnutí.",
-    "closingLine2": "Ne jejich náhrada."
+    "closingLine1": "Dobrý web nebo systém je důsledek správně pojmenovaného problému.",
+    "closingLine2": "Ne náhrada za chybějící rozhodnutí."
   },
   "services": {
-    "title": "S čím vám prakticky pomohu",
-    "description": "Pomáhám pojmenovat problém, navrhnout směr a dodat web, portál nebo systém, který má jasnou roli v obchodu i provozu firmy.",
+    "title": "Nejdřív problém. Potom správný typ řešení.",
+    "description": "Návštěvník si nemá vybírat mezi deseti balíčky. Nejdřív společně zjistíme, kde firma ztrácí čas, přehled, důvěru nebo kvalitu poptávek. Teprve potom dává smysl rozhodnout, jestli výsledkem bude datově řízený web, klientský portál, interní systém nebo menší první fáze.",
     "bulletpoints": [
       {
-        "title": "Digitální diagnostika",
-        "description": "Nevíte, jestli potřebujete nový web, úpravu stávající prezentace, portál, interní systém nebo jen jasnější směr?",
-        "description2": "Zmapuji současný stav webu, nabídky, obsahu, procesů, dat a technického řešení. Pojmenuji, co brzdí obchod nebo provoz a co má největší smysl řešit jako první.",
+        "title": "Diagnostika digitálního problému",
+        "description": "Pro firmy, které tuší, že web, e-maily, tabulky, dokumenty nebo interní komunikace brzdí obchod nebo provoz, ale není jasné, kde začít.",
+        "description2": "Zmapuji současný stav, pojmenuji hlavní ztráty a navrhnu, co má být další realistický krok. Výstupem je rozhodovací podklad pro vedení firmy.",
         "gain": [
-          "jasně pojmenované problémy a priority",
-          "doporučení dalšího postupu",
-          "návrh realistických fází realizace",
+          "mapa současného stavu a hlavních ztrát",
+          "prioritizovaný seznam problémů a příležitostí",
+          "návrh nejmenší smysluplné první fáze",
           "podklad pro rozhodnutí vedení firmy"
         ]
       },
       {
-        "title": "Firemní web, redesign nebo předprodejová prezentace",
-        "description": "Pro firmy, které potřebují důvěryhodnější web, jasnější nabídku a lepší cestu od návštěvníka k poptávce.",
-        "description2": "Navrhnu strukturu, obsahovou logiku, UX a technické řešení tak, aby web, produktová prezentace nebo předprodejová část lépe vysvětlovala nabídku, budovala důvěru a podporovala kvalifikovaný zájem zákazníků.",
+        "title": "Datově řízený web / produktová prezentace",
+        "description": "Pro firmy, kde web nemá být jen brožura, ale obchodní a informační vrstva nad produkty, použitím, dokumenty, referencemi a poptávkami.",
+        "description2": "Navrhnu strukturu, typy stránek, obsahovou logiku, dokumentovou vrstvu a technické řešení tak, aby web pomáhal návštěvníkovi chápat nabídku a posílat kvalitnější poptávky.",
         "gain": [
-          "jasné pozicování a strukturu webu",
-          "srozumitelnou prezentaci služeb nebo produktů",
-          "lepší důvěryhodnost a poptávkovou cestu",
-          "UX návrh pro web, e-shop nebo předprodej",
-          "moderní technické řešení bez zbytečného balastu"
+          "jasná informační architektura",
+          "produktové, aplikační a dokumentové stránky jako systém",
+          "lepší poptávková cesta a technická důvěryhodnost",
+          "příprava na PIM-lite, B2B nebo další datovou vrstvu"
         ]
       },
       {
-        "title": "Klientský portál nebo interní systém",
-        "description": "Pro firmy, které řídí důležité procesy přes e-maily, tabulky, ruční přepisování...",
-        "description2": "Navrhnu a vyvinu aplikaci, která sjednotí klienty, zakázky, nabídky, objednávky, stavy, dokumenty, notifikace nebo reporting do jednoho použitelného prostředí.",
+        "title": "Klientský portál / interní systém",
+        "description": "Pro firmy, které potřebují dostat klienty, projekty, stavy, dokumenty, úkoly nebo provozní agendu z e-mailů a tabulek do jednoho systému.",
+        "description2": "Navrhnu a vyvinu aplikaci, která sjednotí proces, data, role a komunikaci do jednoho použitelného prostředí.",
         "gain": [
-          "datový a procesní model",
-          "klientskou zónu nebo interní workflow",
-          "lepší kontrolu nad zakázkami a odpovědnostmi",
-          "řešení navržené podle reálného provozu firmy"
-        ]
-      },
-      {
-        "title": "Dlouhodobá digitální režie",
-        "description": "Pro firmy, které chtějí web, systémy a digitální rozhodnutí rozvíjet postupně, bez náhodných zásahů a bez vlastního digitálního architekta.",
-        "description2": "Pomáhám držet směr, priority, technickou kvalitu a návaznosti mezi webem, dodavateli, daty, obsahem a dalšími systémy.",
-        "gain": [
-          "externího partnera pro digitální směr",
-          "kontrolu nad webem a technickými rozhodnutími",
-          "průběžný rozvoj bez náhodných zásahů",
-          "spojení byznysu, UX a technické realizace"
+          "datový a procesní model podle reality firmy",
+          "klientská zóna, interní workflow nebo provozní nástroj",
+          "lepší kontrola nad zakázkami, dokumenty a odpovědnostmi",
+          "řešení navržené jako jedno místo pravdy"
         ]
       }
     ],
-    "cta": "Domluvit úvodní konzultaci",
-    "gainTitle": "Co získáte:"
+    "cta": "Ověřit vhodnost spolupráce",
+    "gainTitle": "Co získáte:",
+    "longTermTitle": "Možnost dlouhodobé spolupráce",
+    "longTermDescription": "Po diagnostice nebo první realizaci nemusí spolupráce končit. Můžu dál pomáhat s prioritami, rozvojem webu, portálu, interního systému, datové vrstvy nebo koordinací dalších digitálních kroků. Ne jako náhodná technická podpora, ale jako partner, který zná kontext firmy a hlídá, aby další změny dávaly obchodní i technický smysl."
   },
   "process": {
     "title": "Jak spolupráce probíhá",
-    "description": "Spolupráci stavím na pochopení reality firmy, ne na rychlém skoku do designu nebo kódu.",
-    "description2": "Nejdřív pojmenujeme problém, cíl a směr. Teprve potom dává smysl řešit strukturu, technologii, design a vývoj.",
+    "description": "Spolupráci stavím na pochopení reálného provozu a obchodního problému, ne na rychlém skoku do designu nebo kódu.",
+    "description2": "Nejdřív pojmenujeme, kde vzniká ztráta času, přehledu, důvěry nebo kvality poptávek. Teprve potom dává smysl řešit obrazovky, datový model, technologii a vývoj.",
     "outputLabel": "Výstup:",
     "steps": [
       {
         "number": "1",
-        "title": "Úvodní konzultace",
-        "description": "Krátce projdeme váš záměr, současný stav, cíle, očekávání a to, co dnes nefunguje.",
-        "output": "rozhodnutí, jestli dává smysl pokračovat do diagnostiky, návrhu směru nebo rovnou do realizace"
+        "title": "Úvodní posouzení",
+        "description": "Krátce projdeme, co firma řeší, kde dnes vzniká ruční práce, ztráta přehledu nebo slabá poptávková cesta a jestli dává smysl placená diagnostika.",
+        "output": "rozhodnutí, jestli spolupráce dává smysl"
       },
       {
         "number": "2",
-        "title": "Analýza současného stavu",
-        "description": "Podívám se na web, nabídku, cílové skupiny, poptávkovou cestu, procesy, data, technické limity a obchodní souvislosti.",
-        "output": "pojmenování hlavních problémů, rizik, příležitostí a priorit"
+        "title": "Diagnostika současného stavu",
+        "description": "Zmapuji web, poptávky, zakázky, dokumenty, data, role, odpovědnosti a nástroje, které dnes drží provoz pohromadě.",
+        "output": "pojmenované ztráty, rizika, příležitosti a priority"
       },
       {
         "number": "3",
-        "title": "Návrh směru a fází",
-        "description": "Navrhnu, co řešit jako první, co nechat na později a jaký rozsah je vzhledem k cíli realistický.",
-        "output": "roadmapa, priority, doporučený rozsah a způsob realizace"
+        "title": "Návrh dalšího kroku",
+        "description": "Navrhnu, jestli má dávat prioritu web, portál, interní systém, datová vrstva nebo menší první fáze s jasným rozsahem.",
+        "output": "doporučený typ řešení, MVP rozsah a roadmapa"
       },
       {
         "number": "4",
-        "title": "Návrh řešení",
-        "description": "Připravím strukturu webu, logiku systému, UX, datový model, obsahové bloky a technické zadání.",
+        "title": "UX, struktura a technické zadání",
+        "description": "Připravím logiku klíčových obrazovek, formulářů, rolí, dat, dokumentů a návazností.",
         "output": "konkrétní návrh, podle kterého se dá bezpečně stavět"
       },
       {
         "number": "5",
         "title": "Vývoj a spuštění",
         "description": "Řešení realizuji sám, nebo pomáhám vést projekt a koordinovat další specialisty podle potřeb firmy.",
-        "output": "funkční web, portál nebo interní systém připravený pro reálný provoz"
+        "output": "funkční web, portál nebo interní systém připravený pro provoz"
       },
       {
         "number": "6",
-        "title": "Údržba a další rozvoj",
-        "description": "Po spuštění řešení sledujeme, vyhodnocujeme, ladíme a rozvíjíme podle reálného provozu.",
-        "output": "dlouhodobě udržitelné řešení místo jednorázové zakázky bez návaznosti"
+        "title": "Vyhodnocení a rozvoj",
+        "description": "Po spuštění sledujeme, co řešení skutečně zjednodušilo, kde je potřeba úprava a co má smysl rozvíjet dál.",
+        "output": "dlouhodobě udržitelné řešení místo jednorázového výstupu"
       }
     ]
   },
   "portfolioImpact": {
-    "title": "Projekty, kde web nebyl samostatný cíl. Byl součástí většího řešení.",
-    "introOne": "Ne všechny firemní problémy vyřeší nový vzhled. Někdy je potřeba zpřehlednit zakázky, sjednotit data, nahradit tabulky nebo vytvořit systém, který drží provoz pohromadě.",
-    "introTwo": "Vybrané projekty níže ukazují, kde jsem neřešil jen obrazovky, ale také proces, strukturu, data, použitelnost a dlouhodobé fungování.",
+    "title": "Projekty, kde bylo potřeba dát provozu jasný systém",
+    "introOne": "Nejsilnější projekty nejsou ty, kde vznikl jen nový vzhled. Jsou to projekty, kde bylo potřeba zpřehlednit zakázky, data, dokumenty, komunikaci nebo provozní logiku.",
+    "introTwo": "Vybrané ukázky níže ukazují návrh procesu, datového modelu, UX a technického řešení v jednom celku.",
     "items": [
       {
         "name": "UGHighers",
         "image": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1771523925/zbyneksvoboda/portfolio2/ugh.webp",
         "subtitle": "Klientský portál a interní systém pro řízení zakázkové výroby hudebních nosičů.",
-        "context": "UGHighers řeší zakázkovou výrobu vinylů, CD, kazet, obalů a dalších fyzických produktů. Firma potřebovala dostat pod kontrolu klienty, projekty, cenové nabídky, výrobní stavy, komunikaci a podklady pro fakturaci. Cílem nebyl jen web, ale hlavní provozní nástroj firmy.",
+        "context": "Zakázková výroba hudebních nosičů běžela přes e-maily, tabulky a roztříštěnou komunikaci. Tým musel opakovaně dohledávat aktuální informace o klientech, projektech, cenových nabídkách, schválení zakázek, shipping adresách a dalších provozních detailech.",
         "results": [
-          "evidence klientů, projektů a výrobních stavů",
-          "tvorba a schvalování cenových nabídek",
-          "klientská zóna pro správu vlastních projektů",
-          "auditní záznamy, notifikace a e-mailové šablony",
-          "jedno místo pro řízení zakázek a komunikace"
+          "přes 800 projektů v aplikaci",
+          "10 měsíců ostrého provozu",
+          "každodenní používání interním týmem",
+          "cenové nabídky, schvalování, shipping podklady, auditní záznamy a fakturační podklady na jednom místě",
+          "jedno místo pravdy pro řízení zakázek od nabídky po provozní zpracování"
         ],
         "role": "návrh procesu, aplikační logiky, datového modelu, UX struktury a vývoj systému"
       },
       {
-        "name": "Interní informační systém pro školu",
+        "name": "SvouCestou.info",
         "image": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1751903175/zbyneksvoboda/portfolio2/svoucestou.webp",
-        "subtitle": "Správa výuky, docházky, žáků a hodnocení v jednom prostředí.",
-        "context": "Škola potřebovala centralizovat agendu, která byla obtížně udržitelná v tabulkách a ruční administrativě. Cílem bylo sledovat progres žáků, spravovat lekce, učivo, docházku, rodiče, akce a hodnoticí výstupy.",
+        "subtitle": "Školní management, interní systém a rodičovský portál.",
+        "context": "Plánování výuky, pokrok dětí, docházka, stravné, školní akce a komunikace s rodiči byly rozptýlené mezi osobní poznámky, zprávy, tabulky a opakované dotazy. Učitelé potřebovali jedno sdílené místo, kde mohou plánovat, zapisovat progres dětí a navazovat na práci ostatních.",
         "results": [
-          "správa žáků, rodičů, lekcí a učiva",
-          "sledování progresu v jednotlivých oblastech",
-          "docházka a kalendář akcí",
-          "tvorba hodnoticích výkazů",
-          "centralizace školních dat do jednoho prostředí"
+          "sjednocení práce průvodců v interní části systému",
+          "přehled o tom, co dítě dělalo, co má naplánované a v jaké fázi učení se nachází",
+          "školní kalendář, akce, docházka, stravné a úkoly pro rodiče v jednom prostředí",
+          "rodičovský portál připravovaný pro nasazení od září 2026",
+          "cílem je omezit ruční komunikaci přes WhatsApp a opakované dotazy rodičů"
         ],
-        "role": "návrh stavového modelu, datové struktury, UX logiky a vývoj interního systému"
-      },
-      {
-        "name": "Harasov a Kokořínsko",
-        "image": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1754939908/zbyneksvoboda/portfolio2/harasov.webp",
-        "subtitle": "Dlouhodobá správa webů, domén a online infrastruktury pro turistické projekty.",
-        "context": "Spolupráce začala webem, ale postupně se rozšířila do dlouhodobé správy digitální infrastruktury ubytovacích a turistických projektů v oblasti Kokořínska.",
-        "results": [
-          "vývoj a správa více webů",
-          "správa domén a technického zázemí",
-          "měření návštěvnosti",
-          "postupné zlepšování online prezentace",
-          "dlouhodobá webová režie"
-        ],
-        "role": "technická správa, webová režie, konzultace, návrh struktury a dlouhodobý rozvoj"
-      },
-      {
-        "name": "Doomentia",
-        "image": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1778581224/zbyneksvoboda/portfolio2/doomentia.webp",
-        "subtitle": "Úprava vzhledu a UX e-shopu na Shoptetu.",
-        "context": "Doomentia potřebovala upravit vzhled e-shopu na Shoptetu tak, aby lépe odpovídal značce a konkrétním potřebám klienta. Nešlo o kompletní vývoj na zelené louce, ale o cílené přizpůsobení existující platformy.",
-        "results": [
-          "úprava vzhledu e-shopu",
-          "doladění vybraných UX prvků",
-          "přizpůsobení frontendové vrstvy",
-          "technická realizace v rámci omezení Shoptetu"
-        ],
-        "role": "frontendové úpravy, UX doladění a technická realizace"
-      },
-      {
-        "name": "FKTR",
-        "image": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1778581224/zbyneksvoboda/portfolio2/fktr.webp",
-        "subtitle": "Vlastní fakturační aplikace pro správu klientů, faktur a cashflow.",
-        "context": "FKTR vznikl jako vlastní náhrada běžného fakturačního nástroje. Cílem bylo mít jednoduchý systém přizpůsobený vlastnímu způsobu práce, bez zbytečné složitosti a s větší kontrolou nad klienty, fakturami a cashflow.",
-        "results": [
-          "správa klientů",
-          "vystavování faktur",
-          "sledování zaplacení",
-          "přehled cashflow",
-          "základní subscription logika"
-        ],
-        "role": "návrh produktu, datového modelu, aplikační logiky a vývoj"
-      },
-      {
-        "name": "Cyklovýzvy",
-        "image": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1778581224/zbyneksvoboda/portfolio2/cyklovyzvy.webp",
-        "subtitle": "Webová aplikace pro komunitní cyklistické výzvy.",
-        "context": "Cyklovýzvy jsou vlastní rozpracovaný projekt zaměřený na pohodové cyklistické výzvy bez honění žebříčků a výkonu. Uživatel si koupí trasu, jede podle GPX, označí výzvu jako dokončenou a následně může získat odměnu nebo merch.",
-        "results": [
-          "prodej tras a výzev",
-          "práce s GPX soubory",
-          "uživatelské profily",
-          "dokončování výzev",
-          "budoucí komunitní funkce"
-        ],
-        "role": "produktový návrh, UX logika, datový model a vývoj aplikace"
+        "role": "návrh stavového modelu výuky, datové struktury, UX logiky a vývoj systému"
       }
     ],
-    "cta": "Domluvit konzultaci vašeho projektu",
+    "cta": "Zmapovat podobný problém ve firmě",
     "labels": {
       "context": "Kontext",
-      "results": "Co řešení pokrývá",
+      "results": "Dopad / co řešení pokrývá",
       "role": "Moje role",
       "imagePlaceholder": "Náhled projektu doplníme"
     }
@@ -243,89 +188,108 @@
     "for_title": "Dává smysl, když:",
     "not_for_title": "Nedává smysl, když:",
     "for": [
-      "jste menší nebo střední firma a chcete sjednotit web, data a procesy",
-      "berete web, e-shop nebo portál jako obchodní a provozní nástroj",
-      "potřebujete jasný směr před investicí do webu, systému nebo digitálního řešení",
-      "projekt vyžaduje přemýšlení nad procesem, UX, obsahem, daty i technologií",
-      "hledáte dlouhodobou spolupráci založenou na důvěře a otevřené zpětné vazbě"
+      "řešíte zakázky, klienty, dokumenty nebo provoz přes e-maily a tabulky",
+      "potřebujete jedno místo pravdy pro tým, klienty nebo partnery",
+      "máte složitější nabídku, produkty, použití, dokumenty nebo technické podklady",
+      "chcete nejdřív dobře navrhnout proces, datový model a MVP rozsah",
+      "hledáte partnera, který spojí business analýzu, UX a vývoj"
     ],
     "not_for": [
-      "hlavním kritériem je nejnižší cena",
-      "chcete rychlý web bez cíle, zadání a rozhodnutí",
-      "potřebujete jen grafiku bez strategie, obsahu a obchodní logiky",
-      "hledáte správu WordPress šablony nebo běžnou údržbu builderu",
-      "řešíte jednorázovou opravu bez širšího kontextu",
+      "hledáte nejlevnější web podle šablony",
+      "chcete jen grafiku bez řešení obsahu, procesu a dat",
+      "potřebujete pouze údržbu WordPress builderu",
+      "nemáte nikoho, kdo umí za firmu rozhodovat a dodávat podklady",
       "hledáte jen kodéra podle hotového zadání bez možnosti mluvit do směru"
     ]
   },
   "cenik": {
     "title": "Orientační ceny",
-    "description": "Cena závisí na rozsahu, odpovědnosti a tom, jestli řešíme jen web, nebo širší obchodní a provozní systém. Níže jsou orientační vstupní úrovně.",
+    "description": "Neprodávám počet podstránek ani hodiny kódu. Cena se odvíjí od toho, jaký problém řešíme, kolik rozhodnutí je potřeba uzavřít a jakou odpovědnost má řešení nést.",
     "pricing": [
       {
-        "title": "Digitální diagnostika",
-        "description": "Rychlé zmapování webu, nabídky, obsahu, procesů, dat a technického stavu. Vhodné jako první krok před větší investicí.",
-        "price": "od 3000 Kč",
-        "note": "(podle rozsahu a hloubky analýzy)"
+        "title": "Diagnostika digitálního problému",
+        "description": "Zmapování současného stavu webu, poptávek, zakázek, klientů, dokumentů, dat nebo interní komunikace. Výstupem jsou pojmenované ztráty, priority a doporučený další krok.",
+        "price": "od 15 000 Kč",
+        "note": "podle rozsahu a hloubky analýzy"
       },
       {
-        "title": "Návrh směru a architektury řešení",
-        "description": "Strategický návrh webu, portálu, e-shopové části nebo interního systému včetně priorit, struktury, fází a doporučené technologie.",
-        "price": "od 10000 Kč",
-        "note": "(vhodné jako podklad pro rozhodnutí a realizaci)"
+        "title": "Návrh systému a scope freeze",
+        "description": "Návrh procesní logiky, rolí, stavů, datového modelu, klíčových obrazovek, MVP rozsahu a realizační roadmapy před vývojem.",
+        "price": "od 30 000 Kč",
+        "note": "vhodné před vývojem portálu, systému nebo datově řízeného webu"
       },
       {
-        "title": "Firemní web nebo redesign",
-        "description": "Návrh a realizace firemního webu s jasnou strukturou, UX, obsahovou logikou a technickým základem pro další rozvoj.",
-        "price": "od 17000 Kč",
-        "note": "(podle rozsahu, obsahu a nároků na realizaci)"
+        "title": "Datově řízený web / produktová prezentace",
+        "description": "Web pro firmy, kde nestačí statická prezentace. Typicky produkty, použití, dokumenty, reference, poptávky, vícejazyčnost, SEO a příprava na PIM-lite nebo B2B vrstvu.",
+        "price": "od 75 000 Kč",
+        "note": "podle rozsahu, obsahu a datového modelu"
       },
       {
         "title": "Klientský portál nebo interní systém",
         "description": "Aplikace pro klienty, zakázky, nabídky, objednávky, workflow, dokumenty, notifikace nebo reporting.",
-        "price": "individuální nacenění",
-        "note": "(podle rozsahu, integrací a odpovědnosti)"
-      },
-      {
-        "title": "Dlouhodobá webová a digitální režie",
-        "description": "Průběžné vedení webu, systémů, dodavatelů a digitálních rozhodnutí bez nutnosti mít vlastního digitálního architekta.",
-        "price": "individuální nacenění",
-        "note": "(podle počtu projektů, rozsahu spolupráce a očekávané role)"
+        "price": "obvykle od 120 000 Kč",
+        "note": "podle rozsahu, integrací a odpovědnosti"
       }
     ],
     "consultationCallout": {
-      "title": "Úvodní konzultace",
-      "bodyHtml": "Úvodní konzultace v délce 20 minut pro pochopení vašeho projektu, záměru a potřeb.",
+      "title": "Úvodní posouzení vhodnosti spolupráce",
+      "bodyHtml": "Během krátkého hovoru ověříme, jestli řešíte problém, který dává smysl řešit diagnostikou, návrhem systému nebo realizací. Nejde o bezplatný audit. Dlouhodobá spolupráce je možná jako návaznost po první fázi, pokud dává smysl pro obě strany.",
       "price": "zdarma",
-      "cta": "Domluvit konzultaci"
+      "cta": "Ověřit vhodnost spolupráce"
     }
   },
   "testimonials": {
     "title": "Co o spolupráci říkají klienti",
-    "intro": "Spolupracuji s klienty, kteří očekávají spolehlivost, otevřenou komunikaci a řešení použitelné v reálném provozu.",
-    "clientsLinePrefix": "Dlouhodobě spolupracuji s",
-    "clientsLineSuffix": "a dalšími.",
-    "moreLinkLabel": "více recenzí",
+    "intro": "",
+    "clientsLinePrefix": "Pracoval jsem mimo jiné pro",
+    "clientsLineSuffix": "a další klienty.",
+    "moreLinkLabel": "zobrazit více recenzí",
     "items": [
       {
         "name": "Běla Šestáková",
-        "project": "SvouCestou.info",
+        "project": "SvouCestou.info / interní školní systém",
         "text": "Skvělá spolupráce - vše bylo zapracováno k oboustranné spokojenosti, včetně rychlých úprav. Výsledek je kvalitní a profesionální. Moc děkujeme!",
         "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1754939908/zbyneksvoboda/portfolio2/recenze/bela.webp"
       },
       {
-        "name": "Jakub Skála",
-        "project": "AutokempKokorin.cz",
-        "text": "Se spoluprací se Zbyňkem Svobodou jsme moc spokojeni. Stránky pro Autokemp Kokořín, které pro nás udělal, odpovídají aktuálnímu trendu a hosté na ně reagují velmi pozitivně.",
-        "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1731687135/zbyneksvoboda/ref/jakub_skala.png.webp"
-      },
-      {
         "name": "Kateřina Hrabíková",
         "project": "Zodpovědná výuka",
-        "text": "Velmi jsem ocenila pečlivost a ochotu přizpůsobit se mým potřebám. Každý detail byl promyšlen a díky tomu teď mám web, který je plně funkční a snadno použitelný pro naše návštěvníky.",
+        "text": "Velmi jsem ocenila pečlivost a ochotu přizpůsobit se mým potřebám. Každý detail byl promyšlen, a díky tomu nyní mám web, který je plně funkční a snadno použitelný pro naše návštěvníky.",
         "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1730489771/zbyneksvoboda/portfolio2/recenze/kaca.webp"
+      },
+      {
+        "name": "Jakub Skála",
+        "project": "AutokempKokorin.cz",
+        "text": "Se spoluprací se Zbyňkem Svobodou jsme moc spokojeni. Stránky pro Autokemp Kokořín, které pro nás udělal, odpovídají aktuálnímu trendu a při požadavku na další úpravy Zbyněk reaguje bez prodlení.",
+        "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1731687135/zbyneksvoboda/ref/jakub_skala.png.webp"
       }
     ],
+    "secondaryItems": [
+      {
+        "name": "Kristýna Franková",
+        "project": "Hexfit.eu",
+        "text": "Spolupráci s panem Svobodou vřele doporučuji, veškerá má přání ohledně úprav designu byla obratem splněna. Oceňuji rychlost a kvalitu odvedené práce a přátelskou a rychlou komunikaci.",
+        "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882223/zbyneksvoboda/portfolio2/recenze/frankova.webp"
+      },
+      {
+        "name": "Petr Kolář",
+        "project": "Doomentia.com",
+        "text": "Zbyňku, díky moc. Super práce. Zůstaňme v kontaktu na další práce.",
+        "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882223/zbyneksvoboda/portfolio2/recenze/doom.webp"
+      },
+      {
+        "name": "Natalie Štípková",
+        "project": "PohrebniUstavKralupy.cz",
+        "text": "Jsme velmi spokojeni s prací pana Zbyňka Svobody, který pracoval na našich webových stránkách. Jeho profesionální přístup a znalosti v oblasti webdesignu nás nadchly.",
+        "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882225/zbyneksvoboda/portfolio2/recenze/pu.webp"
+      },    {
+        "name": "Jan Svárovský",
+        "project": "ArboristikaSvarovsky.cz",
+        "text": "Výborná spolupráce v tom pravém smyslu - pochopení požadavků + návrh + konzultace + realizace = spokojenost. To vše rychle a operativně, DĚKUJI!!!",
+        "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882223/zbyneksvoboda/portfolio2/recenze/js.webp"
+      }
+    ],
+    "hiddenItemsNote": "VYNECHAT z homepage: příliš neformální reference Štěpána Malého a slabší reference typu 'super práce'. Nezahazovat, ale nepoužívat na hlavní prodejní stránce.",
     "otherClients": [
       "Doomentia",
       "Ergo-product.cz",
@@ -337,40 +301,44 @@
       "Biozahájí",
       "Autokemp Kokořín",
       "Diavita",
-      "Nikola Smejkalová"
+      "Nikola Smejkalová",
+      "Arboristika Svarovský",
+      "Pohřební ústav Kralupy",
+      "Kolem-krku.cz",
+      "Hexfit.eu"
     ]
   },
-  "contact": {
-    "imageAlt": "Zbyněk Svoboda, webový konzultant a full-stack vývojář",
-    "title": "Pojďme probrat, kde váš digitál ztrácí směr.",
-    "lead": "Stručně napište, co řešíte. Společně ověříme, jestli dává smysl nový web, lepší obchodní prezentace, e-shopová část, klientský portál, interní systém nebo nejdřív digitální diagnostika.",
-    "email": "info@zbyneksvoboda.cz",
-    "phoneDisplay": "773687792",
-    "phoneHref": "tel:00420773687792",
-    "ownerName": "Zbyněk Svoboda",
-    "addressLines": [
-      "Nebužely 3",
-      "277 34, Nebužely",
-      "IČ: 74811002"
-    ],
-    "notVat": "Nejsem plátcem DPH",
-    "social": [
-      {
-        "href": "https://www.facebook.com/profile.php?id=100093105173892",
-        "label": "Zbynek.Svoboda"
-      },
-      {
-        "href": "https://www.instagram.com/zbyndasvoboda/",
-        "label": "ZbyndaSvoboda"
-      },
-      {
-        "href": "https://www.linkedin.com/in/zbyneksvoboda/",
-        "label": "Zbyneksvoboda"
-      }
-    ]
-  },
+"contact": {
+  "imageAlt": "Zbyněk Svoboda, webový konzultant a vývojář klientských portálů, interních systémů a datově řízených webů",
+  "title": "Pojďme zjistit, kde vám digitál brzdí obchod nebo provoz.",
+  "lead": "Napište mi stručně, co dnes řešíte - web, poptávky, zakázky, dokumenty, data, interní komunikaci nebo potřebu portálu či systému. Ozvu se s návrhem dalšího kroku: konzultace, diagnostika, návrh řešení nebo menší první úprava.",
+  "email": "info@zbyneksvoboda.cz",
+  "phoneDisplay": "773687792",
+  "phoneHref": "tel:00420773687792",
+  "ownerName": "Zbyněk Svoboda",
+  "addressLines": [
+    "Nebužely 3",
+    "277 34, Nebužely",
+    "IČ: 74811002"
+  ],
+  "notVat": "Nejsem plátcem DPH",
+  "social": [
+    {
+      "href": "https://www.facebook.com/profile.php?id=100093105173892",
+      "label": "Zbynek.Svoboda"
+    },
+    {
+      "href": "https://www.instagram.com/zbyndasvoboda/",
+      "label": "ZbyndaSvoboda"
+    },
+    {
+      "href": "https://www.linkedin.com/in/zbyneksvoboda/",
+      "label": "Zbyneksvoboda"
+    }
+  ]
+},
   "header": {
-    "navCta": "konzultace"
+    "navCta": "ověřit spolupráci"
   },
   "form": {
     "successMessage": "Děkuji za zprávu. Ozvu se vám co nejdříve.",
@@ -383,13 +351,13 @@
     "websiteLabel": "Váš web (volitelné)",
     "websitePlaceholder": "vasweb.cz",
     "messageLabel": "S čím potřebujete pomoci? *",
-    "messagePlaceholder": "Popište stručně současný stav, problém a cíl, kterého chcete dosáhnout.",
+    "messagePlaceholder": "Popište stručně současný stav: co dnes nefunguje na webu, kde se ztrácí informace, co řešíte přes e-maily nebo tabulky, kdo řešení používá a jaký výsledek potřebujete.",
     "gdprNote": "Odesláním zprávy souhlasíte s následnou komunikací. Vaše údaje použiji pouze pro odpověď na vaši zprávu a nebudu je využívat pro marketingové účely.",
     "submitSending": "Odesílám...",
-    "submitIdle": "Odeslat zprávu"
+    "submitIdle": "Odeslat popis problému"
   },
   "contactModal": {
-    "title": "Dohodněme si konzultaci",
+    "title": "Ověřme vhodnost spolupráce",
     "closeAriaLabel": "Zavřít"
   }
 }

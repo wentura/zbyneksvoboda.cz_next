@@ -1,4 +1,5 @@
 import { portfolioData } from "./data/portfolioData";
+import { servicesData } from "./data/servicesData";
 
 export default function sitemap() {
   const baseUrl = "https://zbyneksvoboda.cz";
@@ -11,11 +12,17 @@ export default function sitemap() {
       lastModified,
     }));
 
+  const services = servicesData.map((service) => ({
+    url: `${baseUrl}/sluzby/${service.slug}`,
+    lastModified,
+  }));
+
   return [
     { url: `${baseUrl}/`, lastModified },
     { url: `${baseUrl}/portfolio`, lastModified },
     { url: `${baseUrl}/recenze`, lastModified },
     { url: `${baseUrl}/ckdfaq`, lastModified },
+    ...services,
     ...caseStudies,
   ];
 }
