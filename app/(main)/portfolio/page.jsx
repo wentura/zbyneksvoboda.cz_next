@@ -175,14 +175,15 @@ export default function PortfolioPage() {
           {/* * CTA na konci */}
           <div className="mt-16 md:mt-24 p-8 md:p-12 bg-neutral-50 rounded-2xl text-center">
             <h2 className="type-h2 mb-4 text-gray-900">
-              Máte projekt, který byste chtěli realizovat?
+              Řešíte web, portál nebo chaos v datech a procesech?
             </h2>
             <p className="type-body-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-              Začněme spolupráci ještě dnes a posuňme vaše podnikání blíže
-              klientům s moderním a funkčním webem.
+              Nejdřív ověříme, kde digitál brzdí obchod nebo provoz – a jestli
+              dává smysl web, automatizace konkrétního procesu, nebo interní
+              systém. Nemusíte mít jasno předem.
             </p>
             <Link href="/#kontakt" className="heroBtn inline-block">
-              Začít spolupráci
+              Ověřit vhodnost spolupráce
             </Link>
           </div>
         </div>

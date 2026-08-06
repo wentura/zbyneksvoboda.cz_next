@@ -1,7 +1,7 @@
 export const processData = {
   title: "Jak ze zmatku vznikne použitelné řešení",
   description:
-    "Nejdřív si ujasníme, co má digitální řešení firmě skutečně přinést. Teprve potom navrhuji web, portál nebo interní systém, který má šanci fungovat v reálném provozu.",
+    "Nejdřív si ujasníme, co má digitální řešení firmě skutečně přinést. Teprve potom navrhuji web, automatizaci, portál nebo interní systém, který má šanci fungovat v reálném provozu.",
   steps: [
     {
       number: "1",
@@ -13,7 +13,7 @@ export const processData = {
       number: "2",
       title: "Mapování reality",
       description:
-        "Podívám se na web, poptávky, zakázky, data, dokumenty, nástroje a způsob práce týmu.",
+        "Podívám se na web, poptávky, zakázky, data, dokumenty, nástroje a způsob práce týmu – včetně míst, kde se ztrácí čas ruční prací.",
     },
     {
       number: "3",
@@ -25,7 +25,7 @@ export const processData = {
       number: "4",
       title: "Návrh řešení",
       description:
-        "Navrhnu, jestli má větší smysl web, portál, interní systém, datová vrstva nebo menší první fáze.",
+        "Navrhnu, jestli má větší smysl web, automatizační sprint, portál, interní systém, datová vrstva nebo menší první fáze.",
     },
     {
       number: "5",
@@ -37,7 +37,7 @@ export const processData = {
       number: "6",
       title: "Spuštění a další rozvoj",
       description:
-        "Po spuštění sledujeme, co řešení zjednodušilo, co je potřeba upravit a kam má smysl pokračovat.",
+        "Po spuštění sledujeme, co řešení zjednodušilo. Pokud dává smysl, pokračujeme průběžným digitálním rozvojem – priority, měření a další menší kroky.",
     },
   ],
 };

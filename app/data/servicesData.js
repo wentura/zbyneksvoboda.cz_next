@@ -1,14 +1,14 @@
 export const servicesOverview = {
   title: "Nejdřív problém. Potom správné řešení.",
   description:
-    "Nezačínám výběrem technologie ani hotovým balíčkem. Nejdřív zjistíme, kde firma ztrácí čas, přehled nebo obchodní příležitosti. Podle toho navrhnu web, portál, interní systém nebo menší první fázi.",
+    "Digitální řešení nemusí znamenat jen nový web nebo velkou aplikaci. Nejdřív mapuji současný stav – data, procesy a opakovanou ruční práci – a hledám nejmenší řešení s měřitelným přínosem. Podle situace navrhnu web, automatizaci konkrétního procesu, portál, interní systém nebo ověření, kde dává smysl bezpečně využít AI.",
   gainTitle: "Co získáte",
   cta: "Ověřit vhodnost spolupráce",
   ctaHref: "/#kontakt",
   detailLinkLabel: "Zjistit více",
-  longTermTitle: "Možnost dlouhodobé spolupráce",
+  longTermTitle: "Průběžný digitální rozvoj",
   longTermDescription:
-    "Po první fázi můžu dál pomáhat s prioritami, rozvojem a technickou návazností. Ne jako náhodná podpora, ale jako partner, který zná kontext firmy.",
+    "Po spuštění můžeme pokračovat pravidelným vyhodnocováním a rozvojem. Společně určujeme priority, sledujeme obchodní a provozní dopad a postupně zlepšujeme web, data, automatizace nebo interní nástroje – včetně kontroly nákladů. Ne jako náhodná podpora, ale jako partner, který zná kontext firmy.",
 };
 
 export const servicesData = [
@@ -16,31 +16,33 @@ export const servicesData = [
     slug: "diagnostika",
     title: "Diagnostika digitálního problému",
     situation:
-      "Není jasné, jestli má firma řešit web, portál, interní systém nebo jen lépe nastavit proces?",
+      "Není jasné, jestli má firma řešit web, portál, interní systém, automatizaci procesu – nebo nejdřív zpřehlednit data a ruční práci?",
     outcome:
-      "Zmapujeme současný stav, pojmenujeme hlavní ztráty a určím nejmenší smysluplný další krok.",
+      "Zmapujeme současný stav, pojmenujeme hlavní ztráty a určím nejmenší smysluplný další krok. Výstupem je rozhodovací dokument, ne seznam chyb.",
     benefits: [
-      "přehled současného stavu",
-      "hlavní ztráty a rizika",
-      "priority pro další fázi",
-      "podklad pro rozhodnutí vedení",
+      "přehled webu, procesů, dat a nástrojů",
+      "hlavní ztráty, rizika a priority",
+      "možnosti automatizace a vhodné/nevhodné AI",
+      "návrh realistické první fáze",
     ],
     detailHref: "/sluzby/diagnostika",
     detail: {
       metaDescription:
-        "Diagnostika digitálního problému ve firmě. Zmapování webu, procesů, dat, dokumentů a návrh dalšího smysluplného kroku.",
+        "Diagnostika digitálního problému ve firmě. Zmapování webu, procesů, dat, dokumentů, automatizace a návrh dalšího smysluplného kroku.",
       intro:
-        "Než firma investuje do webu, portálu nebo systému, potřebuje vědět, kde digitál skutečně brzdí obchod nebo provoz.",
+        "Než firma investuje do webu, portálu nebo systému, potřebuje vědět, kde digitál skutečně brzdí obchod nebo provoz – a jestli stačí menší zásah.",
       forWho:
         "Pro firmy, školy a specializované provozy, kde důležité informace běží přes web, e-maily, tabulky, sdílené složky nebo ruční koordinaci.",
       includes: [
         "zmapování webu, poptávek, zakázek, klientů, dokumentů a odpovědností",
-        "pojmenování hlavních ztrát a slabých míst",
-        "návrh priorit a první realistické fáze",
+        "posouzení kvality dat, opakované ruční práce a používaných nástrojů",
+        "možnosti automatizace a realistické/nevhodné použití AI",
+        "pojmenování hlavních ztrát, rizik a priorit",
+        "návrh první smysluplné fáze (web, automatizace, datová vrstva, portál nebo AI pilot)",
       ],
       deliverable:
         "Rozhodovací dokument s hlavními zjištěními, doporučeným rozsahem první fáze a návrhem dalšího postupu.",
-      priceHint: "od 15 000 Kč",
+      priceHint: "od 9 000 Kč",
       priceHref: "/#cenik",
     },
   },
@@ -48,32 +50,33 @@ export const servicesData = [
     slug: "web-redesign",
     title: "Datově řízený web",
     situation:
-      "Web má vysvětlit složitější nabídku, produkty, dokumenty nebo použití, ale dnes působí jako statická brožura?",
+      "Web má vysvětlit složitější nabídku, produkty, varianty nebo dokumenty, ale dnes působí jako statická brožura?",
     outcome:
-      "Vznikne web s jasnou strukturou, lepší poptávkovou cestou a obsahem, který se dá dlouhodobě rozvíjet.",
+      "Vznikne web s jasnou strukturou produktů a obsahu, lepší poptávkovou cestou a daty, která se dají dlouhodobě spravovat, měřit a napojovat.",
     benefits: [
-      "jasná struktura nabídky",
+      "struktura produktů, variant a parametrů",
       "lepší cesta k poptávce",
-      "produktové a dokumentové stránky",
-      "příprava na další datovou vrstvu",
+      "dokumenty, katalogy a strukturovaná data",
+      "příprava na automatizaci a AI nad ověřenými daty",
     ],
     detailHref: "/sluzby/web-redesign",
     detail: {
       metaDescription:
-        "Datově řízený web pro B2B, technické a specializované firmy. Struktura nabídky, produkty, dokumenty, poptávky a další rozvoj.",
+        "Datově řízený web pro B2B, technické a specializované firmy. Produkty, parametry, dokumenty, strukturovaná data, poptávky a příprava na automatizaci.",
       intro:
-        "U technických a B2B firem web často není jen prezentace. Musí vysvětlit nabídku, podpořit obchod a unést další rozvoj.",
+        "U technických a B2B firem web často není jen prezentace. Musí zpřehlednit nabídku, podpořit obchod a unést správu dat, aktualizace i další rozvoj.",
       forWho:
-        "Pro firmy, které potřebují lépe strukturovat služby, produkty, použití, dokumenty, reference a poptávkovou cestu.",
+        "Pro výrobní firmy, katalogové weby a e-shopy, které potřebují strukturovat služby, produkty, varianty, technické parametry, dokumentaci, reference a poptávkovou cestu.",
       includes: [
-        "návrh informační architektury",
-        "struktura typů stránek a obsahu",
-        "UX návrh klíčových cest návštěvníka",
-        "technická realizace podle rozsahu",
+        "návrh informační a produktové architektury",
+        "struktura kategorií, variant, parametrů a dokumentů",
+        "obsahová správa, vícejazyčnost a strukturovaná data",
+        "měření, napojení na další systémy a automatizace aktualizací",
+        "příprava dat pro vyhledávání, filtrování nebo praktické AI asistenty",
       ],
       deliverable:
-        "Web, který funguje jako obchodní a obsahová vrstva firmy, ne jen jako vizitka.",
-      priceHint: "od 75 000 Kč",
+        "Web, který funguje jako obchodní a obsahová vrstva firmy – s daty připravenými na další rozvoj, ne jen jako vizitka.",
+      priceHint: "od 55 000 Kč",
       priceHref: "/#cenik",
     },
   },
@@ -81,32 +84,33 @@ export const servicesData = [
     slug: "portal-system",
     title: "Klientský portál / interní systém",
     situation:
-      "Zakázky, klienti, dokumenty, stavy nebo úkoly se řeší přes e-maily, tabulky a ruční dohledávání?",
+      "Zakázky, klienti, dokumenty, stavy nebo schvalování se řeší přes e-maily, tabulky a ruční dohledávání?",
     outcome:
-      "Navrhnu a postavím systém, který sjednotí proces, data, role a komunikaci do jednoho použitelného prostředí.",
+      "Navrhnu a postavím systém, který sjednotí proces, data, role a komunikaci – včetně notifikací, workflow a automatizace opakované práce.",
     benefits: [
-      "jedno místo pravdy",
-      "datový a procesní model",
-      "role, stavy a odpovědnosti",
-      "méně ruční koordinace",
+      "jedno místo pravdy pro zakázky a dokumenty",
+      "role, stavy, schvalování a notifikace",
+      "automatizace a integrace mezi nástroji",
+      "reporting, auditní historie, méně ruční koordinace",
     ],
     detailHref: "/sluzby/portal-system",
     detail: {
       metaDescription:
-        "Návrh a vývoj klientských portálů a interních systémů pro zakázky, klienty, dokumenty, workflow a provozní data.",
+        "Návrh a vývoj klientských portálů a interních systémů pro zakázky, workflow, notifikace, automatizaci a provozní data.",
       intro:
-        "Když tabulky a e-maily přestanou stačit, firma potřebuje systém navržený podle skutečného provozu.",
+        "Když tabulky a e-maily přestanou stačit, firma potřebuje systém navržený podle skutečného provozu – ne další izolovaný nástroj.",
       forWho:
-        "Pro firmy, které řídí zakázky, klienty, nabídky, dokumenty, školní agendu nebo interní procesy ručně.",
+        "Pro firmy, které řídí zakázky, klienty, nabídky, dokumenty, školní agendu nebo interní procesy ručně a chtějí méně přepisování a dohledávání.",
       includes: [
         "návrh datového a procesního modelu",
-        "UX struktura a aplikační logika",
-        "role, oprávnění, stavy a notifikace",
-        "vývoj na vhodném technickém stacku",
+        "role, oprávnění, stavy, schvalování a notifikace",
+        "automatizace workflow a napojení na používané nástroje",
+        "reporting, auditní historie a provozní přehledy",
+        "AI funkce pouze tam, kde mají jasný přínos, s kontrolou dat a možností lidského zásahu",
       ],
       deliverable:
-        "Funkční portál nebo interní systém připravený pro reálný provoz a další rozvoj.",
-      priceHint: "obvykle od 120 000 Kč",
+        "Funkční portál nebo interní systém připravený pro reálný provoz a další rozvoj. První verze řeší nejdůležitější část procesu.",
+      priceHint: "od 90 000 Kč",
       priceHref: "/#cenik",
     },
   },

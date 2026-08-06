@@ -119,6 +119,15 @@ Není nutné pro první iteraci, ale do TODO můžou přibýt:
   - [ ] případových studiích
 - [ ] Vytvořit jazykovou verzi EN (pokud se rozhodneš cílit víc i na zahraničí).
 
+### AI / automatizace – další fáze (po merge do nabídky)
+
+Hotovo v copy/ceníku: automatizace a AI připravenost v diagnostice, datově řízeném webu a portálech; automatizační sprint; retainer od 12 000 Kč/měsíc.
+
+- [ ] Produktová/datová připravenost nabízet jako součást diagnostiky a datově řízených webů (ne jako samostatný hlavní produkt) – např. u LunaPlastu jako navazující práce.
+- [ ] AI případovou studii vytvořit až po první reálné realizaci (ne dříve).
+- [ ] Neprodávat chatbot / „AI transformaci“ jako samostatný produkt bez dat, měření a odpovědnosti.
+- [ ] Po 2–3 klientech na automatizačním sprintu zvážit samostatnou homepage kartu (zatím ne).
+
 ---
 
 ## 11. Poznámky k dalším iteracím

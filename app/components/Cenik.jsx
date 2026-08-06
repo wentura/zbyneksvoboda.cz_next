@@ -25,7 +25,7 @@ export default function Cenik({ content }) {
           </div>
         ))}
 
-        <div className="p-6 md:p-8 border border-neutral-200 flex flex-col bg-brand-offwhite md:col-span-2">
+        <div className="p-6 md:p-8 border border-neutral-200 flex flex-col bg-brand-offwhite md:col-span-1">
           <h3 className="type-h3 text-modra2 mb-3">
             {content.consultationCallout.title}
           </h3>
@@ -38,9 +38,14 @@ export default function Cenik({ content }) {
           >
             {content.consultationCallout.cta}
           </Link>
-          <p className="type-body font-semibold text-modra2 text-right">
+          <p className="type-body font-semibold text-modra2 text-right mb-4">
             {content.consultationCallout.price}
           </p>
+          {content.consultationCallout.disclaimer && (
+            <p className="type-body text-gray-600 text-sm">
+              {content.consultationCallout.disclaimer}
+            </p>
+          )}
         </div>
       </div>
     </SectionShell>
