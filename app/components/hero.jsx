@@ -50,18 +50,7 @@ export default function Hero({ content }) {
         </Reveal>
       </div>
 
-      {content.trustStrip?.length > 0 && (
-        <ul className="mt-14 md:mt-16 pt-8 border-t border-brand-offwhite/15 grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-10">
-          {content.trustStrip.map((item) => (
-            <li
-              key={item}
-              className="type-meta text-brand-offwhite/80 tracking-wide"
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
-      )}
+
     </SectionShell>
   );
 }
