@@ -1,19 +1,15 @@
 export const problemData = {
-  title: "Z webu, dat a provozu může vzniknout jeden funkční celek.",
+  title: "Problém obvykle není v chybějící šabloně.",
   introParagraphs: [
-    "Firmy často nepotřebují jen hezčí web nebo další nástroj. Potřebují jasnější nabídku, lepší poptávkovou cestu, přehlednější data a méně ruční koordinace.",
-    "Podle situace může výsledkem být datově řízený web, automatizace jednoho konkrétního procesu, klientský portál, interní systém nebo menší první fáze, která odstraní největší provozní tření.",
-    "Nejdřív proto mapuji, kde digitální řešení firmě nejvíc pomůže. Potom navrhuji realistický další krok, který dává obchodní i technický smysl.",
+    "Firmy ztrácejí čas a obchodní příležitosti, když nabídka, zakázky a dokumenty žijí v e-mailech, tabulkách a ruční koordinaci. Potřebují přehlednější data a méně provozního tření — ne další izolovanou obrazovku.",
   ],
-  listLead: "Pomáhám hlavně s tím, aby firma měla:",
+  listLead: "Typicky pomáhám s tím, aby firma měla:",
   bulletpoints: [
-    "srozumitelnější nabídku a kvalitnější poptávky",
-    "jasnou strukturu služeb, produktů a dokumentů",
-    "jedno místo pro zakázky, klienty, stavy a odpovědnosti",
-    "méně ručního dohledávání, přepisování a opakovaných e-mailů",
-    "lepší přehled pro tým i vedení",
-    "realistický plán, kde začít a co nechat na později",
+    "srozumitelnou B2B nebo produktovou nabídku na webu",
+    "zakázky, stavy a dokumenty na jednom místě",
+    "méně přepisování mezi formuláři, e-maily a Excelem",
+    "realistický další krok — web, automatizace nebo portál",
   ],
   closing:
-    "Výsledkem nemá být další izolovaná obrazovka, ale řešení, které pomáhá firmě fungovat přehledněji, rychleji a s menší závislostí na improvizaci.",
+    "Nejdřív pojmenujeme, kde digitál brzdí provoz nebo obchod. Teprve potom stavíme řešení.",
 };

@@ -9,29 +9,24 @@ Jazyk: čeština, vykání, profesionální, lidský, bez přehnané omáčky.
 
 ## 1. Hero sekce
 
+Live zdroj: `app/data/heroData.js`.
+
 **Hlavní nadpis (H1):**
 
-> Pomáhám firmám dělat lepší rozhodnutí v digitálu.
+> Když zakázky, data a nabídka žijí v e-mailech a tabulkách, firma ztrácí přehled i obchod.
 
 **Podnadpis:**
 
-> Jsem digitální konzultant, stratég a vývojář.  
-> Pomáhám firmám ujasnit si směr, postavit funkční web a dlouhodobě ho rozvíjet tak, aby podporoval jejich byznys – ne ho brzdil.
+> Pomáhám B2B a výrobním firmám zpřehlednit digitální provoz: produktovou nabídku, zakázky, dokumenty a opakovanou ruční práci. Výsledkem je datově řízený web, automatizace konkrétního procesu nebo klientský portál — podle skutečného problému, ne podle šablony.
 
-**Doplňující text:**
+**Trust strip (filtr):**
 
-> Web nevnímám jako vizitku.  
-> Beru ho jako nástroj, který má jasný cíl, strukturu a měřitelný přínos.
+- Ne WordPress šablony  
+- Ne správa sociálních sítí  
+- Investice od desítek tisíc — ne web do pátku  
 
-**Bulletpointy:**
-
-- nejdřív směr, potom řešení  
-- byznys, UX a technologie v jednom kontextu  
-- spolupráce založená na důvěře a dlouhodobém partnerství  
-
-**Primární CTA:**
-
-> Domluvit nezávaznou konzultaci
+**Primární CTA:** Ověřit vhodnost spolupráce  
+**Sekundární CTA:** Ukázat výsledky  
 
 ---
 
@@ -295,23 +290,23 @@ Pod recenzemi může být krátká věta:
 
 ## 7. Pro koho jsem / nejsem
 
-**Nadpis:**
+Live zdroj: `app/data/fitData.js`. Sekce je na homepage hned po Problem.
 
-> Pro koho jsem – a pro koho ne
+**Nadpis:** Pro koho dává spolupráce smysl
 
-**Ideální spolupráce:**
+**Dává smysl, když:**
 
-- jednotlivci a firmy, které chtějí mít ve svém digitálu jasno  
-- projekty, které berou web jako důležitý nástroj, ne nutnost  
-- klienti, kteří ocení otevřenou komunikaci a upřímnou zpětnou vazbu  
-- dlouhodobé spolupráce založené na důvěře
+- máte B2B nebo výrobní nabídku, kterou web neumí srozumitelně vysvětlit  
+- zakázky, klienti, dokumenty nebo schvalování běží přes e-maily a Excel  
+- potřebujete jedno místo pravdy pro tým nebo klienty  
+- chcete investovat do řešení problému, ne do nejlevnější šablony  
 
-**Kdy spolupráce nedává smysl:**
+**Nedává smysl, když:**
 
-- když je hlavním kritériem nejnižší cena  
-- „rychlý web do pátku" bez cíle a zadání  
-- zadání typu „udělejte něco hezkého"  
-- projekty, které nechtějí přemýšlet o svém byznysu
+- hledáte WordPress šablonu nebo levný web „do pátku“  
+- chcete správu Facebooku, Instagramu nebo obsah na sociální sítě  
+- hlavním kritériem je nejnižší cena  
+- nemáte provozní ani obchodní problém — jen chcete „být online“  
 
 ---
 

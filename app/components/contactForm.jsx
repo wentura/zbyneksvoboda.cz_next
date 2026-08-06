@@ -1,35 +1,30 @@
 // * Klientská komponenta kvůli formulářovému stavu.
 "use client";
 
-// * Importy React hooků pro práci s formulářem.
 import { useEffect, useRef, useState } from "react";
 
-// * Export kontaktního formuláře s odesláním na API (texty z copy.json přes `form`).
 export default function ContactForm({ form }) {
-  // * Stav formuláře včetně honeypotu.
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     website: "",
+    problemType: "",
+    budget: "",
     discussion: "",
-    company: "", // honeypot
+    company: "",
   });
 
-  // * Timestamp pro detekci příliš rychlého odeslání.
   const formStartRef = useRef(null);
   useEffect(() => {
-    // * Nastavit čas startu formuláře pouze jednou.
     if (!formStartRef.current) {
       formStartRef.current = Date.now();
     }
   }, []);
 
-  // * Stav odesílání a výsledku.
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
-  // * Zpracování změn ve formuláři.
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prev) => ({
@@ -38,7 +33,6 @@ export default function ContactForm({ form }) {
     }));
   };
 
-  // * Odeslání formuláře na API.
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -57,7 +51,6 @@ export default function ContactForm({ form }) {
         }),
       });
 
-      // * Úspěšná odpověď z API.
       if (response.ok) {
         setSubmitStatus({
           type: "success",
@@ -68,37 +61,37 @@ export default function ContactForm({ form }) {
           email: "",
           phone: "",
           website: "",
+          problemType: "",
+          budget: "",
           discussion: "",
           company: "",
         });
         formStartRef.current = Date.now();
       } else {
-        // * Zpracování chybové odpovědi.
         const errorData = await response.json();
         setSubmitStatus({
           type: "error",
           message: errorData.message || form.errorGeneric,
         });
       }
-    } catch (error) {
-      // * Síťová nebo neočekávaná chyba.
+    } catch {
       setSubmitStatus({
         type: "error",
         message: form.errorGeneric,
       });
     } finally {
-      // * Reset stavu odesílání.
       setIsSubmitting(false);
     }
   };
 
+  const selectClassName =
+    "w-full px-4 py-3 bg-gray-700 text-white placeholder-gray-200";
+
   return (
     <div className="mx-auto text-white">
-      {/* * Zobrazení stavu odeslání */}
       {submitStatus && (
         <div
           className={`my-6 p-4 rounded-lg ${
-            // * Barva boxu podle typu výsledku.
             submitStatus.type === "success"
               ? "bg-green-100 text-green-800 border border-green-200"
               : "bg-red-100 text-red-800 border border-red-200"
@@ -109,7 +102,6 @@ export default function ContactForm({ form }) {
       )}
 
       <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
-        {/* * Honeypot: skrytý pro uživatele, ale přítomný v DOM */}
         <div className="hidden" aria-hidden="true">
           <label htmlFor="company">{form.honeypotLabel}</label>
           <input
@@ -138,7 +130,7 @@ export default function ContactForm({ form }) {
               value={formData.name}
               onChange={handleInputChange}
               required
-              className="w-full px-4 py-3 bg-gray-700 text-white placeholder-gray-200"
+              className={selectClassName}
               placeholder={form.namePlaceholder}
             />
           </div>
@@ -157,9 +149,57 @@ export default function ContactForm({ form }) {
               value={formData.email}
               onChange={handleInputChange}
               required
-              className="w-full px-4 py-3 bg-gray-700 text-white placeholder-gray-200"
+              className={selectClassName}
               placeholder={form.emailPlaceholder}
             />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
+          <div>
+            <label
+              htmlFor="problemType"
+              className="block text-sm font-medium text-gray-200 mb-2"
+            >
+              {form.problemTypeLabel}
+            </label>
+            <select
+              id="problemType"
+              name="problemType"
+              value={formData.problemType}
+              onChange={handleInputChange}
+              required
+              className={selectClassName}
+            >
+              {(form.problemTypeOptions || []).map((option) => (
+                <option key={option.value || "empty"} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div>
+            <label
+              htmlFor="budget"
+              className="block text-sm font-medium text-gray-200 mb-2"
+            >
+              {form.budgetLabel}
+            </label>
+            <select
+              id="budget"
+              name="budget"
+              value={formData.budget}
+              onChange={handleInputChange}
+              required
+              className={selectClassName}
+            >
+              {(form.budgetOptions || []).map((option) => (
+                <option key={option.value || "empty"} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
           </div>
         </div>
 
@@ -177,7 +217,7 @@ export default function ContactForm({ form }) {
               name="website"
               value={formData.website}
               onChange={handleInputChange}
-              className="w-full px-4 py-3 bg-gray-700 text-white placeholder-gray-200"
+              className={selectClassName}
               placeholder={form.websitePlaceholder}
             />
           </div>
@@ -197,7 +237,7 @@ export default function ContactForm({ form }) {
             onChange={handleInputChange}
             required
             rows={4}
-            className="w-full px-4 py-3 bg-gray-700 text-white placeholder-gray-200"
+            className={selectClassName}
             placeholder={form.messagePlaceholder}
           />
         </div>
@@ -211,11 +251,8 @@ export default function ContactForm({ form }) {
         <button
           type="submit"
           disabled={isSubmitting}
-          // * className="w-full bg-white text-modra2 py-3 px-6 font-bold hover:underline underline-offset-4 decoration-2 decoration-modra2 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-          // className="heroBtn text-center mx-auto w-full border-2 border-white"
           className="ctaBtnSecondaryDark w-full"
         >
-          {/* * Text tlačítka se mění při odesílání */}
           {isSubmitting ? form.submitSending : form.submitIdle}
         </button>
       </form>

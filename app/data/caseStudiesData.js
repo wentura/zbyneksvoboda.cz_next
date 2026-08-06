@@ -19,10 +19,14 @@ export const caseStudiesData = {
       type: "Klientský portál a interní systém pro zakázkovou výrobu",
       problem:
         "Zakázková výroba hudebních nosičů se opírala o e-maily, tabulky a roztříštěnou komunikaci. Aktuální informace o projektech, nabídkách, schválení a shipping detailech nebyly na jednom místě.",
+      problemShort:
+        "Zakázky, nabídky a shipping detaily žily v e-mailech a tabulkách. Tým i klienti neměli jedno místo pravdy.",
       solution:
         "Navrhl a vyvinul jsem systém, který propojuje klientskou zónu, evidenci projektů, cenové nabídky, schvalování, provozní detaily, shipping podklady, notifikace, auditní záznamy a fakturační podklady.",
       result:
         "Přes 800 projektů v aplikaci, 10 měsíců ostrého provozu a každodenní používání interním týmem. Systém vytvořil jedno místo pravdy pro řízení zakázek od nabídky po provozní zpracování.",
+      resultHighlight:
+        "800+ projektů v ostrém provozu. Jedno místo pravdy od nabídky po shipping.",
       role:
         "návrh procesu, UX struktury, datového modelu, aplikační logiky a vývoj systému",
       image:
@@ -34,10 +38,14 @@ export const caseStudiesData = {
       type: "Školní management, interní systém a rodičovský portál",
       problem:
         "Plánování výuky, pokrok dětí, docházka, stravné, školní akce a komunikace s rodiči byly rozptýlené mezi osobní poznámky, zprávy, tabulky a opakované dotazy. Učitelé neměli jedno sdílené místo, kde by na sebe mohli přirozeně navazovat.",
+      problemShort:
+        "Výuka, docházka, stravné a komunikace s rodiči běžely přes poznámky, WhatsApp a tabulky.",
       solution:
         "Navrhl a vyvíjím systém pro správu dětí, učebních plánů, lekcí, pokroku, docházky, stravného, školního kalendáře, akcí, úkolů pro rodiče a hodnoticích výstupů bez známkování.",
       result:
         "Interní část sjednocuje práci průvodců a dává týmu aktuální přehled o tom, co dítě dělalo, co má naplánované a v jaké fázi učení se nachází. Rodičovský portál je připravovaný pro nasazení od září 2026 s cílem omezit ruční komunikaci přes WhatsApp, zpřehlednit docházku, stravné a školní akce.",
+      resultHighlight:
+        "Interní systém sjednocuje práci týmu. Rodičovský portál připravený na ostrý provoz.",
       role:
         "návrh procesů, datového modelu, UX logiky, stavového modelu výuky a vývoj systému",
       image:

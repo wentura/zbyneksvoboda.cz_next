@@ -1,188 +1,151 @@
-// * Importy pro obrázky, odkazy, React a data portfolia.
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { portfolioData } from "../../data/portfolioData";
 import SafeHtml from "../../components/SafeHtml";
+import Reveal from "../../components/Reveal";
 
 export const metadata = {
   title: "Případové studie a projekty – Zbyněk Svoboda",
   description:
-    "Výběr projektů a případových studií. Ukázky práce, přístup k řešení a výsledky spolupráce.",
+    "Výběr projektů a případových studií. Portály, interní systémy a weby s provozním dopadem.",
   alternates: { canonical: "/portfolio" },
 };
 
-// * Export stránky portfolia s rozdělením na case studies a ostatní projekty.
 export default function PortfolioPage() {
-  // * Projekty s case study - zobrazíme ve formátu podobném CaseStudiesSection.
-  // * Zahrneme projekty, které mají caseStudy a nejsou explicitně označené jako hasCaseStudy: false.
-  const projectsWithCaseStudy = portfolioData.filter(
-    (item) => item.caseStudy && item.hasCaseStudy !== false && item.slug
+  const featured = portfolioData.filter(
+    (item) => item.hasCaseStudy === true || item.frontpage === true,
   );
-
-  // * Projekty bez case study - zobrazíme jednodušší formát.
-  const projectsWithoutCaseStudy = portfolioData.filter(
-    (item) => !item.caseStudy || item.hasCaseStudy === false || !item.slug
+  const archive = portfolioData.filter(
+    (item) => item.hasCaseStudy !== true && item.frontpage !== true,
   );
 
   return (
     <main className="min-h-screen bg-white">
-      <section className="py-16 md:py-24">
+      <section className="py-20 md:py-28">
         <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
-          <h1 className="nadpisPage mb-6 md:mb-8 text-center md:text-left">
-            Projekty & reference
-          </h1>
-          <p className="type-body-lg mb-12 text-gray-700 max-w-3xl">
-            Každý web nebo e-shop, na kterém pracuji, má jasný cíl – ať už jde o
-            lepší uživatelský zážitek, vyšší konverze, nebo technickou
-            efektivitu. Podívejte se na vybrané projekty, kde se spojila
-            technická preciznost s promyšlenou strategií.
-          </p>
+          <Reveal>
+            <h1 className="type-h1 text-modra2 mb-4 max-w-3xl">
+              Projekty &amp; reference
+            </h1>
+            <p className="type-body-lg mb-16 text-neutral-700 max-w-3xl">
+              Vybrané projekty, kde šlo o provoz, data nebo proces — ne jen o
+              novou vizitku. U každého je vidět, jaký problém firma řešila a jaký
+              dopad spolupráce přinesla.
+            </p>
+          </Reveal>
 
-          {/* * Projekty s case study - detailní formát */}
-          {projectsWithCaseStudy.length > 0 && (
-            <div className="space-y-16 md:space-y-24 mb-24">
-              <h2 className="type-h2 mb-8 text-gray-900">
+          {featured.length > 0 && (
+            <div className="mb-20 md:mb-28">
+              <h2 className="label-meta text-modra2 mb-10">
                 Případové studie
               </h2>
-              {/* * Smyčka přes projekty s case study */}
-              {projectsWithCaseStudy.map((item, index) => (
-                <div
-                  key={index}
-                  className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12"
-                >
-                  {/* * Levá strana - název, tag, obrázek */}
-                  <div className="md:col-span-1">
-                    <div className="mb-4">
-                      <span className="inline-block px-3 py-1 type-meta bg-neutral-100 text-gray-700 rounded">
-                        {item.caseStudy?.title || "Projekt"}
-                      </span>
-                    </div>
-                    <h3 className="type-h2 mb-2 text-gray-900">
-                      {item.title}
-                    </h3>
-                    {/* * Podnadpis je zobrazen pouze pokud existuje */}
-                    {item.caseStudy?.subTitle && (
-                      <p className="type-body-lg text-gray-600 mb-6">
-                        {item.caseStudy.subTitle}
-                      </p>
-                    )}
-                    {/* * Náhledový obrázek pokud je k dispozici */}
-                    {item.images && item.images[0] && (
-                      <div className="mb-6 overflow-hidden rounded-lg shadow-md">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+                {featured.map((item, index) => (
+                  <article
+                    key={item.slug || item.title}
+                    className="reveal group flex flex-col"
+                    style={
+                      index ? { animationDelay: `${index * 0.08}s` } : undefined
+                    }
+                  >
+                    {item.images?.[0] && (
+                      <div className="aspect-[16/10] relative bg-neutral-100 overflow-hidden mb-6">
                         <Image
                           src={item.images[0].img}
                           alt={item.images[0].alt || item.title}
-                          width={600}
-                          height={400}
-                          className="object-cover w-full h-auto"
+                          fill
+                          className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+                          sizes="(max-width: 768px) 100vw, 50vw"
                         />
                       </div>
                     )}
-                    {/* * Externí odkaz na web projektu */}
-                    {item.link && (
-                      <a
-                        href={item.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="odkaz type-body"
-                      >
-                        Navštívit web →
-                      </a>
-                    )}
-                  </div>
-
-                  {/* * Pravá strana - problém, řešení, výsledek */}
-                  <div className="md:col-span-2 space-y-8">
-                    {/* * Dlouhý text case study */}
-                    {item.caseStudy?.studyTextLong && (
+                    <h3 className="type-h3 text-modra2 mb-4">{item.title}</h3>
+                    {item.shortDecs && (
                       <SafeHtml
-                        html={item.caseStudy.studyTextLong}
-                        className="type-body text-gray-700 prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-strong:text-gray-900"
+                        html={item.shortDecs}
+                        className="type-body text-neutral-700 mb-6 flex-grow"
                       />
                     )}
-                    {/* * Odkaz na detailní case study pokud existuje slug */}
-                    {item.slug && (
-                      <div className="pt-4 border-t border-neutral-200">
+                    <div className="pt-5 border-t border-neutral-200 flex flex-wrap gap-x-6 gap-y-2 mt-auto">
+                      {item.slug && item.hasCaseStudy && (
                         <Link
                           href={`/portfolio/pripadovaStudie/${item.slug}`}
-                          className="odkaz type-body font-medium"
+                          className="odkaz type-body font-medium text-modra2"
                         >
-                          Zobrazit detailní případovou studii →
+                          Detailní studie
                         </Link>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-
-          {/* * Projekty bez case study - jednodušší grid */}
-          {projectsWithoutCaseStudy.length > 0 && (
-            <div>
-              {/* * <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-gray-900">
-                Další projekty
-              </h2> */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-                {/* * Smyčka přes projekty bez case study */}
-                {projectsWithoutCaseStudy.map((item, index) => (
-                  <div
-                    key={index}
-                    className="flex flex-col bg-white rounded-lg border border-neutral-200 overflow-hidden hover:shadow-lg transition-shadow"
-                  >
-                    {/* * Náhledový obrázek pokud je k dispozici */}
-                    {item.images && item.images[0] && (
-                      <div className="overflow-hidden">
-                        <Image
-                          src={item.images[0].img}
-                          alt={item.images[0].alt || item.title}
-                          width={600}
-                          height={400}
-                          className="object-cover object-top w-full h-48 md:h-64"
-                        />
-                      </div>
-                    )}
-                    <div className="p-6 flex flex-col flex-grow">
-                      <h3 className="type-h3 mb-3 text-gray-900">
-                        {item.title}
-                      </h3>
-                      {/* * Krátký popis, pokud existuje */}
-                      {item.shortDecs && (
-                        <SafeHtml
-                          html={item.shortDecs}
-                          className="type-body text-gray-700 mb-4 flex-grow"
-                        />
                       )}
-                      {/* * Externí odkaz na projekt */}
-                      {item.link && (
+                      {item.link && item.link !== "#" && (
                         <a
                           href={item.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="odkaz type-meta mt-auto"
+                          className="odkaz type-body text-neutral-600"
                         >
-                          {item.linkViewMore || "Navštívit web"} →
+                          {item.linkViewMore || "Navštívit web"}
                         </a>
                       )}
                     </div>
-                  </div>
+                  </article>
                 ))}
               </div>
             </div>
           )}
 
-          {/* * CTA na konci */}
-          <div className="mt-16 md:mt-24 p-8 md:p-12 bg-neutral-50 rounded-2xl text-center">
-            <h2 className="type-h2 mb-4 text-gray-900">
+          {archive.length > 0 && (
+            <div className="border-t border-neutral-200 pt-16 md:pt-20">
+              <h2 className="label-meta mb-10">Další projekty</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border-t border-neutral-200">
+                {archive.map((item) => (
+                  <article
+                    key={item.slug || item.title}
+                    className="py-10 md:p-8 border-b border-neutral-200 lg:border-r lg:[&:nth-child(3n)]:border-r-0 flex flex-col"
+                  >
+                    {item.images?.[0] && (
+                      <div className="aspect-[16/10] relative bg-neutral-100 overflow-hidden mb-6">
+                        <Image
+                          src={item.images[0].img}
+                          alt={item.images[0].alt || item.title}
+                          fill
+                          className="object-cover object-top"
+                          sizes="(max-width: 768px) 100vw, 33vw"
+                        />
+                      </div>
+                    )}
+                    <h3 className="type-h3 text-modra2 mb-3">{item.title}</h3>
+                    {item.shortDecs && (
+                      <SafeHtml
+                        html={item.shortDecs}
+                        className="type-body text-neutral-700 mb-6 flex-grow"
+                      />
+                    )}
+                    {item.link && item.link !== "#" && (
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="odkaz type-meta mt-auto text-modra2"
+                      >
+                        {item.linkViewMore || "Navštívit web"}
+                      </a>
+                    )}
+                  </article>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div className="mt-20 md:mt-28 pt-12 md:pt-16 border-t border-neutral-200">
+            <h2 className="type-h2 text-modra2 mb-4 max-w-2xl">
               Řešíte web, portál nebo chaos v datech a procesech?
             </h2>
-            <p className="type-body-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-              Nejdřív ověříme, kde digitál brzdí obchod nebo provoz – a jestli
+            <p className="type-body-lg text-neutral-700 mb-8 max-w-2xl">
+              Nejdřív ověříme, kde digitál brzdí obchod nebo provoz — a jestli
               dává smysl web, automatizace konkrétního procesu, nebo interní
               systém. Nemusíte mít jasno předem.
             </p>
-            <Link href="/#kontakt" className="heroBtn inline-block">
+            <Link href="/#kontakt" className="ctaBtnSecondaryDark inline-flex">
               Ověřit vhodnost spolupráce
             </Link>
           </div>

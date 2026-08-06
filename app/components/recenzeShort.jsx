@@ -1,68 +1,73 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Reveal from "./Reveal";
 
 export default function RecenzeShort({ content }) {
   const { items, otherClients } = content;
 
   return (
-    <section id="recenze" className="py-16 md:py-24 bg-white scroll-mt-12">
+    <section
+      id="recenze"
+      className="py-20 md:py-28 bg-brand-offwhite scroll-mt-16"
+    >
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
-        <h2 className="nadpisPage mb-6 md:mb-8 text-left">{content.title}</h2>
-        <p className="type-body-lg mb-12 text-gray-700">
-          {content.intro}
-        </p>
+        <Reveal>
+          <h2 className="type-h1 text-modra2 mb-4 max-w-2xl">{content.title}</h2>
+          {content.intro ? (
+            <p className="type-body-lg mb-14 text-neutral-700 max-w-2xl">
+              {content.intro}
+            </p>
+          ) : (
+            <div className="mb-14" />
+          )}
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12">
-          {items.map((testimonial, index) => (
-            <div
-              key={index}
-              className="p-6 md:p-8 bg-white rounded-2xl border border-neutral-200 shadow-sm flex flex-col"
-            >
-              <div className="mb-4">
-                <p className="type-body text-gray-700 mb-6">
-                  &quot;{testimonial.text}&quot;
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-neutral-200 mb-14">
+            {items.map((testimonial, index) => (
+              <div
+                key={index}
+                className="py-10 md:py-12 md:px-8 first:md:pl-0 border-b md:border-b-0 md:border-l border-neutral-200 first:md:border-l-0 flex flex-col"
+              >
+                <p className="type-body text-neutral-700 mb-8 flex-grow leading-relaxed">
+                  &ldquo;{testimonial.text}&rdquo;
                 </p>
-              </div>
-              <div className="mt-auto pt-4 border-t border-neutral-200 flex flex-row items-center gap-2 justify-between">
-                <div>
-                  <p className="font-semibold text-gray-900 mb-1">
-                    {testimonial.name}
-                  </p>
-                  <p className="type-meta text-gray-600">
-                    {testimonial.project}
-                  </p>
+                <div className="pt-6 border-t border-neutral-200 flex flex-row items-center gap-4">
+                  <Image
+                    src={testimonial.fotka}
+                    alt={testimonial.name}
+                    width={48}
+                    height={48}
+                    className="rounded-full object-cover object-center w-12 h-12"
+                  />
+                  <div>
+                    <p className="font-semibold text-modra2 type-body">
+                      {testimonial.name}
+                    </p>
+                    <p className="type-meta text-neutral-500">
+                      {testimonial.project}
+                    </p>
+                  </div>
                 </div>
-                <Image
-                  src={testimonial.fotka}
-                  alt={testimonial.name}
-                  width={60}
-                  height={60}
-                  className="rounded-full object-cover object-center w-16 h-16 mr-1"
-                />
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        <div className="mt-12 pt-8 border-t border-neutral-200">
-          <p className="type-body text-gray-700 mb-6">
-            {content.clientsLinePrefix}{" "}
-            {otherClients.map((client, index) => (
-              <React.Fragment key={client}>
-                {index > 0 && index < otherClients.length && ", "}
-                <strong>{client}</strong>
-              </React.Fragment>
-            ))}{" "}
-            {content.clientsLineSuffix}
-          </p>
-        </div>
-
-        <div className="mt-8 flex justify-center">
-          <Link href="/recenze" className="odkaz type-body">
-            {content.moreLinkLabel}
-          </Link>
-        </div>
+          <div className="pt-8 border-t border-neutral-200">
+            <p className="type-body text-neutral-700 mb-6 max-w-3xl">
+              {content.clientsLinePrefix}{" "}
+              {otherClients.map((client, index) => (
+                <React.Fragment key={client}>
+                  {index > 0 && ", "}
+                  <strong>{client}</strong>
+                </React.Fragment>
+              ))}{" "}
+              {content.clientsLineSuffix}
+            </p>
+            <Link href="/recenze" className="odkaz type-body text-modra2">
+              {content.moreLinkLabel}
+            </Link>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

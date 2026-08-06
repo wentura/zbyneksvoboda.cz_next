@@ -1,9 +1,9 @@
 export const servicesOverview = {
   title: "Nejdřív problém. Potom správné řešení.",
   description:
-    "Digitální řešení nemusí znamenat jen nový web nebo velkou aplikaci. Nejdřív mapuji současný stav – data, procesy a opakovanou ruční práci – a hledám nejmenší řešení s měřitelným přínosem. Podle situace navrhnu web, automatizaci konkrétního procesu, portál, interní systém nebo ověření, kde dává smysl bezpečně využít AI.",
+    "Digitální řešení nemusí znamenat jen nový web nebo velkou aplikaci. Nejdřív mapuji data, procesy a ruční práci a hledám nejmenší řešení s měřitelným přínosem. Nedělám WordPress šablony ani správu sociálních sítí — pracuji s firmami, které řeší nabídku, zakázky nebo provozní chaos.",
   gainTitle: "Co získáte",
-  cta: "Ověřit vhodnost spolupráce",
+  cta: null,
   ctaHref: "/#kontakt",
   detailLinkLabel: "Zjistit více",
   longTermTitle: "Průběžný digitální rozvoj",
@@ -20,9 +20,8 @@ export const servicesData = [
     outcome:
       "Zmapujeme současný stav, pojmenujeme hlavní ztráty a určím nejmenší smysluplný další krok. Výstupem je rozhodovací dokument, ne seznam chyb.",
     benefits: [
-      "přehled webu, procesů, dat a nástrojů",
-      "hlavní ztráty, rizika a priority",
-      "možnosti automatizace a vhodné/nevhodné AI",
+      "přehled webu, procesů a dat",
+      "priority a rizika",
       "návrh realistické první fáze",
     ],
     detailHref: "/sluzby/diagnostika",
@@ -54,10 +53,9 @@ export const servicesData = [
     outcome:
       "Vznikne web s jasnou strukturou produktů a obsahu, lepší poptávkovou cestou a daty, která se dají dlouhodobě spravovat, měřit a napojovat.",
     benefits: [
-      "struktura produktů, variant a parametrů",
+      "struktura produktů a parametrů",
       "lepší cesta k poptávce",
-      "dokumenty, katalogy a strukturovaná data",
-      "příprava na automatizaci a AI nad ověřenými daty",
+      "data připravená na další rozvoj",
     ],
     detailHref: "/sluzby/web-redesign",
     detail: {
@@ -88,10 +86,9 @@ export const servicesData = [
     outcome:
       "Navrhnu a postavím systém, který sjednotí proces, data, role a komunikaci – včetně notifikací, workflow a automatizace opakované práce.",
     benefits: [
-      "jedno místo pravdy pro zakázky a dokumenty",
-      "role, stavy, schvalování a notifikace",
-      "automatizace a integrace mezi nástroji",
-      "reporting, auditní historie, méně ruční koordinace",
+      "jedno místo pravdy",
+      "role, stavy a notifikace",
+      "automatizace a méně ruční práce",
     ],
     detailHref: "/sluzby/portal-system",
     detail: {

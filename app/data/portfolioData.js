@@ -43,12 +43,7 @@ export const portfolioData = [
     linkViewMore: "strategický návrh webové prezentace",
     shortDecs:
       "Rozpracovaný strategický návrh webové, produktové a datové vrstvy pro výrobní firmu.<br /><br />Vhodné jako podpůrná ukázka analytické a návrhové práce, ne jako hlavní case study, dokud projekt nepřejde do další fáze a nebude mít reálný dopad v provozu.",
-    images: [
-      {
-        img: "/portfolio/lunaplast.webp",
-        alt: "Lunaplast strategický návrh webové prezentace",
-      },
-    ],
+    images: [],
     hasCaseStudy: false,
     frontpage: false,
     slug: "lunaplast",

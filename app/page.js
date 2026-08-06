@@ -1,7 +1,7 @@
-import AboutPreview from "./components/AboutPreview";
 import CaseStudiesPreview from "./components/CaseStudiesPreview";
 import Cenik from "./components/Cenik";
 import Contact from "./components/contact";
+import FitSection from "./components/FitSection";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import ProblemSection from "./components/ProblemSection";
@@ -19,12 +19,12 @@ export default function Home() {
         <Hero content={content.hero} />
         <ProofStrip content={content.proof} />
         <ProblemSection content={content.problem} />
-        <Services content={content.services} />
+        <FitSection content={content.fit} />
         <CaseStudiesPreview content={content.caseStudies} />
+        <Services content={content.services} />
         <RecenzeShort content={content.testimonials} />
         <ProcessSection content={content.process} />
         <Cenik content={content.cenik} />
-        {/* <AboutPreview content={content.about} /> */}
         <Contact contact={content.contact} form={content.form} />
       </main>
     </>

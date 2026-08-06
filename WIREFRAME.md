@@ -55,15 +55,16 @@ Layout: jednoduchý, dvousloupcový (desktop), jednokolonový (mobile).
 
 **Pořadí sekcí:**
 1. Header
-2. Hero (tmavé pozadí, 2 CTA, fotka, trust strip)
-3. Proof strip (důkazní body)
-4. Problem – „Když web, data a procesy přestanou držet pohromadě“
-5. Services – 4 karty + odkazy na `/sluzby/[slug]`
-6. Case studies preview – 4 featured projekty
-7. Process – 5 kroků, „Nezačínám grafikou ani kódem“
-8. Pricing – orientační ceny
-9. About preview – `#o-mne`
-10. Contact – `#kontakt`
+2. Hero (problém + filtr trust strip + product vizuál)
+3. Proof strip (konkrétní důkazy)
+4. Problem — krátký framing
+5. Fit — Pro koho ano / ne
+6. Case studies preview — důkaz před nabídkou
+7. Services — 3 karty + ceny
+8. Recenze
+9. Process — 6 kroků
+10. Pricing — orientační ceny + retainer
+11. Contact — kvalifikovaný formulář
 
 **Data:** `app/data/*.js` agregovaná přes `content.js`.
 

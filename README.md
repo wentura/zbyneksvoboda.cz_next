@@ -41,7 +41,20 @@ To enable the contact form functionality, you need to set up Resend.com:
    ```
    RESEND_API_KEY=re_your_api_key_here
    ```
-4. Update the recipient email in `app/api/contact/route.js` (line 47)
+4. Update the recipient email in `app/api/contact/route.js` if needed
+
+### Rate limiting (Upstash Redis) — recommended for production
+
+On Vercel, in-memory rate limiting does not work across instances. Add:
+
+1. Create a Redis database at [Upstash](https://upstash.com)
+2. Add to `.env.local` / Vercel env:
+   ```
+   UPSTASH_REDIS_REST_URL=...
+   UPSTASH_REDIS_REST_TOKEN=...
+   ```
+
+Without these vars the app falls back to in-memory limiting (OK for local dev only).
 
 ## Deploy on Vercel
 

@@ -15,8 +15,8 @@ module.exports = {
         brand: {
           navy: "#0D1824",
           navy2: "#101923",
-          offwhite: "#F4F3F0",
-          accent: "#E85D3F",
+          offwhite: "#F5F6F8",
+          accent: "#C45A3A",
           green: "#168A5B",
         },
       },

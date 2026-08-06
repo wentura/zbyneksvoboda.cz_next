@@ -29,7 +29,9 @@ Tento dokument slouží jako pracovní seznam úkolů pro redesign webu **Zbyňk
 - [x] Aktualizovat navigaci (header) podle nové struktury menu.
 - [x] Podstránky služeb `/sluzby/[slug]`.
 - [ ] `TestimonialsSection` na homepage (recenze zůstávají na `/recenze`).
-- [ ] `FitSection` (Pro koho jsem / nejsem) – zatím nahrazeno `AboutPreview`.
+- [x] `FitSection` (Pro koho jsem / nejsem) na homepage.
+- [x] Sprint filtr + vizuál: hero bez „Weby…“, trust strip, case studies před services, kvalifikace formuláře.
+- [x] Audit follow-up: Upstash rate limit + Origin, CSS motion, fonty, UX polish, cleanup dead code.
 
 ---
 

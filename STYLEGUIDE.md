@@ -46,21 +46,16 @@ Barvy se mají držet:
 - existující vizuální identity (pokud je definovaná)
 - neutrální, klidné palety (šedé, tmavě modré / inkoustové, jeden akcent)
 
-Obecná doporučení (pokud není definováno jinak):
-
-- **Background:** světlý (např. `#F8F8F8` / `#FAFAFA` nebo téměř bílý)
-- **Text:** tmavě šedý / téměř černý (`#111`–`#333`)
-- **Primární akcent (CTA):** jedna barva, mírně výraznější (např. tlumená modrá / zelená)
-- **Sekundární akcenty:** velmi opatrně, ideálně jen odstíny šedé
-
-Tailwind-style přístup:
-- `bg-white`, `bg-neutral-50`, `bg-neutral-100`
-- `text-neutral-900`, `text-neutral-800`
-- accent např. `bg-sky-600` / `bg-emerald-600` – ale zvolit a držet se jedné barvy
+- **Background:** světlý cool neutrál (`#F5F6F8`) + bílá
+- **Text:** téměř černý (`#111`)
+- **Navy:** `#0D1824` (hero, kontakt, primární CTA ve světlých sekcích)
+- **Akcent:** ztlumený terracotta `#C45A3A` — střídmě (hero CTA)
+- **Sekundární:** šedé hairlines, bez neonů
 
 Zakázáno:
 - více než jedna výrazná akcentní barva
-- neonové, příliš syté kombinace
+- teplý krém / okrová jako hlavní surface
+- pill tlačítka a těžké stíny karet
 
 ---
 
@@ -92,43 +87,42 @@ Gridy:
 ### 5.1 Tlačítka (CTA)
 
 Primární tlačítko:
-- používat pro nejdůležitější akce (konzultace / odeslat formulář)
-- plná barva + bílý text, zaoblené rohy, mírný hover efekt
-
-Příklad Tailwind:
-- `inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium`
-- `bg-accent text-white hover:bg-accent/90 transition`
+- nejdůležitější akce (konzultace / odeslat)
+- **navy** fill nebo ztlumený terracotta akcent (`#C45A3A`)
+- ostré / mírně ostré rohy (`rounded-sm` / `rounded-none`) — ne pill
+- na jednom viewportu max 1 silný akcentní CTA
 
 Sekundární CTA:
-- link s podtržením nebo outline button
-- použít pro „Podívat se na případové studie“ apod.
+- outline nebo textový odkaz
+- např. „Ukázat výsledky“
 
 ---
 
-### 5.2 Karty (services, case studies, recenze)
+### 5.2 Karty a oddělení obsahu (Nordic / Swiss)
 
-Stylistika:
-- `rounded-2xl`
-- `border border-neutral-200` nebo `bg-white` + stín `shadow-sm`
-- `p-6 md:p-8`
-- uvnitř jasná hierarchie textu (title > subtitle > body > small text)
+Preferovat:
+- **hairline** oddělovače (`border-t border-neutral-200`)
+- sloupcový grid + whitespace
+- case studies: full-bleed image + text pod ním
+
+Vyhnout se:
+- `shadow-sm` / `rounded-2xl` kartám jako defaultu
+- hustým border boxům kolem každého bloku
 
 ---
 
 ### 5.3 Navigace
 
-- sticky header na desktopu i mobilu (pokud nepřekáží)
-- transparentní nebo světlé pozadí (žádné výrazné barvy)
-- logická hierarchie – první úroveň menu stačí
+- sticky header, světlé nebo transparentní pozadí
+- jednoduché textové odkazy, jedna CTA
 
 ---
 
 ### 5.4 Animace
 
-- pokud se použije Framer Motion, tak velmi střídmě:
-  - fade-in a lehký translate při scrollu
-  - mírný hover scale/opacity u karet
-- žádné složité parallax nebo „scroll-jacking“
+- CSS fade / translate, střídmě
+- respektovat `prefers-reduced-motion`
+- žádný parallax ani scroll-jacking
 
 ---
 
