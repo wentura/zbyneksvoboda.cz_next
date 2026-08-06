@@ -2,6 +2,7 @@ import copy from "./copy.json";
 import { heroData } from "./app/data/heroData";
 import { proofData } from "./app/data/proofData";
 import { problemData } from "./app/data/problemData";
+import { fitData } from "./app/data/fitData";
 import {
   servicesData,
   servicesOverview,
@@ -17,6 +18,7 @@ export const content = {
   hero: heroData,
   proof: proofData,
   problem: problemData,
+  fit: fitData,
   services: {
     ...servicesOverview,
     items: servicesData,
@@ -27,9 +29,9 @@ export const content = {
   about: aboutData,
   contact: {
     ...copy.contact,
-    title: "Pojďme zjistit, kde vám digitál brzdí obchod nebo provoz.",
+    title: "Pojďme zjistit, jestli dává spolupráce smysl.",
     lead:
-      "Napište mi stručně, co dnes řešíte - web, poptávky, zakázky, dokumenty, data, interní komunikaci nebo potřebu portálu či systému. Ozvu se s návrhem dalšího kroku: konzultace, diagnostika, návrh řešení nebo menší první úprava.",
+      "Spolupráce dává smysl, když řešíte data, procesy, nabídku nebo chaos v zakázkách — ne když hledáte WordPress šablonu nebo správu sociálních sítí. Napište, co dnes brzdí provoz nebo obchod. Ozvu se s návrhem dalšího kroku.",
   },
   form: copy.form,
   header: {
@@ -43,6 +45,7 @@ export {
   heroData,
   proofData,
   problemData,
+  fitData,
   servicesData,
   servicesOverview,
   getServiceBySlug,

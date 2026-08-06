@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import SafeHtml from "./SafeHtml";
 
 export default function PortfolioImpactSection({ content }) {
   if (!content) return null;
@@ -10,7 +11,8 @@ export default function PortfolioImpactSection({ content }) {
 
     return parts.map((part, index) => {
       const isMetric = /^(\d+\s?%|\d+x|\d+\+)$/i.test(part);
-      if (!isMetric) return <React.Fragment key={`${part}-${index}`}>{part}</React.Fragment>;
+      if (!isMetric)
+        return <React.Fragment key={`${part}-${index}`}>{part}</React.Fragment>;
 
       return (
         <span key={`${part}-${index}`} className="font-semibold text-gray-900">
@@ -21,24 +23,29 @@ export default function PortfolioImpactSection({ content }) {
   };
 
   return (
-    <section className="py-16 md:py-12 bg-brand-offwhite scroll-mt-12" id="studie-a-reference">
+    <section
+      className="py-16 md:py-12 bg-brand-offwhite scroll-mt-12"
+      id="studie-a-reference"
+    >
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
         <h2 className="nadpisPage mb-6 md:mb-8 text-left">{content.title}</h2>
-        <p className="type-body-lg text-gray-700 max-w-4xl">
-          {content.introOne}
-        </p>
+        <p className="type-body-lg text-gray-700 max-w-4xl">{content.introOne}</p>
         <p className="type-body-lg text-gray-700 max-w-4xl mb-12">
           {content.introTwo}
         </p>
 
         <div className="space-y-16 md:space-y-24 divide-y divide-neutral-100">
           {content.items.map((item) => (
-            <article key={item.name} className="grid grid-cols-1 lg:grid-cols-2 pt-12 md:pt-16 gap-8 lg:gap-24">
-              <div className="">
-                <h3 className="type-h2 text-gray-900 mb-2">
-                  {item.name}
-                </h3>
-                <p className="type-body-lg text-gray-600 mb-6" dangerouslySetInnerHTML={{ __html: item.subtitle }} />
+            <article
+              key={item.name}
+              className="grid grid-cols-1 lg:grid-cols-2 pt-12 md:pt-16 gap-8 lg:gap-24"
+            >
+              <div>
+                <h3 className="type-h2 text-gray-900 mb-2">{item.name}</h3>
+                <SafeHtml
+                  className="type-body-lg text-gray-600 mb-6"
+                  html={item.subtitle}
+                />
 
                 <div className="w-full min-h-[200px] md:min-h-96 rounded-xl overflow-hidden border border-neutral-200 bg-neutral-100">
                   {item.image ? (
@@ -47,8 +54,15 @@ export default function PortfolioImpactSection({ content }) {
                       aria-label={`${item.name} náhled projektu`}
                       role="img"
                     >
-                      <Image src={item.image} alt={item.name} width={600} height={400} className="w-full h-full object-cover" />
-                      </div>
+                      <Image
+                        src={item.image}
+                        alt={item.name}
+                        width={600}
+                        height={400}
+                        className="w-full h-full object-cover"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                      />
+                    </div>
                   ) : (
                     <div className="w-full min-h-[200px] md:min-h-96 flex items-center justify-center type-meta text-gray-500">
                       {content.labels.imagePlaceholder}
@@ -71,8 +85,13 @@ export default function PortfolioImpactSection({ content }) {
                   </h4>
                   <ul className="space-y-2">
                     {item.results.map((result) => (
-                      <li key={result} className="flex items-start type-body text-gray-700">
-                        <span className="text-brand-green ml-2 md:ml-4 mr-1 md:mr-2 font-bold">•</span>
+                      <li
+                        key={result}
+                        className="flex items-start type-body text-gray-700"
+                      >
+                        <span className="text-brand-green ml-2 md:ml-4 mr-1 md:mr-2 font-bold">
+                          •
+                        </span>
                         <span>{highlightMetrics(result)}</span>
                       </li>
                     ))}
@@ -91,7 +110,10 @@ export default function PortfolioImpactSection({ content }) {
         </div>
 
         <div className="flex justify-center mt-10">
-          <Link className="ctaBtnSecondaryDark uppercase tracking-wide text-center mx-auto" href="/#kontakt">
+          <Link
+            className="ctaBtnSecondaryDark uppercase tracking-wide text-center mx-auto"
+            href="/#kontakt"
+          >
             {content.cta}
           </Link>
         </div>

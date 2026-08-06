@@ -1,105 +1,170 @@
-// * Importy pro data, obrázky a bezpečný HTML render.
 import { portfolioData } from "@/app/data/portfolioData";
+import { caseStudiesData } from "@/app/data/caseStudiesData";
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
 import SafeHtml from "@/app/components/SafeHtml";
-// * Export detailu případové studie podle slugu.
-const stripHtml = (value) =>
-  String(value || "").replace(/<[^>]*>/g, "").trim();
+import Reveal from "@/app/components/Reveal";
+import { notFound } from "next/navigation";
 
-export function generateMetadata({ params }) {
-  const { slug } = params;
-  const item = portfolioData.find((entry) => entry.slug === slug);
+const stripHtml = (value) => String(value || "").replace(/<[^>]*>/g, "").trim();
 
-  if (!item) {
+function getStudy(slug) {
+  const portfolioItem = portfolioData.find((entry) => entry.slug === slug);
+  const caseItem = caseStudiesData.items.find((entry) => entry.slug === slug);
+  if (!portfolioItem && !caseItem) return null;
+  return { portfolioItem, caseItem };
+}
+
+export function generateStaticParams() {
+  const slugs = new Set([
+    ...portfolioData.filter((p) => p.slug && p.hasCaseStudy).map((p) => p.slug),
+    ...caseStudiesData.items.map((c) => c.slug),
+  ]);
+  return [...slugs].map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const data = getStudy(slug);
+  if (!data) {
     return {
       title: "Případová studie – Zbyněk Svoboda",
-      description: "Detailní případová studie z webových projektů.",
-      alternates: {
-        canonical: `/portfolio/pripadovaStudie/${slug}`,
-      },
+      description: "Detailní případová studie.",
     };
   }
 
-  const title = `${item.title} – případová studie`;
+  const { portfolioItem, caseItem } = data;
+  const title = `${caseItem?.title || portfolioItem?.title} – případová studie`;
   const description =
-    stripHtml(item.caseStudy?.studyTextShort) ||
-    stripHtml(item.shortDecs) ||
-    "Detailní případová studie z webových projektů.";
+    caseItem?.problemShort ||
+    stripHtml(portfolioItem?.shortDecs) ||
+    "Detailní případová studie.";
   const image =
-    item.caseStudy?.images?.[0]?.img || item.images?.[0]?.img || "/ja.jpg";
+    caseItem?.image || portfolioItem?.images?.[0]?.img || "/ja.jpg";
 
   return {
     title,
     description,
-    alternates: { canonical: `/portfolio/pripadovaStudie/${item.slug}` },
+    alternates: { canonical: `/portfolio/pripadovaStudie/${slug}` },
     openGraph: {
       title,
       description,
-      url: `https://zbyneksvoboda.cz/portfolio/pripadovaStudie/${item.slug}`,
+      url: `https://zbyneksvoboda.cz/portfolio/pripadovaStudie/${slug}`,
       images: [{ url: image }],
       type: "article",
       locale: "cs_CZ",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: [image],
     },
   };
 }
 
 export default async function PripadovaStudie({ params }) {
-  // * Načtení slugu z routy.
   const { slug } = await params;
-  // * Výběr konkrétního projektu z dat.
-  const item = portfolioData.find((item) => item.slug === slug);
+  const data = getStudy(slug);
+  if (!data) notFound();
+
+  const { portfolioItem, caseItem } = data;
+  const title = caseItem?.title || portfolioItem?.title;
+  const type = caseItem?.type;
+  const image =
+    caseItem?.image || portfolioItem?.images?.[0]?.img;
+  const imageAlt =
+    portfolioItem?.images?.[0]?.alt || title;
+  const labels = caseStudiesData.labels;
 
   return (
-    <section className="container px-5 py-24 mx-auto flex flex-col">
-      {/* <div className="h-96 overflow-hidden">
-        <img
-          alt="content"
-          className="object-cover object-top h-full w-full"
-          src={item.caseStudy.images[0].img}
-        />
-      </div> */}
-      <h1 className="nadpisPage">{item.caseStudy.title}</h1>
-      <h2 className="nadpisPortfolio mt-4">{item.title}</h2>
-      <p></p>
-      <div className="flex flex-col sm:flex-row mt-10 flex-col-reverse">
-        <div className={`sm:w-1/3 text-center sm:pr-8 sm:py-8 divide-y-8`}>
-          <Image
-            alt="content"
-            className="pb-12"
-            src={item.caseStudy.images[0].img}
-            width={600}
-            height={1000}
-          />
-          <Image
-            alt="content"
-            className="pt-12"
-            src={item.caseStudy.images[1].img}
-            width={600}
-            height={1000}
-          />
-        </div>
-        <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0text-left  leading-relaxed">
-          <SafeHtml html={item.caseStudy.studyTextLong} />
+    <main className="min-h-screen bg-white">
+      <section className="py-20 md:py-28">
+        <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
+          <Reveal>
+            <p className="label-meta mb-4">
+              <Link href="/portfolio" className="odkaz text-neutral-500">
+                Portfolio
+              </Link>
+              <span className="mx-2 text-neutral-300">/</span>
+              <span className="text-modra2">Případová studie</span>
+            </p>
 
-          <div className="flex flex-col items-center text-center justify-center md:w-1/2 mx-auto mt-12">
-            {/* <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">
-              Phoebe Caulfield
-            </h2>
-            <div className="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4" />
-            <p className="text-base">
-              Raclette knausgaard hella meggs normcore williamsburg enamel pin
-              sartorial venmo tbh hot chicken gentrify portland.
-            </p> */}
-          </div>
+            {type && (
+              <p className="label-meta text-brand-accent mb-4">{type}</p>
+            )}
+            <h1 className="type-h1 text-modra2 mb-8 max-w-3xl">{title}</h1>
+
+            {image && (
+              <div className="aspect-[16/9] relative bg-neutral-100 overflow-hidden mb-14 md:mb-16">
+                <Image
+                  src={image}
+                  alt={imageAlt}
+                  fill
+                  className="object-cover object-top"
+                  sizes="100vw"
+                  priority
+                />
+              </div>
+            )}
+
+            {caseItem ? (
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16">
+                <div className="md:col-span-7 space-y-10">
+                  <div>
+                    <p className="label-meta mb-3">{labels.problem}</p>
+                    <p className="type-body-lg text-neutral-700">
+                      {caseItem.problem}
+                    </p>
+                  </div>
+                  <div className="pt-8 border-t border-neutral-200">
+                    <p className="label-meta mb-3">{labels.solution}</p>
+                    <p className="type-body-lg text-neutral-700">
+                      {caseItem.solution}
+                    </p>
+                  </div>
+                  <div className="pt-8 border-t border-neutral-200">
+                    <p className="label-meta mb-3">{labels.result}</p>
+                    <p className="type-body-lg text-modra2 font-medium">
+                      {caseItem.result}
+                    </p>
+                  </div>
+                </div>
+
+                <aside className="md:col-span-5 md:border-l md:border-neutral-200 md:pl-10 lg:pl-14">
+                  <p className="label-meta mb-3">{labels.role}</p>
+                  <p className="type-body text-neutral-700 mb-10">
+                    {caseItem.role}
+                  </p>
+                  {portfolioItem?.link && portfolioItem.link !== "#" && (
+                    <a
+                      href={portfolioItem.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ctaBtnSecondaryLight inline-flex"
+                    >
+                      {portfolioItem.linkViewMore || "Navštívit web"}
+                    </a>
+                  )}
+                </aside>
+              </div>
+            ) : (
+              <div className="max-w-2xl">
+                {portfolioItem?.shortDecs && (
+                  <SafeHtml
+                    html={portfolioItem.shortDecs}
+                    className="type-body-lg text-neutral-700"
+                  />
+                )}
+              </div>
+            )}
+
+            <div className="mt-20 pt-12 border-t border-neutral-200">
+              <Link href="/portfolio" className="odkaz type-body text-modra2">
+                ← Zpět na portfolio
+              </Link>
+              <span className="mx-4 text-neutral-300">|</span>
+              <Link href="/#kontakt" className="odkaz type-body text-modra2">
+                Ověřit vhodnost spolupráce
+              </Link>
+            </div>
+          </Reveal>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   );
 }

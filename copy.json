@@ -252,6 +252,20 @@
         "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1754939908/zbyneksvoboda/portfolio2/recenze/bela.webp"
       },
       {
+        "name": "Petr Kolář",
+        "project": "Doomentia.com",
+        "text": "Zbyňku, díky moc. Super práce. Zůstaňme v kontaktu na další práce.",
+        "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882223/zbyneksvoboda/portfolio2/recenze/doom.webp"
+      },
+      {
+        "name": "Jan Svárovský",
+        "project": "ArboristikaSvarovsky.cz",
+        "text": "Výborná spolupráce v tom pravém smyslu - pochopení požadavků + návrh + konzultace + realizace = spokojenost. To vše rychle a operativně, DĚKUJI!!!",
+        "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882223/zbyneksvoboda/portfolio2/recenze/js.webp"
+      }
+    ],
+    "secondaryItems": [
+      {
         "name": "Kateřina Hrabíková",
         "project": "Zodpovědná výuka",
         "text": "Velmi jsem ocenila pečlivost a ochotu přizpůsobit se mým potřebám. Každý detail byl promyšlen, a díky tomu nyní mám web, který je plně funkční a snadno použitelný pro naše návštěvníky.",
@@ -262,9 +276,7 @@
         "project": "AutokempKokorin.cz",
         "text": "Se spoluprací se Zbyňkem Svobodou jsme moc spokojeni. Stránky pro Autokemp Kokořín, které pro nás udělal, odpovídají aktuálnímu trendu a při požadavku na další úpravy Zbyněk reaguje bez prodlení.",
         "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1731687135/zbyneksvoboda/ref/jakub_skala.png.webp"
-      }
-    ],
-    "secondaryItems": [
+      },
       {
         "name": "Kristýna Franková",
         "project": "Hexfit.eu",
@@ -272,21 +284,10 @@
         "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882223/zbyneksvoboda/portfolio2/recenze/frankova.webp"
       },
       {
-        "name": "Petr Kolář",
-        "project": "Doomentia.com",
-        "text": "Zbyňku, díky moc. Super práce. Zůstaňme v kontaktu na další práce.",
-        "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882223/zbyneksvoboda/portfolio2/recenze/doom.webp"
-      },
-      {
         "name": "Natalie Štípková",
         "project": "PohrebniUstavKralupy.cz",
         "text": "Jsme velmi spokojeni s prací pana Zbyňka Svobody, který pracoval na našich webových stránkách. Jeho profesionální přístup a znalosti v oblasti webdesignu nás nadchly.",
         "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882225/zbyneksvoboda/portfolio2/recenze/pu.webp"
-      },    {
-        "name": "Jan Svárovský",
-        "project": "ArboristikaSvarovsky.cz",
-        "text": "Výborná spolupráce v tom pravém smyslu - pochopení požadavků + návrh + konzultace + realizace = spokojenost. To vše rychle a operativně, DĚKUJI!!!",
-        "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882223/zbyneksvoboda/portfolio2/recenze/js.webp"
       }
     ],
     "hiddenItemsNote": "VYNECHAT z homepage: příliš neformální reference Štěpána Malého a slabší reference typu 'super práce'. Nezahazovat, ale nepoužívat na hlavní prodejní stránce.",
@@ -324,16 +325,8 @@
   "notVat": "Nejsem plátcem DPH",
   "social": [
     {
-      "href": "https://www.facebook.com/profile.php?id=100093105173892",
-      "label": "Zbynek.Svoboda"
-    },
-    {
-      "href": "https://www.instagram.com/zbyndasvoboda/",
-      "label": "ZbyndaSvoboda"
-    },
-    {
       "href": "https://www.linkedin.com/in/zbyneksvoboda/",
-      "label": "Zbyneksvoboda"
+      "label": "LinkedIn"
     }
   ]
 },
@@ -350,8 +343,25 @@
     "emailPlaceholder": "vas@email.cz",
     "websiteLabel": "Váš web (volitelné)",
     "websitePlaceholder": "vasweb.cz",
+    "problemTypeLabel": "Co primárně řešíte? *",
+    "problemTypeOptions": [
+      { "value": "", "label": "Vyberte…" },
+      { "value": "chaos-zakazky", "label": "Chaos v zakázkách, datech nebo dokumentech" },
+      { "value": "b2b-web", "label": "Produktový / B2B web a nabídka" },
+      { "value": "automatizace", "label": "Automatizace konkrétního procesu" },
+      { "value": "jine", "label": "Něco jiného" }
+    ],
+    "budgetLabel": "Orientační investice *",
+    "budgetOptions": [
+      { "value": "", "label": "Vyberte…" },
+      { "value": "zjistujeme", "label": "Zatím zjišťujeme" },
+      { "value": "do-30k", "label": "Do 30 000 Kč" },
+      { "value": "30-80k", "label": "30–80 000 Kč" },
+      { "value": "80k-plus", "label": "80 000 Kč a více" },
+      { "value": "mesicni", "label": "Měsíční spolupráce" }
+    ],
     "messageLabel": "S čím potřebujete pomoci? *",
-    "messagePlaceholder": "Popište stručně současný stav: co dnes nefunguje na webu, kde se ztrácí informace, co řešíte přes e-maily nebo tabulky, kdo řešení používá a jaký výsledek potřebujete.",
+    "messagePlaceholder": "Popište provozní nebo obchodní problém — ne „potřebujeme web a Instagram“.",
     "gdprNote": "Odesláním zprávy souhlasíte s následnou komunikací. Vaše údaje použiji pouze pro odpověď na vaši zprávu a nebudu je využívat pro marketingové účely.",
     "submitSending": "Odesílám...",
     "submitIdle": "Odeslat popis problému"

@@ -3,15 +3,11 @@
 import SectionShell from "./SectionShell";
 import Image from "next/image";
 import React from "react";
-import { motion } from "framer-motion";
 import ContactForm from "./contactForm";
 
 export default function Contact({ contact, form }) {
   return (
-    <SectionShell
-      className="bg-modra2"
-      id="kontakt"
-    >
+    <SectionShell className="bg-modra2" id="kontakt">
       <div className="container max-w-screen-xl mx-auto">
         <h2 className="nadpisPageWhite sm:w-full text-left mb-6 md:mb-8">
           {contact.title}
@@ -42,19 +38,21 @@ export default function Contact({ contact, form }) {
           <div className="flex flex-col text-white gap-8">
             <div className="flex flex-col lg:flex-row lg:justify-between gap-4 text-white">
               <div className="md:flex flex-col gap-2 mb-8 hidden">
-                {contact.social.map((item) => (
-                  <div key={item.href}>
-                    <a
-                      className="ml-3 text-white odkaz flex gap-2"
-                      href={item.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <SocialIcon href={item.href} />
-                      {item.label}
-                    </a>
-                  </div>
-                ))}
+                {(contact.social || [])
+                  .filter((item) => item.href.includes("linkedin"))
+                  .map((item) => (
+                    <div key={item.href}>
+                      <a
+                        className="ml-3 text-white odkaz flex gap-2"
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <LinkedInIcon />
+                        {item.label}
+                      </a>
+                    </div>
+                  ))}
               </div>
               <span className="text-white type-body text-center md:text-left pl-4 md:pl-3">
                 {contact.ownerName}
@@ -69,12 +67,7 @@ export default function Contact({ contact, form }) {
               </span>
             </div>
             <div className="flex w-full mx-auto text-center items-center justify-center">
-              <motion.div
-                initial={{ rotate: 0 }}
-                whileInView={{ rotate: 6 }}
-                viewport={{ once: true, amount: 0.6 }}
-                transition={{ delay: 2, duration: 0.8, ease: "easeInOut" }}
-              >
+              <div className="contact-photo-tilt">
                 <Image
                   className="object-contain bg-neutral-200 p-2 pb-8 mr-0"
                   alt={contact.imageAlt}
@@ -82,7 +75,7 @@ export default function Contact({ contact, form }) {
                   width={400}
                   height={600}
                 />
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
@@ -91,37 +84,7 @@ export default function Contact({ contact, form }) {
   );
 }
 
-function SocialIcon({ href }) {
-  if (href.includes("facebook"))
-    return (
-      <svg
-        fill="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        className="w-5 h-5 text-white shrink-0"
-        viewBox="0 0 24 24"
-        aria-hidden
-      >
-        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-      </svg>
-    );
-  if (href.includes("instagram"))
-    return (
-      <svg
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        className="w-5 h-5 text-white shrink-0"
-        viewBox="0 0 24 24"
-        aria-hidden
-      >
-        <rect width={20} height={20} x={2} y={2} rx={5} ry={5} />
-        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
-      </svg>
-    );
+function LinkedInIcon() {
   return (
     <svg
       fill="currentColor"

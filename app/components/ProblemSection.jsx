@@ -1,39 +1,40 @@
 import SectionShell from "./SectionShell";
+import Reveal from "./Reveal";
 
 export default function ProblemSection({ content }) {
   return (
     <SectionShell className="bg-white">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div className="md:col-span-2">
-      <h2 className="type-h1 text-modra2 mb-6 max-w-3xl">{content.title}</h2>
-      <div className="space-y-4 mb-10 type-body-lg text-gray-700 max-w-3xl">
-        {content.introParagraphs.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
-        ))}
-      </div>
-      </div>
+      <Reveal>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16">
+          <div className="md:col-span-8">
+            <h2 className="type-h1 text-modra2 mb-8 max-w-full">
+              {content.title}
+            </h2>
+            <div className="space-y-5 type-body-lg text-neutral-700 max-w-full">
+              {content.introParagraphs.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+            <p className="type-body-lg text-modra2 font-medium mt-10 max-w-full">
+              {content.closing}
+            </p>
+          </div>
 
-      <div className="mb-8">
-        <p className="type-body font-semibold text-gray-900 mb-4">
-          {content.listLead}
-        </p>
-        <ul className="grid grid-cols-1 gap-3 max-w-md">
-          {content.bulletpoints.map((bulletpoint, index) => (
-            <li
-              key={index}
-              className="flex items-start type-body text-gray-700"
-            >
-              <span className="text-brand-accent mr-2 shrink-0">•</span>
-              <span>{bulletpoint}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <p className="type-body-lg text-gray-700 font-medium md:col-span-2">
-        {content.closing}
-      </p>
-    </div>
+          <div className="md:col-span-4 md:border-l md:border-neutral-200 md:pl-8">
+            <p className="label-meta mb-6">{content.listLead}</p>
+            <ul className="space-y-2">
+              {content.bulletpoints.map((bulletpoint, index) => (
+                <li
+                  key={index}
+                  className="type-body text-neutral-700 border-b border-neutral-100 pb-4 last:border-0 last:pb-0"
+                >
+                  {bulletpoint}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </Reveal>
     </SectionShell>
   );
 }

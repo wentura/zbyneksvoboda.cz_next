@@ -29,7 +29,9 @@ Tento dokument slouží jako pracovní seznam úkolů pro redesign webu **Zbyňk
 - [x] Aktualizovat navigaci (header) podle nové struktury menu.
 - [x] Podstránky služeb `/sluzby/[slug]`.
 - [ ] `TestimonialsSection` na homepage (recenze zůstávají na `/recenze`).
-- [ ] `FitSection` (Pro koho jsem / nejsem) – zatím nahrazeno `AboutPreview`.
+- [x] `FitSection` (Pro koho jsem / nejsem) na homepage.
+- [x] Sprint filtr + vizuál: hero bez „Weby…“, trust strip, case studies před services, kvalifikace formuláře.
+- [x] Audit follow-up: Upstash rate limit + Origin, CSS motion, fonty, UX polish, cleanup dead code.
 
 ---
 
@@ -118,6 +120,15 @@ Není nutné pro první iteraci, ale do TODO můžou přibýt:
   - [ ] práci s AI ve světě webů
   - [ ] případových studiích
 - [ ] Vytvořit jazykovou verzi EN (pokud se rozhodneš cílit víc i na zahraničí).
+
+### AI / automatizace – další fáze (po merge do nabídky)
+
+Hotovo v copy/ceníku: automatizace a AI připravenost v diagnostice, datově řízeném webu a portálech; automatizační sprint; retainer od 12 000 Kč/měsíc.
+
+- [ ] Produktová/datová připravenost nabízet jako součást diagnostiky a datově řízených webů (ne jako samostatný hlavní produkt) – např. u LunaPlastu jako navazující práce.
+- [ ] AI případovou studii vytvořit až po první reálné realizaci (ne dříve).
+- [ ] Neprodávat chatbot / „AI transformaci“ jako samostatný produkt bez dat, měření a odpovědnosti.
+- [ ] Po 2–3 klientech na automatizačním sprintu zvážit samostatnou homepage kartu (zatím ne).
 
 ---
 

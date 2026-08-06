@@ -1,52 +1,52 @@
-// * Import React pro sekci fit.
-import React from "react";
+import SectionShell from "./SectionShell";
+import Reveal from "./Reveal";
 
-// * Export sekce "Pro koho jsem / nejsem".
 export default function FitSection({ content }) {
+  
   return (
-    <section className="py-16 md:py-24 bg-white">
-      <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
-        <div className="nadpisPage mb-6 md:mb-8 leading-tight w-full flex flex-col md:flex-row justify-between">
-          <div className="text-left">{content.title}</div>
-          <div className="type-body text-neutral-400 font-normal text-right md:min-w-fit md:self-end">{content.not_for_description}</div>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* * Pro koho jsem */}
-          
-          <div className="p-6 bg-brand-green/10 rounded-2xl border border-brand-green/25">
-            <h3 className="type-h2 mb-6 text-gray-900">
-              {content.for_title}
-            </h3>
+    <SectionShell id="pro-koho" className="bg-brand-offwhite">
+      <Reveal>
+        <h2 className="type-h1 text-modra2 mb-4 max-w-2xl">{content.title}</h2>
+        <p className="type-body-lg text-neutral-700 mb-14 max-w-3xl">
+          {content.description}
+        </p>
 
-            <ul className="space-y-1 md:space-y-2">
-              {content.for.map((item, index) => (
-                <li key={index} className="flex items-start">
-                  <span className="text-brand-green mr-2 font-bold">•</span>
-                  <span className="type-body text-gray-700">{item}</span>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+          <div>
+            <p className="label-meta text-modra2 mb-6">{content.forTitle}</p>
+            <ul className="space-y-2">
+              {content.for.map((item) => (
+                <li
+                  key={item}
+                  className="flex items-start type-body text-neutral-700 gap-2"
+                >
+                  <span className="text-green-600 text-2xl shrink-0 font-bold" aria-hidden>
+                    +
+                  </span>
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
           </div>
-          
-          {/* * Pro koho nejsem */}
-          <div className="p-6 bg-brand-accent/5 rounded-2xl border border-brand-accent/20">
-            <h3 className="type-h2 mb-6 text-gray-900">
-              {content.not_for_title}
-            </h3>
-            <ul className="space-y-1 md:space-y-2">
-              {content.not_for.map((item, index) => (
-                <li key={index} className="flex items-start">
-                  <span className="text-brand-accent mr-2 font-bold">•</span>
-                  <span className="type-body text-gray-700">{item}</span>
+
+          <div className="md:border-l md:border-neutral-200 md:pl-10 lg:pl-14">
+            <p className="label-meta text-modra2 mb-6">{content.notForTitle}</p>
+            <ul className="space-y-2">
+              {content.notFor.map((item) => (
+                <li
+                  key={item}
+                  className="flex items-start type-body text-neutral-700 gap-2"
+                >
+                  <span className="text-red-600 text-2xl shrink-0 font-bold" aria-hidden>
+                    −
+                  </span>
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
-                
           </div>
         </div>
-      </div>
-    </section>
+      </Reveal>
+    </SectionShell>
   );
 }
-

@@ -55,15 +55,16 @@ Layout: jednoduchý, dvousloupcový (desktop), jednokolonový (mobile).
 
 **Pořadí sekcí:**
 1. Header
-2. Hero (tmavé pozadí, 2 CTA, fotka, trust strip)
-3. Proof strip (důkazní body)
-4. Problem – „Když web, data a procesy přestanou držet pohromadě“
-5. Services – 4 karty + odkazy na `/sluzby/[slug]`
-6. Case studies preview – 4 featured projekty
-7. Process – 5 kroků, „Nezačínám grafikou ani kódem“
-8. Pricing – orientační ceny
-9. About preview – `#o-mne`
-10. Contact – `#kontakt`
+2. Hero (problém + filtr trust strip + product vizuál)
+3. Proof strip (konkrétní důkazy)
+4. Problem — krátký framing
+5. Fit — Pro koho ano / ne
+6. Case studies preview — důkaz před nabídkou
+7. Services — 3 karty + ceny
+8. Recenze
+9. Process — 6 kroků
+10. Pricing — orientační ceny + retainer
+11. Contact — kvalifikovaný formulář
 
 **Data:** `app/data/*.js` agregovaná přes `content.js`.
 
@@ -116,21 +117,22 @@ Na konci krátké shrnutí typu:
 ### 2.3 Sekce „S čím vám pomůžu“ (Služby / Řešení)
 
 **Cíl:**  
-Prezentovat tři hlavní pilíře služeb, včetně stručného popisu a orientační ceny.
+Prezentovat tři hlavní pilíře služeb (AI a automatizace jsou součástí, ne čtvrtý obor).
 
 **Layout:**
 - Nadpis + krátký úvodní odstavec
 - Pod tím 3 karty vedle sebe (na desktopu), na mobilu pod sebou:
-  1. UX & Web Consulting
-  2. Web Leadership (Fractional CTO)
-  3. High-end Web / Redesign
+  1. Diagnostika digitálního problému
+  2. Datově řízený web
+  3. Klientský portál / interní systém
 
 Každá karta obsahuje:
 - název služby
-- 2–4 věty popisu
+- situace + výsledek
 - bullet list „Co získáte“
-- orientační cenu („od X Kč“ nebo rozmezí)
-- mini CTA (např. „Chci toto řešení“ → scroll na kontakt)
+- CTA sekce → kontakt
+
+Data: `app/data/servicesData.js`
 
 ---
 
@@ -215,17 +217,16 @@ Nastavit očekávání, ukázat úroveň cen, ale nezabíjet flexibilitu.
 
 **Layout:**
 - Nadpis
-- Krátké vysvětlení, že cena závisí na rozsahu a cílech
-- 3 boxy (pro 3 hlavní služby):
-  - UX & Web Consulting
-  - Web Leadership
-  - High-end web / redesign
+- Krátké vysvětlení, že cena závisí na problému a odpovědnosti výsledku
+- 5 boxů + callout úvodního posouzení:
+  1. Diagnostika — od 9 000 Kč
+  2. Automatizace konkrétního procesu — od 25 000 Kč
+  3. Datově řízený web — od 55 000 Kč
+  4. Klientský portál / interní systém — od 90 000 Kč
+  5. Průběžný digitální rozvoj — od 12 000 Kč / měsíc
+  6. Úvodní posouzení vhodnosti — zdarma
 
-Každý box:
-- název
-- krátký popis
-- orientační cena / rozmezí
-- poznámka „konkrétní nabídku připravím po úvodní konzultaci“
+Data: `app/data/pricingData.js`
 
 ---
 

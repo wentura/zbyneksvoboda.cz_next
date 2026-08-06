@@ -1,13 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer components {
-  /* Central typography system */
+  /* Central typography system — Nordic / Swiss */
   .type-meta {
     @apply text-sm font-medium;
     font-family: var(--font-montserrat), sans-serif;
     font-weight: 400;
     font-style: normal;
+  }
+  .label-meta {
+    @apply text-xs font-semibold uppercase tracking-[0.12em] text-neutral-500;
+    font-family: var(--font-montserrat), sans-serif;
   }
   .type-body {
     @apply text-sm md:text-base leading-relaxed;
@@ -16,40 +21,45 @@
     font-style: normal;
   }
   .type-body-lg {
-    @apply text-lg md:text-xl leading-relaxed;
+    @apply text-base md:text-lg leading-relaxed;
     font-family: var(--font-montserrat), sans-serif;
     font-weight: 400;
     font-style: normal;
   }
   .type-h3 {
-    @apply text-lg md:text-xl font-semibold leading-tight;
+    @apply text-lg md:text-xl font-semibold leading-tight tracking-tight;
     font-family: var(--font-montserrat), sans-serif;
     font-weight: 600;
     font-style: normal;
   }
   .type-h2 {
-    @apply text-2xl md:text-3xl font-semibold leading-tight;
+    @apply text-2xl md:text-4xl font-semibold leading-tight tracking-tight;
     font-family: var(--font-montserrat), sans-serif;
     font-weight: 600;
     font-style: normal;
   }
   .type-h1 {
-    @apply text-2xl md:text-3xl font-bold leading-tight;
+    @apply text-3xl md:text-4xl font-bold leading-[1.1] tracking-tight;
     font-family: var(--font-montserrat), sans-serif;
     font-weight: 700;
     font-style: normal;
   }
   .type-hero-title {
-    @apply text-2xl md:text-4xl font-extrabold leading-tight;
+    @apply text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.08] tracking-tight;
     font-family: var(--font-montserrat), sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     font-style: normal;
   }
   .type-hero {
-    @apply text-4xl md:text-6xl font-extrabold leading-tight;
+    @apply text-4xl md:text-6xl font-bold leading-tight tracking-tight;
     font-family: var(--font-montserrat), sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     font-style: normal;
+  }
+  .type-display-num {
+    @apply text-4xl md:text-5xl font-bold tabular-nums tracking-tight text-modra2;
+    font-family: var(--font-montserrat), sans-serif;
+    font-weight: 700;
   }
 
   .odkaz {
@@ -58,7 +68,7 @@
   strong {
     font-weight: 700 !important;
   }
-  /* Legacy helper kept for backwards compatibility */
+
   .nadpisPage {
     @apply type-h2 tracking-tight text-modra2;
     font-style: normal;
@@ -76,46 +86,53 @@
   .heroJmeno {
     @apply type-h2 text-gray-900 tracking-tight;
     font-family: var(--font-montserrat), sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     font-style: normal;
   }
   .nadpisPortfolio {
     @apply type-h2 text-gray-900 tracking-tight;
-    font-family: var(--font-notoserif), serif;
+    font-family: var(--font-montserrat), sans-serif;
     font-weight: 700;
     font-style: normal;
   }
+
+  /* Swiss / Nordic CTA — sharp corners, navy primary */
   .ctaBtnPrimary {
-    @apply inline-flex items-center justify-center rounded-full px-6 py-3 type-body font-semibold bg-brand-accent text-white hover:opacity-90 transition no-underline;
+    @apply inline-flex items-center justify-center rounded-sm px-6 py-3 type-body font-semibold bg-brand-accent text-white hover:opacity-90 transition no-underline;
     font-family: var(--font-montserrat), sans-serif;
   }
   .ctaBtnSecondary {
-    @apply inline-flex items-center justify-center rounded-full px-6 py-3 type-body font-semibold border border-brand-offwhite/40 text-brand-offwhite hover:bg-brand-offwhite hover:text-modra2 transition no-underline;
+    @apply inline-flex items-center justify-center rounded-sm px-6 py-3 type-body font-semibold border border-brand-offwhite/50 text-brand-offwhite hover:bg-brand-offwhite hover:text-modra2 transition no-underline;
     font-family: var(--font-montserrat), sans-serif;
   }
   .ctaBtnSecondaryLight {
-    @apply inline-flex items-center justify-center rounded-full px-6 py-3 type-body font-semibold border border-modra2 text-modra2 hover:bg-modra2 hover:text-brand-offwhite transition no-underline;
+    @apply inline-flex items-center justify-center rounded-sm px-6 py-3 type-body font-semibold border border-modra2 text-modra2 hover:bg-modra2 hover:text-brand-offwhite transition no-underline;
     font-family: var(--font-montserrat), sans-serif;
   }
   .ctaBtnDark {
-    @apply px-6 py-3 bg-black text-white hover:opacity-90 font-bold;
+    @apply px-6 py-3 rounded-sm bg-modra2 text-white hover:opacity-90 font-semibold;
   }
   .ctaBtnDarkSecondary {
-    @apply px-6 py-3 border border-modra2 hover:bg-modra2 hover:text-white font-bold ;
+    @apply px-6 py-3 rounded-sm border border-modra2 hover:bg-modra2 hover:text-white font-semibold;
   }
   .ctaBtnSecondaryDark {
-    @apply inline-flex px-6 py-3 type-body font-semibold text-white bg-brand-accent justify-center rounded-full focus:outline-none hover:opacity-90 transition no-underline;
+    @apply inline-flex px-6 py-3 type-body font-semibold text-white bg-modra2 justify-center rounded-sm focus:outline-none hover:opacity-90 transition no-underline;
     font-family: var(--font-montserrat), sans-serif;
   }
 
-.heroBtn {
-  @apply inline-flex items-center justify-center rounded-full px-6 md:px-8 py-3 md:py-4 bg-brand-navy text-white font-semibold type-body transition-all duration-150 hover:-translate-y-0.5 hover:bg-brand-navy2;
-}
-.heroBtnSecondary {
-  @apply inline-flex items-center justify-center rounded-full px-6 md:px-8 py-3 md:py-4 border border-accent text-accent font-semibold type-body transition hover:bg-accent hover:text-white hover:no-underline;
-}
+  .heroBtn {
+    @apply inline-flex items-center justify-center rounded-sm px-6 md:px-8 py-3 md:py-4 bg-brand-navy text-white font-semibold type-body transition hover:bg-brand-navy2 no-underline;
+  }
+  .heroBtnSecondary {
+    @apply inline-flex items-center justify-center rounded-sm px-6 md:px-8 py-3 md:py-4 border border-modra2 text-modra2 font-semibold type-body transition hover:bg-modra2 hover:text-white hover:no-underline;
+  }
 
-
+  .hairline {
+    @apply border-t border-neutral-200;
+  }
+  .hairline-l {
+    @apply border-l border-neutral-200;
+  }
 
   .bg-modra2 {
     background: var(--brand-navy);
@@ -130,6 +147,7 @@
     line-height: 111% !important;
   }
 }
+
 .cookie-consent {
   z-index: 9999 !important;
 }
@@ -147,19 +165,20 @@
   animation: page-fade-in 0.3s ease-in-out;
 }
 
-/* === Swiss style overrides (minimal, typographic) === */
+/* === Nordic / Swiss tokens === */
 :root {
   --brand-navy: #0d1824;
   --brand-navy-2: #101923;
-  --brand-offwhite: #f4f3f0;
-  --brand-accent: #e85d3f;
+  --brand-offwhite: #f5f6f8;
+  --brand-accent: #c45a3a;
   --brand-green: #168a5b;
   --accent: #0d1824;
 }
+
 html,
 body {
   background: var(--brand-offwhite);
-  color: #000000;
+  color: #111111;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -169,22 +188,52 @@ a {
 a:hover {
   text-decoration: underline;
 }
-/* Utility to keep headings tight and body relaxed */
 h1,
 h2,
 h3 {
   line-height: 1.1;
 }
 p {
-  line-height: 1.6;
+  line-height: 1.65;
 }
-/* Simple container rhythm can be handled by Tailwind, but ensure images don't overflow */
 img,
 svg,
 video {
   max-width: 100%;
   height: auto;
 }
-.redborder  * {
-  border: 1px solid red;
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  animation: reveal-up 0.4s ease-out both;
+}
+
+@keyframes contact-tilt {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(3deg);
+  }
+}
+
+.contact-photo-tilt {
+  animation: contact-tilt 0.7s ease-in-out 1s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .contact-photo-tilt {
+    animation: none;
+  }
 }

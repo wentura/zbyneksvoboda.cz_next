@@ -9,29 +9,24 @@ Jazyk: čeština, vykání, profesionální, lidský, bez přehnané omáčky.
 
 ## 1. Hero sekce
 
+Live zdroj: `app/data/heroData.js`.
+
 **Hlavní nadpis (H1):**
 
-> Pomáhám firmám dělat lepší rozhodnutí v digitálu.
+> Když zakázky, data a nabídka žijí v e-mailech a tabulkách, firma ztrácí přehled i obchod.
 
 **Podnadpis:**
 
-> Jsem digitální konzultant, stratég a vývojář.  
-> Pomáhám firmám ujasnit si směr, postavit funkční web a dlouhodobě ho rozvíjet tak, aby podporoval jejich byznys – ne ho brzdil.
+> Pomáhám B2B a výrobním firmám zpřehlednit digitální provoz: produktovou nabídku, zakázky, dokumenty a opakovanou ruční práci. Výsledkem je datově řízený web, automatizace konkrétního procesu nebo klientský portál — podle skutečného problému, ne podle šablony.
 
-**Doplňující text:**
+**Trust strip (filtr):**
 
-> Web nevnímám jako vizitku.  
-> Beru ho jako nástroj, který má jasný cíl, strukturu a měřitelný přínos.
+- Ne WordPress šablony  
+- Ne správa sociálních sítí  
+- Investice od desítek tisíc — ne web do pátku  
 
-**Bulletpointy:**
-
-- nejdřív směr, potom řešení  
-- byznys, UX a technologie v jednom kontextu  
-- spolupráce založená na důvěře a dlouhodobém partnerství  
-
-**Primární CTA:**
-
-> Domluvit nezávaznou konzultaci
+**Primární CTA:** Ověřit vhodnost spolupráce  
+**Sekundární CTA:** Ukázat výsledky  
 
 ---
 
@@ -90,78 +85,66 @@ Pomáhám firmám přemýšlet o webu v širším kontextu:
 
 ## 3. Služby / Řešení
 
-### 3.1 Strategická webová konzultace
+**Nadpis sekce:**
 
-**Podnadpis:**
+> Nejdřív problém. Potom správné řešení.
 
-> Když potřebujete nadhled, jasno a konkrétní doporučení.
+**Úvod:**
 
-**Text:**
+Digitální řešení nemusí znamenat jen nový web nebo velkou aplikaci. Nejdřív mapuji současný stav – data, procesy a opakovanou ruční práci – a hledám nejmenší řešení s měřitelným přínosem. Podle situace navrhnu web, automatizaci konkrétního procesu, portál, interní systém nebo ověření, kde dává smysl bezpečně využít AI.
 
-Podívám se na váš web očima zákazníka i odborníka.  
-Analyzuji strukturu, obsah, UX, důvěryhodnost i technické řešení – a pojmenuji, co dává smysl zlepšit.
+Live zdroj textů: `app/data/servicesData.js`.
+
+### 3.1 Diagnostika digitálního problému
+
+**Situace:** Není jasné, jestli řešit web, portál, systém, automatizaci – nebo nejdřív data a ruční práci.
+
+**Výsledek:** Rozhodovací dokument s prioritami a návrhem první fáze.
 
 **Co získáte:**
 
-- jasně pojmenované problémy a příležitosti  
-- konkrétní návrhy změn  
-- doporučení k obsahu, UX a technické architektuře  
-- srozumitelnou roadmapu dalších kroků
+- přehled webu, procesů, dat a nástrojů  
+- hlavní ztráty, rizika a priority  
+- možnosti automatizace a vhodné/nevhodné AI  
+- návrh realistické první fáze
 
-**Orientační cena:**
-
-> od 5 000 Kč
+**Orientační cena:** od 9 000 Kč
 
 ---
 
-### 3.2 Web Leadership
+### 3.2 Datově řízený web
 
-**Podnadpis:**
+**Situace:** Web má vysvětlit složitější nabídku, produkty, varianty nebo dokumenty, ale působí jako statická brožura.
 
-> Dlouhodobé vedení webových projektů bez nutnosti mít vlastního „webového šéfa".
-
-**Úvodní věta:**
-
-> Jsem partner pro firmy, které nechtějí web řešit operativně, ale strategicky.
-
-**Text:**
-
-Pomáhám držet směr, kvalitu a souvislosti napříč webem, e-shopem nebo interními systémy.
+**Výsledek:** Web s jasnou strukturou produktů a obsahu, lepší poptávkou a daty připravenými na rozvoj.
 
 **Co získáte:**
 
-- dlouhodobý dohled nad webem a digitálními projekty  
-- pomoc s výběrem dodavatelů a technologií  
-- kontrolu kvality a smysluplnosti řešení  
-- partnera, který rozumí byznysu i technické stránce věci
+- struktura produktů, variant a parametrů  
+- lepší cesta k poptávce  
+- dokumenty, katalogy a strukturovaná data  
+- příprava na automatizaci a AI nad ověřenými daty
 
-**Orientační cena:**
-
-> od 10 000 Kč měsíčně
+**Orientační cena:** od 55 000 Kč
 
 ---
 
-### 3.3 High-end web / redesign
+### 3.3 Klientský portál / interní systém
 
-**Podnadpis:**
+**Situace:** Zakázky, klienti, dokumenty a schvalování běží přes e-maily a tabulky.
 
-> Když nechcete jen nový web, ale funkční systém pro prezentaci firmy.
-
-**Text:**
-
-Navrhnu a zrealizuji web, který vychází z vašich cílů, dat a reálných potřeb zákazníků.  
-Vhodné pro firmy, které chtějí web jako stabilní součást svého podnikání – ne jednorázový projekt.
+**Výsledek:** Systém sjednotí proces, data, role a komunikaci – včetně workflow a automatizace.
 
 **Co získáte:**
 
-- jasné pozicování a strukturu webu  
-- promyšlený UX návrh a obsahovou kostru  
-- moderní technické řešení připravené na další rozvoj  
-- web optimalizovaný pro rychlost, mobil a dlouhodobou udržitelnost
+- jedno místo pravdy  
+- role, stavy, schvalování a notifikace  
+- automatizace a integrace  
+- reporting a auditní historie
 
-**Orientační cena:**
+**Orientační cena:** od 90 000 Kč
 
-> od 30 000 Kč
+**Poznámka:** AI není samostatná služba na homepage. Je součástí diagnostiky, datové připravenosti webu a portálů – jen tam, kde má měřitelný přínos.
 
 ---
 
@@ -307,23 +290,23 @@ Pod recenzemi může být krátká věta:
 
 ## 7. Pro koho jsem / nejsem
 
-**Nadpis:**
+Live zdroj: `app/data/fitData.js`. Sekce je na homepage hned po Problem.
 
-> Pro koho jsem – a pro koho ne
+**Nadpis:** Pro koho dává spolupráce smysl
 
-**Ideální spolupráce:**
+**Dává smysl, když:**
 
-- jednotlivci a firmy, které chtějí mít ve svém digitálu jasno  
-- projekty, které berou web jako důležitý nástroj, ne nutnost  
-- klienti, kteří ocení otevřenou komunikaci a upřímnou zpětnou vazbu  
-- dlouhodobé spolupráce založené na důvěře
+- máte B2B nebo výrobní nabídku, kterou web neumí srozumitelně vysvětlit  
+- zakázky, klienti, dokumenty nebo schvalování běží přes e-maily a Excel  
+- potřebujete jedno místo pravdy pro tým nebo klienty  
+- chcete investovat do řešení problému, ne do nejlevnější šablony  
 
-**Kdy spolupráce nedává smysl:**
+**Nedává smysl, když:**
 
-- když je hlavním kritériem nejnižší cena  
-- „rychlý web do pátku" bez cíle a zadání  
-- zadání typu „udělejte něco hezkého"  
-- projekty, které nechtějí přemýšlet o svém byznysu
+- hledáte WordPress šablonu nebo levný web „do pátku“  
+- chcete správu Facebooku, Instagramu nebo obsah na sociální sítě  
+- hlavním kritériem je nejnižší cena  
+- nemáte provozní ani obchodní problém — jen chcete „být online“  
 
 ---
 
@@ -335,26 +318,23 @@ Pod recenzemi může být krátká věta:
 
 **Úvodní odstavec:**
 
-Každý projekt je jiný.  
-Cena vždy vychází z reálného rozsahu, cílů a nároků.
+Ceny berte jako rámec pro první rozhodnutí. Neprodávám počet podstránek ani samotné hodiny kódu.
+
+Live zdroj: `app/data/pricingData.js`.
 
 ---
 
-**Strategická webová konzultace**
+**Diagnostika digitálního problému** — od 9 000 Kč
 
-> od 5 000 Kč
+**Automatizace konkrétního procesu** — od 25 000 Kč
 
----
+**Datově řízený web** — od 55 000 Kč
 
-**Web Leadership (měsíčně)**
+**Klientský portál / interní systém** — od 90 000 Kč
 
-> od 10 000 Kč
+**Průběžný digitální rozvoj** — od 12 000 Kč / měsíc
 
----
-
-**High-end web / redesign**
-
-> od 30 000 Kč
+**Úvodní posouzení vhodnosti spolupráce** — zdarma
 
 ---
 
