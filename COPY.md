@@ -13,73 +13,52 @@ Live zdroj: `app/data/heroData.js`.
 
 **Hlavní nadpis (H1):**
 
-> Když zakázky, data a nabídka žijí v e-mailech a tabulkách, firma ztrácí přehled i obchod.
+> B2B weby a interní systémy pro firmy, kterým obchod a zakázky přerostly e-mail a Excel.
 
 **Podnadpis:**
 
-> Pomáhám B2B a výrobním firmám zpřehlednit digitální provoz: produktovou nabídku, zakázky, dokumenty a opakovanou ruční práci. Výsledkem je datově řízený web, automatizace konkrétního procesu nebo klientský portál — podle skutečného problému, ne podle šablony.
+> Pomáhám výrobním a servisním firmám zpřehlednit nabídku, poptávky, dokumenty a zakázkové procesy. Nejdřív zjistíme, kde vzniká ztráta. Potom navrhnu nejmenší řešení, které ji odstraní.
 
-**Trust strip (filtr):**
+**Trust strip:**
 
-- Ne WordPress šablony  
-- Ne správa sociálních sítí  
-- Investice od desítek tisíc — ne web do pátku  
+- B2B a výrobní firmy  
+- Diagnostika před investicí  
+- Realizace od desítek tisíc  
 
-**Primární CTA:** Ověřit vhodnost spolupráce  
+**Primární CTA:** Probrat konkrétní problém  
 **Sekundární CTA:** Ukázat výsledky  
 
 ---
 
-## 2. Problém – proč většina webů nefunguje
+## 2. Dva typické problémy
+
+Live zdroj: `app/data/problemData.js`.
 
 **Nadpis:**
 
-> Spousta webů vznikla s dobrým úmyslem.
+> Dva typické problémy, se kterými firmy přicházejí
 
-**Podnadpis:**
+**Cesta A — Neumíme dobře prodat naši nabídku**
 
-> Dnes ale firmám nepomáhá růst.
+Srozumitelnější nabídka → lepší kvalifikace poptávek. Typicky vede k datově řízenému webu.
 
-**Úvodní odstavec:**
+**Cesta B — Zakázky a administrativa nám přerostly přes hlavu**
 
-Mnoho firem má web, který „nějak funguje".  
-Je online, je hezký, ale nepřináší nové poptávky ani lepší obchodní výsledky.
+Méně administrativy → jedno místo pravdy. Typicky vede k automatizaci nebo portálu.
 
-Ne proto, že by byl špatně nakódovaný.  
-Většinou chybí jasný záměr a struktura.
+**Závěr:**
 
-**Typické situace, se kterými se setkávám:**
-
-- návštěvník během pár vteřin nepochopí, co firma nabízí  
-- web mluví hlavně o firmě, ne o problémech zákazníků  
-- uživatel neví, kam jít dál a co je dalším krokem  
-- změny se dělají pocitově, bez dat a zpětné vazby  
-
-**Závěrečná věta:**
-
-Web pak žije vlastním životem – a firma s ním.
+> Nejdřív pojmenujeme, kde digitál brzdí obchod nebo provoz. Teprve potom stavíme řešení.
 
 ---
 
 ## 2.1. Role / Pozicování
 
-**Nadpis:**
+**Klíčová věta (live):**
 
-> Moje role nezačíná u designu ani u kódu.
+> Pomáhám B2B firmám odstranit konkrétní obchodní nebo provozní ztrátu. Web, automatizace nebo systém je až prostředek.
 
-**Text:**
-
-Pomáhám firmám přemýšlet o webu v širším kontextu:
-
-- jakou má roli v byznysu  
-- koho má oslovovat  
-- co má podporovat  
-- a jak se má vyvíjet v čase  
-
-**Klíčová věta:**
-
-> Web je výsledek rozhodnutí.  
-> Ne jejich začátek.
+Řešení navrhuji podle obchodního a provozního problému, ne podle předem vybrané platformy.
 
 ---
 
@@ -91,24 +70,17 @@ Pomáhám firmám přemýšlet o webu v širším kontextu:
 
 **Úvod:**
 
-Digitální řešení nemusí znamenat jen nový web nebo velkou aplikaci. Nejdřív mapuji současný stav – data, procesy a opakovanou ruční práci – a hledám nejmenší řešení s měřitelným přínosem. Podle situace navrhnu web, automatizaci konkrétního procesu, portál, interní systém nebo ověření, kde dává smysl bezpečně využít AI.
+Řešení navrhuji podle obchodního a provozního problému, ne podle předem vybrané platformy. Nejdřív mapuji data, procesy a ruční práci a hledám nejmenší řešení s měřitelným přínosem.
 
 Live zdroj textů: `app/data/servicesData.js`.
 
-### 3.1 Diagnostika digitálního problému
+### 3.1 Digitální diagnostika firmy
 
-**Situace:** Není jasné, jestli řešit web, portál, systém, automatizaci – nebo nejdřív data a ruční práci.
+**Rozsah:** 90 minut s vedením + analýza stavu  
+**Výstup do 5 pracovních dnů:** priority, ztráty, rizika, doporučená 1. fáze, orientační investice, plán 90 dní  
+**Klíčová věta:** Výstup je použitelný i v případě, že následnou realizaci nebudu dělat já.
 
-**Výsledek:** Rozhodovací dokument s prioritami a návrhem první fáze.
-
-**Co získáte:**
-
-- přehled webu, procesů, dat a nástrojů  
-- hlavní ztráty, rizika a priority  
-- možnosti automatizace a vhodné/nevhodné AI  
-- návrh realistické první fáze
-
-**Orientační cena:** od 9 000 Kč
+**Cena:** 10 000 Kč
 
 ---
 
@@ -117,13 +89,6 @@ Live zdroj textů: `app/data/servicesData.js`.
 **Situace:** Web má vysvětlit složitější nabídku, produkty, varianty nebo dokumenty, ale působí jako statická brožura.
 
 **Výsledek:** Web s jasnou strukturou produktů a obsahu, lepší poptávkou a daty připravenými na rozvoj.
-
-**Co získáte:**
-
-- struktura produktů, variant a parametrů  
-- lepší cesta k poptávce  
-- dokumenty, katalogy a strukturovaná data  
-- příprava na automatizaci a AI nad ověřenými daty
 
 **Orientační cena:** od 55 000 Kč
 
@@ -135,13 +100,6 @@ Live zdroj textů: `app/data/servicesData.js`.
 
 **Výsledek:** Systém sjednotí proces, data, role a komunikaci – včetně workflow a automatizace.
 
-**Co získáte:**
-
-- jedno místo pravdy  
-- role, stavy, schvalování a notifikace  
-- automatizace a integrace  
-- reporting a auditní historie
-
 **Orientační cena:** od 90 000 Kč
 
 **Poznámka:** AI není samostatná služba na homepage. Je součástí diagnostiky, datové připravenosti webu a portálů – jen tam, kde má měřitelný přínos.
@@ -150,230 +108,121 @@ Live zdroj textů: `app/data/servicesData.js`.
 
 ## 4. Jak spolupráce probíhá (Proces)
 
+Live zdroj: `app/data/processData.js`.
+
 **Nadpis:**
 
-> Jak spolupráce probíhá
-
-**Úvodní text:**
-
-> Spolupráci beru jako dialog.
-
-Nejdřív potřebuji pochopit vás, váš byznys a kontext.  
-Teprve potom řešíme web.
+> Diagnostika. Rozhodnutí. Realizace.
 
 **Kroky:**
 
-1. **Nezávazná konzultace (30 minut)**  
-   Seznámíme se, ujasníme cíle a očekávání.
-
-2. **Analýza a audit**  
-   Web, data, konkurence, cílové skupiny.
-
-3. **Návrh strategie a řešení**  
-   Přehledný plán, podle kterého se dá rozhodovat i postupovat.
-
-4. **Realizace nebo vedení projektu**  
-   Buď řešení realizuji, nebo vedu váš tým / dodavatele.
-
-5. **Ladění a měření výsledků**  
-   Práce s daty, chováním uživatelů a reálným fungováním webu.
-
-6. **Dlouhodobá spolupráce (volitelně)**  
-   Pokud dává smysl, pokračujeme dál.
+1. **Diagnostika** — kde vzniká ztráta (web / procesy / data)
+2. **Rozhodnutí** — co řešit první, orientační investice, co nechat
+3. **Realizace** — nejmenší smysluplná verze + případný rozvoj
 
 ---
 
 ## 5. Případové studie
 
+Live zdroj: `app/data/caseStudiesData.js`. Primární důkaz: **UGHighers**.
+
 **Nadpis:**
 
-> Případové studie
+> Výsledky, kde nejde jen o web
 
-### 5.1 Autokemp Kokořín – od starého webu k plné sezóně
+### 5.1 UGHighers – provozní systém místo Excelů
 
-**Co klient řešil:**
+**Problém:** Zakázky, nabídky a shipping běžely přes e-maily a Excel.
 
-Autokemp Kokořín měl zastaralý web, který se špatně zobrazoval na mobilu, byl nepřehledný a neodpovídal současnému standardu.  
-Hosté na webu těžko hledali základní informace a rezervace přes web nebyly prioritním kanálem.
+**Řešení:** Klíčový provozní systém — jedno místo pravdy od nabídky po shipping.
 
-**Co jsem udělal:**
+**Dopad:** 800+ zakázek, 10 měsíců ostrého provozu, tým i klienti se stejnými daty bez paralelních Excelů.
 
-- navrhl jsem novou strukturu webu podle toho, co hosté nejčastěji hledají (ceny, fotky, možnosti ubytování, okolí)  
-- připravil jsem moderní responzivní web s důrazem na jednoduchost a rychlost  
-- zjednodušil jsem cestu k rezervaci a jasně oddělil sekce ubytování, služeb a kontaktů
+**Otázky na klienta (doplnit metriky):** počet interních uživatelů, co se přestalo přepisovat, zkrácení nabídka→schválení, self-service klientů.
 
-**Výsledek:**
+### 5.2 SvouCestou.info – školní interní systém
 
-Web, který působí důvěryhodně, je snadno použitelný na mobilu a lépe podporuje obsazenost kempu v sezóně.
-
----
-
-### 5.2 KolemKrku – e-shop, kde produkty konečně vyniknou
-
-**Co klient řešil:**
-
-E-shop s ručně vyráběnými produkty na Shoptetu nedokázal na mobilu dobře odprezentovat produkty.  
-Layout byl přeplácaný a zákazníci se hůř orientovali v kategoriích.
-
-**Co jsem udělal:**
-
-- upravil jsem strukturu kategorií a produktových stránek  
-- zjednodušil jsem zobrazení produktů s důrazem na fotky a jasný popis  
-- zlepšil jsem vizuální hierarchii informací a CTA prvků
-
-**Výsledek:**
-
-Přehlednější e-shop, kde produkty vyniknou a zákazník se snáze dostane od úvodní stránky až k dokončení objednávky.
-
----
-
-### 5.3 Zodpovědná výuka – bezpečný přesun na Shoptet
-
-**Co klient řešil:**
-
-E-shop s výukovými materiály běžel na WordPressu/WooCommerce, byl technicky náročný na správu a čas od času nestabilní.  
-Majitelka potřebovala řešení, které bude dlouhodobě udržovatelné a méně technicky náročné.
-
-**Co jsem udělal:**
-
-- navrhl jsem přechod na platformu Shoptet jako vhodnější řešení pro tento typ projektu  
-- pomohl jsem s migrací obsahu a nastavením struktury  
-- zaměřil jsem se na srozumitelnost pro rodiče a učitele a jednoduché dokončení nákupu
-
-**Výsledek:**
-
-Stabilní e-shop, který šetří čas i nervy majitelce a je dobře použitelný pro cílovou skupinu.
+Interní systém sjednocuje práci týmu. Rodičovský portál v přípravě.
 
 ---
 
 ## 6. Recenze
 
-**Nadpis:**
-
-> Co o spolupráci říkají klienti
-
-**Úvodní odstavec:**
-
-Spolupracuji s klienty, kteří očekávají kvalitu, spolehlivost a lidský přístup.  
-Takhle popisují naši spolupráci:
-
-(Převzaté / lehce učesané existující texty:)
-
----
-
-**Běla Šestáková – SvouCestou.info**
-
-> Skvělá spolupráce – vše bylo zapracováno k oboustranné spokojenosti, včetně rychlých úprav.  
-> Výsledek je kvalitní a profesionální. Moc děkujeme!
-
----
-
-**Jakub Skála – AutokempKokorin.cz**
-
-> Se spoluprací se Zbyňkem Svobodou jsme moc spokojeni.  
-> Stránky pro Autokemp Kokořín, které pro nás udělal, odpovídají aktuálnímu trendu a hosté na ně reagují velmi pozitivně.
-
----
-
-**Kateřina Hrabíková – Zodpovědná výuka**
-
-> Velmi jsem ocenila pečlivost a ochotu přizpůsobit se mým potřebám.  
-> Každý detail byl promyšlen a díky tomu teď mám web, který je plně funkční a snadno použitelný pro naše návštěvníky.
-
----
-
-Pod recenzemi může být krátká věta:
-
-> Dlouhodobě spolupracuji mimo jiné s projekty jako Doomantia, AntonieEmma, Hexfit, Kolem-krku, Kokostezky, Zoe8, Zodpovědný Hub a dalšími.
+Homepage: jen business / procesní reference (Jan Svárovský, Běla Šestáková, Kateřina Hrabíková).
+Vulgarita a „super práce“ execution-only reference nejsou na hlavní prodejní vrstvě.
 
 ---
 
 ## 7. Pro koho jsem / nejsem
 
-Live zdroj: `app/data/fitData.js`. Sekce je na homepage hned po Problem.
+Live zdroj: `app/data/fitData.js`. Sekce je na homepage **až po ceníku** (po důkazech).
 
 **Nadpis:** Pro koho dává spolupráce smysl
 
 **Dává smysl, když:**
 
-- máte B2B nebo výrobní nabídku, kterou web neumí srozumitelně vysvětlit  
-- zakázky, klienti, dokumenty nebo schvalování běží přes e-maily a Excel  
-- potřebujete jedno místo pravdy pro tým nebo klienty  
-- chcete investovat do řešení problému, ne do nejlevnější šablony  
+- máte B2B nebo výrobní nabídku, kterou web neumí srozumitelně vysvětlit
+- zakázky, klienti, dokumenty nebo schvalování běží přes e-maily a Excel
+- potřebujete jedno místo pravdy pro tým nebo klienty
+- chcete investovat do řešení problému, ne do nejlevnější šablony
 
 **Nedává smysl, když:**
 
-- hledáte WordPress šablonu nebo levný web „do pátku“  
-- chcete správu Facebooku, Instagramu nebo obsah na sociální sítě  
-- hlavním kritériem je nejnižší cena  
-- nemáte provozní ani obchodní problém — jen chcete „být online“  
+- hlavním kritériem je nejnižší cena
+- chcete jen správu Facebooku nebo obsah na sociální sítě
+- nemáte provozní ani obchodní problém — jen chcete „být online“
+- hledáte levný web „do pátku“ bez zájmu o výsledek
 
 ---
 
 ## 8. Orientační ceník
 
-**Nadpis:**
-
-> Orientační ceny
-
-**Úvodní odstavec:**
-
-Ceny berte jako rámec pro první rozhodnutí. Neprodávám počet podstránek ani samotné hodiny kódu.
-
 Live zdroj: `app/data/pricingData.js`.
 
----
-
-**Diagnostika digitálního problému** — od 9 000 Kč
-
-**Automatizace konkrétního procesu** — od 25 000 Kč
+**Digitální diagnostika firmy** — 10 000 Kč
 
 **Datově řízený web** — od 55 000 Kč
 
 **Klientský portál / interní systém** — od 90 000 Kč
 
+**Automatizace konkrétního procesu** — od 25 000 Kč
+
 **Průběžný digitální rozvoj** — od 12 000 Kč / měsíc
 
-**Úvodní posouzení vhodnosti spolupráce** — zdarma
+**Úvodní posouzení** — zdarma · CTA: Probrat konkrétní problém
 
 ---
 
-## 9. Kontakt / konzultace
+## 9. Kontakt / kvalifikace
 
 **Nadpis:**
 
-> Pojďme probrat váš web
+> Pojďme probrat konkrétní problém.
 
 **Text:**
 
-Možná cítíte, že by váš web mohl fungovat lépe.  
-Nemusíte mít jasno – od toho je úvodní konzultace.
+Napište, co dnes brzdí obchod nebo provoz — a proč to potřebujete řešit právě teď.
 
-Napište mi pár vět o vašem projektu. Ozvu se vám a domluvíme krátkou nezávaznou konzultaci.
+**Formulář:**
 
-**Formulář – popisky:**
+- Jméno a příjmení *
+- E-mail *
+- Co primárně řešíte? * (cesta A / B / automatizace / jiné)
+- Orientační investice (volitelné)
+- Web firmy (volitelné)
+- Co dnes nefunguje? *
+- Proč to potřebujete řešit právě teď? *
 
-- Jméno a příjmení  
-  - „Vaše jméno“  
-- E-mail  
-  - „vas@email.cz“  
-- Název firmy / webu (volitelné)  
-  - „např. vasweb.cz“  
-- Co aktuálně řešíte?  
-  - „Popište v pár větách projekt, web nebo problém, který chcete řešit…“
+**Tlačítko:** Odeslat popis problému
 
-**Tlačítko:**
+**Kontakty:**
 
-> Odeslat zprávu
-
-**Kontakty (pod nebo vedle formuláře):**
-
-> info@zbyneksvoboda.cz  
-> 773 68 77 92  
-> Nebužely 3, 277 34 Nebužely  
-> IČ: 74811002  
+> info@zbyneksvoboda.cz
+> 773 68 77 92
+> Nebužely 3, 277 34 Nebužely
+> IČ: 74811002
 > Nejsem plátcem DPH
 
 ---
 
-Tento dokument je základní zdroj textů. Při změnách pozicování nebo služeb je potřeba ho aktualizovat tak, aby odpovídal realitě a navazoval na `WIREFRAME.md` a `STYLEGUIDE.md`.
+Tento dokument je základní zdroj textů. Live pravda je v `app/data/*.js` a `copy.json`. Při změnách pozicování ho synchronizujte s `WIREFRAME.md` a `STYLEGUIDE.md`.

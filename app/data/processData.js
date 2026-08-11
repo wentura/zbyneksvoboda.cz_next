@@ -1,43 +1,25 @@
 export const processData = {
-  title: "Jak ze zmatku vznikne použitelné řešení",
+  title: "Diagnostika. Rozhodnutí. Realizace.",
   description:
-    "Nejdřív si ujasníme, co má digitální řešení firmě skutečně přinést. Teprve potom navrhuji web, automatizaci, portál nebo interní systém, který má šanci fungovat v reálném provozu.",
+    "Nejdřív zjistíme, kde vzniká ztráta. Pak se rozhodneme, co řešit první. Teprve potom stavíme nejmenší řešení, které má šanci fungovat v reálném provozu.",
   steps: [
     {
       number: "1",
-      title: "Rychlé ověření",
+      title: "Diagnostika",
       description:
-        "Krátce projdeme, co dnes nefunguje, co chcete zlepšit a jestli dává smysl pokračovat do placené diagnostiky.",
+        "Zmapujeme web, nabídku, zakázky, data a ruční práci. Pojmenujeme, kde vzniká ztráta času, přehledu nebo obchodních příležitostí.",
     },
     {
       number: "2",
-      title: "Mapování reality",
+      title: "Rozhodnutí",
       description:
-        "Podívám se na web, poptávky, zakázky, data, dokumenty, nástroje a způsob práce týmu – včetně míst, kde se ztrácí čas ruční prací.",
+        "Oddělíme priority od nápadů navíc. Dostanete doporučenou první fázi, orientační investici a jasný další krok — včetně toho, co teď řešit nemusíte.",
     },
     {
       number: "3",
-      title: "Pojmenování priorit",
+      title: "Realizace",
       description:
-        "Oddělíme skutečné problémy od nápadů navíc a určíme, co má největší dopad na obchod, provoz nebo přehled.",
-    },
-    {
-      number: "4",
-      title: "Návrh řešení",
-      description:
-        "Navrhnu, jestli má větší smysl web, automatizační sprint, portál, interní systém, datová vrstva nebo menší první fáze.",
-    },
-    {
-      number: "5",
-      title: "Uzavření rozsahu a realizace",
-      description:
-        "Dohodneme, co přesně patří do první verze, co počká na později, a řešení následně postavím nebo pomohu řídit jeho realizaci.",
-    },
-    {
-      number: "6",
-      title: "Spuštění a další rozvoj",
-      description:
-        "Po spuštění sledujeme, co řešení zjednodušilo. Pokud dává smysl, pokračujeme průběžným digitálním rozvojem – priority, měření a další menší kroky.",
+        "Postavím nejmenší smysluplnou verzi — web, automatizaci nebo portál. Po spuštění můžeme pokračovat průběžným rozvojem podle dopadu v provozu.",
     },
   ],
 };

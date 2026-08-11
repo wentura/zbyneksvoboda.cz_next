@@ -9,7 +9,7 @@ export default function RecenzeShort({ content }) {
   return (
     <section
       id="recenze"
-      className="py-20 md:py-28 bg-brand-offwhite scroll-mt-16"
+      className="py-20 md:py-28 bg-white scroll-mt-16"
     >
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
         <Reveal>
@@ -53,7 +53,7 @@ export default function RecenzeShort({ content }) {
           </div>
 
           <div className="pt-8 border-t border-neutral-200">
-            <p className="type-body text-neutral-700 mb-6 max-w-3xl">
+            <p className="type-body text-neutral-700 mb-6 max-w-4xl">
               {content.clientsLinePrefix}{" "}
               {otherClients.map((client, index) => (
                 <React.Fragment key={client}>

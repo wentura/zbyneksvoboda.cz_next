@@ -1,7 +1,7 @@
 export const servicesOverview = {
   title: "Nejdřív problém. Potom správné řešení.",
   description:
-    "Digitální řešení nemusí znamenat jen nový web nebo velkou aplikaci. Nejdřív mapuji data, procesy a ruční práci a hledám nejmenší řešení s měřitelným přínosem. Nedělám WordPress šablony ani správu sociálních sítí — pracuji s firmami, které řeší nabídku, zakázky nebo provozní chaos.",
+    "Řešení navrhuji podle obchodního a provozního problému, ne podle předem vybrané platformy. Nejdřív mapuji data, procesy a ruční práci a hledám nejmenší řešení s měřitelným přínosem — web, automatizace nebo portál podle situace.",
   gainTitle: "Co získáte",
   cta: null,
   ctaHref: "/#kontakt",
@@ -14,34 +14,34 @@ export const servicesOverview = {
 export const servicesData = [
   {
     slug: "diagnostika",
-    title: "Diagnostika digitálního problému",
+    title: "Digitální diagnostika firmy",
     situation:
       "Není jasné, jestli má firma řešit web, portál, interní systém, automatizaci procesu – nebo nejdřív zpřehlednit data a ruční práci?",
     outcome:
-      "Zmapujeme současný stav, pojmenujeme hlavní ztráty a určím nejmenší smysluplný další krok. Výstupem je rozhodovací dokument, ne seznam chyb.",
+      "Do 5 pracovních dnů dostanete rozhodovací dokument: priority, ztráty, rizika, doporučenou první fázi, orientační investici a plán dalších 90 dní. Výstup je použitelný i bez mé následné realizace.",
     benefits: [
-      "přehled webu, procesů a dat",
-      "priority a rizika",
-      "návrh realistické první fáze",
+      "90 minut s vedením + analýza stavu",
+      "priority, ztráty a rizika",
+      "doporučená první fáze a plán 90 dní",
     ],
     detailHref: "/sluzby/diagnostika",
     detail: {
       metaDescription:
-        "Diagnostika digitálního problému ve firmě. Zmapování webu, procesů, dat, dokumentů, automatizace a návrh dalšího smysluplného kroku.",
+        "Digitální diagnostika firmy za 10 000 Kč. 90 minut s vedením, analýza stavu a rozhodovací dokument do 5 pracovních dnů.",
       intro:
-        "Než firma investuje do webu, portálu nebo systému, potřebuje vědět, kde digitál skutečně brzdí obchod nebo provoz – a jestli stačí menší zásah.",
+        "Než firma investuje do webu, portálu nebo systému, potřebuje vědět, kde digitál skutečně brzdí obchod nebo provoz – a jestli stačí menší zásah. Diagnostika je samostatný produkt, ne skrytý sales pitch.",
       forWho:
-        "Pro firmy, školy a specializované provozy, kde důležité informace běží přes web, e-maily, tabulky, sdílené složky nebo ruční koordinaci.",
+        "Pro B2B, výrobní a servisní firmy, kde důležité informace běží přes web, e-maily, tabulky, sdílené složky nebo ruční koordinaci.",
       includes: [
-        "zmapování webu, poptávek, zakázek, klientů, dokumentů a odpovědností",
+        "90 minut rozhovoru s vedením o aktuálním stavu a cílech",
+        "zmapování webu, nabídky, poptávek, zakázek, dokumentů a odpovědností",
         "posouzení kvality dat, opakované ruční práce a používaných nástrojů",
-        "možnosti automatizace a realistické/nevhodné použití AI",
         "pojmenování hlavních ztrát, rizik a priorit",
-        "návrh první smysluplné fáze (web, automatizace, datová vrstva, portál nebo AI pilot)",
+        "návrh první smysluplné fáze a plánu dalších 90 dní",
       ],
       deliverable:
-        "Rozhodovací dokument s hlavními zjištěními, doporučeným rozsahem první fáze a návrhem dalšího postupu.",
-      priceHint: "od 9 000 Kč",
+        "Rozhodovací dokument s prioritami, ztrátami, riziky, doporučenou první fází, orientační investicí a plánem 90 dní. Výstup je použitelný i v případě, že následnou realizaci nebudu dělat já.",
+      priceHint: "10 000 Kč",
       priceHref: "/#cenik",
     },
   },

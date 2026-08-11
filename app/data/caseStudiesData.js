@@ -18,19 +18,25 @@ export const caseStudiesData = {
       title: "UGHighers",
       type: "Klientský portál a interní systém pro zakázkovou výrobu",
       problem:
-        "Zakázková výroba hudebních nosičů se opírala o e-maily, tabulky a roztříštěnou komunikaci. Aktuální informace o projektech, nabídkách, schválení a shipping detailech nebyly na jednom místě.",
+        "Zakázková výroba hudebních nosičů běžela přes e-maily, tabulky a roztříštěnou komunikaci. Nabídky, schvalování, shipping a provozní detaily se dohledávaly na několika místech — tým i klienti neměli společný přehled.",
       problemShort:
-        "Zakázky, nabídky a shipping detaily žily v e-mailech a tabulkách. Tým i klienti neměli jedno místo pravdy.",
+        "Zakázky, nabídky a shipping běžely přes e-maily a Excel. Tým i klienti pracovali s paralelními verzemi pravdy.",
       solution:
-        "Navrhl a vyvinul jsem systém, který propojuje klientskou zónu, evidenci projektů, cenové nabídky, schvalování, provozní detaily, shipping podklady, notifikace, auditní záznamy a fakturační podklady.",
+        "Navrhl jsem firmě klíčový provozní systém: klientská zóna, evidence projektů, nabídky, schvalování, shipping podklady, notifikace, auditní záznamy a fakturační podklady na jednom místě.",
       result:
-        "Přes 800 projektů v aplikaci, 10 měsíců ostrého provozu a každodenní používání interním týmem. Systém vytvořil jedno místo pravdy pro řízení zakázek od nabídky po provozní zpracování.",
+        "800+ zakázek zpracovaných systémem. 10 měsíců ostrého provozu. Tým i klienti pracují se stejnými daty — bez paralelních Excelů a ručního dohledávání stavu zakázky.",
       resultHighlight:
-        "800+ projektů v ostrém provozu. Jedno místo pravdy od nabídky po shipping.",
+        "800+ zakázek. 10 měsíců provozu. Jedno místo pravdy od nabídky po shipping — bez paralelních Excelů.",
       role:
         "návrh procesu, UX struktury, datového modelu, aplikační logiky a vývoj systému",
       image:
         "https://res.cloudinary.com/dam7wdzvx/image/upload/v1771523925/zbyneksvoboda/portfolio2/ugh.webp",
+      metricsQuestions: [
+        "Kolik lidí systém denně používá?",
+        "Co se dříve muselo přepisovat mezi e-mailem a Excelem?",
+        "Jak dlouho trvalo vytvoření a schválení nabídky předtím a potom?",
+        "Kolik informací si klient dnes dohledá sám bez statusového e-mailu?",
+      ],
     },
     {
       slug: "skolni-system",

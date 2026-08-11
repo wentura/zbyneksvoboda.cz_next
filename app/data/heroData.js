@@ -1,8 +1,9 @@
 export const heroData = {
-  title: "Nabídky, zakázky a data mimo excel a e-maily.",
+  title:
+    "B2B weby a interní systémy pro firmy, kterým obchod a zakázky přerostly e-mail a Excel.",
   subheadline:
-    "Pomáhám firmám zpřehlednit digitální provoz — produktovou nabídku, dokumenty a opakovanou ruční práci. Výsledkem je web, automatizace nebo klientský portál podle skutečného problému, ne podle šablony.",
-  ctaPrimary: "Ověřit vhodnost spolupráce",
+    "Pomáhám výrobním a servisním firmám zpřehlednit nabídku, poptávky, dokumenty a zakázkové procesy. Nejdřív zjistíme, kde vzniká ztráta. Potom navrhnu nejmenší řešení, které ji odstraní.",
+  ctaPrimary: "Probrat konkrétní problém",
   ctaPrimaryHref: "/#kontakt",
   ctaSecondary: "Ukázat výsledky",
   ctaSecondaryHref: "/#pripadove-studie",
@@ -11,8 +12,8 @@ export const heroData = {
   productImage:
     "https://res.cloudinary.com/dam7wdzvx/image/upload/v1771523925/zbyneksvoboda/portfolio2/ugh.webp",
   trustStrip: [
-    "Ne WordPress šablony",
-    "Ne správa sociálních sítí",
-    "Investice od desítek tisíc — ne web do pátku",
+    "B2B a výrobní firmy",
+    "Diagnostika před investicí",
+    "Realizace od desítek tisíc",
   ],
 };

@@ -29,13 +29,13 @@ export const content = {
   about: aboutData,
   contact: {
     ...copy.contact,
-    title: "Pojďme zjistit, jestli dává spolupráce smysl.",
+    title: "Pojďme probrat konkrétní problém.",
     lead:
-      "Spolupráce dává smysl, když řešíte data, procesy, nabídku nebo chaos v zakázkách — ne když hledáte WordPress šablonu nebo správu sociálních sítí. Napište, co dnes brzdí provoz nebo obchod. Ozvu se s návrhem dalšího kroku.",
+      "Napište, co dnes brzdí obchod nebo provoz — a proč to potřebujete řešit právě teď. Ozvu se s návrhem dalšího kroku: krátký hovor, diagnostika, nebo jasné NE, pokud spolupráce nedává smysl.",
   },
   form: copy.form,
   header: {
-    navCta: "Konzultace",
+    navCta: "Probrat problém",
   },
   contactModal: copy.contactModal,
   testimonials: copy.testimonials,

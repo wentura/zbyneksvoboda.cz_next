@@ -6,8 +6,8 @@ export default function Cenik({ content }) {
   return (
     <SectionShell id="cenik" className="bg-white">
       <Reveal>
-        <h2 className="type-h1 text-modra2 mb-4 max-w-3xl">{content.title}</h2>
-        <p className="type-body-lg text-neutral-700 mb-14 max-w-3xl">
+        <h2 className="type-h1 text-modra2 mb-4 max-w-4xl">{content.title}</h2>
+        <p className="type-body-lg text-neutral-700 mb-14 max-w-4xl">
           {content.description}
         </p>
 

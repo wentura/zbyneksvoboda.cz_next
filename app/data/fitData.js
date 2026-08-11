@@ -1,7 +1,7 @@
 export const fitData = {
   title: "Pro koho dává spolupráce smysl",
   description:
-    "Pracuji s firmami, které potřebují víc než hezký web. Typicky B2B, výroba nebo provoz, kde se ztrácí čas a přehled v datech a procesech.",
+    "Pracuji s firmami, které potřebují odstranit konkrétní obchodní nebo provozní ztrátu — ne jen „být online“.",
   forTitle: "Dává smysl, když:",
   notForTitle: "Nedává smysl, když:",
   for: [
@@ -11,9 +11,9 @@ export const fitData = {
     "chcete investovat do řešení problému, ne do nejlevnější šablony",
   ],
   notFor: [
-    "hledáte WordPress šablonu nebo levný web „do pátku“",
-    "chcete jen správu Facebooku nebo obsah na sociální sítě",
     "hlavním kritériem je nejnižší cena",
+    "chcete jen správu Facebooku nebo obsah na sociální sítě",
     "nemáte provozní ani obchodní problém — jen chcete „být online“",
+    "hledáte levný web „do pátku“ bez zájmu o výsledek",
   ],
 };

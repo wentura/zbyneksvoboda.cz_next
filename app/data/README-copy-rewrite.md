@@ -10,16 +10,16 @@ To je ostřejší, méně zaměnitelné a lépe navazuje na UGHighers, školní 
 
 ## Design
 
-Nedělat plný redesign. Teď není problém vizuální kvalita, ale obchodní ostrost nabídky a distribuce.
+Nedělat plný redesign. Teď není problém vizuální kvalita, ale obchodní ostrost nabídky a kvalifikace leadů.
 
-Doporučené malé zásahy:
+Doporučené zásahy (hotovo v konverzním sprintu):
 
-1. Hero musí mít silnější headline, subheadline a konkrétní proof strip.
-2. Služby se mají tvářit jako postup spolupráce, ne jako čtyři rovnocenné možnosti.
-3. Case studies musí jít výš a být kratší, tvrdší, s dopadem.
-4. Pricing musí odstranit nízké kotvy 3 000 Kč, 10 000 Kč a 17 000 Kč.
-5. V navigaci stačí Služby, Výsledky, Ceny, Kontakt.
-6. CTA změnit z „Domluvit konzultaci“ na „Zmapovat digitální chaos“ nebo „Ověřit vhodnost spolupráce“.
+1. Hero: ICP + ztráta + CTA „Probrat konkrétní problém“.
+2. Dvě vstupní cesty (nabídka vs. provoz) místo katalogu produktů.
+3. Diagnostika jako produkt za 10 000 Kč.
+4. Proces Diagnose → Decide → Deliver.
+5. Formulář: „proč teď“ povinné, budget volitelný.
+6. Méně WordPress negace — hodnota před anti-platformou.
 
 ## VYNECHAT z homepage
 

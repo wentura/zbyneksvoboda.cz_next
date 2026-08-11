@@ -5,7 +5,7 @@ export default function StartSection({ content }) {
     <section className="py-8 md:py-16 bg-brand-offwhite">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
         <h2 className="nadpisPage mb-4 md:mb-2">{content.title}</h2>
-        <p className="type-h3 mb-2 text-gray-700 font-bold max-w-3xl">
+        <p className="type-h3 mb-2 text-gray-700 font-bold max-w-4xl">
           {content.intro}
         </p>
         <div className="my-4 type-body-lg text-gray-700 flex flex-col gap-4">

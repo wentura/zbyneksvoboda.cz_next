@@ -25,10 +25,10 @@ export default function PortfolioPage() {
       <section className="py-20 md:py-28">
         <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
           <Reveal>
-            <h1 className="type-h1 text-modra2 mb-4 max-w-3xl">
+            <h1 className="type-h1 text-modra2 mb-4 max-w-4xl">
               Projekty &amp; reference
             </h1>
-            <p className="type-body-lg mb-16 text-neutral-700 max-w-3xl">
+            <p className="type-body-lg mb-16 text-neutral-700 max-w-4xl">
               Vybrané projekty, kde šlo o provoz, data nebo proces — ne jen o
               novou vizitku. U každého je vidět, jaký problém firma řešila a jaký
               dopad spolupráce přinesla.
@@ -146,7 +146,7 @@ export default function PortfolioPage() {
               systém. Nemusíte mít jasno předem.
             </p>
             <Link href="/#kontakt" className="ctaBtnSecondaryDark inline-flex">
-              Ověřit vhodnost spolupráce
+              Probrat konkrétní problém
             </Link>
           </div>
         </div>

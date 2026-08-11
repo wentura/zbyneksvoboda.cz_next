@@ -28,7 +28,7 @@ Konkrétní fonty se můžou řídit aktuální implementací, ale obecná pravi
 - **Základní text (body):** čistý bezpatkový font (např. Inter, system sans)
 - **Nadpisy (H1–H3):** stejný font, jen jiné řezy (bold/semibold) a velikosti
 - **Řádkování:** dostatečně vzdušné, klidně `leading-relaxed` nebo `leading-loose`
-- **Max šířka textu:** kolem `max-w-prose` až `max-w-3xl` pro dlouhé texty (lepší kratší řádky)
+- **Max šířka textu:** kolem `max-w-prose` až `max-w-4xl` pro dlouhé texty (lepší kratší řádky)
 
 Tailwind orientačně:
 - H1: `text-3xl md:text-5xl font-bold`

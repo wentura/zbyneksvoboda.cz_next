@@ -74,6 +74,8 @@ export default function Contact({ contact, form }) {
                   src="/ja.jpg"
                   width={400}
                   height={600}
+                  loading="lazy"
+                  sizes="(max-width: 768px) 80vw, 400px"
                 />
               </div>
             </div>

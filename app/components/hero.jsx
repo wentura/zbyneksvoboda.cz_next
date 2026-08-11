@@ -31,7 +31,7 @@ export default function Hero({ content }) {
         </Reveal>
 
         <Reveal
-          className="relative order-first lg:order-last lg:col-span-6 hidden md:block"
+          className="relative order-first lg:order-last lg:col-span-6"
           delay={0.08}
         >
           <div className="relative aspect-[4/3] w-full overflow-hidden bg-modra2/40">
@@ -42,6 +42,7 @@ export default function Hero({ content }) {
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               priority
+              fetchPriority="high"
             />
           </div>
           <p className="label-meta text-brand-offwhite/50 mt-4">

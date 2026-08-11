@@ -120,6 +120,7 @@ export async function POST(request) {
       company,
       formStartedAt,
       problemType,
+      whyNow,
       budget,
     } = body;
 
@@ -153,7 +154,7 @@ export async function POST(request) {
       );
     }
 
-    if (!name || !email || !discussion || !problemType || !budget) {
+    if (!name || !email || !discussion || !problemType || !whyNow) {
       throw new ValidationError("Všechna povinná pole musí být vyplněna.");
     }
 
@@ -163,7 +164,8 @@ export async function POST(request) {
       if (phone) validateLength("Telefon", phone, MAX_LENGTHS.phone);
       if (website) validateLength("Web", website, MAX_LENGTHS.website);
       validateLength("Typ problému", problemType, MAX_LENGTHS.problemType);
-      validateLength("Investice", budget, MAX_LENGTHS.budget);
+      validateLength("Proč teď", whyNow, MAX_LENGTHS.whyNow);
+      if (budget) validateLength("Investice", budget, MAX_LENGTHS.budget);
       validateLength("Zpráva", discussion, MAX_LENGTHS.discussion);
     } catch (lengthError) {
       throw new ValidationError(lengthError.message);
@@ -181,9 +183,11 @@ export async function POST(request) {
       ${phone ? `<p><strong>Telefon:</strong> ${escapeHtml(phone)}</p>` : ""}
       ${website ? `<p><strong>Web:</strong> ${escapeHtml(website)}</p>` : ""}
       <p><strong>Typ problému:</strong> ${escapeHtml(problemType)}</p>
-      <p><strong>Orientační investice:</strong> ${escapeHtml(budget)}</p>
-      <p><strong>O čem budeme diskutovat:</strong></p>
+      ${budget ? `<p><strong>Orientační investice:</strong> ${escapeHtml(budget)}</p>` : "<p><strong>Orientační investice:</strong> neuvedeno</p>"}
+      <p><strong>Co dnes nefunguje:</strong></p>
       <p>${escapeHtml(discussion).replace(/\n/g, "<br>")}</p>
+      <p><strong>Proč to řeší právě teď:</strong></p>
+      <p>${escapeHtml(whyNow).replace(/\n/g, "<br>")}</p>
       <hr>
       <p><small>Zpráva byla odeslána z kontaktního formuláře na webu zbyneksvoboda.cz</small></p>
     `;

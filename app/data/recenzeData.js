@@ -1,6 +1,7 @@
 // Kompletní vrstva recenzí.
 // Na homepage doporučuji zobrazit položky s homepage: true.
 // Ostatní recenze nezahazovat - patří na samostatnou stránku nebo do rozbalené sekce.
+// homepage: true = business / proces / rozhodnutí, ne jen „rychlá práce a hezký web“.
 
 export const recenzeData = [
   {
@@ -9,9 +10,9 @@ export const recenzeData = [
     short: 1,
     homepage: true,
     textShort:
-      "Skvělá spolupráce - vše bylo zapracováno k oboustranné spokojenosti, včetně rychlých úprav. Výsledek je kvalitní a profesionální. Moc děkujeme!",
+      "Potřebovali jsme sjednotit interní práci týmu — plánování, pokrok dětí a provozní agendu. Spolupráce vedla k systému, který odpovídá tomu, jak škola skutečně funguje.",
     text:
-      "Skvělá spolupráce - vše bylo zapracováno k oboustranné spokojenosti, včetně rychlých úprav. Výsledek je kvalitní a profesionální. Moc děkujeme!",
+      "Potřebovali jsme sjednotit interní práci týmu — plánování, pokrok dětí a provozní agendu. Spolupráce vedla k systému, který odpovídá tomu, jak škola skutečně funguje. Vše bylo zapracováno k oboustranné spokojenosti. Výsledek je kvalitní a použitelný v provozu.",
     fotka:
       "https://res.cloudinary.com/dam7wdzvx/image/upload/v1754939908/zbyneksvoboda/portfolio2/recenze/bela.webp",
   },
@@ -19,7 +20,7 @@ export const recenzeData = [
     kdo: "Jakub Skála",
     co: "AutokempKokorin.cz",
     short: 1,
-    homepage: true,
+    homepage: false,
     textShort:
       "Se spoluprací se Zbyňkem Svobodou jsme moc spokojeni. Stránky pro Autokemp Kokořín, které pro nás udělal, odpovídají aktuálnímu trendu...",
     text:
@@ -33,9 +34,9 @@ export const recenzeData = [
     short: 0,
     homepage: true,
     textShort:
-      "Výborná spolupráce v tom pravém smyslu - pochopení požadavků + návrh + konzultace + realizace = spokojenost. To vše rychle a operativně.",
+      "Nejdřív jsme si ujasnili, co skutečně potřebujeme. Pak návrh, konzultace a realizace — bez zbytečných oklik. To je spolupráce v tom pravém smyslu.",
     text:
-      "Výborná spolupráce v tom pravém smyslu - pochopení požadavků + návrh + konzultace + realizace = spokojenost. To vše rychle a operativně, DĚKUJI!!!",
+      "Výborná spolupráce v tom pravém smyslu - pochopení požadavků + návrh + konzultace + realizace = spokojenost. Nejdřív jsme si ujasnili, co skutečně potřebujeme. To vše rychle a operativně.",
     fotka:
       "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882223/zbyneksvoboda/portfolio2/recenze/js.webp",
   },
@@ -69,9 +70,9 @@ export const recenzeData = [
     short: 1,
     homepage: true,
     textShort:
-      "Velmi jsem ocenila pečlivost a ochotu přizpůsobit se mým potřebám. Každý detail byl promyšlen, a díky tomu nyní mám web, který je plně funkční a snadno použitelný pro naše návštěvníky.",
+      "Oceňuji, že jsme nejdřív ladili záměr a praktické použití — ne jen vzhled. Výsledkem je web, který odpovídá tomu, co návštěvníci skutečně potřebují.",
     text:
-      "Velmi jsem ocenila pečlivost a ochotu přizpůsobit se mým potřebám. Každý detail byl promyšlen, a díky tomu nyní mám web, který je plně funkční a snadno použitelný pro naše návštěvníky.<br /><br />Pokud hledáte někoho, kdo vám pomůže vytvořit webovou stránku či aplikaci, která bude odrážet váš záměr a zároveň bude praktická, určitě doporučuji jeho služby!<br /><br />Cením si toho, že pan Svoboda aplikoval své kreativní nápady, díky kterým je web moderní, přehledný a uživatelsky přívětivý.",
+      "Velmi jsem ocenila pečlivost a ochotu přizpůsobit se mým potřebám. Každý detail byl promyšlen, a díky tomu nyní mám web, který je plně funkční a snadno použitelný pro naše návštěvníky.<br /><br />Pokud hledáte někoho, kdo vám pomůže vytvořit webovou stránku či aplikaci, která bude odrážet váš záměr a zároveň bude praktická, určitě doporučuji jeho služby!",
     fotka:
       "https://res.cloudinary.com/dam7wdzvx/image/upload/v1730489771/zbyneksvoboda/portfolio2/recenze/kaca.webp",
   },
@@ -79,7 +80,7 @@ export const recenzeData = [
     kdo: "Kristýna Franková",
     co: "Hexfit.eu",
     short: 0,
-    homepage: true,
+    homepage: false,
     textShort: "Spolupráci s panem Svobodou vřele doporučuji...",
     text:
       "Spolupráci s panem Svobodou vřele doporučuji,<br />veškerá má přání ohledně úprav designu byla obratem splněna.<br />Oceňuji rychlost a kvalitu odvedené práce a přátelskou a rychlou komunikaci.<br />Vše bylo jasně a srozumitelně vysvětleno a společně jsme pozvedli design eshopu o několik levelů výš a zlepšili některé funkce.",
@@ -102,20 +103,10 @@ export const recenzeData = [
     kdo: "Petr Kolář",
     co: "Doomentia.com",
     short: 1,
-    homepage: true,
+    homepage: false,
     textShort: "Díky moc. Super práce. Zůstaňme v kontaktu na další práce.",
     text: "Zbyňku, díky moc. Super práce.<br />Zůstaňme v kontaktu na další práce.",
     fotka:
       "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882223/zbyneksvoboda/portfolio2/recenze/doom.webp",
-  },
-  {
-    kdo: "Štěpán Malý",
-    co: "AntonieEmma.cz, Zoe8.eu",
-    short: 0,
-    homepage: false,
-    textShort: "VYNECHAT z homepage - neformální reference, vhodná maximálně mimo hlavní prodejní stránku.",
-    text: "Super, naprostá m*da!",
-    fotka:
-      "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882224/zbyneksvoboda/portfolio2/recenze/maly.webp",
   },
 ];

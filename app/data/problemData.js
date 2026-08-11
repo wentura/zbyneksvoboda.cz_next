@@ -1,15 +1,28 @@
 export const problemData = {
-  title: "Problém obvykle není v chybějící šabloně.",
+  title: "Dva typické problémy, se kterými firmy přicházejí",
   introParagraphs: [
-    "Firmy ztrácejí čas a obchodní příležitosti, když nabídka, zakázky a dokumenty žijí v e-mailech, tabulkách a ruční koordinaci. Potřebují přehlednější data a méně provozního tření — ne další izolovanou obrazovku.",
+    "Firmy nekupují „datově řízený web“ ani „klientský portál“. Kupují odstranění konkrétní ztráty — v obchodě, nebo v provozu.",
   ],
-  listLead: "Typicky pomáhám s tím, aby firma měla:",
-  bulletpoints: [
-    "srozumitelnou B2B nebo produktovou nabídku na webu",
-    "zakázky, stavy a dokumenty na jednom místě",
-    "méně přepisování mezi formuláři, e-maily a Excelem",
-    "realistický další krok — web, automatizace nebo portál",
+  paths: [
+    {
+      label: "A",
+      title: "Neumíme dobře prodat naši nabídku",
+      situation:
+        "Výrobní nebo B2B firma, mnoho produktů, technické parametry, PDF katalogy, slabá struktura webu. Obchodník musí pořád něco vysvětlovat.",
+      result:
+        "Srozumitelnější nabídka → důvěryhodnější prezentace → lepší kvalifikace poptávek.",
+      leadsTo: "Typicky vede k datově řízenému webu.",
+    },
+    {
+      label: "B",
+      title: "Zakázky a administrativa nám přerostly přes hlavu",
+      situation:
+        "Excel, e-mail, PDF, WhatsApp, ruční přepisování, statusové dotazy, dokumenty na několika místech.",
+      result:
+        "Méně administrativy → lepší přehled → méně chyb → rychlejší práce.",
+      leadsTo: "Typicky vede k automatizaci nebo klientskému portálu.",
+    },
   ],
   closing:
-    "Nejdřív pojmenujeme, kde digitál brzdí provoz nebo obchod. Teprve potom stavíme řešení.",
+    "Nejdřív pojmenujeme, kde digitál brzdí obchod nebo provoz. Teprve potom stavíme řešení.",
 };

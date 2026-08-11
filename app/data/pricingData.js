@@ -1,8 +1,15 @@
 export const pricingData = {
   title: "Orientační ceny",
   description:
-    "Nejsem dodavatel webu za pár tisíc ani správce sociálních sítí. Nejdřív vidíte realizační rozsah — diagnostika je vstup před investicí, ne levný web.",
+    "Nejdřív vidíte rozsah a dopad — diagnostika je vstup před investicí. Řešení navrhuji podle obchodního a provozního problému, ne podle předem vybrané platformy.",
   pricing: [
+    {
+      title: "Digitální diagnostika firmy",
+      description:
+        "90 minut s vedením, analýza stavu a rozhodovací dokument do 5 pracovních dnů. Výstup je použitelný i bez mé následné realizace.",
+      price: "10 000 Kč",
+      note: "vstup před rozhodnutím",
+    },
     {
       title: "Datově řízený web",
       description:
@@ -25,13 +32,6 @@ export const pricingData = {
       note: "mezivrstva mezi diagnostikou a větším systémem",
     },
     {
-      title: "Diagnostika digitálního problému",
-      description:
-        "Rozhodovací vstup před větší investicí. Zmapuji web, procesy a data a navrhnu další smysluplný krok. Nejde o levný web.",
-      price: "od 9 000 Kč",
-      note: "vstup před rozhodnutím",
-    },
-    {
       title: "Průběžný digitální rozvoj",
       description:
         "Pravidelné řízení priorit, menší rozvoj, vyhodnocení a dílčí automatizace. Ne anonymní balík hodin ani levná údržba bez kontextu.",
@@ -43,9 +43,9 @@ export const pricingData = {
   consultationCallout: {
     title: "Úvodní posouzení vhodnosti spolupráce",
     body:
-      "Během krátkého hovoru ověříme, jestli jsem pro daný problém vhodný partner. Nejde o bezplatný audit.",
+      "Během krátkého hovoru ověříme, jestli je problém relevantní a jestli dává smysl pokračovat do diagnostiky. Nejde o bezplatný audit.",
     price: "zdarma",
-    cta: "Ověřit vhodnost spolupráce",
+    cta: "Probrat konkrétní problém",
     ctaHref: "/#kontakt",
     disclaimer:
       "Dlouhodobá spolupráce je možná jako průběžný digitální rozvoj po diagnostice nebo první realizaci. Neprodávám anonymní technickou podporu ani levnou údržbu bez kontextu.",

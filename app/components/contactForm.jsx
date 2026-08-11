@@ -3,17 +3,20 @@
 
 import { useEffect, useRef, useState } from "react";
 
+const emptyForm = {
+  name: "",
+  email: "",
+  phone: "",
+  website: "",
+  problemType: "",
+  whyNow: "",
+  budget: "",
+  discussion: "",
+  company: "",
+};
+
 export default function ContactForm({ form }) {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    website: "",
-    problemType: "",
-    budget: "",
-    discussion: "",
-    company: "",
-  });
+  const [formData, setFormData] = useState(emptyForm);
 
   const formStartRef = useRef(null);
   useEffect(() => {
@@ -56,16 +59,7 @@ export default function ContactForm({ form }) {
           type: "success",
           message: form.successMessage,
         });
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          website: "",
-          problemType: "",
-          budget: "",
-          discussion: "",
-          company: "",
-        });
+        setFormData(emptyForm);
         formStartRef.current = Date.now();
       } else {
         const errorData = await response.json();
@@ -191,7 +185,6 @@ export default function ContactForm({ form }) {
               name="budget"
               value={formData.budget}
               onChange={handleInputChange}
-              required
               className={selectClassName}
             >
               {(form.budgetOptions || []).map((option) => (
@@ -239,6 +232,25 @@ export default function ContactForm({ form }) {
             rows={4}
             className={selectClassName}
             placeholder={form.messagePlaceholder}
+          />
+        </div>
+
+        <div>
+          <label
+            htmlFor="whyNow"
+            className="block text-sm font-medium text-gray-200 mb-2 text-left"
+          >
+            {form.whyNowLabel}
+          </label>
+          <textarea
+            id="whyNow"
+            name="whyNow"
+            value={formData.whyNow}
+            onChange={handleInputChange}
+            required
+            rows={3}
+            className={selectClassName}
+            placeholder={form.whyNowPlaceholder}
           />
         </div>
 

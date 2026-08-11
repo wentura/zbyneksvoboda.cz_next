@@ -17,7 +17,7 @@ Nejde o pixel-perfect design, ale o **logiku sekcí, hierarchii informací a lay
   - Případové studie (`/#pripadove-studie`)
   - O mně (`/#o-mne`)
   - Kontakt (`/#kontakt`)
-- CTA tlačítko: **Konzultace** → `/#kontakt`
+- CTA tlačítko: **Probrat problém** → `/#kontakt`
 - Články: zatím bez položky v menu (blog neexistuje)
 - Recenze a ceník: dostupné na homepage přes scroll, ne v hlavním menu
 
@@ -53,18 +53,18 @@ Layout: jednoduchý, dvousloupcový (desktop), jednokolonový (mobile).
 
 ## 2. Homepage – sekce (implementováno)
 
-**Pořadí sekcí:**
+**Pořadí sekcí (konverzní sprint 2026):**
 1. Header
-2. Hero (problém + filtr trust strip + product vizuál)
-3. Proof strip (konkrétní důkazy)
-4. Problem — krátký framing
-5. Fit — Pro koho ano / ne
-6. Case studies preview — důkaz před nabídkou
-7. Services — 3 karty + ceny
-8. Recenze
-9. Process — 6 kroků
-10. Pricing — orientační ceny + retainer
-11. Contact — kvalifikovaný formulář
+2. Hero (ICP + CTA „Probrat konkrétní problém“ + trust strip bez anti-WP)
+3. Proof strip (UGHighers / provozní důkazy)
+4. Problem — dvě vstupní cesty (nabídka vs. provozní chaos)
+5. Case studies preview — UGHighers + relevantní důkaz
+6. Services — diagnostika + 2 řešení jako následek cest
+7. Process — Diagnostika → Rozhodnutí → Realizace (3 kroky)
+8. Pricing — diagnostika 10 000 Kč nahoře + orientační ceny
+9. Fit — Pro koho ano / ne (až po důkazech)
+10. Recenze — business-outcome reference
+11. Contact — formulář s „proč teď“, budget volitelný
 
 **Data:** `app/data/*.js` agregovaná přes `content.js`.
 
@@ -219,7 +219,7 @@ Nastavit očekávání, ukázat úroveň cen, ale nezabíjet flexibilitu.
 - Nadpis
 - Krátké vysvětlení, že cena závisí na problému a odpovědnosti výsledku
 - 5 boxů + callout úvodního posouzení:
-  1. Diagnostika — od 9 000 Kč
+  1. Digitální diagnostika firmy — 10 000 Kč
   2. Automatizace konkrétního procesu — od 25 000 Kč
   3. Datově řízený web — od 55 000 Kč
   4. Klientský portál / interní systém — od 90 000 Kč

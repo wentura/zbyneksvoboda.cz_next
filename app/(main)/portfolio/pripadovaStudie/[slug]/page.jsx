@@ -87,7 +87,7 @@ export default async function PripadovaStudie({ params }) {
             {type && (
               <p className="label-meta text-brand-accent mb-4">{type}</p>
             )}
-            <h1 className="type-h1 text-modra2 mb-8 max-w-3xl">{title}</h1>
+            <h1 className="type-h1 text-modra2 mb-8 max-w-4xl">{title}</h1>
 
             {image && (
               <div className="aspect-[16/9] relative bg-neutral-100 overflow-hidden mb-14 md:mb-16">
@@ -159,7 +159,7 @@ export default async function PripadovaStudie({ params }) {
               </Link>
               <span className="mx-4 text-neutral-300">|</span>
               <Link href="/#kontakt" className="odkaz type-body text-modra2">
-                Ověřit vhodnost spolupráce
+                Probrat konkrétní problém
               </Link>
             </div>
           </Reveal>

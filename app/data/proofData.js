@@ -1,8 +1,8 @@
 export const proofData = {
   items: [
-    "800+ projektů prošlo klientským portálem UGHighers",
-    "zakázky, nabídky a dokumenty na jednom místě",
-    "méně e-mailů, tabulek a ručního dohledávání",
-    "B2B a provozní systémy — ne online vizitky",
+    "800+ zakázek zpracovaných systémem UGHighers",
+    "10 měsíců ostrého provozu — každodenní používání týmem",
+    "nabídky, schvalování a shipping bez paralelních Excelů",
+    "provozní systém, ne online vizitka",
   ],
 };

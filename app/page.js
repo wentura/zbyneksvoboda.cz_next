@@ -19,12 +19,12 @@ export default function Home() {
         <Hero content={content.hero} />
         <ProofStrip content={content.proof} />
         <ProblemSection content={content.problem} />
-        <FitSection content={content.fit} />
         <CaseStudiesPreview content={content.caseStudies} />
         <Services content={content.services} />
-        <RecenzeShort content={content.testimonials} />
         <ProcessSection content={content.process} />
         <Cenik content={content.cenik} />
+        <FitSection content={content.fit} />
+        <RecenzeShort content={content.testimonials} />
         <Contact contact={content.contact} form={content.form} />
       </main>
     </>

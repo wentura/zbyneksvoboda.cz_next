@@ -13,11 +13,11 @@ export default function ServiceDetailPage({ service }) {
         {service.title}
       </p>
 
-      <h1 className="text-3xl md:text-4xl font-bold text-modra2 mb-6 max-w-3xl">
+      <h1 className="text-3xl md:text-4xl font-bold text-modra2 mb-6 max-w-4xl">
         {service.title}
       </h1>
 
-      <p className="type-body-lg text-gray-700 mb-8 max-w-3xl">{detail.intro}</p>
+      <p className="type-body-lg text-gray-700 mb-8 max-w-4xl">{detail.intro}</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-4xl">
         <div>
@@ -30,12 +30,12 @@ export default function ServiceDetailPage({ service }) {
         </div>
       </div>
 
-      <div className="mb-12 max-w-3xl">
+      <div className="mb-12 max-w-4xl">
         <h2 className="type-h3 text-modra2 mb-3">Pro koho</h2>
         <p className="type-body text-gray-700">{detail.forWho}</p>
       </div>
 
-      <div className="mb-12 max-w-3xl">
+      <div className="mb-12 max-w-4xl">
         <h2 className="type-h3 text-modra2 mb-4">Co je součástí</h2>
         <ul className="space-y-2">
           {detail.includes.map((item) => (
@@ -47,12 +47,12 @@ export default function ServiceDetailPage({ service }) {
         </ul>
       </div>
 
-      <div className="mb-12 max-w-3xl">
+      <div className="mb-12 max-w-4xl">
         <h2 className="type-h3 text-modra2 mb-3">Typický výstup</h2>
         <p className="type-body text-gray-700">{detail.deliverable}</p>
       </div>
 
-      <div className="mb-12 max-w-3xl">
+      <div className="mb-12 max-w-4xl">
         <h2 className="type-h3 text-modra2 mb-4">Přínosy</h2>
         <ul className="space-y-2">
           {service.benefits.map((benefit) => (
@@ -64,9 +64,11 @@ export default function ServiceDetailPage({ service }) {
         </ul>
       </div>
 
-      <div className="p-6 md:p-8 bg-brand-offwhite border border-neutral-200 max-w-3xl">
+      <div className="p-6 md:p-8 bg-brand-offwhite border border-neutral-200 max-w-4xl">
         <p className="type-body text-gray-700 mb-2">
-          Orientační cena:{" "}
+          {detail.priceHint?.startsWith("od ")
+            ? "Orientační cena: "
+            : "Cena: "}
           <span className="font-semibold text-modra2">{detail.priceHint}</span>
         </p>
         <p className="type-meta text-gray-600 mb-6">
@@ -75,7 +77,7 @@ export default function ServiceDetailPage({ service }) {
           </Link>
         </p>
         <Link href="/#kontakt" className="ctaBtnSecondaryDark">
-          Domluvit konzultaci
+          Probrat konkrétní problém
         </Link>
       </div>
     </article>

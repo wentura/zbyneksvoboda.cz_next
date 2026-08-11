@@ -6,12 +6,13 @@ Tento projekt je osobní web **Zbyňka Svobody** – webového konzultanta a dig
 
 Cíl webu:
 - neprezentovat Zbyňka jako „kodéra, co dělá weby pro všechny“
-- ale jako **webového konzultanta, strategického partnera a web leadera / fractional CTO**
+- ale jako partnera, který **pomáhá B2B firmám odstranit konkrétní obchodní nebo provozní ztrátu** (web, automatizace nebo systém je prostředek)
+- live positioning (2026): B2B / výroba / servis, diagnostika → rozhodnutí → realizace
 - web má prodávat zejména:
-  - úvodní konzultaci
-  - UX / web consulting (audity)
-  - Web Leadership (dlouhodobá spolupráce)
-  - High-end web / redesign (kompletní řešení)
+  - rozhovor o konkrétním problému
+  - digitální diagnostiku firmy (produkt, 10 000 Kč)
+  - datově řízený web / automatizaci / portál podle problému
+  - průběžný digitální rozvoj
 
 Web má působit:
 - stručně
@@ -95,18 +96,16 @@ Klíčová sdělení:
 
 Detailní struktura je v `WIREFRAME.md`, ale shrnutí pro rychlou orientaci:
 
-1. **Hero** – kdo je Zbyněk, co dělá, pro koho, hlavní CTA (konzultace)
-2. **Problém – proč většina webů nefunguje** – krátké vysvětlení, že problém není jen v kódu/grafice
-3. **Služby / Řešení (3 pilíře)**:
-   - UX & Web Consulting (audity, analýzy)
-   - Web Leadership (fractional CTO)
-   - High-end web / redesign
-4. **Jak pracuji (proces)** – kroky spolupráce
-5. **Případové studie** – 2–4 klíčové projekty s problémem → řešením → výsledkem
-6. **Recenze** – vybrané reference od klientů
-7. **Pro koho jsem / nejsem** – filtrování klientů
-8. **Orientační ceník**
-9. **Kontakt / konzultace** – formulář + kontakty
+1. **Hero** – ICP (B2B/výroba), ztráta, CTA „Probrat konkrétní problém“
+2. **Proof** – UGHighers a provozní důkazy
+3. **Dva problémy** – nabídka vs. provozní chaos
+4. **Případové studie** – UGHighers + relevantní důkaz
+5. **Služby** – diagnostika → web / portál
+6. **Proces** – Diagnostika → Rozhodnutí → Realizace
+7. **Ceník** – diagnostika 10 000 Kč jako vstup
+8. **Fit** – pro koho ano / ne
+9. **Recenze** – business outcome
+10. **Kontakt** – formulář s „proč teď“
 
 ---
 

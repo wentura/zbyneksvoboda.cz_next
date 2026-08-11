@@ -8,7 +8,7 @@ export const portfolioData = [
     link: "https://ughighers.com/",
     linkViewMore: "ughighers.com",
     shortDecs:
-      "Klientský portál a interní systém pro řízení zakázkové výroby hudebních nosičů.<br /><br />Přes 800 projektů v aplikaci, 10 měsíců ostrého provozu a jedno místo pravdy pro nabídky, schvalování, shipping podklady a provozní řízení zakázek.",
+      "Klíčový provozní systém pro zakázkovou výrobu hudebních nosičů.<br /><br />800+ zakázek zpracovaných systémem. 10 měsíců ostrého provozu. Tým i klienti pracují se stejnými daty — nabídky, schvalování a shipping bez paralelních Excelů.",
     images: [
       {
         img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1771523925/zbyneksvoboda/portfolio2/ugh.webp",

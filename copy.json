@@ -14,7 +14,7 @@
       "10 měsíců ostrého provozu u UGHighers",
       "návrh procesu, UX, datového modelu i vývoj v jedné odpovědnosti"
     ],
-    "cta": "Ověřit vhodnost spolupráce",
+    "cta": "Probrat konkrétní problém",
     "imageAlt": "Zbyněk Svoboda, webový konzultant a vývojář klientských portálů, interních systémů a datově řízených webů"
   },
   "problem": {
@@ -90,7 +90,7 @@
         ]
       }
     ],
-    "cta": "Ověřit vhodnost spolupráce",
+    "cta": "Probrat konkrétní problém",
     "gainTitle": "Co získáte:",
     "longTermTitle": "Možnost dlouhodobé spolupráce",
     "longTermDescription": "Po diagnostice nebo první realizaci nemusí spolupráce končit. Můžu dál pomáhat s prioritami, rozvojem webu, portálu, interního systému, datové vrstvy nebo koordinací dalších digitálních kroků. Ne jako náhodná technická podpora, ale jako partner, který zná kontext firmy a hlídá, aby další změny dávaly obchodní i technický smysl."
@@ -235,33 +235,33 @@
       "title": "Úvodní posouzení vhodnosti spolupráce",
       "bodyHtml": "Během krátkého hovoru ověříme, jestli řešíte problém, který dává smysl řešit diagnostikou, návrhem systému nebo realizací. Nejde o bezplatný audit. Dlouhodobá spolupráce je možná jako návaznost po první fázi, pokud dává smysl pro obě strany.",
       "price": "zdarma",
-      "cta": "Ověřit vhodnost spolupráce"
+      "cta": "Probrat konkrétní problém"
     }
   },
   "testimonials": {
     "title": "Co o spolupráci říkají klienti",
-    "intro": "",
+    "intro": "Nejde jen o „hezký web“. Jde o to, jestli jsme nejdřív pochopili problém — a pak navrhli řešení, které dává smysl v provozu.",
     "clientsLinePrefix": "Pracoval jsem mimo jiné pro",
     "clientsLineSuffix": "a další klienty.",
     "moreLinkLabel": "zobrazit více recenzí",
     "items": [
       {
+        "name": "Jan Svárovský",
+        "project": "ArboristikaSvarovsky.cz",
+        "text": "Nejdřív jsme si ujasnili, co skutečně potřebujeme. Pak návrh, konzultace a realizace — bez zbytečných oklik. To je spolupráce v tom pravém smyslu.",
+        "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882223/zbyneksvoboda/portfolio2/recenze/js.webp"
+      },
+      {
         "name": "Běla Šestáková",
         "project": "SvouCestou.info / interní školní systém",
-        "text": "Skvělá spolupráce - vše bylo zapracováno k oboustranné spokojenosti, včetně rychlých úprav. Výsledek je kvalitní a profesionální. Moc děkujeme!",
+        "text": "Potřebovali jsme sjednotit interní práci týmu — plánování, pokrok dětí a provozní agendu. Spolupráce vedla k systému, který odpovídá tomu, jak škola skutečně funguje.",
         "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1754939908/zbyneksvoboda/portfolio2/recenze/bela.webp"
       },
       {
-        "name": "Petr Kolář",
-        "project": "Doomentia.com",
-        "text": "Zbyňku, díky moc. Super práce. Zůstaňme v kontaktu na další práce.",
-        "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882223/zbyneksvoboda/portfolio2/recenze/doom.webp"
-      },
-      {
-        "name": "Jan Svárovský",
-        "project": "ArboristikaSvarovsky.cz",
-        "text": "Výborná spolupráce v tom pravém smyslu - pochopení požadavků + návrh + konzultace + realizace = spokojenost. To vše rychle a operativně, DĚKUJI!!!",
-        "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882223/zbyneksvoboda/portfolio2/recenze/js.webp"
+        "name": "Kateřina Hrabíková",
+        "project": "Zodpovědná výuka",
+        "text": "Oceňuji, že jsme nejdřív ladili záměr a praktické použití — ne jen vzhled. Výsledkem je web, který odpovídá tomu, co návštěvníci skutečně potřebují.",
+        "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1730489771/zbyneksvoboda/portfolio2/recenze/kaca.webp"
       }
     ],
     "secondaryItems": [
@@ -290,7 +290,7 @@
         "fotka": "https://res.cloudinary.com/dam7wdzvx/image/upload/v1729882225/zbyneksvoboda/portfolio2/recenze/pu.webp"
       }
     ],
-    "hiddenItemsNote": "VYNECHAT z homepage: příliš neformální reference Štěpána Malého a slabší reference typu 'super práce'. Nezahazovat, ale nepoužívat na hlavní prodejní stránce.",
+    "hiddenItemsNote": "VYNECHAT z homepage: execution-only reference (rychlé úpravy, hezký web) a Doomentia. Vulgarita Štěpána Malého odstraněna z veřejné vrstvy.",
     "otherClients": [
       "Doomentia",
       "Ergo-product.cz",
@@ -331,43 +331,45 @@
   ]
 },
   "header": {
-    "navCta": "ověřit spolupráci"
+    "navCta": "Probrat problém"
   },
   "form": {
-    "successMessage": "Děkuji za zprávu. Ozvu se vám co nejdříve.",
+    "successMessage": "Děkuji. Ozvu se vám k kvalifikaci problému a návrhu dalšího kroku.",
     "errorGeneric": "Něco se pokazilo. Zkuste zprávu prosím odeslat znovu.",
     "honeypotLabel": "Company",
     "nameLabel": "Jméno a příjmení *",
     "namePlaceholder": "Vaše jméno",
     "emailLabel": "E-mail *",
     "emailPlaceholder": "vas@email.cz",
-    "websiteLabel": "Váš web (volitelné)",
+    "websiteLabel": "Web firmy (volitelné)",
     "websitePlaceholder": "vasweb.cz",
     "problemTypeLabel": "Co primárně řešíte? *",
     "problemTypeOptions": [
       { "value": "", "label": "Vyberte…" },
-      { "value": "chaos-zakazky", "label": "Chaos v zakázkách, datech nebo dokumentech" },
-      { "value": "b2b-web", "label": "Produktový / B2B web a nabídka" },
+      { "value": "b2b-web", "label": "Nabídka / B2B web — neumíme dobře prodat" },
+      { "value": "chaos-zakazky", "label": "Zakázky a admin — přerostly e-mail a Excel" },
       { "value": "automatizace", "label": "Automatizace konkrétního procesu" },
       { "value": "jine", "label": "Něco jiného" }
     ],
-    "budgetLabel": "Orientační investice *",
+    "whyNowLabel": "Proč to potřebujete řešit právě teď? *",
+    "whyNowPlaceholder": "Např. rostoucí počet zakázek, chyby v datech, nový obchodní cíl, termín před sezónou…",
+    "budgetLabel": "Orientační investice (volitelné)",
     "budgetOptions": [
-      { "value": "", "label": "Vyberte…" },
+      { "value": "", "label": "Zatím neuvádím" },
       { "value": "zjistujeme", "label": "Zatím zjišťujeme" },
       { "value": "do-30k", "label": "Do 30 000 Kč" },
       { "value": "30-80k", "label": "30–80 000 Kč" },
       { "value": "80k-plus", "label": "80 000 Kč a více" },
       { "value": "mesicni", "label": "Měsíční spolupráce" }
     ],
-    "messageLabel": "S čím potřebujete pomoci? *",
-    "messagePlaceholder": "Popište provozní nebo obchodní problém — ne „potřebujeme web a Instagram“.",
+    "messageLabel": "Co dnes nefunguje? *",
+    "messagePlaceholder": "Popište provozní nebo obchodní problém — co se děje dnes a co by se mělo změnit.",
     "gdprNote": "Odesláním zprávy souhlasíte s následnou komunikací. Vaše údaje použiji pouze pro odpověď na vaši zprávu a nebudu je využívat pro marketingové účely.",
     "submitSending": "Odesílám...",
     "submitIdle": "Odeslat popis problému"
   },
   "contactModal": {
-    "title": "Ověřme vhodnost spolupráce",
+    "title": "Probrat konkrétní problém",
     "closeAriaLabel": "Zavřít"
   }
 }
