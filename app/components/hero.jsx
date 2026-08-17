@@ -10,6 +10,11 @@ export default function Hero({ content }) {
     <SectionShell className="bg-modra2 text-brand-offwhite !pt-14 md:!pt-24">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         <Reveal className="lg:col-span-6">
+          {content.eyebrow ? (
+            <p className="label-meta text-brand-offwhite/70 mb-4">
+              {content.eyebrow}
+            </p>
+          ) : null}
           <h1 className="type-hero-title mb-6">{content.title}</h1>
           <p className="type-body-lg text-brand-offwhite/85 mb-10 max-w-xl">
             {content.subheadline}
@@ -46,7 +51,7 @@ export default function Hero({ content }) {
             />
           </div>
           <p className="label-meta text-brand-offwhite/50 mt-4">
-            Klientský portál v ostrém provozu — ne šablona
+            Klientský portál v ostrém provozu - ne šablona
           </p>
         </Reveal>
       </div>

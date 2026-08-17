@@ -1,25 +1,25 @@
 export const processData = {
-  title: "Diagnostika. Rozhodnutí. Realizace.",
+  title: "Nejprve pochopit problém. Potom rozhodnout. Až potom stavět.",
   description:
-    "Nejdřív zjistíme, kde vzniká ztráta. Pak se rozhodneme, co řešit první. Teprve potom stavíme nejmenší řešení, které má šanci fungovat v reálném provozu.",
+    "Největší riziko digitálního projektu není technologie. Je to investice do řešení, které odstraňuje špatně definovaný problém. Pokud zjistím, že nejlepší řešení je jiný existující software nebo specialista, řeknu to.",
   steps: [
     {
       number: "1",
       title: "Diagnostika",
       description:
-        "Zmapujeme web, nabídku, zakázky, data a ruční práci. Pojmenujeme, kde vzniká ztráta času, přehledu nebo obchodních příležitostí.",
+        "Zmapuji konkrétní oblast - například poptávky, zakázky, schvalování, dokumenty, produktová data nebo reporting. Hledám ruční práci, duplicity, ztráty informací a závislost na jednotlivých lidech.",
     },
     {
       number: "2",
       title: "Rozhodnutí",
       description:
-        "Oddělíme priority od nápadů navíc. Dostanete doporučenou první fázi, orientační investici a jasný další krok — včetně toho, co teď řešit nemusíte.",
+        "Porovnáme varianty od nejjednoduššího zásahu po vlastní vývoj. Dostanete doporučení, co má smysl řešit teď, co později a co vůbec.",
     },
     {
       number: "3",
       title: "Realizace",
       description:
-        "Postavím nejmenší smysluplnou verzi — web, automatizaci nebo portál. Po spuštění můžeme pokračovat průběžným rozvojem podle dopadu v provozu.",
+        "Nasadím nejmenší funkční řešení, které odstraní prioritní problém. Po spuštění se další rozvoj řídí podle reálného používání a dopadu.",
     },
   ],
 };

@@ -6,12 +6,13 @@ Tento projekt je osobní web **Zbyňka Svobody** – webového konzultanta a dig
 
 Cíl webu:
 - neprezentovat Zbyňka jako „kodéra, co dělá weby pro všechny“
-- ale jako partnera, který **pomáhá B2B firmám odstranit konkrétní obchodní nebo provozní ztrátu** (web, automatizace nebo systém je prostředek)
-- live positioning (2026): B2B / výroba / servis, diagnostika → rozhodnutí → realizace
+- ale jako partnera, který **pomáhá B2B firmám odstranit chaos mezi webem, Excelem, e-mailem a firemními systémy**
+- live positioning (2026): problém-first digitalizace; diagnostika → rozhodnutí → nejmenší řešení (proces, automatizace, integrace, web nebo vlastní aplikace)
 - web má prodávat zejména:
   - rozhovor o konkrétním problému
-  - digitální diagnostiku firmy (produkt, 10 000 Kč)
-  - datově řízený web / automatizaci / portál podle problému
+  - digitální diagnostiku (jedna prioritní oblast, 10 000 Kč)
+  - automatizaci a propojení systémů
+  - B2B web / interní systém podle problému
   - průběžný digitální rozvoj
 
 Web má působit:
@@ -96,16 +97,17 @@ Klíčová sdělení:
 
 Detailní struktura je v `WIREFRAME.md`, ale shrnutí pro rychlou orientaci:
 
-1. **Hero** – ICP (B2B/výroba), ztráta, CTA „Probrat konkrétní problém“
-2. **Proof** – UGHighers a provozní důkazy
-3. **Dva problémy** – nabídka vs. provozní chaos
-4. **Případové studie** – UGHighers + relevantní důkaz
-5. **Služby** – diagnostika → web / portál
-6. **Proces** – Diagnostika → Rozhodnutí → Realizace
-7. **Ceník** – diagnostika 10 000 Kč jako vstup
-8. **Fit** – pro koho ano / ne
-9. **Recenze** – business outcome
-10. **Kontakt** – formulář s „proč teď“
+1. **Hero** – chaos mezi webem, Excelem, e-mailem a systémy; CTA „Probrat konkrétní problém“
+2. **Proof** – UGHighers provozní důkazy
+3. **Dva problémy** – nabídka vs. provoz
+4. **Nemusíte měnit všechno** – 4 úrovně řešení
+5. **Případové studie** – UGHighers + SvouCestou
+6. **Služby** – diagnostika, B2B web, automatizace, interní systém
+7. **Proces** – Diagnostika → Rozhodnutí → Realizace
+8. **Ceník** – diagnostika 10 000 Kč, automatizace jako nejmenší realizace
+9. **Fit** – pro koho ano / ne
+10. **Recenze** – business outcome
+11. **Kontakt** – formulář s „proč teď“
 
 ---
 

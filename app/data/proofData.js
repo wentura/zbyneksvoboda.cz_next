@@ -1,8 +1,7 @@
 export const proofData = {
   items: [
-    "800+ zakázek zpracovaných systémem UGHighers",
-    "10 měsíců ostrého provozu — každodenní používání týmem",
+    "800+ zakázek zpracovaných v jednom systému",
+    "10 měsíců každodenního ostrého provozu",
     "nabídky, schvalování a shipping bez paralelních Excelů",
-    "provozní systém, ne online vizitka",
   ],
 };

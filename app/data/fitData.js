@@ -1,19 +1,23 @@
 export const fitData = {
-  title: "Pro koho dává spolupráce smysl",
+  title: "Kdy dává spolupráce smysl",
   description:
-    "Pracuji s firmami, které potřebují odstranit konkrétní obchodní nebo provozní ztrátu — ne jen „být online“.",
+    "Největší hodnotu přináším firmám, které už fungují, ale jejich digitální nástroje a procesy nestačí tempu nebo složitosti provozu.",
   forTitle: "Dává smysl, když:",
   notForTitle: "Nedává smysl, když:",
   for: [
-    "máte B2B nebo výrobní nabídku, kterou web neumí srozumitelně vysvětlit",
-    "zakázky, klienti, dokumenty nebo schvalování běží přes e-maily a Excel",
-    "potřebujete jedno místo pravdy pro tým nebo klienty",
-    "chcete investovat do řešení problému, ne do nejlevnější šablony",
+    "jste B2B, výrobní nebo servisní firma",
+    "důležité informace jsou rozdělené mezi více nástrojů",
+    "lidé přepisují stejná data nebo opakovaně dohledávají stav",
+    "web neumí dobře vysvětlit složitější nabídku",
+    "chcete zlepšit konkrétní proces, ne koupit technologii pro technologii",
+    "jste připraveni ukázat, jak firma skutečně pracuje",
   ],
   notFor: [
-    "hlavním kritériem je nejnižší cena",
-    "chcete jen správu Facebooku nebo obsah na sociální sítě",
-    "nemáte provozní ani obchodní problém — jen chcete „být online“",
-    "hledáte levný web „do pátku“ bez zájmu o výsledek",
+    "hledáte nejlevnější web podle šablony",
+    "chcete implementovat konkrétní technologii bez ověření problému",
+    "nechcete měnit proces, pouze digitalizovat současný chaos",
+    "hledáte správce sociálních sítí",
+    "potřebujete obecnou IT podporu koncových zařízení",
+    "očekáváte enterprise tým dostupný 24/7",
   ],
 };

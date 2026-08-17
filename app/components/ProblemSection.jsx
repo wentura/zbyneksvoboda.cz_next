@@ -5,7 +5,7 @@ export default function ProblemSection({ content }) {
   const paths = content.paths || [];
 
   return (
-    <SectionShell className="bg-white">
+    <SectionShell id="problemy" className="bg-white">
       <Reveal>
         <div className="max-w-4xl mb-14">
           <h2 className="type-h1 text-modra2 mb-6 max-w-full">
@@ -32,6 +32,18 @@ export default function ProblemSection({ content }) {
                 <p className="type-body text-neutral-700 mb-4">
                   {path.situation}
                 </p>
+                {path.symptoms?.length ? (
+                  <ul className="space-y-2 mb-6">
+                    {path.symptoms.map((symptom) => (
+                      <li
+                        key={symptom}
+                        className="type-body text-neutral-600 pl-4 border-l border-neutral-200"
+                      >
+                        {symptom}
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
                 <p className="type-body text-modra2 font-medium mb-3">
                   {path.result}
                 </p>

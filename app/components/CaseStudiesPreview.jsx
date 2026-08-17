@@ -5,7 +5,7 @@ import Reveal from "./Reveal";
 
 export default function CaseStudiesPreview({ content }) {
   return (
-    <SectionShell id="pripadove-studie" className="bg-brand-offwhite">
+    <SectionShell id="pripadove-studie" className="bg-white">
       <Reveal>
         <h2 className="type-h1 text-modra2 mb-4 max-w-4xl">{content.title}</h2>
         <p className="type-body-lg text-neutral-700 mb-14 max-w-4xl">
@@ -45,6 +45,12 @@ export default function CaseStudiesPreview({ content }) {
                   </p>
                 </div>
               </div>
+              <Link
+                href={`/portfolio/pripadovaStudie/${study.slug}`}
+                className="odkaz type-body mt-6"
+              >
+                {content.labels.more}
+              </Link>
             </article>
           ))}
         </div>

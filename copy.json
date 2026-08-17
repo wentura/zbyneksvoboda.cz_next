@@ -346,9 +346,9 @@
     "problemTypeLabel": "Co primárně řešíte? *",
     "problemTypeOptions": [
       { "value": "", "label": "Vyberte…" },
-      { "value": "b2b-web", "label": "Nabídka / B2B web — neumíme dobře prodat" },
-      { "value": "chaos-zakazky", "label": "Zakázky a admin — přerostly e-mail a Excel" },
-      { "value": "automatizace", "label": "Automatizace konkrétního procesu" },
+      { "value": "b2b-web", "label": "Web neumí vysvětlit nabídku" },
+      { "value": "chaos-zakazky", "label": "Excel, e-mail a ruční přepisování" },
+      { "value": "automatizace", "label": "Propojení systémů / automatizace" },
       { "value": "jine", "label": "Něco jiného" }
     ],
     "whyNowLabel": "Proč to potřebujete řešit právě teď? *",
@@ -366,7 +366,7 @@
     "messagePlaceholder": "Popište provozní nebo obchodní problém — co se děje dnes a co by se mělo změnit.",
     "gdprNote": "Odesláním zprávy souhlasíte s následnou komunikací. Vaše údaje použiji pouze pro odpověď na vaši zprávu a nebudu je využívat pro marketingové účely.",
     "submitSending": "Odesílám...",
-    "submitIdle": "Odeslat popis problému"
+    "submitIdle": "Odeslat problém"
   },
   "contactModal": {
     "title": "Probrat konkrétní problém",

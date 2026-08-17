@@ -11,22 +11,24 @@ Jazyk: čeština, vykání, profesionální, lidský, bez přehnané omáčky.
 
 Live zdroj: `app/data/heroData.js`.
 
+**Eyebrow:** Digitální konzultant pro B2B, výrobu a služby
+
 **Hlavní nadpis (H1):**
 
-> B2B weby a interní systémy pro firmy, kterým obchod a zakázky přerostly e-mail a Excel.
+> Pomáhám firmám odstranit chaos mezi webem, Excelem, e-mailem a firemními systémy.
 
 **Podnadpis:**
 
-> Pomáhám výrobním a servisním firmám zpřehlednit nabídku, poptávky, dokumenty a zakázkové procesy. Nejdřív zjistíme, kde vzniká ztráta. Potom navrhnu nejmenší řešení, které ji odstraní.
+> Zmapuji, kde se ztrácí čas, informace nebo obchodní příležitosti. Potom navrhnu nejmenší řešení, které dává ekonomický smysl - úpravu procesu, automatizaci, propojení systémů, web nebo interní aplikaci.
 
 **Trust strip:**
 
-- B2B a výrobní firmy  
-- Diagnostika před investicí  
-- Realizace od desítek tisíc  
+- B2B, výroba a služby
+- Diagnostika před vývojem
+- Existující systémy nemusíte zahodit
 
-**Primární CTA:** Probrat konkrétní problém  
-**Sekundární CTA:** Ukázat výsledky  
+**Primární CTA:** Probrat konkrétní problém
+**Sekundární CTA:** Ukázat výsledky
 
 ---
 
@@ -36,19 +38,19 @@ Live zdroj: `app/data/problemData.js`.
 
 **Nadpis:**
 
-> Dva typické problémy, se kterými firmy přicházejí
+> Poznáváte některou z těchto situací?
 
-**Cesta A — Neumíme dobře prodat naši nabídku**
+**Cesta A - Web neumí prodat to, co firma skutečně umí**
 
-Srozumitelnější nabídka → lepší kvalifikace poptávek. Typicky vede k datově řízenému webu.
+Srozumitelnější nabídka, kvalitnější poptávky. Typicky vede k úpravě nabídky, datového modelu nebo B2B webu.
 
-**Cesta B — Zakázky a administrativa nám přerostly přes hlavu**
+**Cesta B - Provoz drží pohromadě Excel, e-mail a lidé**
 
-Méně administrativy → jedno místo pravdy. Typicky vede k automatizaci nebo portálu.
+Méně administrativy, méně chyb. Typicky vede k automatizaci, propojení systémů nebo interní aplikaci.
 
 **Závěr:**
 
-> Nejdřív pojmenujeme, kde digitál brzdí obchod nebo provoz. Teprve potom stavíme řešení.
+> Nejdřív určím, kde vzniká největší ztráta. Teprve potom vybíráme nástroj.
 
 ---
 
@@ -56,9 +58,9 @@ Méně administrativy → jedno místo pravdy. Typicky vede k automatizaci nebo 
 
 **Klíčová věta (live):**
 
-> Pomáhám B2B firmám odstranit konkrétní obchodní nebo provozní ztrátu. Web, automatizace nebo systém je až prostředek.
+> Pomáhám firmám odstranit chaos mezi webem, Excelem, e-mailem a firemními systémy.
 
-Řešení navrhuji podle obchodního a provozního problému, ne podle předem vybrané platformy.
+Nezačínám technologií. Pokud problém vyřeší lepší nastavení stávajícího systému, nebudu prodávat nový.
 
 ---
 
@@ -66,39 +68,52 @@ Méně administrativy → jedno místo pravdy. Typicky vede k automatizaci nebo 
 
 **Nadpis sekce:**
 
-> Nejdřív problém. Potom správné řešení.
+> Od diagnostiky k nejmenšímu řešení, které dává smysl.
 
-**Úvod:**
+Live zdroj: `app/data/servicesData.js`. Čtyři služby:
 
-Řešení navrhuji podle obchodního a provozního problému, ne podle předem vybrané platformy. Nejdřív mapuji data, procesy a ruční práci a hledám nejmenší řešení s měřitelným přínosem.
+1. Digitální diagnostika - 10 000 Kč, jedna prioritní oblast
+2. B2B web a produktová data - od 55 000 Kč
+3. Automatizace a propojení systémů - od 25 000 Kč (`/sluzby/automatizace-integrace`)
+4. Interní systémy a klientské portály - od 90 000 Kč
 
-Live zdroj textů: `app/data/servicesData.js`.
+---
 
-### 3.1 Digitální diagnostika firmy
+### 3.1 Digitální diagnostika
 
-**Rozsah:** 90 minut s vedením + analýza stavu  
-**Výstup do 5 pracovních dnů:** priority, ztráty, rizika, doporučená 1. fáze, orientační investice, plán 90 dní  
-**Klíčová věta:** Výstup je použitelný i v případě, že následnou realizaci nebudu dělat já.
+**Rozsah:** jedna prioritní oblast, 90 minut s vedením + analýza
+**Výstup do 5 pracovních dnů:** mapa problému, ztráty, rizika, doporučená 1. fáze, orientační investice, plán 90 dní
+**Klíčová věta:** Výstup je použitelný i bez mé následné realizace. Nepokrývá kompletní audit celé firmy.
 
 **Cena:** 10 000 Kč
 
 ---
 
-### 3.2 Datově řízený web
+### 3.2 B2B web a produktová data
 
-**Situace:** Web má vysvětlit složitější nabídku, produkty, varianty nebo dokumenty, ale působí jako statická brožura.
+**Situace:** Web neumí srozumitelně vysvětlit technickou nebo rozsáhlou nabídku.
 
-**Výsledek:** Web s jasnou strukturou produktů a obsahu, lepší poptávkou a daty připravenými na rozvoj.
+**Výsledek:** Struktura nabídky, produktových dat a poptávkové cesty.
 
 **Orientační cena:** od 55 000 Kč
 
 ---
 
-### 3.3 Klientský portál / interní systém
+### 3.3 Automatizace a propojení systémů
 
-**Situace:** Zakázky, klienti, dokumenty a schvalování běží přes e-maily a tabulky.
+**Situace:** Stejné údaje se přepisují mezi formulářem, e-mailem, Excelem, CRM nebo účetnictvím.
 
-**Výsledek:** Systém sjednotí proces, data, role a komunikaci – včetně workflow a automatizace.
+**Výsledek:** Data vzniknou jednou a dál se předávají bez zbytečné ruční práce.
+
+**Orientační cena:** od 25 000 Kč
+
+---
+
+### 3.4 Interní systémy a klientské portály
+
+**Situace:** Zakázky, klienti, dokumenty a schvalování už nelze řídit kombinací e-mailu, Excelu a současných aplikací.
+
+**Výsledek:** Systém kolem skutečného procesu - vlastní aplikace až když jednodušší řešení nestačí.
 
 **Orientační cena:** od 90 000 Kč
 

@@ -33,6 +33,7 @@ Tento dokument slouží jako pracovní seznam úkolů pro redesign webu **Zbyňk
 - [x] Sprint filtr + vizuál: hero bez „Weby…“, trust strip, case studies před services, kvalifikace formuláře.
 - [x] Audit follow-up: Upstash rate limit + Origin, CSS motion, fonty, UX polish, cleanup dead code.
 - [x] **Konverzní sprint (sales):** ostřejší hero/CTA, 2 cesty problému, diagnostika 10 000 Kč, proces 3 kroky, formulář „proč teď“, méně WordPress negace, Fit později, business recenze, UGHighers framing.
+- [x] **Copy digitalizace 2026:** problém-first hero, SolutionOptions, 4. služba automatizace/integrace, diagnostika = jedna oblast, fit bez arogance.
 
 ---
 

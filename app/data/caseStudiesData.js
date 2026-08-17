@@ -15,18 +15,18 @@ export const caseStudiesData = {
   items: [
     {
       slug: "ughighers",
-      title: "UGHighers",
-      type: "Klientský portál a interní systém pro zakázkovou výrobu",
+      title: "Z e-mailů a tabulek do jednoho systému pro 800+ zakázek",
+      type: "Provozní digitalizace",
       problem:
-        "Zakázková výroba hudebních nosičů běžela přes e-maily, tabulky a roztříštěnou komunikaci. Nabídky, schvalování, shipping a provozní detaily se dohledávaly na několika místech — tým i klienti neměli společný přehled.",
+        "Nabídky, schvalování, shipping podklady a komunikace byly rozdělené mezi e-mail, tabulky a jednotlivé lidi.",
       problemShort:
-        "Zakázky, nabídky a shipping běžely přes e-maily a Excel. Tým i klienti pracovali s paralelními verzemi pravdy.",
+        "Nabídky, schvalování, shipping podklady a komunikace byly rozdělené mezi e-mail, tabulky a jednotlivé lidi.",
       solution:
-        "Navrhl jsem firmě klíčový provozní systém: klientská zóna, evidence projektů, nabídky, schvalování, shipping podklady, notifikace, auditní záznamy a fakturační podklady na jednom místě.",
+        "Navrhl a vyvinul jsem klientský portál a interní systém, který sjednotil projekty, nabídky, schvalování, provozní data a fakturační podklady.",
       result:
-        "800+ zakázek zpracovaných systémem. 10 měsíců ostrého provozu. Tým i klienti pracují se stejnými daty — bez paralelních Excelů a ručního dohledávání stavu zakázky.",
+        "800+ zakázek v systému, 10 měsíců ostrého provozu a jedno místo pravdy pro interní tým i klienty.",
       resultHighlight:
-        "800+ zakázek. 10 měsíců provozu. Jedno místo pravdy od nabídky po shipping — bez paralelních Excelů.",
+        "800+ zakázek v systému, 10 měsíců ostrého provozu a jedno místo pravdy pro interní tým i klienty.",
       role:
         "návrh procesu, UX struktury, datového modelu, aplikační logiky a vývoj systému",
       image:
@@ -40,18 +40,18 @@ export const caseStudiesData = {
     },
     {
       slug: "skolni-system",
-      title: "SvouCestou.info",
-      type: "Školní management, interní systém a rodičovský portál",
+      title: "Jedno místo pro plánování, docházku, pokrok a školní provoz",
+      type: "Interní systém",
       problem:
-        "Plánování výuky, pokrok dětí, docházka, stravné, školní akce a komunikace s rodiči byly rozptýlené mezi osobní poznámky, zprávy, tabulky a opakované dotazy. Učitelé neměli jedno sdílené místo, kde by na sebe mohli přirozeně navazovat.",
+        "Informace byly rozdělené mezi tabulky, zprávy, poznámky a opakované dotazy.",
       problemShort:
-        "Výuka, docházka, stravné a komunikace s rodiči běžely přes poznámky, WhatsApp a tabulky.",
+        "Informace byly rozdělené mezi tabulky, zprávy, poznámky a opakované dotazy.",
       solution:
-        "Navrhl a vyvíjím systém pro správu dětí, učebních plánů, lekcí, pokroku, docházky, stravného, školního kalendáře, akcí, úkolů pro rodiče a hodnoticích výstupů bez známkování.",
+        "Interní systém sjednocuje práci průvodců, plánování výuky, pokrok dětí, docházku, stravné a další provozní agendu.",
       result:
-        "Interní část sjednocuje práci průvodců a dává týmu aktuální přehled o tom, co dítě dělalo, co má naplánované a v jaké fázi učení se nachází. Rodičovský portál je připravovaný pro nasazení od září 2026 s cílem omezit ruční komunikaci přes WhatsApp, zpřehlednit docházku, stravné a školní akce.",
+        "Tým pracuje se společnými daty. Rodičovská část je připravená pro nasazení od září 2026.",
       resultHighlight:
-        "Interní systém sjednocuje práci týmu. Rodičovský portál připravený na ostrý provoz.",
+        "Tým pracuje se společnými daty. Rodičovská část je připravená pro nasazení od září 2026.",
       role:
         "návrh procesů, datového modelu, UX logiky, stavového modelu výuky a vývoj systému",
       image:

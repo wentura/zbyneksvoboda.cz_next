@@ -13,17 +13,17 @@ const montserrat = Montserrat({
 
 // * Metadata pro SEO.
 export const metadata = {
-  title: "Zbyněk Svoboda - digitální strategie, firemní weby a interní systémy",
+  title: "Digitalizace firemních procesů, B2B weby a interní systémy | Zbyněk Svoboda",
   description:
-    "Pomáhám malým a středním firmám sjednotit web, data a interní procesy do funkčního digitálního systému. Navrhuji firemní weby, klientské portály a interní aplikace.",
+    "Pomáhám B2B, výrobním a servisním firmám odstranit ruční práci a chaos mezi Excelem, e-mailem, webem a firemními systémy. Diagnostika, automatizace, integrace, B2B weby a interní aplikace.",
   metadataBase: new URL("https://zbyneksvoboda.cz"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Zbyněk Svoboda - digitální strategie, firemní weby a interní systémy",
+    title: "Digitalizace firemních procesů, B2B weby a interní systémy | Zbyněk Svoboda",
     description:
-      "Pomáhám malým a středním firmám sjednotit web, data a interní procesy do funkčního digitálního systému. Navrhuji firemní weby, klientské portály a interní aplikace.",
+      "Pomáhám B2B, výrobním a servisním firmám odstranit ruční práci a chaos mezi Excelem, e-mailem, webem a firemními systémy. Diagnostika, automatizace, integrace, B2B weby a interní aplikace.",
     url: "https://zbyneksvoboda.cz",
     siteName: "Zbyněk Svoboda",
     images: [
@@ -39,9 +39,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zbyněk Svoboda - digitální strategie, firemní weby a interní systémy",
+    title: "Digitalizace firemních procesů, B2B weby a interní systémy | Zbyněk Svoboda",
     description:
-      "Pomáhám malým a středním firmám sjednotit web, data a interní procesy do funkčního digitálního systému. Navrhuji firemní weby, klientské portály a interní aplikace.",
+      "Pomáhám B2B, výrobním a servisním firmám odstranit ruční práci a chaos mezi Excelem, e-mailem, webem a firemními systémy. Diagnostika, automatizace, integrace, B2B weby a interní aplikace.",
     images: ["/ja.jpg"],
   },
 };
@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
         "@type": "Person",
         name: "Zbyněk Svoboda",
         url: "https://zbyneksvoboda.cz",
-        jobTitle: "Digitální stratég, webový konzultant a vývojář",
+        jobTitle: "Digitální konzultant a solution architect",
         email: "info@zbyneksvoboda.cz",
         telephone: "+420773687792",
         address: {

@@ -12,12 +12,14 @@ import { caseStudiesData } from "./app/data/caseStudiesData";
 import { processData } from "./app/data/processData";
 import { pricingData } from "./app/data/pricingData";
 import { aboutData } from "./app/data/aboutData";
+import { solutionOptionsData } from "./app/data/solutionOptionsData";
 
 export const content = {
   name: copy.name,
   hero: heroData,
   proof: proofData,
   problem: problemData,
+  solutionOptions: solutionOptionsData,
   fit: fitData,
   services: {
     ...servicesOverview,
@@ -29,13 +31,13 @@ export const content = {
   about: aboutData,
   contact: {
     ...copy.contact,
-    title: "Pojďme probrat konkrétní problém.",
+    title: "Popište mi, kde se dnes ztrácí čas, informace nebo obchod.",
     lead:
-      "Napište, co dnes brzdí obchod nebo provoz — a proč to potřebujete řešit právě teď. Ozvu se s návrhem dalšího kroku: krátký hovor, diagnostika, nebo jasné NE, pokud spolupráce nedává smysl.",
+      "Nemusíte vědět, jestli potřebujete automatizaci, nový web nebo interní systém. Napište mi, jak dnes proces funguje, kde se zasekává a proč ho potřebujete řešit. Ozvu se s návrhem vhodného dalšího kroku.",
   },
   form: copy.form,
   header: {
-    navCta: "Probrat problém",
+    navCta: "Probrat konkrétní problém",
   },
   contactModal: copy.contactModal,
   testimonials: copy.testimonials,
@@ -53,4 +55,5 @@ export {
   processData,
   pricingData,
   aboutData,
+  solutionOptionsData,
 };

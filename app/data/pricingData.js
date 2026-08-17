@@ -1,40 +1,40 @@
 export const pricingData = {
   title: "Orientační ceny",
   description:
-    "Nejdřív vidíte rozsah a dopad — diagnostika je vstup před investicí. Řešení navrhuji podle obchodního a provozního problému, ne podle předem vybrané platformy.",
+    "Nejdřív vidíte rozsah a dopad - diagnostika je vstup před investicí. Řešení navrhuji podle obchodního a provozního problému, ne podle předem vybrané platformy.",
   pricing: [
     {
-      title: "Digitální diagnostika firmy",
+      title: "Digitální diagnostika",
       description:
-        "90 minut s vedením, analýza stavu a rozhodovací dokument do 5 pracovních dnů. Výstup je použitelný i bez mé následné realizace.",
+        "Jedna prioritní obchodní nebo provozní oblast. 90 minut s vedením, analýza problému a rozhodovací dokument do 5 pracovních dnů.",
       price: "10 000 Kč",
-      note: "vstup před rozhodnutím",
-    },
-    {
-      title: "Datově řízený web",
-      description:
-        "Web pro firmy, kde nestačí jen vizitka. Produkty, varianty, parametry, dokumenty, poptávková cesta a datová vrstva.",
-      price: "od 55 000 Kč",
-      note: "běžně 55 000–120 000 Kč",
-    },
-    {
-      title: "Klientský portál / interní systém",
-      description:
-        "Aplikace pro zakázky, klienty, workflow, notifikace a jedno místo pravdy. Začíná se menší první verzí.",
-      price: "od 90 000 Kč",
-      note: "větší systémy obvykle 120 000 Kč+",
+      note: "vstup před větší investicí",
     },
     {
       title: "Automatizace konkrétního procesu",
       description:
-        "Menší realizace bez nutnosti stavět celý systém. Jedna uzavřená první verze — formulář, notifikace, dokument nebo sync dat.",
+        "Jedna jasně vymezená automatizace nebo integrace - například synchronizace dat, notifikace, dokumenty, formulář nebo schvalovací krok.",
       price: "od 25 000 Kč",
-      note: "mezivrstva mezi diagnostikou a větším systémem",
+      note: "když není potřeba stavět celý systém",
+    },
+    {
+      title: "B2B web a produktová data",
+      description:
+        "Pro technické a B2B firmy, kde web musí pracovat s produkty, parametry, dokumenty, poptávkami a strukturovanými daty.",
+      price: "od 55 000 Kč",
+      note: "běžně 55 000 až 120 000 Kč",
+    },
+    {
+      title: "Interní systém / klientský portál",
+      description:
+        "První provozní verze aplikace pro zakázky, klienty, workflow, dokumenty, stavy a reporting.",
+      price: "od 90 000 Kč",
+      note: "větší systémy obvykle 120 000 Kč+",
     },
     {
       title: "Průběžný digitální rozvoj",
       description:
-        "Pravidelné řízení priorit, menší rozvoj, vyhodnocení a dílčí automatizace. Ne anonymní balík hodin ani levná údržba bez kontextu.",
+        "Pravidelná práce na prioritách po diagnostice nebo první realizaci. Rozvoj podle dopadu, ne balík náhodných hodin.",
       price: "od 12 000 Kč / měsíc",
       note: "po diagnostice nebo první realizaci",
       highlight: true,
@@ -48,6 +48,6 @@ export const pricingData = {
     cta: "Probrat konkrétní problém",
     ctaHref: "/#kontakt",
     disclaimer:
-      "Dlouhodobá spolupráce je možná jako průběžný digitální rozvoj po diagnostice nebo první realizaci. Neprodávám anonymní technickou podporu ani levnou údržbu bez kontextu.",
+      "Dlouhodobá spolupráce je možná jako průběžný digitální rozvoj po diagnostice nebo první realizaci. Pokud spolupráce nebude dávat smysl, řeknu to rovnou.",
   },
 };

@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 
 export default function ProcessSection({ content }) {
   return (
-    <SectionShell className="bg-brand-offwhite">
+    <SectionShell id="jak-pracuji" className="bg-white">
       <Reveal>
         <h2 className="type-h1 text-modra2 mb-4 max-w-4xl">{content.title}</h2>
         <p className="type-body-lg text-neutral-700 mb-14 max-w-4xl">
