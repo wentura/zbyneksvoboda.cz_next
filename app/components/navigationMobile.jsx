@@ -79,7 +79,7 @@ export default function NavigationMobile() {
               className="ctaBtnPrimary text-center mx-auto w-full"
               onClick={toggleMenu}
             >
-              Konzultace
+              Probrat konkrétní problém
             </Link>
           </li>
         </ul>

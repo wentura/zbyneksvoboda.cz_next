@@ -39,12 +39,12 @@ function MatomoClient() {
     <img
       referrerPolicy="no-referrer-when-downgrade"
       src={src}
-      className="pointer-events-none absolute h-0 w-0 border-0 opacity-0"
+      className="pointer-events-none fixed bottom-0 left-0 border-0"
       alt=""
-      width={0}
-      height={0}
-      loading="lazy"
-      decoding="async"
+      width={1}
+      height={1}
+      loading="eager"
+      decoding="sync"
     />
   );
 }

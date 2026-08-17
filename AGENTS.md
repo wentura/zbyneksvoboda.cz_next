@@ -29,10 +29,12 @@ Web má působit:
 Jako AI asistent v Cursoru:
 
 1. **Vždy si nejprve přečti:**
+   - `app/data/*.js` – **live texty webu** (hero, služby, ceník, formulář…)
    - `WIREFRAME.md` – struktura a layout webu
-   - `COPY.md` – texty pro jednotlivé sekce
    - `STYLEGUIDE.md` – vizuální a obsahové zásady
    - `TODO.md` – aktuální úkoly a priority
+   - `COPY.md` – krátký přehled, ne zdroj pravdy
+
 
 2. **Primární úkoly:**
    - pomáhat s redesignem homepage a případně dalších podstránek
@@ -47,7 +49,7 @@ Jako AI asistent v Cursoru:
 
 4. **Co nedělat:**
    - nevymýšlet generické texty typu „jsme dynamický tým…“
-   - nepoužívat lorem ipsum, pokud existuje relevantní text v `COPY.md`
+   - nepoužívat lorem ipsum, pokud existuje relevantní text v `app/data/*.js`
    - neměnit zásadní positioning (web consultant & strategist) zpět na „jen webdesigner“
    - nepřidávat složitý vizuální balast, efekty nebo „agenturácký“ styl
 
@@ -97,8 +99,8 @@ Klíčová sdělení:
 
 Detailní struktura je v `WIREFRAME.md`, ale shrnutí pro rychlou orientaci:
 
-1. **Hero** – chaos mezi webem, Excelem, e-mailem a systémy; CTA „Probrat konkrétní problém“
-2. **Proof** – UGHighers provozní důkazy
+1. **Hero** – kratší H1, portrét, produkt; CTA „Probrat konkrétní problém“
+2. **Proof** – display čísla (900+, 11+, 1)
 3. **Dva problémy** – nabídka vs. provoz
 4. **Nemusíte měnit všechno** – 4 úrovně řešení
 5. **Případové studie** – UGHighers + SvouCestou
@@ -106,8 +108,9 @@ Detailní struktura je v `WIREFRAME.md`, ale shrnutí pro rychlou orientaci:
 7. **Proces** – Diagnostika → Rozhodnutí → Realizace
 8. **Ceník** – diagnostika 10 000 Kč, automatizace jako nejmenší realizace
 9. **Fit** – pro koho ano / ne
-10. **Recenze** – business outcome
-11. **Kontakt** – formulář s „proč teď“
+10. **FAQ** – námitky (ERP, web, rozpočet, low-code)
+11. **Recenze** – business outcome
+12. **Kontakt** – formulář s „proč teď“
 
 ---
 
@@ -150,14 +153,16 @@ Asistent by měl při návrzích kódu:
 
 ---
 
-## 7. Práce s WIREFRAME.md a COPY.md
+## 7. Práce s copy
 
-- Pokud už existuje text v `COPY.md`, PRIORITNĚ ho používej.
+- Live texty jsou v `app/data/*.js`, agregace v `content.js`.
+- `COPY.md` je jen přehled. Při rozporu platí datové soubory.
 - Úpravy textu dělej v duchu `STYLEGUIDE.md`.
 - Pokud je potřeba text rozšířit, dodržuj:
   - tón (konzultant, ne agentura),
-  - cílovku (malé a střední firmy, projekty s ambicí růstu),
-  - pozicování Zbyňka (web consultant & strategist, ne jen kóder).
+  - cílovku (malé a střední B2B, výroba, servis),
+  - pozicování: problém před technologií, jednotné číslo „já“.
+
 
 ---
 
@@ -175,7 +180,7 @@ Když asistent řeší konkrétní úkol:
 - Přepsat konkrétní sekci homepage podle `STYLEGUIDE.md`
 - Vytvořit React/Next.js komponentu pro konkrétní sekci (`HeroSection`, `ServicesSection`, …)
 - Připravit HTML strukturu + Tailwind třídy dle `WIREFRAME.md`
-- Upravit texty v `COPY.md` podle změn pozicování nebo nových služeb
+- Upravit texty v `app/data/*.js` podle změn pozicování nebo nových služeb
 - Navrhnout, jak z existujícího portfolia udělat „případové studie“ (problem → solution → result)
 - Optimalizovat strukturu navigace nebo CTA
 
@@ -183,10 +188,10 @@ Když asistent řeší konkrétní úkol:
 
 ## 10. Shrnutí
 
-- Zbyněk je **web consultant & strategist**, ne „kodér na webíky“.
-- Web má prodávat **konzultaci** a **strategická řešení**, ne jen grafickou podobu.
+- Zbyněk pomáhá B2B firmám odstranit chaos mezi webem, Excelem, e-mailem a firemními systémy.
+- Web má prodávat **diagnostiku a nejmenší smysluplné řešení**, ne automaticky nový web nebo aplikaci.
 - Asistent má být:
   - konkrétní
   - konzistentní
-  - respektovat existující soubory: `WIREFRAME.md`, `COPY.md`, `STYLEGUIDE.md`, `TODO.md`
+  - respektovat live copy v `app/data/*.js` a docs: `WIREFRAME.md`, `STYLEGUIDE.md`, `TODO.md`
 - Jakékoliv změny, které by rozbíjely pozicování nebo styl, se mají dělat opatrně a vědomě – ideálně s komentářem v TODO, proč k nim došlo.

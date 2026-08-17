@@ -6,18 +6,21 @@ export const processData = {
     {
       number: "1",
       title: "Diagnostika",
+      time: "90 min + 5-8 pracovních dnů",
       description:
         "Zmapuji konkrétní oblast - například poptávky, zakázky, schvalování, dokumenty, produktová data nebo reporting. Hledám ruční práci, duplicity, ztráty informací a závislost na jednotlivých lidech.",
     },
     {
       number: "2",
       title: "Rozhodnutí",
+      time: "před jakýmkoliv vývojem",
       description:
         "Porovnáme varianty od nejjednoduššího zásahu po vlastní vývoj. Dostanete doporučení, co má smysl řešit teď, co později a co vůbec.",
     },
     {
       number: "3",
       title: "Realizace",
+      time: "první verze podle rozsahu",
       description:
         "Nasadím nejmenší funkční řešení, které odstraní prioritní problém. Po spuštění se další rozvoj řídí podle reálného používání a dopadu.",
     },

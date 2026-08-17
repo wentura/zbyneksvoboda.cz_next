@@ -11,11 +11,11 @@ export default function Services({ content }) {
           {content.description}
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-neutral-200">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0 border-t border-neutral-200">
           {content.items.map((service) => (
             <article
               key={service.slug}
-              className="py-10 md:py-12 md:px-8 border-b lg:border-b-0 border-neutral-200 md:border-l md:[&:nth-child(2n+1)]:border-l-0 lg:border-l lg:[&:nth-child(4n+1)]:border-l-0"
+              className="py-10 md:py-12 md:px-8 border-b md:border-b-1 border-neutral-200 md:border-l md:[&:nth-child(2n+1)]:border-l-0 lg:border-l lg:[&:nth-child(4n+1)]:border-l-0"
             >
               <h3 className="type-h3 text-modra2 mb-4">{service.title}</h3>
               <p className="type-body text-neutral-700 mb-3">
@@ -34,11 +34,11 @@ export default function Services({ content }) {
                   </li>
                 ))}
               </ul>
-              {service.detailHref ? (
+              {/* {service.detailHref ? (
                 <Link href={service.detailHref} className="odkaz type-body">
                   {content.detailLinkLabel}
                 </Link>
-              ) : null}
+              ) : null} */}
             </article>
           ))}
         </div>

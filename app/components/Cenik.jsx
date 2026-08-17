@@ -15,24 +15,45 @@ export default function Cenik({ content }) {
           {content.pricing.map((item) => (
             <div
               key={item.title}
-              className={`py-10 md:p-8 border-b border-neutral-200 lg:border-r lg:odd:border-r lg:[&:nth-child(3n)]:border-r-0 flex flex-col`}
+              className={`py-10 md:p-8 border-b border-neutral-200 lg:border-r lg:[&:nth-child(3n)]:border-r-0 flex flex-col ${
+                item.highlight ? "bg-modra2 text-brand-offwhite" : ""
+              }`}
             >
-              <h3 className="type-h3 text-modra2 mb-3">{item.title}</h3>
-              <p className="type-body text-neutral-700 mb-4 flex-grow">
-                {item.description}
-              </p>
-              {item.note && (
-                <p className="label-meta mb-4 normal-case tracking-normal font-medium">
+              {item.note ? (
+                <p
+                  className={`label-meta mb-3 ${
+                    item.highlight ? "text-brand-offwhite/60" : ""
+                  }`}
+                >
                   {item.note}
                 </p>
-              )}
-              <p className="type-body font-semibold text-modra2 mt-auto">
+              ) : null}
+              <h3
+                className={`type-h3 mb-3 ${
+                  item.highlight ? "text-brand-offwhite" : "text-modra2"
+                }`}
+              >
+                {item.title}
+              </h3>
+              <p
+                className={`type-body mb-4 flex-grow ${
+                  item.highlight ? "text-brand-offwhite/80" : "text-neutral-700"
+                }`}
+              >
+                {item.description}
+              </p>
+              <p
+                className={`type-body font-semibold mt-auto ${
+                  item.highlight ? "text-brand-offwhite" : "text-modra2"
+                }`}
+              >
                 {item.price}
               </p>
             </div>
           ))}
 
-          <div className="p-2 py-10 md:p-8 border-b border-neutral-200 bg-brand-offwhite flex flex-col lg:col-span-1 ">
+          <div className="py-10 md:p-8 border-b border-neutral-200 flex flex-col">
+            <p className="label-meta mb-3">{content.consultationCallout.price}</p>
             <h3 className="type-h3 text-modra2 mb-3">
               {content.consultationCallout.title}
             </h3>
@@ -41,18 +62,10 @@ export default function Cenik({ content }) {
             </p>
             <Link
               href={content.consultationCallout.ctaHref}
-              className="ctaBtnSecondaryDark mb-4 text-center self-start"
+              className="ctaBtnSecondaryLight text-center self-start"
             >
               {content.consultationCallout.cta}
             </Link>
-            <p className="type-body font-semibold text-modra2 mb-4">
-              {content.consultationCallout.price}
-            </p>
-            {content.consultationCallout.disclaimer && (
-              <p className="type-meta text-neutral-500">
-                {content.consultationCallout.disclaimer}
-              </p>
-            )}
           </div>
         </div>
       </Reveal>

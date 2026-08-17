@@ -18,6 +18,7 @@ export const fitData = {
     "nechcete měnit proces, pouze digitalizovat současný chaos",
     "hledáte správce sociálních sítí",
     "potřebujete obecnou IT podporu koncových zařízení",
-    "očekáváte enterprise tým dostupný 24/7",
+    "očekáváte implementaci konkrétního ERP na klíč",
+    "hledáte tým 30 vývojářů dostupný 24/7",
   ],
 };

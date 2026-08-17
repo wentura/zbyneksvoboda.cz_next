@@ -29,6 +29,8 @@ export const caseStudiesData = {
         "800+ zakázek v systému, 10 měsíců ostrého provozu a jedno místo pravdy pro interní tým i klienty.",
       role:
         "návrh procesu, UX struktury, datového modelu, aplikační logiky a vývoj systému",
+      metric: "800+",
+      metricLabel: "zakázek v jednom systému",
       image:
         "https://res.cloudinary.com/dam7wdzvx/image/upload/v1771523925/zbyneksvoboda/portfolio2/ugh.webp",
       metricsQuestions: [
@@ -54,6 +56,8 @@ export const caseStudiesData = {
         "Tým pracuje se společnými daty. Rodičovská část je připravená pro nasazení od září 2026.",
       role:
         "návrh procesů, datového modelu, UX logiky, stavového modelu výuky a vývoj systému",
+      metric: "1 systém",
+      metricLabel: "místo tabulek, zpráv a poznámek",
       image:
         "https://res.cloudinary.com/dam7wdzvx/image/upload/v1751903175/zbyneksvoboda/portfolio2/svoucestou.webp",
     },

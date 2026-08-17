@@ -33,30 +33,52 @@ export default function Hero({ content }) {
               {content.ctaSecondary}
             </Link>
           </div>
+          {content.portraitSrc ? (
+            <div className="flex items-center gap-4 mt-10">
+              <Image
+                src={content.portraitSrc}
+                alt={content.portraitAlt}
+                width={56}
+                height={56}
+                sizes="56px"
+                loading="eager"
+                className="object-cover object-top w-14 h-14 bg-neutral-200"
+              />
+              <div>
+                <p className="type-body font-semibold text-brand-offwhite">
+                  {content.portraitCaption}
+                </p>
+                <p className="type-meta text-brand-offwhite/60">
+                  {content.portraitRole}
+                </p>
+              </div>
+            </div>
+          ) : null}
         </Reveal>
 
         <Reveal
           className="relative order-first lg:order-last lg:col-span-6"
           delay={0.08}
         >
-          <div className="relative aspect-[4/3] w-full overflow-hidden bg-modra2/40">
-            <Image
-              className="object-cover object-top"
-              alt={content.imageAlt}
-              src={productSrc}
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              priority
-              fetchPriority="high"
-            />
+          <div className="border border-brand-offwhite/20 p-2 bg-black/20">
+            <div className="relative aspect-[4/3] w-full overflow-hidden">
+              <Image
+                className="object-cover object-top"
+                alt={content.imageAlt}
+                src={productSrc}
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
+                loading="eager"
+                fetchPriority="high"
+              />
+            </div>
           </div>
           <p className="label-meta text-brand-offwhite/50 mt-4">
-            Klientský portál v ostrém provozu - ne šablona
+            {content.imageCaption}
           </p>
         </Reveal>
       </div>
-
-
     </SectionShell>
   );
 }

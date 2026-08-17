@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Matomo from "./components/matomo";
 import Footer from "./components/footer";
+import MobileStickyCta from "./components/MobileStickyCta";
 
 const montserrat = Montserrat({
   subsets: ["latin", "latin-ext"],
@@ -79,13 +80,14 @@ export default function RootLayout({ children }) {
       lang="cs"
       className={`${montserrat.variable} scroll-smooth`}
     >
-      <body>
+      <body className="pb-20 lg:pb-0">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
         {children}
         <Footer />
+        <MobileStickyCta />
         <Matomo />
       </body>
     </html>

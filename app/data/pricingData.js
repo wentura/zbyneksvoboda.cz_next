@@ -6,9 +6,10 @@ export const pricingData = {
     {
       title: "Digitální diagnostika",
       description:
-        "Jedna prioritní obchodní nebo provozní oblast. 90 minut s vedením, analýza problému a rozhodovací dokument do 5 pracovních dnů.",
+        "Jedna prioritní obchodní nebo provozní oblast. 90 minut s vedením, analýza problému a rozhodovací dokument do 5-8 pracovních dnů.",
       price: "10 000 Kč",
       note: "vstup před větší investicí",
+      highlight: true,
     },
     {
       title: "Automatizace konkrétního procesu",
@@ -37,7 +38,6 @@ export const pricingData = {
         "Pravidelná práce na prioritách po diagnostice nebo první realizaci. Rozvoj podle dopadu, ne balík náhodných hodin.",
       price: "od 12 000 Kč / měsíc",
       note: "po diagnostice nebo první realizaci",
-      highlight: true,
     },
   ],
   consultationCallout: {

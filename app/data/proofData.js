@@ -1,7 +1,16 @@
 export const proofData = {
   items: [
-    "800+ zakázek zpracovaných v jednom systému",
-    "10 měsíců každodenního ostrého provozu",
-    "nabídky, schvalování a shipping bez paralelních Excelů",
+    {
+      value: "900+",
+      label: "zakázek v jednom systému",
+    },
+    {
+      value: "11+",
+      label: "měsíců ostrého provozu",
+    },
+    {
+      value: "1",
+      label: "místo pravdy místo paralelních Excelů",
+    },
   ],
 };

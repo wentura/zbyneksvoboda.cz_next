@@ -23,6 +23,9 @@ export default function ProcessSection({ content }) {
                 {String(step.number).padStart(2, "0")}
               </span>
               <div>
+                {step.time ? (
+                  <p className="label-meta mb-2">{step.time}</p>
+                ) : null}
                 <h3 className="type-h3 text-modra2 mb-2">{step.title}</h3>
                 <p className="type-body text-neutral-700 max-w-2xl">
                   {step.description}

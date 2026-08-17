@@ -1,4 +1,3 @@
-import copy from "./copy.json";
 import { heroData } from "./app/data/heroData";
 import { proofData } from "./app/data/proofData";
 import { problemData } from "./app/data/problemData";
@@ -13,9 +12,14 @@ import { processData } from "./app/data/processData";
 import { pricingData } from "./app/data/pricingData";
 import { aboutData } from "./app/data/aboutData";
 import { solutionOptionsData } from "./app/data/solutionOptionsData";
+import { siteData } from "./app/data/siteData";
+import { formData } from "./app/data/formData";
+import { contactData, contactModalData } from "./app/data/contactData";
+import { testimonialsData } from "./app/data/testimonialsData";
+import { faqData } from "./app/data/faqData";
 
 export const content = {
-  name: copy.name,
+  name: siteData.name,
   hero: heroData,
   proof: proofData,
   problem: problemData,
@@ -29,18 +33,12 @@ export const content = {
   process: processData,
   cenik: pricingData,
   about: aboutData,
-  contact: {
-    ...copy.contact,
-    title: "Popište mi, kde se dnes ztrácí čas, informace nebo obchod.",
-    lead:
-      "Nemusíte vědět, jestli potřebujete automatizaci, nový web nebo interní systém. Napište mi, jak dnes proces funguje, kde se zasekává a proč ho potřebujete řešit. Ozvu se s návrhem vhodného dalšího kroku.",
-  },
-  form: copy.form,
-  header: {
-    navCta: "Probrat konkrétní problém",
-  },
-  contactModal: copy.contactModal,
-  testimonials: copy.testimonials,
+  contact: contactData,
+  form: formData,
+  header: siteData.header,
+  contactModal: contactModalData,
+  testimonials: testimonialsData,
+  faq: faqData,
 };
 
 export {
@@ -56,4 +54,9 @@ export {
   pricingData,
   aboutData,
   solutionOptionsData,
+  siteData,
+  formData,
+  contactData,
+  testimonialsData,
+  faqData,
 };

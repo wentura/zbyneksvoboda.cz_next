@@ -2,6 +2,7 @@ import CaseStudiesPreview from "./components/CaseStudiesPreview";
 import Cenik from "./components/Cenik";
 import Contact from "./components/contact";
 import FitSection from "./components/FitSection";
+import FaqSection from "./components/FaqSection";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import ProblemSection from "./components/ProblemSection";
@@ -26,6 +27,7 @@ export default function Home() {
         <ProcessSection content={content.process} />
         <Cenik content={content.cenik} />
         <FitSection content={content.fit} />
+        <FaqSection content={content.faq} />
         <RecenzeShort content={content.testimonials} />
         <Contact contact={content.contact} form={content.form} />
       </main>

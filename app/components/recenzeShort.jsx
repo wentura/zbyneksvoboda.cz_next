@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import Reveal from "./Reveal";
 
 export default function RecenzeShort({ content }) {
@@ -9,7 +8,7 @@ export default function RecenzeShort({ content }) {
   return (
     <section
       id="recenze"
-      className="py-20 md:py-28 bg-brand-offwhite scroll-mt-16"
+      className="py-20 md:py-28 bg-white scroll-mt-16"
     >
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6">
         <Reveal>
@@ -53,14 +52,17 @@ export default function RecenzeShort({ content }) {
           </div>
 
           <div className="pt-8 border-t border-neutral-200">
-            <p className="type-body text-neutral-700 mb-6 max-w-4xl">
-              {content.clientsLinePrefix}{" "}
-              {otherClients.map((client, index) => (
-                <React.Fragment key={client}>
-                  {index > 0 && ", "}
-                  <strong>{client}</strong>
-                </React.Fragment>
-              ))}{" "}
+            <p className="type-meta text-neutral-500 mb-4">
+              {content.clientsLinePrefix}
+            </p>
+            <ul className="flex flex-wrap gap-x-4 gap-y-2 mb-6">
+              {otherClients.map((client) => (
+                <li key={client} className="type-body text-modra2">
+                  {client}
+                </li>
+              ))}
+            </ul>
+            <p className="type-meta text-neutral-500 mb-6">
               {content.clientsLineSuffix}
             </p>
             <Link href="/recenze" className="odkaz type-body text-modra2">

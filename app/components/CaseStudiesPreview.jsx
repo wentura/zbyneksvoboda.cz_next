@@ -27,6 +27,16 @@ export default function CaseStudiesPreview({ content }) {
                   className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
+                {study.metric ? (
+                  <div className="absolute inset-x-0 bottom-0 bg-modra2/90 px-4 py-3">
+                    <p className="text-2xl md:text-3xl font-bold tabular-nums tracking-tight text-white">
+                      {study.metric}
+                    </p>
+                    <p className="label-meta text-white/70 mt-1">
+                      {study.metricLabel}
+                    </p>
+                  </div>
+                ) : null}
               </div>
               <p className="label-meta text-brand-accent mb-3">{study.type}</p>
               <h3 className="type-h3 text-modra2 mb-6">{study.title}</h3>

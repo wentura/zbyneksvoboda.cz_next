@@ -28,5 +28,6 @@ export const solutionOptionsData = {
         "Vlastní systém má smysl tam, kde standardní nástroje neumí klíčový proces bez drahých kompromisů.",
     },
   ],
-  closing: "Technologie vybírám až podle problému, ne opačně.",
+  closing:
+    "Nejsem dodavatel ERP ani low-code agentura. Nejdřív rozhodneme, jestli stačí proces, propojení, web, nebo až vlastní aplikace.",
 };

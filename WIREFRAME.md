@@ -14,14 +14,12 @@ Nejde o pixel-perfect design, ale o **logiku sekcí, hierarchii informací a lay
 - Logo / jméno: `Zbyněk Svoboda`
 - Menu položky:
   - Výsledky (`/#pripadove-studie`)
-  - Problémy (`/#problemy`)
   - Služby (`/#sluzby`)
-  - Jak pracuji (`/#jak-pracuji`)
   - Ceny (`/#cenik`)
   - Kontakt (`/#kontakt`)
 - CTA tlačítko: **Probrat konkrétní problém** → `/#kontakt`
-- Články: zatím bez položky v menu (blog neexistuje)
-- Recenze a ceník: dostupné na homepage přes scroll, ne v hlavním menu
+- Mobilní sticky CTA (pod `lg`): stejná akce, pořád viditelná
+- Problémy a Jak pracuji: na homepage, ne v hlavním menu
 
 **Layout (desktop):**
 - vlevo: logo / jméno
@@ -57,17 +55,18 @@ Layout: jednoduchý, dvousloupcový (desktop), jednokolonový (mobile).
 
 **Pořadí sekcí (digitalizace 2026):**
 1. Header
-2. Hero (problém-first + CTA „Probrat konkrétní problém“)
-3. Proof strip (UGHighers)
+2. Hero (kratší H1 + portrét + produkt v rámu)
+3. Proof strip - display čísla (900+, 11+, 1)
 4. Problem - dvě situace + symptomy
 5. SolutionOptions - nemusíte měnit všechno (4 úrovně)
-6. Case studies - UGHighers + SvouCestou
+6. Case studies - UGHighers + SvouCestou, metrika na fotce
 7. Services - 4 karty včetně automatizace
-8. Process - Diagnostika → Rozhodnutí → Realizace
-9. Pricing - diagnostika, automatizace, web, portál, rozvoj
+8. Process - Diagnostika → Rozhodnutí → Realizace (s časy)
+9. Pricing - diagnostika zvýrazněná, automatizace jako nejmenší realizace
 10. Fit - Kdy dává spolupráce smysl
-11. Recenze
-12. Contact
+11. FAQ námitky
+12. Recenze
+13. Contact
 
 **Data:** `app/data/*.js` agregovaná přes `content.js`.
 
