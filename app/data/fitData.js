@@ -6,6 +6,7 @@ export const fitData = {
   notForTitle: "Nedává smysl, když:",
   for: [
     "jste B2B, výrobní nebo servisní firma",
+    "potřebujete profesionální web bez stavby informačního systému",
     "důležité informace jsou rozdělené mezi více nástrojů",
     "lidé přepisují stejná data nebo opakovaně dohledávají stav",
     "web neumí dobře vysvětlit složitější nabídku",

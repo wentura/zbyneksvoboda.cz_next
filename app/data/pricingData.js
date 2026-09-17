@@ -1,7 +1,7 @@
 export const pricingData = {
   title: "Orientační ceny",
   description:
-    "Nejdřív vidíte rozsah a dopad - diagnostika je vstup před investicí. Řešení navrhuji podle obchodního a provozního problému, ne podle předem vybrané platformy.",
+    "Nejdřív vidíte rozsah a dopad - diagnostika je vstup před investicí. Řešení navrhuji podle obchodního a provozního problému, ne podle předem vybrané platformy. Cena závisí na rozsahu obsahu a funkcích, ne na počtu URL.",
   pricing: [
     {
       title: "Digitální diagnostika",
@@ -19,9 +19,16 @@ export const pricingData = {
       note: "když není potřeba stavět celý systém",
     },
     {
+      title: "Firemní prezentační web",
+      description:
+        "Moderní web, který vysvětlí nabídku, představí firmu a dovede návštěvníka ke kontaktu, poptávce nebo rezervaci. Bez katalogu, portálu a složitých integrací.",
+      price: "od 35 000 Kč",
+      note: "když stačí kvalitní prezentace a konverze",
+    },
+    {
       title: "B2B web a produktová data",
       description:
-        "Pro technické a B2B firmy, kde web musí pracovat s produkty, parametry, dokumenty, poptávkami a strukturovanými daty.",
+        "Pro technické a B2B firmy, kde web funguje jako obchodní rozhraní - katalog, parametry, dokumenty, poptávky a strukturovaná produktová data.",
       price: "od 55 000 Kč",
       note: "běžně 55 000 až 120 000 Kč",
     },

@@ -18,7 +18,8 @@ export const problemData = {
       ],
       result:
         "Srozumitelnější nabídka, kvalitnější poptávky a data připravená pro další obchodní využití.",
-      leadsTo: "Typicky vede k úpravě nabídky, datového modelu nebo B2B webu.",
+      leadsTo:
+        "U jednodušší nabídky typicky vede k firemnímu prezentačnímu webu. U technické nebo katalogové nabídky k B2B webu a produktovým datům.",
     },
     {
       label: "B",

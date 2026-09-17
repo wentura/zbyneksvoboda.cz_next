@@ -4,6 +4,11 @@ export const faqData = {
     "Většina firem už nějaký systém má. To nevadí. Často je problém v mezeře mezi nástroji, ne v tom, že chybí další krabice.",
   items: [
     {
+      question: "Potřebujeme jen nový firemní web, ne systém.",
+      answer:
+        "Přesně na to je firemní prezentační web od 35 000 Kč - srozumitelná nabídka, důvěra a cesta ke kontaktu nebo rezervaci. Pokud potřebujete katalog, produktová data nebo portál, přecházíme na B2B web nebo individuální řešení.",
+    },
+    {
       question: "Už máme ERP / Helios / účetnictví.",
       answer:
         "Nepřicházím je nahradit. Zjistím, kde se data ztrácejí mezi systémem, Excelem a e-mailem - a navrhnu nejmenší zásah, který tu mezeru uzavře.",

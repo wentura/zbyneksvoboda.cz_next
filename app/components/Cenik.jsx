@@ -52,17 +52,21 @@ export default function Cenik({ content }) {
             </div>
           ))}
 
-          <div className="py-10 md:p-8 border-b border-neutral-200 flex flex-col">
-            <p className="label-meta mb-3">{content.consultationCallout.price}</p>
-            <h3 className="type-h3 text-modra2 mb-3">
-              {content.consultationCallout.title}
-            </h3>
-            <p className="type-body text-neutral-700 mb-8 flex-grow">
-              {content.consultationCallout.body}
-            </p>
+          <div className="py-10 md:p-8 border-b border-neutral-200 flex flex-col md:col-span-2 lg:col-span-3 md:flex-row md:items-end md:justify-between md:gap-8">
+            <div className="flex flex-col flex-grow min-w-0">
+              <p className="label-meta mb-3">
+                {content.consultationCallout.price}
+              </p>
+              <h3 className="type-h3 text-modra2 mb-3">
+                {content.consultationCallout.title}
+              </h3>
+              <p className="type-body text-neutral-700 mb-8 md:mb-0 max-w-3xl">
+                {content.consultationCallout.body}
+              </p>
+            </div>
             <Link
               href={content.consultationCallout.ctaHref}
-              className="ctaBtnSecondaryLight text-center self-start"
+              className="ctaBtnSecondaryLight text-center self-start md:self-end shrink-0"
             >
               {content.consultationCallout.cta}
             </Link>

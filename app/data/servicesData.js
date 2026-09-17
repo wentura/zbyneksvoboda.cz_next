@@ -46,6 +46,39 @@ export const servicesData = [
     },
   },
   {
+    slug: "prezentacni-web",
+    title: "Firemní prezentační web",
+    situation:
+      "Potřebujete modernizovat starý web, spouštíte novou službu nebo chcete srozumitelně představit firmu - ale nepotřebujete katalog, portál ani interní systém?",
+    outcome:
+      "Dostanete profesionální web, který vysvětlí nabídku, získá důvěru a dovede návštěvníka ke kontaktu, poptávce nebo rezervaci.",
+    benefits: [
+      "návrh struktury a jasná konverzní cesta",
+      "responzivní web se základní správou obsahu",
+      "technické SEO, analytika a nasazení",
+    ],
+    detailHref: "/sluzby/prezentacni-web",
+    detail: {
+      metaDescription:
+        "Firemní prezentační web od 35 000 Kč. Moderní web, který vysvětlí nabídku a dovede návštěvníka ke kontaktu, poptávce nebo rezervaci.",
+      intro:
+        "Web pro firmy, které nepotřebují nový informační systém. Potřebují hlavně srozumitelně vysvětlit, co dělají, získat důvěru a dovést zákazníka k akci. Pokud je problém větší než samotná prezentace firmy - katalog, produktová data, portál nebo automatizace - přecházíme na individuální řešení.",
+      forWho:
+        "Pro malé a střední firmy s jednou nebo několika službami, které chtějí moderní, rychlý a udržovatelný web bez složitého katalogu, e-shopu nebo vlastní aplikace.",
+      includes: [
+        "návrh struktury webu a základní UX konverzní cesty",
+        "jeden jasný vizuální směr a responzivní design",
+        "implementace webu a základní správa obsahu",
+        "kontaktní, poptávkové nebo rezervační CTA",
+        "technické SEO, analytika, optimalizace výkonu a nasazení",
+      ],
+      deliverable:
+        "Funkční firemní web připravený na další rozvoj. Do základního rozsahu typicky nepatří rozsáhlý katalog, e-shop, klientský portál, vlastní rezervační systém, ERP integrace ani automatizace firemních procesů - ty se nacení individuálně.",
+      priceHint: "od 35 000 Kč",
+      priceHref: "/#cenik",
+    },
+  },
+  {
     slug: "web-redesign",
     title: "B2B web a produktová data",
     situation:
