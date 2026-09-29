@@ -6,9 +6,9 @@ export const portfolioData = [
   {
     title: "UGHighers",
     link: "https://ughighers.com/",
-    linkViewMore: "ughighers.com",
+    linkViewMore: "Veřejný web UGHighers",
     shortDecs:
-      "Klíčový provozní systém pro zakázkovou výrobu hudebních nosičů.<br /><br />800+ zakázek zpracovaných systémem. 10 měsíců ostrého provozu. Tým i klienti pracují se stejnými daty — nabídky, schvalování a shipping bez paralelních Excelů.",
+      "Klíčový provozní systém pro zakázkovou výrobu hudebních nosičů.<br /><br />1 000+ klientských projektů v systému. Navrhl jsem proces, interní aplikaci a klientský portál, kde tým i klienti pracují s nabídkami, schvalováním a podklady k zakázkám.",
     images: [
       {
         img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1771523925/zbyneksvoboda/portfolio2/ugh.webp",
@@ -23,9 +23,9 @@ export const portfolioData = [
   {
     title: "SvouCestou.info",
     link: "https://svoucestou.info/",
-    linkViewMore: "svoucestou.info",
+    linkViewMore: "Veřejný web školy",
     shortDecs:
-      "Školní management, interní systém a rodičovský portál pro plánování výuky, pokrok dětí, docházku, stravné, akce a komunikaci s rodiči.<br /><br />Interní část sjednocuje práci průvodců. Rodičovský portál je připravovaný pro nasazení od září 2026.",
+      "Školní management a rodičovský přístup pro plánování výuky, pokrok dětí, docházku, stravné a další provozní agendu.<br /><br />Navrhl jsem procesy, datový model a aplikaci s oddělenými přístupy pro vedení, průvodce a rodiče. Tým školy pracuje se společnými daty.",
     images: [
       {
         img: "https://res.cloudinary.com/dam7wdzvx/image/upload/v1751903175/zbyneksvoboda/portfolio2/svoucestou.webp",

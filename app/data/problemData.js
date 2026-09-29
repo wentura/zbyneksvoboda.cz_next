@@ -1,14 +1,14 @@
 export const problemData = {
-  title: "Poznáváte některou z těchto situací?",
+  title: "Poznáváte se z těchto situací?",
   introParagraphs: [
-    "Technologie většinou nejsou hlavní problém. Problém vzniká mezi nimi - tam, kde lidé přepisují data, hledají dokumenty, předávají informace ručně nebo suplují nejasný web.",
+    "Technologie nejsou hlavní problém. Problém vzniká tam, kde lidé přepisují data, hledají dokumenty, předávají informace ručně nebo suplují nejasný web.",
   ],
   paths: [
     {
       label: "A",
       title: "Web neumí prodat to, co firma skutečně umí",
       situation:
-        "Nabídka je technická, produktů a variant je hodně a důležité informace jsou rozdělené mezi web, PDF katalogy, ceníky a zkušenosti obchodníků. Zákazník se obtížně orientuje a obchodník musí opakovaně vysvětlovat základ.",
+        "Nabídka je technická, produktů a variant je hodně a důležité informace jsou rozdělené mezi web, PDF katalogy, ceníky a zkušenosti obchodníků. Zákazník se obtížně orientuje a obchodník opakovaně vysvětluje.",
       symptoms: [
         "produktová nabídka nemá jasnou strukturu",
         "parametry a dokumenty se spravují ručně",
@@ -23,9 +23,9 @@ export const problemData = {
     },
     {
       label: "B",
-      title: "Provoz drží pohromadě Excel, e-mail a lidé",
+      title: "Provoz drží pohromadě tabulky, e-maily a lidi",
       situation:
-        "Každý systém obsahuje část informací, ale celý stav zakázky nikde. Data se přepisují, dokumenty hledají a vedení se na stav musí ptát lidí, kteří ho drží v hlavě.",
+        "Každý systém obsahuje část informací, ale celý stav zakázky nikde. Data se přepisují, dokumenty hledají a vedení se na stav musí ptát lidí, kteří ho drží v paměti.",
       symptoms: [
         "stejné údaje se zapisují na více míst",
         "zakázka nemá jedno místo pravdy",
@@ -41,5 +41,5 @@ export const problemData = {
     },
   ],
   closing:
-    "Nejdřív určím, kde vzniká největší ztráta. Teprve potom vybíráme nástroj.",
+    "Nejdřív určíme, kde vzniká největší ztráta. Teprve potom navrhneme optimální řešení.",
 };

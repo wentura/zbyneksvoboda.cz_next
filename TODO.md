@@ -73,6 +73,7 @@ Tento dokument slouží jako pracovní seznam úkolů pro redesign webu **Zbyňk
 ## 6. Obsah a case studies
 
 - [ ] Doplnit případové studie o konkrétnější výsledky, pokud jsou k dispozici (čísla, konverze, obsazenost apod.).
+- [x] Doplnit anonymizované snímky aplikací UGHighers a Svou Cestou bez údajů klientů a dětí; použít je v přehledu a detailech studií.
 - [ ] Případně přidat další 1–2 projekty jako case studies (např. Harasov, SvouCestou apod.).
 - [ ] U recenzí doplnit kontext (název projektu, typ spolupráce).
 

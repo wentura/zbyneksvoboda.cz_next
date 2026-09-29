@@ -13,7 +13,7 @@ export default function Hero({ content }) {
           {content.eyebrow ? (
             <p className="label-meta text-brand-offwhite/70 mb-4">
               {content.eyebrow}
-            </p>
+              </p>
           ) : null}
           <h1 className="type-hero-title mb-6">{content.title}</h1>
           <p className="type-body-lg text-brand-offwhite/85 mb-10 max-w-xl">
@@ -33,7 +33,7 @@ export default function Hero({ content }) {
               {content.ctaSecondary}
             </Link>
           </div>
-          {content.portraitSrc ? (
+          {/* {content.portraitSrc ? (
             <div className="flex items-center gap-4 mt-10">
               <Image
                 src={content.portraitSrc}
@@ -53,7 +53,7 @@ export default function Hero({ content }) {
                 </p>
               </div>
             </div>
-          ) : null}
+          ) : null} */}
         </Reveal>
 
         <Reveal

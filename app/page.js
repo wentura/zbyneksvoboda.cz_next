@@ -19,7 +19,7 @@ export default function Home() {
       <Header content_name={content.name} navCta={content.header.navCta} />
       <main>
         <Hero content={content.hero} />
-        <ProofStrip content={content.proof} />
+        {/* <ProofStrip content={content.proof} /> */}
         <ProblemSection content={content.problem} />
         <SolutionOptionsSection content={content.solutionOptions} />
         <CaseStudiesPreview content={content.caseStudies} />

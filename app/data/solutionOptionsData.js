@@ -1,33 +1,33 @@
 export const solutionOptionsData = {
-  title: "Nemusíte měnit všechno. Často stačí opravit jedno slabé místo.",
+  title: "Často stačí opravit jedno slabé místo.",
   description:
-    "Většina firem už má účetnictví, ERP, CRM, e-mail, cloudové úložiště nebo další specializované nástroje. Cílem není nahradit je jedním obřím systémem. Cílem je odstranit ruční práci a mezery mezi nimi.",
+    "Většina firem už má účetnictví, ERP, CRM, e-mail, cloudové úložiště nebo další specializované nástroje. Cílem není nahradit je jedním obřím systémem. Cílem je odstranit ruční práci a vyřešit mezery mezi nimi.",
   items: [
     {
       number: "1",
-      title: "Použít lépe to, co už máte",
+      title: "Použít to, co už máte, lépe",
       description:
-        "Pokud problém vyřeší nastavení stávajícího nástroje nebo změna procesu, nový software není potřeba.",
+        "Pokud problém vyřeší nastavení stávajícího nástroje nebo změna procesu, není potřeba instalovat nový software.",
     },
     {
       number: "2",
-      title: "Propojit existující systémy",
+      title: "Propojit existující systémy automaticky",
       description:
-        "Data mohou mezi webem, CRM, účetnictvím, e-shopem nebo interními nástroji přecházet automaticky.",
+        "Data mezi webem, CRM, účetnictvím, e-shopem nebo interními nástroji mohou přecházet automaticky.",
     },
     {
       number: "3",
-      title: "Automatizovat konkrétní krok",
+      title: "Automatizovat konkrétní kroky v procesu",
       description:
-        "Notifikace, dokumenty, schvalování, importy, exporty a opakované administrativní úkoly nemusí dělat člověk.",
+        "Notifikace, dokumenty, schvalování, importy, exporty a opakované administrativní úkoly nemusí dělat člověk. Předá se do systému a automaticky se provede.",
     },
     {
       number: "4",
-      title: "Postavit vlastní aplikaci",
+      title: "Postavit vlastní web nebo aplikaci",
       description:
-        "Vlastní systém má smysl tam, kde standardní nástroje neumí klíčový proces bez drahých kompromisů.",
+        "Vlastní web nebo aplikace má smysl tam, kde standardní nástroje neumí klíčový proces bez drahých kompromisů.",
     },
   ],
   closing:
-    "Nejsem dodavatel ERP ani low-code agentura. Nejdřív rozhodneme, jestli stačí proces, propojení, web, nebo až vlastní aplikace.",
+    "Nejdřív rozhodneme, jestli stačí proces, propojení, web, nebo až vlastní aplikace.",
 };
