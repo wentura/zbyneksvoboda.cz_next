@@ -20,7 +20,7 @@ export default function FitSection({ content }) {
                   key={item}
                   className="flex items-start type-body text-neutral-700 gap-2"
                 >
-                  <span className="text-green-600 text-2xl shrink-0 font-bold" aria-hidden>
+                  <span className="text-green-600 text-2xl shrink-0 font-bold -mt-1" aria-hidden>
                     +
                   </span>
                   <span>{item}</span>
@@ -37,7 +37,7 @@ export default function FitSection({ content }) {
                   key={item}
                   className="flex items-start type-body text-neutral-700 gap-2"
                 >
-                  <span className="text-red-600 text-2xl shrink-0 font-bold" aria-hidden>
+                  <span className="text-red-600 text-2xl shrink-0 font-bold -mt-1" aria-hidden>
                     −
                   </span>
                   <span>{item}</span>
