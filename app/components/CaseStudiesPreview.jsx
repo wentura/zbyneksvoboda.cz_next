@@ -3,7 +3,6 @@ import Image from "next/image";
 import SectionShell from "./SectionShell";
 import Reveal from "./Reveal";
 import CaseStudyVisual from "./CaseStudyVisual";
-
 export default function CaseStudiesPreview({ content }) {
   return (
     <SectionShell id="pripadove-studie" className="bg-white">

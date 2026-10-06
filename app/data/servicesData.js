@@ -1,7 +1,7 @@
 export const servicesOverview = {
-  title: "Od diagnostiky k nejmenšímu řešení, které dává smysl.",
+  title: "Od diagnostiky k nejmenšímu možnému řešení, které dává smysl a řeší problém.",
   description:
-    "Nemusíte předem vědět, jestli potřebujete web, automatizaci nebo systém. První krok je pochopit problém a jeho dopad. Teprve potom má smysl rozhodovat o technologii.",
+    "Nemusíte předem vědět, jestli potřebujete web, automatizaci nebo systém. První krok je pochopit problém a jeho dopad. Teprve potom má smysl rozhodovat o řešení a technologii.",
   gainTitle: "Co získáte",
   cta: null,
   ctaHref: "/#kontakt",
