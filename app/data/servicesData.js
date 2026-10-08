@@ -1,3 +1,6 @@
+// detailHref / detail stránky /sluzby/[slug] nejsou veřejné (2026).
+// Detailní texty v `detail` zůstávají jako připravená copy pro budoucí obnovení.
+
 export const servicesOverview = {
   title: "Od diagnostiky k nejmenšímu možnému řešení, které dává smysl a řeší problém.",
   description:

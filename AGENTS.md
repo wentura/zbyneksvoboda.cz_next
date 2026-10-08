@@ -104,13 +104,15 @@ Detailní struktura je v `WIREFRAME.md`, ale shrnutí pro rychlou orientaci:
 3. **Dva problémy** – nabídka vs. provoz
 4. **Nemusíte měnit všechno** – 4 úrovně řešení
 5. **Případové studie** – UGHighers + SvouCestou
-6. **Služby** – diagnostika, B2B web, automatizace, interní systém
+6. **Služby** – karty na homepage (veřejné `/sluzby/[slug]` momentálně vypnuté)
 7. **Proces** – Diagnostika → Rozhodnutí → Realizace
 8. **Ceník** – diagnostika 10 000 Kč, automatizace jako nejmenší realizace
 9. **Fit** – pro koho ano / ne
 10. **FAQ** – námitky (ERP, web, rozpočet, low-code)
 11. **Recenze** – business outcome
 12. **Kontakt** – formulář s „proč teď“
+
+Kanonická produkční doména: `https://www.zbyneksvoboda.cz` (viz `lib/site.js`, `DEPLOYMENT.md`).
 
 ---
 

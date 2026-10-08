@@ -8,18 +8,18 @@ import Hero from "./components/hero";
 import ProblemSection from "./components/ProblemSection";
 import ProcessSection from "./components/ProcessSection";
 import RecenzeShort from "./components/recenzeShort";
-import ProofStrip from "./components/ProofStrip";
 import SolutionOptionsSection from "./components/SolutionOptionsSection";
 import Services from "./components/services";
 import { content } from "@/content";
 
 export default function Home() {
+  // ProofStrip zůstává vypnutý: čísla jsou v case studies (UGHighers),
+  // samostatný strip zatím nepřidává konverzní hodnotu nad hero.
   return (
     <>
       <Header content_name={content.name} navCta={content.header.navCta} />
       <main>
         <Hero content={content.hero} />
-        {/* <ProofStrip content={content.proof} /> */}
         <ProblemSection content={content.problem} />
         <SolutionOptionsSection content={content.solutionOptions} />
         <CaseStudiesPreview content={content.caseStudies} />

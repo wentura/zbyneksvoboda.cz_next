@@ -1,5 +1,9 @@
 import Link from "next/link";
 
+/**
+ * Šablona detailu služby. Veřejná routa /sluzby/[slug] je vypnutá (2026);
+ * komponenta a data v servicesData.detail zůstávají pro případné obnovení.
+ */
 export default function ServiceDetailPage({ service }) {
   const { detail } = service;
 

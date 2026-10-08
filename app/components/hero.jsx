@@ -8,15 +8,16 @@ export default function Hero({ content }) {
 
   return (
     <SectionShell className="bg-modra2 text-brand-offwhite !pt-14 md:!pt-24">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-        <Reveal className="lg:col-span-6">
+      {/* Na mobilu text + CTA první; na lg zůstává text vlevo, vizuál vpravo */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+        <Reveal className="lg:col-span-6 order-1 lg:order-1">
           {content.eyebrow ? (
             <p className="label-meta text-brand-offwhite/70 mb-4">
               {content.eyebrow}
-              </p>
+            </p>
           ) : null}
           <h1 className="type-hero-title mb-6">{content.title}</h1>
-          <p className="type-body-lg text-brand-offwhite/85 mb-10 max-w-xl">
+          <p className="type-body-lg text-brand-offwhite/85 mb-8 md:mb-10 max-w-xl">
             {content.subheadline}
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -33,31 +34,10 @@ export default function Hero({ content }) {
               {content.ctaSecondary}
             </Link>
           </div>
-          {/* {content.portraitSrc ? (
-            <div className="flex items-center gap-4 mt-10">
-              <Image
-                src={content.portraitSrc}
-                alt={content.portraitAlt}
-                width={56}
-                height={56}
-                sizes="56px"
-                loading="eager"
-                className="object-cover object-top w-14 h-14 bg-neutral-200"
-              />
-              <div>
-                <p className="type-body font-semibold text-brand-offwhite">
-                  {content.portraitCaption}
-                </p>
-                <p className="type-meta text-brand-offwhite/60">
-                  {content.portraitRole}
-                </p>
-              </div>
-            </div>
-          ) : null} */}
         </Reveal>
 
         <Reveal
-          className="relative order-first lg:order-last lg:col-span-6"
+          className="relative order-2 lg:order-2 lg:col-span-6"
           delay={0.08}
         >
           <div className="border border-brand-offwhite/20 p-2 bg-black/20">

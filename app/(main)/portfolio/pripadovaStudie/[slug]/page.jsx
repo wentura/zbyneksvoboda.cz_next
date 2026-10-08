@@ -6,6 +6,7 @@ import SafeHtml from "@/app/components/SafeHtml";
 import Reveal from "@/app/components/Reveal";
 import CaseStudyVisual from "@/app/components/CaseStudyVisual";
 import { notFound } from "next/navigation";
+import { SITE_URL } from "@/lib/site";
 
 const stripHtml = (value) =>
   String(value || "")
@@ -13,9 +14,11 @@ const stripHtml = (value) =>
     .trim();
 
 function getStudy(slug) {
-  const portfolioItem = portfolioData.find((entry) => entry.slug === slug);
   const caseItem = caseStudiesData.items.find((entry) => entry.slug === slug);
-  if (!portfolioItem && !caseItem) return null;
+  const portfolioItem = portfolioData.find(
+    (entry) => entry.slug === slug && entry.hasCaseStudy,
+  );
+  if (!caseItem && !portfolioItem) return null;
   return { portfolioItem, caseItem };
 }
 
@@ -53,7 +56,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title,
       description,
-      url: `https://zbyneksvoboda.cz/portfolio/pripadovaStudie/${slug}`,
+      url: `${SITE_URL}/portfolio/pripadovaStudie/${slug}`,
       images: [{ url: image }],
       type: "article",
       locale: "cs_CZ",

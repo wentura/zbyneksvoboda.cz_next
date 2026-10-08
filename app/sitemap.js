@@ -1,28 +1,23 @@
 import { portfolioData } from "./data/portfolioData";
-import { servicesData } from "./data/servicesData";
+import { SITE_URL } from "@/lib/site";
 
 export default function sitemap() {
-  const baseUrl = "https://zbyneksvoboda.cz";
   const lastModified = new Date();
 
+  // Pouze case studies se skutečným obsahem (hasCaseStudy).
+  // Detailní stránky /sluzby/* nejsou veřejné — zůstávají jen jako data.
   const caseStudies = portfolioData
-    .filter((item) => item.slug)
+    .filter((item) => item.slug && item.hasCaseStudy)
     .map((item) => ({
-      url: `${baseUrl}/portfolio/pripadovaStudie/${item.slug}`,
+      url: `${SITE_URL}/portfolio/pripadovaStudie/${item.slug}`,
       lastModified,
     }));
 
-  const services = servicesData.map((service) => ({
-    url: `${baseUrl}/sluzby/${service.slug}`,
-    lastModified,
-  }));
-
   return [
-    { url: `${baseUrl}/`, lastModified },
-    { url: `${baseUrl}/portfolio`, lastModified },
-    { url: `${baseUrl}/recenze`, lastModified },
-    { url: `${baseUrl}/ckdfaq`, lastModified },
-    ...services,
+    { url: `${SITE_URL}/`, lastModified },
+    { url: `${SITE_URL}/portfolio`, lastModified },
+    { url: `${SITE_URL}/recenze`, lastModified },
+    { url: `${SITE_URL}/ckdfaq`, lastModified },
     ...caseStudies,
   ];
 }

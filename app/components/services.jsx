@@ -34,11 +34,6 @@ export default function Services({ content }) {
                   </li>
                 ))}
               </ul>
-              {/* {service.detailHref ? (
-                <Link href={service.detailHref} className="odkaz type-body">
-                  {content.detailLinkLabel}
-                </Link>
-              ) : null} */}
             </article>
           ))}
         </div>

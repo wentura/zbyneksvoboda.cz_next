@@ -1,10 +1,9 @@
 import sanitizeHtml from "sanitize-html";
 
 /**
- * Bezpečná komponenta pro renderování HTML s sanitizací
- * Pro produkci použít DOMPurify, prozatím základní sanitizace
+ * Bezpečné renderování HTML přes sanitize-html (allowlist tagů/atributů).
+ * DOMPurify není nutný — sanitize-html pokrývá současné use-casy (recenze, portfolio).
  */
-// * Export bezpečné komponenty pro render HTML.
 export default function SafeHtml({ html, className = "" }) {
   if (!html) return null;
 

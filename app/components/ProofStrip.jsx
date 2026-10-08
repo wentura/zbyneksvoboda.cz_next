@@ -1,6 +1,7 @@
 import SectionShell from "./SectionShell";
 import Reveal from "./Reveal";
 
+/** Momentálně nepoužito na homepage — čísla žijí v case studies. Data: proofData.js */
 export default function ProofStrip({ content }) {
   if (!content?.items?.length) return null;
 

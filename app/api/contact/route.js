@@ -7,11 +7,6 @@ import {
   ConfigurationError,
 } from "@/lib/errors";
 import logger from "@/lib/logger";
-import {
-  checkRateLimit,
-  RATE_LIMIT_MAX_REQUESTS,
-  RATE_LIMIT_WINDOW_SECONDS,
-} from "@/lib/rateLimit";
 
 const ALLOWED_ORIGINS = [
   "https://zbyneksvoboda.cz",
@@ -70,31 +65,6 @@ export async function POST(request) {
       return NextResponse.json(
         { message: "Neplatný požadavek." },
         { status: 403 },
-      );
-    }
-
-    const rateLimitResult = await checkRateLimit(ip);
-    if (rateLimitResult.limited) {
-      logger.warn({
-        event: "rate_limit_exceeded",
-        ip,
-        path: "/api/contact",
-        remaining: rateLimitResult.remaining,
-        reset: rateLimitResult.reset,
-      });
-      return NextResponse.json(
-        { message: "Příliš mnoho požadavků. Zkuste to prosím později." },
-        {
-          status: 429,
-          headers: {
-            "X-RateLimit-Limit": (
-              rateLimitResult.limit || RATE_LIMIT_MAX_REQUESTS
-            ).toString(),
-            "X-RateLimit-Remaining": rateLimitResult.remaining.toString(),
-            "X-RateLimit-Reset": rateLimitResult.reset.toString(),
-            "Retry-After": RATE_LIMIT_WINDOW_SECONDS.toString(),
-          },
-        },
       );
     }
 

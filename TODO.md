@@ -1,149 +1,56 @@
 # TODO – Redesign zbyneksvoboda.cz
 
-Tento dokument slouží jako pracovní seznam úkolů pro redesign webu **Zbyňka Svobody** a průběžné vylepšování.
+Pracovní seznam. Live texty jsou v `app/data/*.js`. Kanonická doména: **www.zbyneksvoboda.cz**.
 
 ---
 
-## 1. Příprava a analýza
+## Hotovo (stav 2026)
 
-- [ ] Záloha aktuální verze webu a repozitáře.
-- [ ] Zkontrolovat aktuální strukturu kódu (Next.js verze, layout, komponenty).
-- [ ] Projít `AGENTS.md`, `WIREFRAME.md`, `COPY.md`, `STYLEGUIDE.md` a ujasnit si cílový stav.
-- [ ] Zhodnotit, které části stávajícího webu se dají znovu použít (komponenty, styly, sekce).
-
----
-
-## 2. Struktura homepage
-
-- [x] Vytvořit komponenty pro jednotlivé sekce (viz `WIREFRAME.md`):
-  - [x] `Hero` + trust strip
-  - [x] `ProofStrip`
-  - [x] `ProblemSection`
-  - [x] `Services` (4 karty)
-  - [x] `CaseStudiesPreview`
-  - [x] `ProcessSection`
-  - [x] `AboutPreview`
-  - [x] `Cenik` (Pricing)
-  - [x] `Contact`
-- [x] Upravit `app/page.js` podle nové struktury.
-- [x] Aktualizovat navigaci (header) podle nové struktury menu.
-- [x] Podstránky služeb `/sluzby/[slug]`.
-- [ ] `TestimonialsSection` na homepage (recenze zůstávají na `/recenze`).
-- [x] `FitSection` (Pro koho jsem / nejsem) na homepage.
-- [x] Sprint filtr + vizuál: hero bez „Weby…“, trust strip, case studies před services, kvalifikace formuláře.
-- [x] Audit follow-up: Upstash rate limit + Origin, CSS motion, fonty, UX polish, cleanup dead code.
-- [x] **Konverzní sprint (sales):** ostřejší hero/CTA, 2 cesty problému, diagnostika 10 000 Kč, proces 3 kroky, formulář „proč teď“, méně WordPress negace, Fit později, business recenze, UGHighers framing.
-- [x] **Copy digitalizace 2026:** problém-first hero, SolutionOptions, 4. služba automatizace/integrace, diagnostika = jedna oblast, fit bez arogance.
-- [x] **Copy zdroje:** live texty jen v `app/data/*.js`. Smazán `copy.json` a mrtvé kopie.
-- [x] **Konkurenční UX:** proof čísla, metrika v case studies, portrét v hero, FAQ námitky, sticky CTA, užší nav, zvýrazněná diagnostika.
+- [x] Homepage sekce: Hero, Problem, SolutionOptions, CaseStudies, Services, Process, Cenik, Fit, FAQ, RecenzeShort, Contact
+- [x] Content v `app/data/*.js` + agregace `content.js`
+- [x] Kontaktní formulář (Resend) + honeypot + speed check + Origin + XSS escape
+- [x] Security headers v `next.config.mjs` (CSP, HSTS, …)
+- [x] Formulář bez Redis: honeypot + speed check + Origin (Upstash odstraněn)
+- [x] SafeHtml přes `sanitize-html`
+- [x] Case studies: UGHighers + Svou Cestou (`/portfolio/pripadovaStudie/…`)
+- [x] Recenze na homepage (`RecenzeShort`) + `/recenze`
+- [x] Kanonické URL / sitemap / robots na `https://www.zbyneksvoboda.cz`
+- [x] Veřejné `/sluzby/[slug]` odstraněny ze sitemap i routy (detail copy zůstává v datech)
+- [x] ESLint flat config (`eslint .`) pro Next.js 16
+- [x] Mobilní hero: text + CTA před vizuálem; menu s a11y (aria, Escape, scroll lock)
+- [x] Deployment checklist: `DEPLOYMENT.md` + `.env.example`
 
 ---
 
-## 3. Implementace textů
+## Aktivní – před / po deployi
 
-- [x] Texty v `app/data/*.js` (hero, problem, services, case studies, process, pricing, about, contact).
-- [x] Synchronizovat `COPY.md` s novým positioningem (konverzní sprint).
-- [x] Testimonials na homepage (business-outcome výběr).
-
----
-
-## 4. Styling a UI
-
-- [ ] Nastavit základní layout sekcí podle `STYLEGUIDE.md` (spacing, max-width, grid).
-- [ ] Definovat konzistentní typografii (Tailwind utility) pro:
-  - [ ] H1, H2, H3
-  - [ ] odstavce
-  - [ ] menší text (popisky, meta informace)
-- [ ] Vybrat a nastavit barevnou paletu v souladu se `STYLEGUIDE.md` a existující identitou.
-- [ ] Definovat komponentu pro primární tlačítko (CTA) a používat ji konzistentně.
-- [ ] Stylovat karty služeb, case studies a recenzí podle `STYLEGUIDE.md`.
-- [ ] Zajistit dostatečný kontrast textu a pozadí.
+- [ ] **DNS:** 301/308 z `zbyneksvoboda.cz/*` → `www.zbyneksvoboda.cz/*` (WEDOS/Vercel) — meta-refresh nestačí
+- [ ] **Vercel ENV:** `RESEND_API_KEY` (Upstash ENV už nejsou potřeba — případně smazat ze Vercelu)
+- [ ] Po deployi smoke test podle `DEPLOYMENT.md` (headers, canonical, sitemap, formulář)
 
 ---
 
-## 5. Responsivita
+## UX / obsah (volitelné)
 
-- [ ] Otestovat homepage na mobilech (320–480 px).
-- [ ] U všech gridů zajistit přepnutí na 1 sloupec na malých šířkách.
-- [ ] Ověřit, že CTA tlačítka jsou snadno kliknutelná.
-- [ ] Zkontrolovat čitelnost textu na různých zařízeních.
-
----
-
-## 6. Obsah a case studies
-
-- [ ] Doplnit případové studie o konkrétnější výsledky, pokud jsou k dispozici (čísla, konverze, obsazenost apod.).
-- [x] Doplnit anonymizované snímky aplikací UGHighers a Svou Cestou bez údajů klientů a dětí; použít je v přehledu a detailech studií.
-- [ ] Případně přidat další 1–2 projekty jako case studies (např. Harasov, SvouCestou apod.).
-- [ ] U recenzí doplnit kontext (název projektu, typ spolupráce).
+- [ ] ProofStrip — data existují; zapnout jen pokud dávají smysl nad hero (čísla už jsou v case studies)
+- [ ] Obnovit veřejné `/sluzby/[slug]` až budou připravené a odkazované z homepage
+- [ ] Doplnit další case study až po reálném dopadu (např. LunaPlast)
+- [ ] Doladit mobilní spacing na 320–480 px po ostrém deployi
 
 ---
 
-## 7. SEO a technické detaily
+## Odloženo (neblokuje)
 
-- [ ] Aktualizovat `<title>` a meta description v layoutu.
-- [ ] Zkontrolovat nadpisovou hierarchii (1 × H1 na stránku, logická struktura H2/H3).
-- [ ] Přidat základní Open Graph tagy (název, popis, obrázek).
-- [ ] Zkontrolovat rychlost načítání a případně optimalizovat:
-  - [ ] obrázky (rozměry, formát, lazy loading)
-  - [ ] CSS a JS bundle
-- [ ] Ověřit správné nastavení favicona a manifestu (pokud je potřeba).
+- [ ] Blog / thought leadership
+- [ ] EN verze
+- [ ] Gradual TypeScript migrace
+- [ ] Samostatná „O mně“ stránka
+- [ ] Analytics dashboard / A/B testy
 
 ---
 
-## 8. Formulář a odesílání zpráv
+## Poznámky
 
-- [ ] Navrhnout, jak bude formulář technicky řešen:
-  - [ ] jednoduché serverless řešení
-  - [ ] e-mail, Supabase, jiná varianta
-- [ ] Implementovat backend nebo handler pro odesílání formuláře.
-- [ ] Ošetřit validaci vstupních dat na frontendu i backendu.
-- [ ] Přidat uživatelskou zpětnou vazbu (loading, success, error stavy).
-
----
-
-## 9. Testování
-
-- [ ] Projít kompletní homepage a zkontrolovat:
-  - [ ] překlepy a jazyk
-  - [ ] funkčnost všech odkazů a CTA
-  - [ ] konzistenci stylu
-- [ ] Otestovat na různých prohlížečích (Chrome, Firefox, Safari).
-- [ ] Otestovat na mobilu (iOS, Android).
-
----
-
-## 10. Další rozvoj (do budoucna)
-
-Není nutné pro první iteraci, ale do TODO můžou přibýt:
-
-- [ ] Vytvořit samostatnou stránku „Případové studie“ s detailnějšími rozbory.
-- [ ] Přidat sekci „O mně“ s osobnějším příběhem a propojením na Human Design (role průvodce, konzultanta).
-- [ ] Založit blog / články o:
-  - [ ] web strategii
-  - [ ] UX
-  - [ ] práci s AI ve světě webů
-  - [ ] případových studiích
-- [ ] Vytvořit jazykovou verzi EN (pokud se rozhodneš cílit víc i na zahraničí).
-
-### AI / automatizace – další fáze (po merge do nabídky)
-
-Hotovo v copy/ceníku: automatizace a AI připravenost v diagnostice, datově řízeném webu a portálech; automatizační sprint; retainer od 12 000 Kč/měsíc.
-
-- [ ] Produktová/datová připravenost nabízet jako součást diagnostiky a datově řízených webů (ne jako samostatný hlavní produkt) – např. u LunaPlastu jako navazující práce.
-- [ ] AI případovou studii vytvořit až po první reálné realizaci (ne dříve).
-- [ ] Neprodávat chatbot / „AI transformaci“ jako samostatný produkt bez dat, měření a odpovědnosti.
-- [ ] Po 2–3 klientech na automatizačním sprintu zvážit samostatnou homepage kartu (zatím ne).
-
----
-
-## 11. Poznámky k dalším iteracím
-
-- Při větších změnách struktury nebo obsahu aktualizovat:
-  - `WIREFRAME.md`
-  - `COPY.md`
-  - `STYLEGUIDE.md`
-- Udržovat TODO realisticky – pokud se něco dlouhodobě neplánuje, raději to z dokumentu odstranit nebo přesunout do sekce „Nápady“.
-
-Tento TODO je výchozí plán.  
-Dál se může upřesňovat podle reálného průběhu redesignu a nových nápadů.
+- Nepoužívané komponenty smazané (2026 stabilizace): `Stripe`, `StartSection`, `AboutPreview`, `PortfolioImpactSection`, `CaseStudiesSection`, `mail`, `phone`
+- Zachováno pro budoucnost: `ServiceDetailPage`, `ProofStrip`, `servicesData.detail`
+- Při větších změnách aktualizovat `WIREFRAME.md`, `COPY.md`, `STYLEGUIDE.md`, `DEPLOYMENT.md`

@@ -21,11 +21,9 @@
 - ✅ Referrer-Policy, Permissions-Policy
 - ✅ Implementováno v `next.config.mjs`
 
-### 3. Rate Limiting ✅
-- ✅ Abstrakce pro rate limiting (`lib/rateLimit.js`)
-- ✅ Připraveno pro Upstash Redis (produkce)
-- ✅ Fallback na in-memory (vývoj)
-- ✅ Rate limit headers v response
+### 3. Spam ochrana formuláře ✅
+- ✅ Honeypot + speed check + Origin allowlist
+- ~~Upstash Redis rate limit~~ — odstraněn (2026); pro tento projekt zbytečný
 
 ### 4. Strukturované logování ✅
 - ✅ Logger s JSON formátem (`lib/logger.js`)
@@ -49,7 +47,7 @@
 1. `lib/utils.js` - Helper funkce
 2. `lib/errors.js` - Error třídy
 3. `lib/logger.js` - Logger
-4. `lib/rateLimit.js` - Rate limiting
+4. ~~`lib/rateLimit.js`~~ — odstraněn (bez Upstash)
 5. `app/components/SafeHtml.jsx` - Bezpečná HTML komponenta
 6. `SECURITY_REPORT.md` - Detailní bezpečnostní audit
 7. `SECURITY_CHECKLIST.md` - Checklist pro review
@@ -75,25 +73,9 @@
 
 ### Pro produkci:
 
-1. **Upstash Redis** (volitelné, ale doporučeno):
-   ```bash
-   npm install @upstash/ratelimit @upstash/redis
-   ```
-   - Vytvořit účet na https://upstash.com
-   - Přidat credentials do `.env.local`
-   - Odkomentovat Upstash kód v `lib/rateLimit.js`
-
-2. **DOMPurify** (volitelné, pro lepší sanitizaci):
-   ```bash
-   npm install dompurify
-   ```
-   - Upravit `SafeHtml.jsx` pro použití DOMPurify
-
-3. **Testování:**
-   - Otestovat XSS payloady
-   - Otestovat rate limiting
-   - Otestovat security headers (https://securityheaders.com)
-   - Otestovat CSP policy
+1. **`RESEND_API_KEY`** na Vercelu
+2. **DNS 301** apex → www (viz `DEPLOYMENT.md`)
+3. **Testování:** XSS payloady ve formuláři, security headers, CSP
 
 ---
 

@@ -1,6 +1,8 @@
 # Bezpečnostní checklist
 ## Rychlý referenční seznam pro bezpečnostní review
 
+> Aktuální pravda: `SECURITY_IMPLEMENTATION.md`. Upstash rate limit už není součást projektu.
+
 ### 🔴 Kritické - Opravit před nasazením
 
 #### XSS ochrana

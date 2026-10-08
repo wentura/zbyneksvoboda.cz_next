@@ -1,9 +1,9 @@
-// * Importy pro fonty, globální styly a layout komponenty.
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Matomo from "./components/matomo";
 import Footer from "./components/footer";
 import MobileStickyCta from "./components/MobileStickyCta";
+import { SITE_URL } from "@/lib/site";
 
 const montserrat = Montserrat({
   subsets: ["latin", "latin-ext"],
@@ -12,12 +12,11 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
-// * Metadata pro SEO.
 export const metadata = {
   title: "Digitalizace firemních procesů, B2B weby a interní systémy | Zbyněk Svoboda",
   description:
     "Pomáhám B2B, výrobním a servisním firmám odstranit ruční práci a chaos mezi Excelem, e-mailem, webem a firemními systémy. Diagnostika, automatizace, integrace, B2B weby a interní aplikace.",
-  metadataBase: new URL("https://zbyneksvoboda.cz"),
+  metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: "/",
   },
@@ -25,7 +24,7 @@ export const metadata = {
     title: "Digitalizace firemních procesů, B2B weby a interní systémy | Zbyněk Svoboda",
     description:
       "Pomáhám B2B, výrobním a servisním firmám odstranit ruční práci a chaos mezi Excelem, e-mailem, webem a firemními systémy. Diagnostika, automatizace, integrace, B2B weby a interní aplikace.",
-    url: "https://zbyneksvoboda.cz",
+    url: SITE_URL,
     siteName: "Zbyněk Svoboda",
     images: [
       {
@@ -47,7 +46,6 @@ export const metadata = {
   },
 };
 
-// * Export root layoutu aplikace.
 export default function RootLayout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
@@ -55,7 +53,7 @@ export default function RootLayout({ children }) {
       {
         "@type": "Person",
         name: "Zbyněk Svoboda",
-        url: "https://zbyneksvoboda.cz",
+        url: SITE_URL,
         jobTitle: "Digitální konzultant a solution architect",
         email: "info@zbyneksvoboda.cz",
         telephone: "+420773687792",
@@ -70,7 +68,7 @@ export default function RootLayout({ children }) {
       {
         "@type": "WebSite",
         name: "Zbyněk Svoboda",
-        url: "https://zbyneksvoboda.cz",
+        url: SITE_URL,
       },
     ],
   };

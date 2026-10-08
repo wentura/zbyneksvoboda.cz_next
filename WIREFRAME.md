@@ -53,21 +53,23 @@ Layout: jednoduchý, dvousloupcový (desktop), jednokolonový (mobile).
 
 ## 2. Homepage – sekce (implementováno)
 
-**Pořadí sekcí (digitalizace 2026):**
+**Pořadí sekcí (digitalizace 2026 — implementováno):**
 1. Header
-2. Hero (kratší H1 + portrét + produkt v rámu)
-3. Proof strip - display čísla (900+, 11+, 1)
-4. Problem - dvě situace + symptomy
-5. SolutionOptions - nemusíte měnit všechno (4 úrovně)
-6. Case studies - UGHighers + SvouCestou, metrika na fotce
-7. Services - 4 karty včetně automatizace
-8. Process - Diagnostika → Rozhodnutí → Realizace (s časy)
-9. Pricing - diagnostika zvýrazněná, automatizace jako nejmenší realizace
-10. Fit - Kdy dává spolupráce smysl
-11. FAQ námitky
-12. Recenze
-13. Contact
+2. Hero (H1 + CTA + produkt v rámu; na mobilu text/CTA před vizuálem)
+3. Problem - dvě situace + symptomy
+4. SolutionOptions - 4 úrovně řešení
+5. Case studies - UGHighers + SvouCestou, metrika na fotce
+6. Services - karty na homepage (bez veřejných detailů `/sluzby/*`)
+7. Process - Diagnostika → Rozhodnutí → Realizace
+8. Pricing - diagnostika zvýrazněná
+9. Fit - Kdy dává spolupráce smysl
+10. FAQ námitky
+11. Recenze (`RecenzeShort` + `/recenze`)
+12. Contact
 
+**Vypnuto záměrně:** ProofStrip (čísla jsou v case studies).  
+**Veřejné `/sluzby/[slug]`:** odstraněny; detail copy zůstává v `servicesData.js`.  
+**Kanonická doména:** `https://www.zbyneksvoboda.cz`  
 **Data:** `app/data/*.js` agregovaná přes `content.js`.
 
 ---
@@ -255,19 +257,15 @@ Na mobilu vše pod sebou.
 
 ---
 
-## 3. Další stránky (do budoucna, volitelné)
+## 3. Další stránky
 
-Zatím není nutné, ale do budoucna je možné přidat:
+**Existuje:** `/portfolio`, `/portfolio/pripadovaStudie/[slug]`, `/recenze`, `/ckdfaq`
 
-- Samostatnou stránku „Případové studie“ s detailnějšími rozbory projektů
-- Stránku „O mně“ s osobnějším příběhem (propojení s Human Design / rolí průvodce)
-- Blog / články:
-  - o web strategii
-  - UX
-  - case studies
-  - práci s AI a web vývojem
-
-Tyto části zatím ber jako potenciál, ne nutnou součást první verze redesignu.
+**Do budoucna (volitelné):**
+- Obnovení `/sluzby/[slug]` (šablona `ServiceDetailPage` + data už jsou)
+- Samostatná „O mně“
+- Blog (strategie, UX, AI, case studies)
+- EN verze
 
 ---
 

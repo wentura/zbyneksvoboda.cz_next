@@ -1,6 +1,9 @@
 # Bezpečnostní audit - zbyneksvoboda.cz
 ## Analýza podle OWASP Top 10 2025
 
+> Historický audit. Aktuální stav: `SECURITY_IMPLEMENTATION.md`.  
+> Upstash/Redis rate limit byl později odstraněn — spam řeší honeypot + speed check + Origin.
+
 **Datum:** 2025-01-XX  
 **Verze:** 1.0  
 **Next.js:** 16.0.7  

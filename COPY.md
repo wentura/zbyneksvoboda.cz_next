@@ -40,8 +40,15 @@ Formulář: **Odeslat problém**
 
 - Digitální diagnostika: 10 000 Kč (jedna prioritní oblast)
 - Automatizace konkrétního procesu: od 25 000 Kč
+- Firemní prezentační web: od 35 000 Kč
 - B2B web a produktová data: od 55 000 Kč
 - Interní systém / klientský portál: od 90 000 Kč
 - Průběžný digitální rozvoj: od 12 000 Kč / měsíc
 
-Tón a vizuál: `STYLEGUIDE.md`. Struktura sekcí: `WIREFRAME.md`.
+## Poznámky ke struktuře
+
+- Detailní texty služeb (`servicesData[].detail`) existují, ale veřejné `/sluzby/[slug]` nejsou aktivní.
+- Proof strip data (`proofData.js`) existují, na homepage se nerenderují.
+- Kanonická doména webu: `https://www.zbyneksvoboda.cz`
+
+Tón a vizuál: `STYLEGUIDE.md`. Struktura sekcí: `WIREFRAME.md`. Deploy: `DEPLOYMENT.md`.
